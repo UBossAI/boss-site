@@ -1,0 +1,209 @@
+\documentclass[11pt,letterpaper]{scrartcl}
+
+% ---- Fonts & Encoding ----
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% ---- Layout ----
+\usepackage[margin=1in]{geometry}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+% ---- Colors ----
+\usepackage{xcolor}
+\definecolor{charcoal}{HTML}{2E3440}
+\definecolor{accent}{HTML}{4C566A}
+\definecolor{lightbg}{HTML}{F2F3F5}
+\definecolor{ruleline}{HTML}{D8DEE9}
+
+% ---- Boxes ----
+\usepackage[most]{tcolorbox}
+\tcbset{
+    keyterm/.style={
+        colback=lightbg,
+        colframe=ruleline,
+        boxrule=0.5pt,
+        arc=3pt,
+        left=10pt,
+        right=10pt,
+        top=8pt,
+        bottom=8pt,
+        fonttitle=\bfseries\color{charcoal},
+        coltitle=charcoal,
+        toptitle=4pt,
+        bottomtitle=4pt,
+    }
+}
+
+% ---- Headers ----
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{accent}\textbf{UBoss LLC} --- Key Terms Summary}
+\fancyhead[R]{\small\color{accent}Effective: May 1, 2026}
+\fancyfoot[C]{\small\color{accent}Page \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ---- Section Styling ----
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries\color{charcoal}}{}{0em}{}[\vspace{-0.5em}\textcolor{ruleline}{\rule{\textwidth}{0.4pt}}]
+\titleformat{\subsection}{\normalsize\bfseries\color{accent}}{}{0em}{}
+
+% ---- Links ----
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accent,
+    urlcolor=accent,
+    pdftitle={UBoss LLC - Key Terms Summary},
+    pdfauthor={UBoss LLC},
+}
+
+% ---- Document ----
+\begin{document}
+
+% ---- Title Block ----
+\begin{center}
+    {\LARGE\bfseries\color{charcoal}Key Terms Summary}\\[0.4em]
+    {\large\color{accent}UBoss LLC --- Terms of Service}\\[0.3em]
+    {\small A Delaware Limited Liability Company}\\[0.2em]
+    {\small Effective Date: May 1, 2026}\\[0.5em]
+    \textcolor{ruleline}{\rule{0.5\textwidth}{0.6pt}}
+\end{center}
+
+\vspace{0.5em}
+
+\begin{tcolorbox}[keyterm, title={What is this document?}]
+This is a \textbf{plain-language summary} of the key terms governing your use of UBoss LLC's automation services. The full, legally binding Terms of Service are available at \href{https://uboss.ai/terms}{uboss.ai/terms} and are incorporated by reference into this agreement. In the event of any conflict between this summary and the full Terms of Service, the full Terms shall control.
+\end{tcolorbox}
+
+\section{What We Do}
+
+UBoss LLC builds, hosts, and operates custom automation workflows for small and mid-sized businesses. We use tools like n8n, Twilio, and other integrations to automate tasks such as form processing, notifications, scheduling, and communications --- all tailored to your business needs.
+
+\section{Your Subscription}
+
+\begin{tcolorbox}[keyterm, title={Pricing Model}]
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item \textbf{One-time build fee} for initial automation development
+    \item \textbf{Monthly subscription} for ongoing hosting, maintenance, and support
+    \item Subscription tiers range from \textbf{Starter (\$300/mo)} to \textbf{Corporate (Custom)}
+    \item Your specific plan and pricing are documented in your Service Agreement
+\end{itemize}
+\end{tcolorbox}
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item Subscriptions renew monthly unless cancelled with \textbf{30 days written notice}.
+    \item Late payments may result in service suspension after a 10-day grace period.
+    \item UBoss reserves the right to adjust pricing with 30 days advance notice.
+\end{itemize}
+
+\section{What You're Responsible For}
+
+As our client (``Tenant''), you agree to:
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item Provide accurate information and maintain proper consents from your customers
+    \item Comply with all applicable laws, including TCPA, CAN-SPAM, and Massachusetts state law
+    \item Not use our automations for spam, phishing, or any illegal activity
+    \item Comply with Twilio's Acceptable Use Policy for any messaging services
+    \item Notify us promptly of any opt-out requests or complaints from your customers
+\end{itemize}
+
+\section{Messaging \& Communications}
+
+\begin{tcolorbox}[keyterm, title={Important --- Messaging Rules}]
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item All SMS/WhatsApp messaging is \textbf{transactional only} --- no promotional or marketing messages
+    \item You must have \textbf{proper consent} from anyone who receives messages through our system
+    \item Recipients can reply \textbf{STOP} at any time to opt out
+    \item Standard message and data rates may apply
+\end{itemize}
+\end{tcolorbox}
+\section{Who Owns What}
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item \textbf{Your data:} You own all data you provide to us or that is collected on your behalf. You may request export at any time.
+    \item \textbf{Our work:} UBoss retains ownership of all automation templates, frameworks, code libraries, and reusable logic. You receive a \textbf{non-exclusive license} to use workflows built for you for the duration of your subscription.
+    \item \textbf{AI outputs:} Any AI-generated content is provided ``as is'' with no guarantee of accuracy, completeness, or fitness for any purpose.
+\end{itemize}
+
+\section{Liability \& Disclaimers}
+
+\begin{tcolorbox}[keyterm, title={Key Protections}]
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item Services are provided \textbf{``as is''} --- no warranties on uptime, accuracy, or uninterrupted operation
+    \item UBoss's total liability is capped at \textbf{fees you've paid in the prior 12 months} (or as otherwise agreed in writing)
+    \item You agree to \textbf{indemnify UBoss} for claims arising from your misuse of our services or failure to obtain proper consents
+\end{itemize}
+\end{tcolorbox}
+
+\section{Termination}
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item Either party may terminate with \textbf{30 days written notice}.
+    \item UBoss may suspend or terminate immediately for breach of these terms, non-payment, or violation of the Acceptable Use Policy.
+    \item Upon termination, your data will be retained for \textbf{90 days} then securely deleted, unless a longer period is required by law.
+\end{itemize}
+
+\section{Privacy \& Data}
+
+Our full Privacy Policy is available at \href{https://uboss.ai/privacy}{uboss.ai/privacy} and governs all data collection, processing, storage, and deletion. By signing below, you acknowledge you have reviewed or been given access to the Privacy Policy.
+
+\section{Governing Law}
+
+These terms are governed by \textbf{Delaware law} for corporate matters and \textbf{Massachusetts law} for data privacy and consumer protection. Disputes will be resolved through good-faith negotiation, then binding arbitration in Massachusetts if needed.
+
+\vspace{1em}
+\textcolor{ruleline}{\rule{\textwidth}{0.4pt}}
+\vspace{1em}
+
+\begin{center}
+    {\large\bfseries\color{charcoal}Acknowledgment \& Agreement}
+\end{center}
+
+\vspace{0.5em}
+
+\begin{tcolorbox}[keyterm, title={}]
+By signing below, I confirm that I have read and understand this Key Terms Summary. I agree to be bound by these Key Terms and by UBoss LLC's full Terms of Service (available at \href{https://uboss.ai/terms}{uboss.ai/terms}), which are incorporated herein by reference. I also acknowledge that I have been provided access to UBoss LLC's Privacy Policy.
+\end{tcolorbox}
+
+\vspace{1.5em}
+
+% ---- Client / Tenant ----
+\begin{minipage}[t]{0.48\textwidth}
+    {\bfseries\color{charcoal}Client / Tenant}\\[1.5em]
+    \textcolor{ruleline}{\rule{\textwidth}{0.4pt}}\\[-0.3em]
+    {\small Printed Name}\\[1.5em]
+    \textcolor{ruleline}{\rule{\textwidth}{0.4pt}}\\[-0.3em]
+    {\small Company Name (if applicable)}\\[1.5em]
+    \textcolor{ruleline}{\rule{\textwidth}{0.4pt}}\\[-0.3em]
+    {\small Signature}\\[1.5em]
+    \textcolor{ruleline}{\rule{\textwidth}{0.4pt}}\\[-0.3em]
+    {\small Date}
+\end{minipage}
+\hfill
+% ---- UBoss Representative ----
+\begin{minipage}[t]{0.48\textwidth}
+    {\bfseries\color{charcoal}UBoss LLC}\\[1.5em]
+    \textcolor{ruleline}{\rule{\textwidth}{0.4pt}}\\[-0.3em]
+    {\small Printed Name}\\[1.5em]
+    \textcolor{ruleline}{\rule{\textwidth}{0.4pt}}\\[-0.3em]
+    {\small Title}\\[1.5em]
+    \textcolor{ruleline}{\rule{\textwidth}{0.4pt}}\\[-0.3em]
+    {\small Signature}\\[1.5em]
+    \textcolor{ruleline}{\rule{\textwidth}{0.4pt}}\\[-0.3em]
+    {\small Date}
+\end{minipage}
+
+\vspace{2em}
+
+\begin{center}
+    {\small\color{accent} Full Terms of Service: \href{https://uboss.ai/terms}{uboss.ai/terms} \quad|\quad Privacy Policy: \href{https://uboss.ai/privacy}{uboss.ai/privacy}}\\[0.5em]
+    {\small\color{accent} Questions? Contact \href{mailto:support@uboss.ai}{support@uboss.ai}}
+\end{center}
+
+\end{document}

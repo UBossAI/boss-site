@@ -1,0 +1,550 @@
+\documentclass[11pt,letterpaper,parskip=half]{scrartcl}
+
+% ---- Fonts & Encoding ----
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% ---- Layout ----
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{tabularx}
+
+% ---- Colors ----
+\usepackage{xcolor}
+\definecolor{charcoal}{HTML}{2E3440}
+\definecolor{accent}{HTML}{4C566A}
+\definecolor{lightbg}{HTML}{F2F3F5}
+\definecolor{ruleline}{HTML}{D8DEE9}
+
+% ---- Boxes ----
+\usepackage[most]{tcolorbox}
+\tcbset{
+    keyterm/.style={
+        colback=lightbg,
+        colframe=ruleline,
+        boxrule=0.5pt,
+        arc=3pt,
+        left=10pt, right=10pt,
+        top=8pt, bottom=8pt,
+        fonttitle=\bfseries\color{charcoal},
+        coltitle=charcoal,
+        toptitle=4pt, bottomtitle=4pt,
+    }
+}
+
+% ---- Headers ----
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{accent}\textbf{UBoss LLC} --- Terms of Service}
+\fancyhead[R]{\small\color{accent}Effective: May 1, 2026}
+\fancyfoot[C]{\small\color{accent}Page \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ---- Section Styling ----
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries\color{charcoal}}{Section \thesection.}{0.5em}{}[\vspace{-0.5em}\textcolor{ruleline}{\rule{\textwidth}{0.4pt}}]
+\titleformat{\subsection}{\normalsize\bfseries\color{accent}}{\thesubsection.}{0.5em}{}
+
+% ---- Links ----
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accent,
+    urlcolor=accent,
+    pdftitle={UBoss LLC - Terms of Service},
+    pdfauthor={UBoss LLC},
+}
+
+% ---- Table of Contents Styling ----
+\usepackage{tocloft}
+\renewcommand{\cftsecfont}{\color{charcoal}\bfseries}
+\renewcommand{\cftsecpagefont}{\color{accent}}
+\renewcommand{\cftsubsecfont}{\color{accent}}
+\renewcommand{\cftsubsecpagefont}{\color{accent}}
+
+% ---- Document ----
+\begin{document}
+
+% ---- Title Block ----
+\begin{center}
+    {\LARGE\bfseries\color{charcoal}Terms of Service}\\[0.4em]
+    {\large\color{accent}UBoss LLC}\\[0.3em]
+    {\small A Delaware Limited Liability Company}\\[0.2em]
+    {\small Effective Date: May 1, 2026 \quad|\quad Last Updated: May 1, 2026}\\[0.5em]
+    \textcolor{ruleline}{\rule{0.5\textwidth}{0.6pt}}
+\end{center}
+
+\vspace{0.5em}
+
+\begin{tcolorbox}[keyterm, title={Plain-Language Summary}]
+UBoss LLC provides custom automation services for businesses. We build, host, and maintain automated workflows using tools like n8n and Twilio. These Terms govern your use of our services. The key points are:
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item You own your data; we own our tools and work product
+    \item No spam --- all messaging must be transactional and properly consented
+    \item We provide services ``as is'' --- no uptime or accuracy guarantees
+    \item Our liability is capped at what you've paid us in the last 12 months
+    \item Either party can terminate with 30 days notice
+\end{itemize}
+This summary is for convenience only. The full terms below are legally binding.
+\end{tcolorbox}
+
+\vspace{0.5em}
+\tableofcontents
+\newpage
+
+\section{Introduction and Acceptance of Terms}
+
+These Terms of Service (``Terms,'' ``Agreement'') constitute a legally binding agreement between you (``Client,'' ``Tenant,'' ``you,'' or ``your'') and \textbf{UBoss LLC} (``UBoss,'' ``Company,'' ``we,'' ``us,'' or ``our''), a limited liability company organized under the laws of the State of Delaware and operating in the Commonwealth of Massachusetts.
+
+These Terms govern your access to and use of all services provided by UBoss, including but not limited to:
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item Custom automation workflow development, hosting, and maintenance;
+    \item Integration with third-party platforms and APIs (e.g., n8n, Twilio, Tally.so);
+    \item SMS, WhatsApp, email, and voice communications facilitated through UBoss systems;
+    \item Any dashboards, analytics, or reporting tools provided as part of your subscription;
+    \item Consulting, configuration, and support services.
+\end{itemize}
+
+\textbf{Acceptance.} You accept these Terms by:
+\begin{enumerate}[nosep, leftmargin=1.5em]
+    \item Signing the Key Terms Summary document provided by UBoss;
+    \item Executing a Service Agreement or Statement of Work that references these Terms;
+    \item Using any UBoss service after having been provided access to these Terms.
+\end{enumerate}
+
+If you do not agree to these Terms, you must not use our services. If you are accepting on behalf of a business entity, you represent that you have the authority to bind that entity.
+
+\section{Service Description}
+
+\subsection{What We Provide}
+
+UBoss is an automation services firm that designs, builds, deploys, and maintains custom automation workflows for small and mid-sized businesses (SMBs). Our services include:
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item \textbf{Workflow Development:} Custom automation built primarily on the n8n platform, along with custom scripts and integrations as needed.
+    \item \textbf{Hosting \& Infrastructure:} Workflows run on UBoss-managed infrastructure (currently a locally owned server in Massachusetts running Docker containers; future migration to cloud services such as AWS is anticipated).
+    \item \textbf{Communications Automation:} Transactional SMS, WhatsApp, and email messaging facilitated through Twilio and other providers.
+    \item \textbf{Form \& Data Processing:} Collection and processing of data submitted through Tally.so forms or other intake methods.
+    \item \textbf{Ongoing Maintenance \& Support:} Monitoring, updates, troubleshooting, and optimization of active workflows as part of your subscription plan.
+\end{itemize}
+
+\subsection{AI-Assisted Automation}
+
+Certain UBoss workflows incorporate artificial intelligence and large language model (LLM) components to enhance automation quality and responsiveness. UBoss operates self-hosted AI infrastructure, including:
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item \textbf{Ollama} --- a locally hosted LLM inference server running on UBoss-owned hardware in Massachusetts;
+    \item \textbf{LiteLLM} --- a model routing and gateway layer that directs requests to the appropriate model based on task requirements.
+\end{itemize}
+
+AI components are used to analyze non-identifiable data points and generate contextually appropriate responses, formatting, summaries, or process recommendations. AI is used as an \textbf{assistive tool within automation workflows} --- not as an autonomous decision-maker.
+
+In rare fallback scenarios where local model capacity is insufficient, requests may be routed to third-party AI providers (currently Anthropic and OpenAI). When this occurs, data transmitted to third-party providers is limited to the minimum necessary and is subject to those providers' respective privacy policies and data processing terms. UBoss does not send raw personally identifiable information to any AI model, whether self-hosted or third-party.
+
+UBoss anticipates offering direct AI-assisted capabilities to Clients as a future service. Should such offerings be introduced, these Terms will be updated to include applicable usage terms, rate limits, and output liability provisions.
+
+\subsection{What We Are Not}
+
+UBoss is a \textbf{service provider and data processor}, not a law firm, marketing agency, financial advisor, or healthcare provider. We do not provide legal, tax, medical, or compliance advice. Clients are responsible for ensuring their use of our services complies with all applicable laws and industry regulations.
+
+\subsection{Third-Party Dependencies}
+
+Our services rely on third-party platforms and tools. UBoss does not control and is not responsible for the availability, performance, pricing changes, or policy modifications of third-party services including but not limited to Twilio, Tally.so, n8n, Stripe, Vercel, GitHub, and Amazon Web Services. Changes to third-party services may affect the functionality of your workflows, and UBoss will use commercially reasonable efforts to adapt but does not guarantee uninterrupted operation.
+
+\section{Subscription Plans and Payment}
+
+\subsection{Pricing Structure}
+
+UBoss services are provided under a two-component pricing model:
+
+\begin{enumerate}[nosep, leftmargin=1.5em]
+    \item \textbf{One-Time Build Fee:} A flat fee for the initial development and deployment of your automation workflow(s), as quoted in your Service Agreement or Statement of Work.
+    \item \textbf{Monthly Subscription:} An ongoing monthly fee for hosting, maintenance, monitoring, and support of your active workflows.
+\end{enumerate}
+
+\subsection{Subscription Tiers}
+
+The following standard subscription tiers are available as of the effective date:
+
+\begin{center}
+\begin{tabularx}{\textwidth}{l l X}
+    \toprule
+    \textbf{Plan} & \textbf{Monthly} & \textbf{Description} \\
+    \midrule
+    Starter & \$300 & Entry level --- basic automations \\
+    Professional & \$700 & Core tier --- multiple automations + dashboards \\
+    Professional Plus & \$890 & Advanced features + analytics \\
+    Business & \$1,500 & Heavy usage --- enterprise features \\
+    Business Plus & \$1,900 & Heavy usage + priority support \\
+    Corporate & Custom & Enterprise-level custom solutions \\
+    \bottomrule
+\end{tabularx}
+\end{center}
+
+Your specific plan, pricing, and included services are documented in your Service Agreement. UBoss reserves the right to modify tier pricing and features with \textbf{thirty (30) days advance written notice}. Changes do not apply retroactively to the current billing cycle.
+
+\subsection{Payment Terms}
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item \textbf{Build fees} are due according to the payment schedule in your Service Agreement (e.g., 50\% upfront, 50\% upon delivery).
+    \item \textbf{Monthly subscriptions} are billed on the first business day of each month and are due upon receipt.
+    \item Accepted payment methods will be specified in your Service Agreement. Future integration with Stripe for online payments is anticipated.
+    \item \textbf{Late payments:} Invoices unpaid after ten (10) calendar days will incur a late fee of 1.5\% per month on the outstanding balance. UBoss reserves the right to suspend services after the 10-day grace period until the account is brought current.
+    \item \textbf{Taxes:} All fees are exclusive of applicable taxes, which are the Client's responsibility.
+\end{itemize}
+
+\subsection{Refunds}
+
+Build fees are non-refundable once work has commenced unless otherwise agreed in writing. Monthly subscription fees are non-refundable for partial months. If UBoss terminates services for reasons other than Client breach, a pro-rated refund for the unused portion of the current billing period will be issued.
+
+\section{Client Responsibilities}
+
+As a Client of UBoss, you represent, warrant, and agree to the following:
+
+\subsection{General Obligations}
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item Provide accurate, complete, and current information as required for service delivery;
+    \item Respond to UBoss communications and requests for information in a timely manner;
+    \item Designate at least one authorized point of contact for your account;
+    \item Maintain the security of any credentials, API keys, or access tokens provided to you;
+    \item Notify UBoss promptly of any security incidents, unauthorized access, or suspected breaches involving your account or data.
+\end{itemize}
+
+\subsection{Compliance Obligations}
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item Comply with all applicable federal, state, and local laws, including the Telephone Consumer Protection Act (TCPA), CAN-SPAM Act, Massachusetts General Laws Chapters 93A and 93H, and any industry-specific regulations applicable to your business;
+    \item Obtain and maintain all necessary consents from your customers (Third-Party End-Users) before providing their data to UBoss or directing UBoss to communicate with them;
+    \item Maintain records of consent sufficient to demonstrate compliance with TCPA, Twilio's Acceptable Use Policy, and applicable state law;
+    \item Ensure that any data you provide to UBoss has been lawfully collected and that you have the right to share it with UBoss for the purposes described in your Service Agreement.
+\end{itemize}
+
+\subsection{Prohibited Activities}
+
+You shall not use UBoss services to:
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item Send unsolicited commercial messages, spam, or bulk promotional communications;
+    \item Engage in phishing, fraud, deception, or any illegal activity;
+    \item Transmit malware, viruses, or harmful code;
+    \item Harass, threaten, or abuse any individual;
+    \item Violate the intellectual property rights of any third party;
+    \item Process data in a manner that violates applicable privacy laws;
+    \item Circumvent or attempt to circumvent any security controls implemented by UBoss.
+\end{itemize}
+
+\section{Acceptable Use Policy (AUP)}
+
+\begin{tcolorbox}[keyterm, title={Twilio Compliance Notice}]
+All messaging conducted through UBoss systems is subject to \textbf{Twilio's Acceptable Use Policy} and \textbf{Twilio's Messaging Policy}. Violation of Twilio's policies may result in immediate suspension of messaging capabilities, fines from carriers, and/or termination of services. UBoss shall not be liable for any consequences arising from a Client's violation of Twilio's policies.
+\end{tcolorbox}
+
+\subsection{Messaging Rules}
+
+All SMS, MMS, WhatsApp, and voice communications sent through UBoss-operated systems must comply with the following:
+
+\begin{enumerate}[nosep, leftmargin=1.5em]
+    \item \textbf{Transactional Only:} Messages must be transactional in nature --- form confirmations, status updates, appointment reminders, service notifications, etc. Promotional, marketing, and advertising messages are \textbf{strictly prohibited} through UBoss automation systems.
+    \item \textbf{Prior Consent Required:} Every message recipient must have provided express consent to receive communications. For SMS/MMS, this consent must meet TCPA standards for express consent (transactional) or express written consent (if any promotional use is ever authorized in a separate agreement).
+    \item \textbf{Opt-Out Compliance:} All messages must include or support opt-out functionality. Recipients must be able to reply STOP to cease receiving messages. Opt-out requests must be honored promptly.
+    \item \textbf{HELP Keyword:} UBoss systems will respond to HELP keyword requests with contact information and a brief description of the messaging service.
+    \item \textbf{Sender Identification:} All messages will identify UBoss or the Tenant as the sender, as applicable.
+    \item \textbf{10DLC Compliance:} All A2P messaging is conducted through properly registered 10DLC campaigns with The Campaign Registry (TCR) and applicable carriers.
+    \item \textbf{Content Restrictions:} Messages must not contain content that is illegal, threatening, harassing, defamatory, obscene, or otherwise objectionable. Messages must not promote illegal substances, weapons, gambling (unless properly licensed), or adult content.
+\end{enumerate}
+
+\subsection{Email Rules}
+
+Emails sent through UBoss automation systems must comply with the CAN-SPAM Act, including:
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item Accurate header and ``From'' information;
+    \item Non-deceptive subject lines;
+    \item Identification as an advertisement (if applicable --- note: UBoss automation emails are transactional);
+    \item A functional unsubscribe mechanism;
+    \item A valid physical postal address.
+\end{itemize}
+
+When email is sent from a Client's own email account through UBoss automation, the Client is the sender of record and bears independent responsibility for CAN-SPAM compliance.
+
+\subsection{Enforcement}
+
+UBoss reserves the right to:
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item Monitor messaging content and patterns for compliance purposes;
+    \item Suspend or terminate messaging capabilities immediately upon detection of AUP violations;
+    \item Report violations to Twilio, carriers, or law enforcement as appropriate;
+    \item Require Clients to provide evidence of consent upon request.
+\end{itemize}
+
+Violations of this AUP may result in immediate suspension or termination of services without prior notice and without refund.
+
+\section{Intellectual Property}
+
+\subsection{UBoss Property}
+
+UBoss retains all right, title, and interest in and to:
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item All automation templates, frameworks, code libraries, reusable components, and proprietary tools developed by UBoss, whether developed before, during, or after the Client engagement;
+    \item The n8n workflow structures, node configurations, and integration patterns that constitute UBoss's general methodology;
+    \item Any improvements, enhancements, or derivative works created by UBoss, even if inspired by or developed in connection with a Client project;
+    \item The UBoss name, logo, trademarks, and brand assets.
+\end{itemize}
+
+\subsection{Client License}
+
+Upon payment of applicable fees, UBoss grants the Client a \textbf{non-exclusive, non-transferable, revocable license} to use the specific automation workflows built for the Client for the duration of the active subscription. This license:
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item Permits use of the workflows solely for the Client's internal business purposes;
+    \item Does not include the right to resell, sublicense, distribute, or reverse-engineer UBoss workflows;
+    \item Terminates upon expiration or termination of the Client's subscription, unless otherwise agreed in writing;
+    \item Does not transfer ownership of any underlying code, logic, or intellectual property.
+\end{itemize}
+
+\subsection{Client Data}
+
+The Client retains full ownership of all data submitted to or collected through UBoss systems on the Client's behalf. UBoss does not claim ownership of Client data.
+
+\subsection{AI-Generated Content}
+
+\begin{tcolorbox}[keyterm, title={AI Disclaimer}]
+Certain UBoss automation workflows may incorporate artificial intelligence or machine learning components, including but not limited to large language models (LLMs) and natural language processing tools. With respect to AI-generated outputs:
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item All AI-generated content is provided \textbf{``as is''} without any warranty of accuracy, completeness, reliability, or fitness for any particular purpose;
+    \item UBoss \textbf{does not guarantee} that AI outputs are free from errors, bias, or ``hallucinations'' (fabricated information);
+    \item The Client is solely responsible for reviewing, verifying, and approving any AI-generated content before use;
+    \item UBoss shall not be liable for any damages arising from reliance on AI-generated content.
+\end{itemize}
+\end{tcolorbox}
+
+\subsection{Service Improvement}
+
+UBoss may use anonymized, aggregated, and de-identified data derived from the provision of services to improve its general tools, methodologies, and service offerings. This does not include the use of identifiable Client data or data classified as Sensitive Data. Clients may opt out of this provision by notifying UBoss in writing.
+
+\subsection{Data Licensing and Anonymized Use}
+
+UBoss may create anonymized, de-identified, and aggregated datasets derived from data processed through its services. Such datasets will be stripped of all personally identifiable information --- including names, email addresses, phone numbers, and account identifiers --- and will contain no data more granular than zip code or city-level geography. UBoss may use these anonymized datasets to:
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item Improve internal tools, automation templates, and service quality;
+    \item Train, develop, or refine machine learning models and AI systems;
+    \item Generate industry benchmarks, trend analyses, and statistical reports;
+    \item Create commercial analytics products or insights derived from aggregated data.
+\end{itemize}
+
+UBoss will not attempt to re-identify any individual from anonymized data, nor will UBoss sell, license, or disclose raw personally identifiable information to any third party for commercial purposes. Clients may opt out of anonymized data usage by providing written notice to \href{mailto:support@uboss.ai}{support@uboss.ai}. Opt-out requests will be processed within thirty (30) calendar days.
+
+\section{Data Ownership and Processing}
+
+\subsection{Roles}
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item \textbf{Client as Data Controller:} When UBoss processes data on the Client's behalf (e.g., communicating with the Client's customers), the Client is the Data Controller and UBoss acts as the Data Processor.
+    \item \textbf{UBoss as Data Controller:} When UBoss collects data directly for its own purposes (e.g., Client contact information for account management), UBoss is the Data Controller.
+\end{itemize}
+
+\subsection{Processing Instructions}
+
+When acting as Data Processor, UBoss processes data only in accordance with the Client's documented instructions as set forth in the Service Agreement and applicable automation workflow specifications. UBoss will not process Client data for any purpose other than performing the contracted services, unless required by law.
+
+\subsection{Data Export}
+
+Clients may request export of their data at any time by submitting a written request to \href{mailto:support@uboss.ai}{support@uboss.ai}. UBoss will provide the data in a commonly used, machine-readable format (e.g., CSV, JSON) within a commercially reasonable timeframe, not to exceed thirty (30) calendar days.
+
+\subsection{Cross-Reference}
+
+All data collection, storage, retention, deletion, and security practices are governed by the \textbf{UBoss LLC Privacy Policy}, available at \href{https://uboss.ai/privacy}{uboss.ai/privacy}, which is incorporated into these Terms by reference.
+
+\section{Warranties and Disclaimers}
+
+\subsection{Limited Warranty}
+
+UBoss warrants that it will perform services in a professional and workmanlike manner consistent with generally accepted industry standards. If a workflow materially fails to perform as specified in the Service Agreement within thirty (30) days of deployment, UBoss will, at its sole discretion, either repair the workflow or refund the applicable build fee. This is the Client's sole and exclusive remedy for breach of this warranty.
+
+\subsection{Disclaimer of Warranties}
+
+\begin{tcolorbox}[keyterm, colback=white, colframe=charcoal, boxrule=0.8pt]
+EXCEPT FOR THE LIMITED WARRANTY ABOVE, UBOSS PROVIDES ALL SERVICES ON AN ``AS IS'' AND ``AS AVAILABLE'' BASIS. TO THE FULLEST EXTENT PERMITTED BY LAW, UBOSS DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO:
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT;
+    \item ANY WARRANTY THAT SERVICES WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE;
+    \item ANY WARRANTY REGARDING THE ACCURACY, RELIABILITY, OR COMPLETENESS OF AI-GENERATED CONTENT;
+    \item ANY WARRANTY REGARDING THE AVAILABILITY OR PERFORMANCE OF THIRD-PARTY SERVICES.
+\end{itemize}
+\end{tcolorbox}
+
+\subsection{No Service Level Agreement}
+
+Unless expressly set forth in a separate written agreement, UBoss does not guarantee any specific uptime percentage, response time, or service level. UBoss will use commercially reasonable efforts to maintain service availability but is not liable for downtime, whether planned or unplanned.
+
+\section{Limitation of Liability}
+
+\subsection{Exclusion of Damages}
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL UBOSS, ITS MEMBERS, MANAGERS, OFFICERS, EMPLOYEES, CONTRACTORS, OR AGENTS BE LIABLE FOR ANY:
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES;
+    \item LOSS OF PROFITS, REVENUE, DATA, BUSINESS OPPORTUNITIES, OR GOODWILL;
+    \item COST OF PROCUREMENT OF SUBSTITUTE SERVICES;
+    \item DAMAGES ARISING FROM UNAUTHORIZED ACCESS TO OR ALTERATION OF DATA;
+\end{itemize}
+
+ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR THE SERVICES, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY, OR OTHERWISE), EVEN IF UBOSS HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+\subsection{Liability Cap}
+
+UBOSS'S TOTAL AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THESE TERMS OR THE SERVICES SHALL NOT EXCEED THE TOTAL FEES ACTUALLY PAID BY THE CLIENT TO UBOSS DURING THE \textbf{TWELVE (12) MONTHS} IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO THE CLAIM, UNLESS OTHERWISE SPECIFIED IN A SEPARATE WRITTEN AGREEMENT BETWEEN THE PARTIES.
+
+\subsection{Essential Basis}
+
+The limitations and exclusions in this section are a fundamental element of the basis of the bargain between the parties. UBoss would not provide services at the fees charged without these limitations.
+
+\section{Indemnification}
+
+\subsection{Client Indemnification}
+
+The Client agrees to indemnify, defend, and hold harmless UBoss LLC, its members, managers, officers, employees, contractors, and agents from and against any and all claims, demands, actions, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees and court costs) arising out of or relating to:
+
+\begin{enumerate}[nosep, leftmargin=1.5em]
+    \item The Client's breach of these Terms or any applicable law;
+    \item The Client's failure to obtain or maintain proper consent from Third-Party End-Users;
+    \item The Client's violation of the Acceptable Use Policy;
+    \item Any claim by a Third-Party End-User arising from the Client's use of UBoss services;
+    \item The Client's provision of inaccurate, misleading, or unlawfully obtained data;
+    \item The Client's violation of Twilio's Acceptable Use Policy, Messaging Policy, or any carrier requirements;
+    \item Any regulatory fines, penalties, or enforcement actions resulting from the Client's conduct.
+\end{enumerate}
+
+\subsection{Indemnification Process}
+
+UBoss will promptly notify the Client of any claim subject to indemnification and will provide reasonable cooperation in the defense thereof. The Client shall not settle any claim in a manner that imposes obligations on UBoss without UBoss's prior written consent.
+
+\section{Confidentiality}
+
+\subsection{Definition}
+
+``Confidential Information'' means any non-public information disclosed by either party to the other in connection with these Terms, including but not limited to business plans, customer lists, technical data, pricing, workflows, API credentials, and trade secrets.
+
+\subsection{Obligations}
+
+Each party agrees to:
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item Hold the other party's Confidential Information in strict confidence;
+    \item Use Confidential Information solely for the purposes of performing under these Terms;
+    \item Not disclose Confidential Information to any third party without prior written consent, except to employees, contractors, or advisors with a need to know who are bound by confidentiality obligations at least as protective as those herein;
+    \item Take reasonable measures to protect Confidential Information from unauthorized disclosure.
+\end{itemize}
+
+\subsection{Exceptions}
+
+Confidentiality obligations do not apply to information that:
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item Is or becomes publicly available through no fault of the receiving party;
+    \item Was known to the receiving party prior to disclosure;
+    \item Is independently developed by the receiving party without use of Confidential Information;
+    \item Is required to be disclosed by law, regulation, or court order (with prompt notice to the disclosing party where permitted).
+\end{itemize}
+
+\section{Governing Law and Dispute Resolution}
+
+\subsection{Governing Law}
+
+These Terms shall be governed by:
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item The laws of the \textbf{State of Delaware} with respect to corporate and contractual matters;
+    \item The laws of the \textbf{Commonwealth of Massachusetts} with respect to data privacy, consumer protection, and electronic communications;
+    \item Applicable federal laws, including the TCPA, CAN-SPAM Act, COPPA, and regulations of the FCC and FTC.
+\end{itemize}
+
+\subsection{Dispute Resolution}
+
+Any dispute arising out of or relating to these Terms shall be resolved as follows:
+
+\begin{enumerate}[nosep, leftmargin=1.5em]
+    \item \textbf{Good-Faith Negotiation:} The parties shall first attempt to resolve the dispute through good-faith negotiation for a period of thirty (30) days.
+    \item \textbf{Mediation:} If negotiation fails, the parties may mutually agree to non-binding mediation.
+    \item \textbf{Binding Arbitration:} If the dispute remains unresolved, it shall be submitted to binding arbitration administered by the American Arbitration Association (AAA) under its Commercial Arbitration Rules. The arbitration shall be conducted in Massachusetts by a single arbitrator.
+    \item \textbf{Costs:} Each party shall bear its own costs and attorneys' fees in connection with any dispute resolution proceedings, unless the arbitrator determines otherwise.
+\end{enumerate}
+
+\subsection{Injunctive Relief}
+
+Notwithstanding the above, either party may seek injunctive or other equitable relief in any court of competent jurisdiction to prevent irreparable harm, including but not limited to breaches of confidentiality or intellectual property provisions.
+
+\section{Force Majeure}
+
+Neither party shall be liable for any failure or delay in performance resulting from causes beyond its reasonable control, including but not limited to: acts of God, natural disasters, pandemic or epidemic, government actions or orders, war or terrorism, power outages, internet or telecommunications failures, cyberattacks by third parties, failures or policy changes of third-party service providers (including Twilio, Tally.so, AWS, or Stripe), labor disputes, or supply chain disruptions.
+
+The affected party shall provide prompt notice and use commercially reasonable efforts to mitigate the impact and resume performance.
+
+\section{Miscellaneous}
+
+\subsection{Entire Agreement}
+
+These Terms, together with any Service Agreement, Statement of Work, the Privacy Policy, and any other documents expressly incorporated by reference, constitute the entire agreement between the parties and supersede all prior negotiations, representations, and agreements relating to the subject matter hereof.
+
+\subsection{Amendments}
+
+UBoss may amend these Terms at any time by posting the revised version at \href{https://uboss.ai/terms}{uboss.ai/terms} and updating the ``Last Updated'' date. Material changes will be communicated to active Clients via email or other reasonable means with at least thirty (30) days notice. Continued use of services after the effective date of any amendment constitutes acceptance. If a Client does not agree to amended Terms, the Client may terminate in accordance with Section 10.
+
+\subsection{Severability}
+
+If any provision of these Terms is found to be invalid, illegal, or unenforceable by a court of competent jurisdiction, the remaining provisions shall continue in full force and effect. The invalid provision shall be modified to the minimum extent necessary to make it valid and enforceable while preserving the parties' original intent.
+
+\subsection{Waiver}
+
+The failure of either party to enforce any provision of these Terms shall not constitute a waiver of that provision or any other provision. A waiver of any provision is effective only if in writing and signed by the waiving party.
+
+\subsection{Assignment}
+
+The Client may not assign or transfer these Terms or any rights hereunder without UBoss's prior written consent. UBoss may assign these Terms in connection with a merger, acquisition, reorganization, or sale of substantially all of its assets.
+
+\subsection{Notices}
+
+All notices under these Terms shall be in writing and delivered via email to the addresses on file. Notices to UBoss shall be sent to \href{mailto:support@uboss.ai}{support@uboss.ai}. Notices are deemed received upon confirmed delivery.
+
+\subsection{Independent Contractors}
+
+The relationship between UBoss and the Client is that of independent contractors. Nothing in these Terms creates a partnership, joint venture, employment, or agency relationship.
+
+\subsection{Headings}
+
+Section headings are for convenience only and do not affect the interpretation of these Terms.
+
+\section{Contact Information}
+\label{sec:contact}
+
+For questions, concerns, or notices relating to these Terms of Service:
+
+\begin{quote}
+    \textbf{UBoss LLC}\\
+    \textit{Terms of Service Inquiries}\\[0.5em]
+    Email: \href{mailto:support@uboss.ai}{support@uboss.ai}\\
+    Website: \href{https://uboss.ai}{https://uboss.ai}\\[0.5em]
+    \textit{Mailing address available upon request.}
+\end{quote}
+
+\vspace{2em}
+
+\begin{center}
+    \textcolor{ruleline}{\rule{0.4\textwidth}{0.4pt}}\\[1em]
+    {\color{accent}\textit{End of Terms of Service --- UBoss LLC}}\\
+    {\color{accent}\textit{Effective May 1, 2026}}
+\end{center}
+
+\end{document}

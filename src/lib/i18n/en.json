@@ -1,0 +1,350 @@
+{
+  "meta": {
+    "siteName": "UBOSS",
+    "siteDescription": "AI automation and consulting for trades businesses in Greater Boston, MA"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "bookCta": "Book a Free Consultation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "selectLanguage": "Select language"
+  },
+  "hero": {
+    "headline": "AI That Works As Hard As You Do",
+    "subheadline": "We build custom AI automations for trades businesses in Greater Boston — so you can focus on the work, not the paperwork.",
+    "cta": "Book a Free Consultation",
+    "ctaSubtext": "No commitment. 15-minute discovery call."
+  },
+  "whatWeDo": {
+    "title": "What We Do",
+    "subtitle": "AI automation for small businesses — built around how you actually work.",
+    "automation": {
+      "title": "Workflow Automation",
+      "description": "Automate intake forms, job scheduling, client follow-ups, and more. Your business runs even when you're on the job."
+    },
+    "assistants": {
+      "title": "AI Assistants",
+      "description": "WhatsApp bots, email responders, and smart assistants that handle customer questions 24/7."
+    },
+    "dashboards": {
+      "title": "Business Dashboards",
+      "description": "See your business data in real time — jobs, revenue, leads, and performance metrics in one place."
+    },
+    "integrations": {
+      "title": "Custom Integrations",
+      "description": "Connect your existing tools — QuickBooks, Google Workspace, CRMs, and more — with AI-powered workflows."
+    }
+  },
+  "whoWeServe": {
+    "title": "Built for Businesses Like Yours",
+    "subtitle": "We specialize in trades and services — the businesses that keep Greater Boston running.",
+    "industries": [
+      "Landscaping & Lawn Care",
+      "Cleaning Services",
+      "General Contracting",
+      "Plumbing & HVAC",
+      "Auto Body & Repair",
+      "Property Management",
+      "Restaurants & Food Service",
+      "And more..."
+    ],
+    "cta": "See how we help your industry"
+  },
+  "whyUboss": {
+    "title": "Why UBOSS",
+    "subtitle": "We're not a generic tech company. We're local, trilingual, and built for the trades.",
+    "reasons": [
+      {
+        "title": "Trilingual — EN / ES / PT-BR",
+        "description": "We serve Greater Boston's English, Spanish-speaking, and Portuguese-speaking business communities — no language barriers."
+      },
+      {
+        "title": "Local & Personal",
+        "description": "We're based in Greater Boston. Face-to-face relationships, not just a support call center."
+      },
+      {
+        "title": "Trades-Focused",
+        "description": "We understand how landscapers, cleaners, and contractors operate. Our automations are built around blue-collar realities."
+      },
+      {
+        "title": "Full-Stack AI",
+        "description": "We don't just resell ChatGPT. We build real infrastructure — custom workflows, integrations, and dashboards tailored to your business."
+      }
+    ]
+  },
+  "pricingPreview": {
+    "title": "Simple, Predictable Pricing",
+    "subtitle": "One-time setup fee + monthly subscription. No hidden costs, no long-term lock-in.",
+    "monthly": "/month",
+    "mostPopular": "Most Popular",
+    "cta": "Book a call to find your plan",
+    "setupFeeNote": "One-time setup fee based on project complexity — discussed during your free consultation.",
+    "enterprise": {
+      "title": "Enterprise",
+      "description": "Custom solutions for larger operations",
+      "cta": "Let's Talk"
+    },
+    "viewFullPricing": "View full pricing details"
+  },
+  "contact": {
+    "title": "Ready to Automate Your Business?",
+    "subtitle": "Book a free consultation or send us a message. We'll get back to you within 24 hours.",
+    "emailLabel": "Email us",
+    "email": "support@uboss.ai",
+    "book15Label": "15-Minute Discovery Call",
+    "book15Description": "Quick intro — tell us about your business",
+    "book60Label": "Strategy Session",
+    "book60Description": "Deep dive into your automation needs",
+    "form": {
+      "title": "Send a Message",
+      "name": "Full Name",
+      "namePlaceholder": "John Smith",
+      "email": "Email Address",
+      "emailPlaceholder": "john@yourbusiness.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "(617) 555-0100",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your business and what you'd like to automate...",
+      "language": "Preferred Language",
+      "languageEn": "English",
+      "languageEs": "Spanish",
+      "languagePt": "Portuguese (Brazilian)",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "successTitle": "Message Sent!",
+      "successMessage": "Thanks for reaching out. We'll get back to you within 24 hours.",
+      "errorMessage": "Something went wrong. Please email us directly at support@uboss.ai."
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Real businesses, real results.",
+    "items": [
+      {
+        "name": "Carlos M.",
+        "business": "Landscaping Business, Framingham MA",
+        "quote": "UBOSS automated our whole job intake process. What used to take me 2 hours now happens automatically. I can focus on the actual work."
+      },
+      {
+        "name": "Ana S.",
+        "business": "Cleaning Service, Somerville MA",
+        "quote": "They spoke to us in Portuguese and understood our business from day one. The WhatsApp automation alone has saved us countless hours every week."
+      },
+      {
+        "name": "Mike T.",
+        "business": "General Contractor, Boston MA",
+        "quote": "The dashboard they built gives me a real-time view of every job. I finally know where my money is going."
+      }
+    ]
+  },
+  "about": {
+    "title": "About UBOSS",
+    "subtitle": "Making AI accessible to the businesses that power our communities.",
+    "missionLabel": "Our Mission",
+    "mission": "To make enterprise-grade AI automation accessible to every small business — regardless of language, technical background, or industry.",
+    "founderLabel": "Founder Story",
+    "founderStory": "UBOSS was founded by a first-generation Salvadorian-American engineer born and raised in Greater Boston. With a senior engineering background and deep roots in the local trades community, he saw firsthand how small businesses — run by hardworking immigrants and families — were being left behind by tech companies that didn't understand their world. UBOSS exists to change that.",
+    "visionLabel": "The Vision",
+    "vision": "A future where every trades business in Greater Boston has access to the same AI tools that Fortune 500 companies use — at a price that makes sense, with support in your language.",
+    "pegasusLabel": "The Pegasus Story",
+    "pegasusStory": "Our brand is named after Pegasus — the mythological winged horse. Like Pegasus, we believe in the power of combining raw strength with the ability to soar. Our infrastructure runs on a server we affectionately call Pegasus, the workhorse that powers everything we build for our clients.",
+    "founderName": "Robert Gutierrez",
+    "founderSiteText": "Learn more about Robert at Robg.dev",
+    "founderSiteUrl": "https://robg.dev",
+    "imageAlt": "Robert Gutierrez, Founder of UBOSS LLC"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Custom AI-powered automations built specifically for your business.",
+    "automation": {
+      "title": "Workflow Automation",
+      "description": "Automate your most time-consuming processes — client intake forms, job scheduling, follow-up emails, invoicing triggers, and more. We map your current workflow and replace manual steps with intelligent automation.",
+      "features": ["Client intake & lead capture", "Automated job scheduling", "Follow-up sequences", "Invoicing triggers"],
+      "cta": "Learn more"
+    },
+    "assistants": {
+      "title": "AI-Powered Assistants",
+      "description": "Deploy AI assistants on WhatsApp, email, and SMS that answer customer questions, qualify leads, and book appointments — 24 hours a day, 7 days a week.",
+      "features": ["WhatsApp bot (coming soon)", "Email auto-responder", "Lead qualification", "Appointment booking"],
+      "cta": "Learn more"
+    },
+    "dashboards": {
+      "title": "Business Dashboards & Analytics",
+      "description": "See your entire business at a glance. We build custom dashboards that pull data from all your tools and present it in a clean, actionable format.",
+      "features": ["Real-time job tracking", "Revenue & expense views", "Lead pipeline visibility", "Google Looker integration"],
+      "cta": "Learn more"
+    },
+    "integrations": {
+      "title": "Custom Integrations",
+      "description": "Already using tools you love? We connect them together so data flows automatically — no more copy-pasting between apps.",
+      "features": ["QuickBooks integration", "Google Workspace", "CRM connections", "Custom API work"],
+      "cta": "Learn more"
+    },
+    "forms": {
+      "title": "Digital Form Creation",
+      "description": "Replace paper forms and outdated PDFs with smart digital forms that feed directly into your automation workflows.",
+      "features": ["Custom-branded forms", "Automatic data routing", "Signature collection", "Mobile-friendly"],
+      "cta": "Learn more"
+    },
+    "notifications": {
+      "title": "SMS & Email Notifications",
+      "description": "Keep your team and clients in the loop automatically. Send job updates, reminders, and confirmations without lifting a finger.",
+      "features": ["Job status updates", "Appointment reminders", "Payment confirmations", "Team notifications"],
+      "cta": "Learn more"
+    },
+    "consultationCta": "Book a free consultation to discuss your needs"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Transparent, predictable pricing for every stage of your business.",
+    "monthly": "/month",
+    "mostPopular": "Most Popular",
+    "setupFeeTitle": "One-Time Setup Fee",
+    "setupFeeNote": "One-time setup fee based on project complexity — discussed during your free consultation.",
+    "enterprise": {
+      "title": "Enterprise",
+      "description": "Custom solutions for larger operations",
+      "cta": "Let's Talk"
+    },
+    "cta": "Book a call to find your plan",
+    "faq": [
+      {
+        "question": "What does the monthly subscription include?",
+        "answer": "Your monthly subscription covers ongoing management, monitoring, and optimization of your automation workflows. We keep everything running, fix issues as they arise, and make adjustments as your business evolves."
+      },
+      {
+        "question": "What is the one-time setup fee?",
+        "answer": "The setup fee covers the initial discovery, design, and build of your custom automations. The cost depends on the complexity of your workflows — we discuss this during your free consultation before you commit to anything."
+      },
+      {
+        "question": "Is there a contract or long-term commitment?",
+        "answer": "No long-term contracts. Our subscriptions are month-to-month. We believe in earning your business every month."
+      },
+      {
+        "question": "Can I start with one automation and add more later?",
+        "answer": "Absolutely. Most clients start with the Starter plan to automate one key workflow, then upgrade as they see results."
+      },
+      {
+        "question": "Do you offer support in Spanish or Portuguese?",
+        "answer": "Yes — we provide full support in English, Spanish, and on-boarding Portuguese. "
+      },
+      {
+        "question": "How long does setup take?",
+        "answer": "Most Starter automations are live within 1-2 weeks. More complex Professional and Business builds typically take 2-4 weeks depending on integrations."
+      }
+    ]
+  },
+  "legal": {
+    "terms": {
+      "title": "Terms of Service",
+      "description": "Our full terms of service agreement.",
+      "download": "Download Terms of Service (PDF)",
+      "viewPdf": "View PDF"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "How we collect, use, and protect your data.",
+      "download": "Download Privacy Policy (PDF)",
+      "viewPdf": "View PDF"
+    },
+    "keyTerms": {
+      "title": "Key Terms Summary",
+      "description": "A plain-language summary of the most important terms.",
+      "download": "Download Key Terms Summary (PDF)",
+      "viewPdf": "View PDF"
+    }
+  },
+  "support": {
+    "title": "Support",
+    "subtitle": "We're here to help.",
+    "description": "Have a question or need help with your automation? Reach out to us and we'll get back to you within 24 hours.",
+    "emailLabel": "Email us",
+    "email": "support@uboss.ai",
+    "contactLink": "Or fill out our contact form",
+    "faqTitle": "Frequently Asked Questions"
+  },
+  "careers": {
+    "title": "Careers",
+    "subtitle": "Build the future of AI for small business.",
+    "description": "UBOSS is a small, growing team building real AI infrastructure for underserved businesses in Greater Boston. We're always looking for talented, mission-driven people to join us.",
+    "culture": "We value curiosity, empathy, and craftsmanship. We work with trades businesses — people who take pride in their work — and we hold ourselves to the same standard.",
+    "openingsTitle": "Current Openings",
+    "noOpenings": "We don't have any open positions listed right now, but we're always open to hearing from great people.",
+    "emailCta": "Send your info to support@uboss.ai",
+    "emailSubject": "Careers — I'd love to join the team"
+  },
+  "footer": {
+    "tagline": "AI That Works As Hard As You Do",
+    "serving": "Serving Greater Boston, MA",
+    "copyright": "© 2026 UBOSS LLC. All rights reserved.",
+    "links": {
+      "services": "Services",
+      "pricing": "Pricing",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "legal": {
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "keyTerms": "Key Terms"
+    },
+    "support": "Support",
+    "careers": "Careers"
+  },
+  "chat": {
+    "title": "Chat with Us",
+    "comingSoon": "Live chat is coming soon! In the meantime, email us:",
+    "email": "support@uboss.ai",
+    "openWhatsApp": "Message us on WhatsApp",
+    "openTelegram": "Message us on Telegram",
+    "open": "Open chat",
+    "close": "Close chat"
+  },
+  "seo": {
+    "home": {
+      "title": "UBOSS — AI Automation for Trades Businesses in Boston",
+      "description": "AI automation and consulting for landscapers, contractors, and small businesses in Greater Boston. Trilingual support: EN, ES, PT-BR."
+    },
+    "about": {
+      "title": "About UBOSS — AI Consulting Boston | Bilingual AI Agency",
+      "description": "UBOSS is a Greater Boston AI consulting agency founded by a bilingual engineer. We make AI accessible for trades businesses and immigrant-owned SMBs."
+    },
+    "services": {
+      "title": "AI Services — Workflow Automation & Business Dashboards | UBOSS",
+      "description": "Custom workflow automation, AI assistants, business dashboards, and integrations for trades businesses in Massachusetts."
+    },
+    "pricing": {
+      "title": "Pricing — AI Automation Plans for Small Business | UBOSS",
+      "description": "Transparent monthly pricing for AI automation. Starter at $500/mo, Professional at $900/mo, Business at $2,000/mo. Book a free consultation."
+    },
+    "contact": {
+      "title": "Contact UBOSS — Book a Free AI Consultation in Boston",
+      "description": "Book a free 15-minute discovery call or strategy session. We serve Greater Boston in English, Spanish, and Brazilian Portuguese."
+    },
+    "support": {
+      "title": "Support — UBOSS AI Automation",
+      "description": "Need help with your UBOSS automation? Contact our support team at support@uboss.ai."
+    },
+    "careers": {
+      "title": "Careers at UBOSS — Join Our AI Team in Boston",
+      "description": "Join UBOSS and help build AI automation for the trades businesses that power Greater Boston."
+    },
+    "legalTerms": {
+      "title": "Terms of Service — UBOSS LLC",
+      "description": "UBOSS LLC Terms of Service agreement."
+    },
+    "legalPrivacy": {
+      "title": "Privacy Policy — UBOSS LLC",
+      "description": "UBOSS LLC Privacy Policy — how we collect, use, and protect your information."
+    },
+    "legalKeyTerms": {
+      "title": "Key Terms Summary — UBOSS LLC",
+      "description": "A plain-language summary of the most important terms in our agreements."
+    }
+  }
+}
