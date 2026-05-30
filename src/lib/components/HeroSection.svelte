@@ -22,7 +22,7 @@
 			<!-- Eyebrow -->
 			<div class="flex items-center gap-2 mb-6">
 				<span class="w-6 h-px bg-teal"></span>
-				<span class="text-teal text-sm font-medium uppercase tracking-widest">UBOSS LLC</span>
+				<span class="text-teal text-sm font-medium uppercase tracking-widest">UBOSS</span>
 			</div>
 
 			<!-- Headline -->
