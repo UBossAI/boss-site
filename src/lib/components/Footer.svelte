@@ -55,6 +55,7 @@
 					<li><a href="/{lang}/legal/terms" class="text-sm hover:text-teal transition-colors">{legal.terms}</a></li>
 					<li><a href="/{lang}/legal/privacy" class="text-sm hover:text-teal transition-colors">{legal.privacy}</a></li>
 					<li><a href="/{lang}/legal/key-terms" class="text-sm hover:text-teal transition-colors">{legal.keyTerms}</a></li>
+					<li><a href="/{lang}/legal/sms-policy" class="text-sm hover:text-teal transition-colors">{legal.smsPolicy}</a></li>
 				</ul>
 			</div>
 		</div>

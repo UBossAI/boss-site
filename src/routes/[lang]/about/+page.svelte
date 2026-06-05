@@ -31,7 +31,8 @@
 				<div>
 					<h2 class="section-heading text-near-black mb-3">{a.founderLabel}</h2>
 					<div class="teal-divider mb-6"></div>
-					<p class="text-gray-mid leading-relaxed">{a.founderStory}</p>
+					<p class="text-gray-mid leading-relaxed mb-4">{a.founderStory}</p>
+					<p class="text-gray-mid leading-relaxed mb-4">{a.founderStory2}</p>
 					<p class="mt-4 text-sm text-gray-mid/70">
 						<a
 							href={a.founderSiteUrl}

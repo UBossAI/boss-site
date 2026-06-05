@@ -1,5 +1,6 @@
 <script lang="ts">
 	import SEOHead from '$lib/components/SEOHead.svelte';
+	import PricingComparisonSection from '$lib/components/PricingComparisonSection.svelte';
 	import { getVisibleTiers, formatPrice, enterprise, setupFee } from '$lib/config/pricing.js';
 	import type { Locale } from '$lib/utils/i18n.js';
 	import type { PageData } from './$types.js';
@@ -112,6 +113,8 @@
 			</div>
 		</div>
 	</section>
+
+	<PricingComparisonSection lang={data.lang} t={data.t as Record<string, unknown>} />
 
 	<!-- FAQ -->
 	<section class="bg-white py-16 lg:py-20">
