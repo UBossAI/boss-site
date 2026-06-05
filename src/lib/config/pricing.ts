@@ -33,113 +33,125 @@ export const tiers: PricingTier[] = [
 		currency: 'USD',
 		interval: 'month',
 		description: {
-			en: 'Automate your first workflow',
-			es: 'Automatiza tu primer proceso',
-			'pt-BR': 'Automatize seu primeiro processo'
+			en: 'Your assistant catches every lead',
+			es: 'Tu asistente captura cada cliente potencial',
+			'pt-BR': 'Seu assistente captura cada lead'
 		},
 		features: {
 			en: [
-				'custom automation workflow',
-				'Email & SMS notifications',
-				'Monthly performance check-in',
+				'Captures every customer inquiry',
+				'Instant notifications when leads come in',
+				'Auto-reply sent to your customer',
+				'Leads organized in one place',
+				'Monthly performance summary',
 				'Email support'
 			],
 			es: [
-				'automatización personalizada',
-				'Notificaciones por email y SMS',
-				'Revisión mensual de rendimiento',
+				'Captura cada consulta de cliente',
+				'Notificaciones instantáneas cuando llegan leads',
+				'Respuesta automática enviada a tu cliente',
+				'Leads organizados en un solo lugar',
+				'Resumen mensual de rendimiento',
 				'Soporte por email'
 			],
 			'pt-BR': [
-				'automação personalizada',
-				'Notificações por email e SMS',
-				'Revisão mensal de desempenho',
+				'Captura cada consulta de cliente',
+				'Notificações instantâneas quando leads chegam',
+				'Resposta automática enviada ao seu cliente',
+				'Leads organizados em um só lugar',
+				'Resumo mensal de desempenho',
 				'Suporte por email'
 			]
 		},
-		cta: { en: 'Get Started', es: 'Comienza Ahora', 'pt-BR': 'Comece Agora' },
+		cta: { en: 'Book a Call', es: 'Agenda tu consulta', 'pt-BR': 'Agende sua consulta' },
 		highlighted: false,
 		visible: true
 	},
 	{
 		id: 'professional',
 		name: { en: 'Professional', es: 'Profesional', 'pt-BR': 'Profissional' },
-		price: 900,
+		price: 800,
 		currency: 'USD',
 		interval: 'month',
 		description: {
-			en: 'Multiple workflows + business dashboards',
-			es: 'Múltiples procesos + paneles de datos',
-			'pt-BR': 'Múltiplos processos + painéis de dados'
+			en: 'Your assistant runs the front desk',
+			es: 'Tu asistente atiende la recepción',
+			'pt-BR': 'Seu assistente gerencia a recepção'
 		},
 		features: {
 			en: [
-				'Up to 4 automation workflows',
-				'Business dashboard & analytics',
-				'Custom digital forms',
-				'Email & SMS notifications',
+				'Everything in Starter',
+				'Appointment confirmations via SMS',
+				'Customers hear back — automatically',
+				'Business dashboard — see your numbers',
+				'Google Business Profile setup',
 				'Bi-weekly check-ins',
-				'Priority email support'
+				'Priority support'
 			],
 			es: [
-				'Hasta 4 automatizaciones',
-				'Panel de datos y analíticas',
-				'Formularios digitales personalizados',
-				'Notificaciones por email y SMS',
+				'Todo lo del plan Inicial',
+				'Confirmaciones de citas por SMS',
+				'Tus clientes reciben respuesta automáticamente',
+				'Panel de negocio — ve tus números',
+				'Configuración de Google Business Profile',
 				'Revisiones cada 2 semanas',
-				'Soporte prioritario por email'
+				'Soporte prioritario'
 			],
 			'pt-BR': [
-				'Até 4 automações',
-				'Painel de dados e análises',
-				'Formulários digitais personalizados',
-				'Notificações por email e SMS',
+				'Tudo do plano Inicial',
+				'Confirmações de consultas via SMS',
+				'Clientes recebem resposta automaticamente',
+				'Painel do negócio — veja seus números',
+				'Configuração do Google Business Profile',
 				'Revisões a cada 2 semanas',
-				'Suporte prioritário por email'
+				'Suporte prioritário'
 			]
 		},
-		cta: { en: 'Go Professional', es: 'Sube de Nivel', 'pt-BR': 'Suba de Nível' },
+		cta: { en: 'Book a Call', es: 'Agenda tu consulta', 'pt-BR': 'Agende sua consulta' },
 		highlighted: true,
 		visible: true
 	},
 	{
-		id: 'business',
-		name: { en: 'Business', es: 'Empresarial', 'pt-BR': 'Empresarial' },
-		price: 2000,
+		id: 'professional-plus',
+		name: { en: 'Professional Plus', es: 'Profesional Plus', 'pt-BR': 'Profissional Plus' },
+		price: 1200,
 		currency: 'USD',
 		interval: 'month',
 		description: {
-			en: 'Full AI-powered operations',
-			es: 'Operaciones completas con IA',
-			'pt-BR': 'Operações completas com IA'
+			en: 'Your assistant manages operations',
+			es: 'Tu asistente gestiona las operaciones',
+			'pt-BR': 'Seu assistente gerencia as operações'
 		},
 		features: {
 			en: [
-				'Unlimited automation workflows',
-				'AI-powered assistants (WhatsApp, Email)',
-				'Advanced dashboards & analytics',
-				'Custom integrations',
-				'Weekly strategy calls',
+				'Everything in Professional',
+				'Automatic review requests after each job',
+				'Customer follow-up sequences',
+				'Advanced performance dashboard',
+				'Multiple intake channels',
+				'Weekly check-in call',
 				'Dedicated support channel'
 			],
 			es: [
-				'Automatizaciones ilimitadas',
-				'Asistentes con IA (WhatsApp, Email)',
-				'Paneles avanzados y analíticas',
-				'Integraciones personalizadas',
-				'Llamadas semanales de estrategia',
+				'Todo lo del plan Profesional',
+				'Solicitudes de reseñas automáticas tras cada trabajo',
+				'Secuencias de seguimiento al cliente',
+				'Panel de rendimiento avanzado',
+				'Múltiples canales de captación',
+				'Llamada semanal de seguimiento',
 				'Canal de soporte dedicado'
 			],
 			'pt-BR': [
-				'Automações ilimitadas',
-				'Assistentes com IA (WhatsApp, Email)',
-				'Painéis avançados e análises',
-				'Integrações personalizadas',
-				'Chamadas semanais de estratégia',
+				'Tudo do plano Profissional',
+				'Solicitações automáticas de avaliação após cada trabalho',
+				'Sequências de acompanhamento do cliente',
+				'Painel de desempenho avançado',
+				'Múltiplos canais de captação',
+				'Chamada semanal de acompanhamento',
 				'Canal de suporte dedicado'
 			]
 		},
-		cta: { en: 'Contact Us', es: 'Contáctanos', 'pt-BR': 'Fale Conosco' },
+		cta: { en: 'Book a Call', es: 'Agenda tu consulta', 'pt-BR': 'Agende sua consulta' },
 		highlighted: false,
 		visible: true
 	}
@@ -147,12 +159,12 @@ export const tiers: PricingTier[] = [
 
 export const enterprise: EnterpriseTier = {
 	id: 'enterprise',
-	name: { en: 'Enterprise', es: 'Corporativo', 'pt-BR': 'Corporativo' },
+	name: { en: 'Business & Enterprise', es: 'Business & Enterprise', 'pt-BR': 'Business & Enterprise' },
 	price: null,
 	description: {
-		en: 'Custom solutions for larger operations',
-		es: 'Soluciones a medida para operaciones grandes',
-		'pt-BR': 'Soluções sob medida para operações maiores'
+		en: 'Built for businesses ready to scale',
+		es: 'Construido para negocios listos para crecer',
+		'pt-BR': 'Construído para negócios prontos para crescer'
 	},
 	cta: { en: "Let's Talk", es: 'Hablemos', 'pt-BR': 'Vamos Conversar' },
 	visible: true

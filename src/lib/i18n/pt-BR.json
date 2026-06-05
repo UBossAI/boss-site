@@ -148,7 +148,7 @@
     "missionLabel": "Nossa Missão",
     "mission": "Tornar a automação com IA de nível empresarial acessível para cada pequeno negócio — independentemente do idioma, formação técnica ou setor.",
     "founderLabel": "História do Fundador",
-    "founderStory": "A UBOSS foi fundada por um engenheiro salvadorenho-americano de primeira geração nascido e criado na Grande Boston. Com experiência como engenheiro sênior e raízes profundas na comunidade local de serviços, ele viu em primeira mão como os pequenos negócios — administrados por imigrantes e famílias trabalhadoras — estavam sendo deixados para trás por empresas de tecnologia que não entendiam seu mundo. A UBOSS existe para mudar isso.",
+    "founderStory": "A UBOSS foi fundada por Robert, um engenheiro de software salvadorenho-americano de primeira geração criado na Grande Boston. Crescendo observando seu pai trabalhar longas horas como pedreiro nos serviços locais, ele desenvolveu um profundo apreço pelos pequenos negócios administrados por imigrantes e famílias trabalhadoras. Como engenheiro sênior bilíngue e pai ele mesmo, viu em primeira mão como essas operações muitas vezes ficavam para trás com a grande tecnologia — sem as ferramentas para obter informações reais e crescer.",
     "visionLabel": "A Visão",
     "vision": "Um futuro onde cada negócio de serviços na Grande Boston tenha acesso às mesmas ferramentas de IA que as grandes empresas usam — a um preço que faça sentido, com suporte no seu idioma.",
     "pegasusLabel": "A História do Pegaso",
@@ -156,7 +156,8 @@
     "founderName": "Robert Gutierrez",
     "founderSiteText": "Saiba mais sobre Robert em Robg.dev",
     "founderSiteUrl": "https://robg.dev",
-    "imageAlt": "Robert Gutierrez, Fundador da UBOSS LLC"
+    "imageAlt": "Robert Gutierrez, Fundador da UBOSS LLC",
+    "founderStory2": "É por isso que a UBOSS preenche essa lacuna com tecnologia prática e acessível. Assim como um artesão habilidoso entrega uma solução sob medida para cada trabalho, desenvolvemos automação para negócios de diversas formas e fornecemos soluções internas que fazem mais sentido para cada empresa no momento presente. Com ferramentas de desenvolvimento personalizadas e painéis customizados, entregamos informações claras sobre as operações do dia a dia — ajudando negócios de serviços a crescer, escalar e prosperar independentemente do idioma ou formação técnica."
   },
   "services": {
     "title": "Nossos Serviços",
@@ -164,37 +165,67 @@
     "automation": {
       "title": "Automação de Processos",
       "description": "Automatize seus processos mais demorados — formulários de clientes, agendamento de trabalhos, e-mails de follow-up, gatilhos de fatura e muito mais. Mapeamos seu fluxo de trabalho atual e substituímos etapas manuais por automação inteligente.",
-      "features": ["Recepção de clientes e captura de leads", "Agendamento automático de trabalhos", "Sequências de follow-up", "Gatilhos de fatura"],
+      "features": [
+        "Recepção de clientes e captura de leads",
+        "Agendamento automático de trabalhos",
+        "Sequências de follow-up",
+        "Gatilhos de fatura"
+      ],
       "cta": "Saiba mais"
     },
     "assistants": {
       "title": "Assistentes com IA",
       "description": "Implante assistentes de IA no WhatsApp, e-mail e SMS que respondem perguntas de clientes, qualificam leads e agendam compromissos — 24 horas por dia, 7 dias por semana.",
-      "features": ["Bot de WhatsApp (em breve)", "Auto-resposta de e-mail", "Qualificação de leads", "Agendamento de compromissos"],
+      "features": [
+        "Bot de WhatsApp (em breve)",
+        "Auto-resposta de e-mail",
+        "Qualificação de leads",
+        "Agendamento de compromissos"
+      ],
       "cta": "Saiba mais"
     },
     "dashboards": {
       "title": "Painéis de Dados e Análises",
       "description": "Veja todo o seu negócio de relance. Construímos painéis personalizados que puxam dados de todas as suas ferramentas e os apresentam de forma clara e acionável.",
-      "features": ["Acompanhamento de trabalhos em tempo real", "Visões de receita e despesas", "Visibilidade do pipeline de leads", "Integração com Google Looker"],
+      "features": [
+        "Acompanhamento de trabalhos em tempo real",
+        "Visões de receita e despesas",
+        "Visibilidade do pipeline de leads",
+        "Integração com Google Looker"
+      ],
       "cta": "Saiba mais"
     },
     "integrations": {
       "title": "Integrações Personalizadas",
       "description": "Já usa ferramentas que você gosta? As conectamos para que a informação flua automaticamente — sem mais copiar e colar entre aplicativos.",
-      "features": ["Integração com QuickBooks", "Google Workspace", "Conexões com CRM", "Trabalho de API personalizado"],
+      "features": [
+        "Integração com QuickBooks",
+        "Google Workspace",
+        "Conexões com CRM",
+        "Trabalho de API personalizado"
+      ],
       "cta": "Saiba mais"
     },
     "forms": {
       "title": "Criação de Formulários Digitais",
       "description": "Substitua formulários de papel e PDFs desatualizados por formulários digitais inteligentes que alimentam diretamente seus fluxos de automação.",
-      "features": ["Formulários com sua marca", "Roteamento automático de dados", "Coleta de assinaturas", "Otimizados para celular"],
+      "features": [
+        "Formulários com sua marca",
+        "Roteamento automático de dados",
+        "Coleta de assinaturas",
+        "Otimizados para celular"
+      ],
       "cta": "Saiba mais"
     },
     "notifications": {
       "title": "Notificações por SMS e E-mail",
       "description": "Mantenha sua equipe e clientes informados automaticamente. Envie atualizações de trabalhos, lembretes e confirmações sem mover um dedo.",
-      "features": ["Atualizações de status de trabalhos", "Lembretes de compromissos", "Confirmações de pagamento", "Notificações para a equipe"],
+      "features": [
+        "Atualizações de status de trabalhos",
+        "Lembretes de compromissos",
+        "Confirmações de pagamento",
+        "Notificações para a equipe"
+      ],
       "cta": "Saiba mais"
     },
     "consultationCta": "Agende uma consulta gratuita para falar sobre suas necessidades"
@@ -237,7 +268,20 @@
         "question": "Quanto tempo leva a configuração?",
         "answer": "A maioria das automações Iniciais fica pronta em 1-2 semanas. Implementações Profissionais e Empresariais mais complexas geralmente levam 2-4 semanas dependendo das integrações."
       }
-    ]
+    ],
+    "comparisonTitle": "O que você está realmente pagando?",
+    "comparisonBody1": "A maioria dos negócios em crescimento não precisa de apenas uma pessoa — precisa de alguém para os dados, alguém para atender chamadas e alguém para coordenar operações. São três contratações. Três salários. Três fontes de erros e ausências.",
+    "comparisonBody2": "Cada um desses funcionários custaria ao seu negócio mais de $25,000 por ano. UBoss combina as três funções em um único sistema — e nunca falha.",
+    "comparisonBanner": "UBoss trabalha 24/7 — 365 dias por ano, incluindo feriados. Sem dias de doença. Sem erros humanos. Sempre disponível.",
+    "comparisonPartTime": "Meio período",
+    "comparisonFullTime": "Tempo integral",
+    "comparisonHoursHeader": "Horas/Semana",
+    "comparisonMonthlyHeader": "Mensal",
+    "comparisonAnnualHeader": "Anual",
+    "comparisonTable1Header": "Assistente de Dados — $17/hr",
+    "comparisonTable2Header": "Secretária / Recepcionista — $20/hr",
+    "comparisonTable3Header": "Secretária Administrativa — $25/hr",
+    "comparisonDisclaimer": "† UBoss opera 24/7 incluindo fins de semana e feriados. Janelas de manutenção programadas podem ocorrer mensalmente — os clientes são notificados com antecedência. As estimativas de taxa horária são baseadas em dados do mercado da área de Boston. Os valores mostrados representam taxas conservadoras de nível inicial. Os custos reais do empregador, incluindo impostos sobre folha de pagamento, benefícios e compensação trabalhista, normalmente adicionam 10–25% acima do salário base."
   },
   "legal": {
     "terms": {
@@ -256,6 +300,12 @@
       "title": "Resumo dos Termos Principais",
       "description": "Um resumo em linguagem simples dos termos mais importantes.",
       "download": "Baixar Resumo dos Termos Principais (PDF)",
+      "viewPdf": "Ver PDF"
+    },
+    "smsPolicy": {
+      "title": "Política de Privacidade de SMS",
+      "description": "Como coletamos, usamos e protegemos informações relacionadas a comunicações por SMS.",
+      "download": "Baixar Política de Privacidade de SMS (PDF)",
       "viewPdf": "Ver PDF"
     }
   },
@@ -291,7 +341,8 @@
     "legal": {
       "terms": "Termos de Serviço",
       "privacy": "Política de Privacidade",
-      "keyTerms": "Termos Principais"
+      "keyTerms": "Termos Principais",
+      "smsPolicy": "Política de Privacidade de SMS"
     },
     "support": "Suporte",
     "careers": "Carreiras"
@@ -345,6 +396,10 @@
     "legalKeyTerms": {
       "title": "Resumo dos Termos Principais — UBOSS LLC",
       "description": "Um resumo em linguagem simples dos termos mais importantes dos nossos acordos."
+    },
+    "legalSmsPolicy": {
+      "title": "Política de Privacidade de SMS — UBOSS LLC",
+      "description": "Política de Privacidade de SMS da UBOSS LLC — como tratamos as comunicações por SMS e protegemos suas informações."
     }
   }
 }

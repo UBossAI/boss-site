@@ -148,7 +148,7 @@
     "missionLabel": "Our Mission",
     "mission": "To make enterprise-grade AI automation accessible to every small business — regardless of language, technical background, or industry.",
     "founderLabel": "Founder Story",
-    "founderStory": "UBOSS was founded by a first-generation Salvadorian-American engineer born and raised in Greater Boston. With a senior engineering background and deep roots in the local trades community, he saw firsthand how small businesses — run by hardworking immigrants and families — were being left behind by tech companies that didn't understand their world. UBOSS exists to change that.",
+    "founderStory": "UBOSS was founded by Robert, a first-generation Salvadoran-American software engineer raised in Greater Boston. Growing up watching his father work long hours as a mason in the local trades, he developed a deep appreciation for small businesses run by hardworking immigrants and families. As a bilingual senior engineer and father himself, he saw firsthand how these operations were often left behind by big tech—lacking the tools for real insight and growth.",
     "visionLabel": "The Vision",
     "vision": "A future where every trades business in Greater Boston has access to the same AI tools that Fortune 500 companies use — at a price that makes sense, with support in your language.",
     "pegasusLabel": "The Pegasus Story",
@@ -156,7 +156,8 @@
     "founderName": "Robert Gutierrez",
     "founderSiteText": "Learn more about Robert at Robg.dev",
     "founderSiteUrl": "https://robg.dev",
-    "imageAlt": "Robert Gutierrez, Founder of UBOSS LLC"
+    "imageAlt": "Robert Gutierrez, Founder of UBOSS LLC",
+    "founderStory2": "That's why UBOSS bridges the gap with practical, accessible technology. Just as a skilled tradesperson delivers a custom fit for every job, we develop automation for businesses in various ways and provide in-house solutions that make the most sense for each company at the present moment. With tailored developer tools and custom dashboards, we deliver clear insights into day-to-day operations—helping trades businesses grow, scale, and thrive regardless of language or technical background."
   },
   "services": {
     "title": "Our Services",
@@ -164,37 +165,67 @@
     "automation": {
       "title": "Workflow Automation",
       "description": "Automate your most time-consuming processes — client intake forms, job scheduling, follow-up emails, invoicing triggers, and more. We map your current workflow and replace manual steps with intelligent automation.",
-      "features": ["Client intake & lead capture", "Automated job scheduling", "Follow-up sequences", "Invoicing triggers"],
+      "features": [
+        "Client intake & lead capture",
+        "Automated job scheduling",
+        "Follow-up sequences",
+        "Invoicing triggers"
+      ],
       "cta": "Learn more"
     },
     "assistants": {
       "title": "AI-Powered Assistants",
       "description": "Deploy AI assistants on WhatsApp, email, and SMS that answer customer questions, qualify leads, and book appointments — 24 hours a day, 7 days a week.",
-      "features": ["WhatsApp bot (coming soon)", "Email auto-responder", "Lead qualification", "Appointment booking"],
+      "features": [
+        "WhatsApp bot (coming soon)",
+        "Email auto-responder",
+        "Lead qualification",
+        "Appointment booking"
+      ],
       "cta": "Learn more"
     },
     "dashboards": {
       "title": "Business Dashboards & Analytics",
       "description": "See your entire business at a glance. We build custom dashboards that pull data from all your tools and present it in a clean, actionable format.",
-      "features": ["Real-time job tracking", "Revenue & expense views", "Lead pipeline visibility", "Google Looker integration"],
+      "features": [
+        "Real-time job tracking",
+        "Revenue & expense views",
+        "Lead pipeline visibility",
+        "Google Looker integration"
+      ],
       "cta": "Learn more"
     },
     "integrations": {
       "title": "Custom Integrations",
       "description": "Already using tools you love? We connect them together so data flows automatically — no more copy-pasting between apps.",
-      "features": ["QuickBooks integration", "Google Workspace", "CRM connections", "Custom API work"],
+      "features": [
+        "QuickBooks integration",
+        "Google Workspace",
+        "CRM connections",
+        "Custom API work"
+      ],
       "cta": "Learn more"
     },
     "forms": {
       "title": "Digital Form Creation",
       "description": "Replace paper forms and outdated PDFs with smart digital forms that feed directly into your automation workflows.",
-      "features": ["Custom-branded forms", "Automatic data routing", "Signature collection", "Mobile-friendly"],
+      "features": [
+        "Custom-branded forms",
+        "Automatic data routing",
+        "Signature collection",
+        "Mobile-friendly"
+      ],
       "cta": "Learn more"
     },
     "notifications": {
       "title": "SMS & Email Notifications",
       "description": "Keep your team and clients in the loop automatically. Send job updates, reminders, and confirmations without lifting a finger.",
-      "features": ["Job status updates", "Appointment reminders", "Payment confirmations", "Team notifications"],
+      "features": [
+        "Job status updates",
+        "Appointment reminders",
+        "Payment confirmations",
+        "Team notifications"
+      ],
       "cta": "Learn more"
     },
     "consultationCta": "Book a free consultation to discuss your needs"
@@ -237,7 +268,20 @@
         "question": "How long does setup take?",
         "answer": "Most Starter automations are live within 1-2 weeks. More complex Professional and Business builds typically take 2-4 weeks depending on integrations."
       }
-    ]
+    ],
+    "comparisonTitle": "What are you really paying for?",
+    "comparisonBody1": "Most growing businesses don't need just one person — they need someone to handle data, someone to answer calls, and someone to coordinate operations. That's three hires. Three salaries. Three sets of sick days, holidays, and human errors.",
+    "comparisonBody2": "Each one of those employees would cost your business over $25,000 a year. UBoss bundles all three roles into one seamless system — and it never calls in sick.",
+    "comparisonBanner": "UBoss works 24/7 — 365 days a year, including holidays. No sick days. No human error. Always on.",
+    "comparisonPartTime": "Part-time",
+    "comparisonFullTime": "Full-time",
+    "comparisonHoursHeader": "Hours/Week",
+    "comparisonMonthlyHeader": "Monthly",
+    "comparisonAnnualHeader": "Annual",
+    "comparisonTable1Header": "Data Entry — $17/hr",
+    "comparisonTable2Header": "Secretary / Receptionist — $20/hr",
+    "comparisonTable3Header": "Administrative Secretary — $25/hr",
+    "comparisonDisclaimer": "† UBoss operates 24/7 including weekends and holidays. Scheduled maintenance windows may occur monthly — clients are notified in advance of any planned downtime. Hourly rate estimates based on Greater Boston market data. Figures shown represent conservative entry-level rates. Actual employer costs including payroll taxes, benefits, and workers’ compensation typically add 10–25% above base wages."
   },
   "legal": {
     "terms": {
@@ -256,6 +300,12 @@
       "title": "Key Terms Summary",
       "description": "A plain-language summary of the most important terms.",
       "download": "Download Key Terms Summary (PDF)",
+      "viewPdf": "View PDF"
+    },
+    "smsPolicy": {
+      "title": "SMS Privacy Policy",
+      "description": "How we collect, use, and protect information related to SMS communications.",
+      "download": "Download SMS Privacy Policy (PDF)",
       "viewPdf": "View PDF"
     }
   },
@@ -291,7 +341,8 @@
     "legal": {
       "terms": "Terms of Service",
       "privacy": "Privacy Policy",
-      "keyTerms": "Key Terms"
+      "keyTerms": "Key Terms",
+      "smsPolicy": "SMS Privacy Policy"
     },
     "support": "Support",
     "careers": "Careers"
@@ -345,6 +396,10 @@
     "legalKeyTerms": {
       "title": "Key Terms Summary — UBOSS LLC",
       "description": "A plain-language summary of the most important terms in our agreements."
+    },
+    "legalSmsPolicy": {
+      "title": "SMS Privacy Policy — UBOSS LLC",
+      "description": "UBOSS LLC SMS Privacy Policy — how we handle SMS communications and protect your information."
     }
   }
 }

@@ -2,7 +2,7 @@ import type { RequestHandler } from './$types.js';
 
 const siteUrl = 'https://uboss.ai';
 const locales = ['en', 'es', 'pt-BR'];
-const pages = ['', 'about', 'services', 'pricing', 'contact', 'support', 'careers', 'legal/terms', 'legal/privacy', 'legal/key-terms'];
+const pages = ['', 'about', 'services', 'pricing', 'contact', 'support', 'careers', 'legal/terms', 'legal/privacy', 'legal/key-terms', 'legal/sms-policy'];
 
 const priorities: Record<string, string> = {
 	'': '1.0',
@@ -14,7 +14,8 @@ const priorities: Record<string, string> = {
 	careers: '0.5',
 	'legal/terms': '0.3',
 	'legal/privacy': '0.3',
-	'legal/key-terms': '0.3'
+	'legal/key-terms': '0.3',
+	'legal/sms-policy': '0.3'
 };
 
 export const GET: RequestHandler = () => {

@@ -20,6 +20,7 @@ const config = {
 				'/en/legal/terms', '/es/legal/terms', '/pt-BR/legal/terms',
 				'/en/legal/privacy', '/es/legal/privacy', '/pt-BR/legal/privacy',
 				'/en/legal/key-terms', '/es/legal/key-terms', '/pt-BR/legal/key-terms',
+				'/en/legal/sms-policy', '/es/legal/sms-policy', '/pt-BR/legal/sms-policy',
 				'/sitemap.xml'
 			]
 		}
