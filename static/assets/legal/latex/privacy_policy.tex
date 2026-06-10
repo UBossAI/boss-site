@@ -1,89 +1,291 @@
-\documentclass[11pt,letterpaper]{article}
+% =============================================================================
+% UBOSS LLC — Unified Privacy Policy
+% Part 1 of 3: Preamble, Title, Summary, Sections 1–6
+% =============================================================================
+\documentclass[11pt, letterpaper]{article}
 
-% ---- Packages ----
-\usepackage[margin=1in]{geometry}
+% --- Core Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{newpxtext} % font
+\usepackage[margin=1in, top=1.2in, bottom=1.2in]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
-\usepackage{parskip}
+\usepackage{tcolorbox}
+\usepackage{booktabs}
+\usepackage{tabularx}
 \usepackage{hyperref}
-\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{lastpage}
+\usepackage{setspace}
 
-% ---- Hyperref Setup ----
+% --- Color Palette ---
+\definecolor{ubossblue}{HTML}{1A3A5C}
+\definecolor{ubossaccent}{HTML}{00A19B}
+\definecolor{ubosslight}{HTML}{F0F7FA}
+\definecolor{ubosswarn}{HTML}{E8505B}
+\definecolor{ubossgray}{HTML}{6B7280}
+\definecolor{ubossdarkgray}{HTML}{374151}
+\definecolor{linkblue}{HTML}{1E6BB8}
+
+% --- Hyperref Setup ---
 \hypersetup{
     colorlinks=true,
-    linkcolor=black,
-    urlcolor=blue!70!black,
-    pdftitle={UBoss LLC Privacy Policy},
+    linkcolor=ubossblue,
+    urlcolor=linkblue,
+    citecolor=ubossblue,
     pdfauthor={UBoss LLC},
+    pdftitle={UBoss LLC — Privacy Policy},
+    pdfsubject={Privacy Policy},
 }
 
-% ---- Header / Footer ----
+% --- Section Formatting ---
+\titleformat{\section}
+  {\Large\bfseries\color{ubossblue}}
+  {Section \thesection.}{0.5em}{}
+  [\vspace{-0.5em}\textcolor{ubossaccent}{\rule{\textwidth}{1.5pt}}]
+
+\titleformat{\subsection}
+  {\large\bfseries\color{ubossdarkgray}}
+  {\thesubsection.}{0.5em}{}
+
+\titleformat{\subsubsection}
+  {\normalsize\bfseries\color{ubossdarkgray}}
+  {\thesubsubsection.}{0.5em}{}
+
+\titlespacing*{\section}{0pt}{2em}{1em}
+\titlespacing*{\subsection}{0pt}{1.5em}{0.5em}
+
+% --- Header / Footer ---
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\small\textbf{UBoss LLC} --- Privacy Policy}
-\fancyhead[R]{\small Effective: May 1, 2025}
-\fancyfoot[C]{\small Page \thepage}
+\fancyhead[L]{\small\textcolor{ubossgray}{UBoss LLC — Privacy Policy}}
+\fancyhead[R]{\small\textcolor{ubossgray}{Effective: June 10, 2026}}
+\fancyfoot[C]{\small\textcolor{ubossgray}{Page \thepage\ of \pageref{LastPage}}}
 \renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
 
-% ---- Section Formatting ----
-\titleformat{\section}{\large\bfseries}{Section \thesection.}{0.5em}{}
-\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{0.5em}{}
+% --- Custom tcolorbox Styles ---
+\tcbset{
+    keysummary/.style={
+        colback=ubosslight,
+        colframe=ubossaccent,
+        coltitle=white,
+        fonttitle=\bfseries,
+        boxrule=1pt,
+        arc=3pt,
+        left=10pt, right=10pt, top=8pt, bottom=8pt,
+        before skip=1em,
+        after skip=1em,
+    },
+    keywarning/.style={
+        colback=red!5,
+        colframe=ubosswarn,
+        coltitle=white,
+        fonttitle=\bfseries,
+        boxrule=1pt,
+        arc=3pt,
+        left=10pt, right=10pt, top=8pt, bottom=8pt,
+        before skip=1em,
+        after skip=1em,
+    },
+    keyhighlight/.style={
+        colback=blue!3,
+        colframe=ubossblue,
+        boxrule=0.8pt,
+        arc=3pt,
+        left=10pt, right=10pt, top=8pt, bottom=8pt,
+        before skip=1em,
+        after skip=1em,
+    }
+}
 
-% ---- Document ----
+% --- List Styling ---
+\setlist[itemize]{leftmargin=1.5em, itemsep=3pt, parsep=0pt}
+\setlist[enumerate]{leftmargin=1.5em, itemsep=3pt, parsep=0pt}
+
+% --- Document Start ---
 \begin{document}
 
-% ---- Title Block ----
+% =============================================
+% TITLE PAGE
+% =============================================
+\begin{titlepage}
 \begin{center}
-    {\LARGE\textbf{Privacy Policy}}\\[0.5em]
-    {\Large UBoss LLC}\\[0.3em]
-    {\normalsize A Delaware Limited Liability Company}\\[0.3em]
-    {\normalsize Effective Date: May 1, 2025}\\[0.2em]
-    {\normalsize Last Updated: May 1, 2025}\\[0.5em]
-    \rule{0.6\textwidth}{0.4pt}
+
+\vspace*{3cm}
+
+{\Huge\bfseries\textcolor{ubossblue}{Privacy Policy}}
+
+\vspace{0.5cm}
+
+{\Large\textcolor{ubossaccent}{\rule{8cm}{2pt}}}
+
+\vspace{1cm}
+
+{\LARGE\bfseries UBoss LLC}
+
+\vspace{0.5cm}
+
+{\large A Delaware Limited Liability Company\\
+Operating in the Commonwealth of Massachusetts}
+
+\vspace{2cm}
+
+\begin{tabular}{rl}
+\textbf{Effective Date:} & June 10, 2026 \\
+\textbf{Last Updated:}   & June 10, 2026 \\
+\textbf{Website:}        & \href{https://uboss.ai}{uboss.ai} \\
+\textbf{Support:}        & \href{mailto:support@uboss.ai}{support@uboss.ai} \\
+\end{tabular}
+
+\vfill
+
+{\small\textcolor{ubossgray}{This document supersedes all prior privacy policies and SMS messaging
+policies published by UBoss LLC. This is the sole, authoritative privacy policy governing
+UBoss services.}}
+
 \end{center}
+\end{titlepage}
 
-\vspace{1em}
+% =============================================
+% PLAIN-LANGUAGE SUMMARY
+% =============================================
+\begin{tcolorbox}[keysummary, title={Plain-Language Summary}]
+This summary is for convenience only. The full policy below is the legally binding version.
 
+\begin{itemize}[label=\textcolor{ubossaccent}{\textbullet}]
+    \item \textbf{What we collect:} Name, address, phone number, email, and preferred
+          communication channel --- nothing more unless we tell you first.
+    \item \textbf{Why we collect it:} To deliver the automation services you or your
+          service provider requested --- form confirmations, appointment reminders,
+          status updates.
+    \item \textbf{SMS messaging:} All text messages are transactional only. No marketing.
+          No spam. Message frequency varies. Standard message and data rates may apply.
+          Reply \textbf{STOP} to opt out, \textbf{HELP} for help.
+    \item \textbf{We never share your mobile data:} We will not sell, rent, or share
+          your phone number or messaging consent with third parties for marketing or
+          promotional purposes.
+    \item \textbf{Your controls:} You can opt out of messages at any time, request a
+          copy of your data, or ask us to delete it.
+    \item \textbf{Security:} Data is stored on infrastructure we own and control, with
+          security practices aligned to SOC~2 principles.
+    \item \textbf{Questions?} Email \href{mailto:support@uboss.ai}{support@uboss.ai}.
+\end{itemize}
+\end{tcolorbox}
+
+\tableofcontents
+\newpage
+
+% =============================================
+% SECTION 1 — INTRODUCTION AND SCOPE
+% =============================================
 \section{Introduction and Scope}
 
-This Privacy Policy (``Policy'') describes how \textbf{UBoss LLC} (``UBoss,'' ``Company,'' ``we,'' ``us,'' or ``our''), a limited liability company organized under the laws of the State of Delaware and physically operating in the Commonwealth of Massachusetts, collects, uses, stores, shares, and protects information obtained through our websites, platforms, automation services, and related tools.
+This Privacy Policy (``Policy'') describes how \textbf{UBoss LLC} (``UBoss,'' ``Company,''
+``we,'' ``us,'' or ``our''), a limited liability company organized under the laws of the
+State of Delaware and physically operating in the Commonwealth of Massachusetts, collects,
+uses, stores, shares, and protects information obtained through our websites, platforms,
+automation services, and related tools.
+
+\subsection{What This Policy Covers}
 
 This Policy applies to:
-\begin{itemize}[nosep]
-    \item Our primary website at \textbf{UBoss.ai};
-    \item Our automation platform hosted at \textbf{uboss.work};
-    \item All forms, integrations, and automation workflows operated or maintained by UBoss on behalf of ourselves or our clients (``Tenants'');
-    \item Any communications initiated through our systems, including but not limited to SMS, WhatsApp, email, and voice calls facilitated via third-party services such as Twilio.
+
+\begin{itemize}
+    \item Our primary website at \href{https://uboss.ai}{UBoss.ai};
+    \item Our automation platform hosted at \href{https://uboss.work}{uboss.work};
+    \item All forms, integrations, and automation workflows operated or maintained by UBoss
+          on behalf of ourselves or our clients (``Tenants'');
+    \item All communications initiated through our systems, including SMS, MMS, WhatsApp,
+          email, and voice calls facilitated via third-party services such as Twilio;
+    \item Our SMS messaging program, including all transactional text messages sent through
+          UBoss-registered phone numbers (see Section~\ref{sec:sms}).
 \end{itemize}
 
-By submitting information through any UBoss-operated form, platform, or communication channel, you (``User,'' ``you,'' or ``your'') acknowledge that you have read, understood, and agree to the terms of this Policy. If you do not agree, you must discontinue use of our services and contact us to request removal of any previously submitted data.
+\subsection{Your Agreement}
 
-UBoss reserves the right to amend this Policy at any time. Material changes will be posted on our website(s) and, where practicable, communicated to affected parties. Continued use of our services following any amendment constitutes acceptance of the revised Policy.
+By submitting information through any UBoss-operated form, platform, or communication
+channel, you (``User,'' ``you,'' or ``your'') acknowledge that you have read, understood,
+and agree to the terms of this Policy. If you do not agree, you must discontinue use of
+our services and contact us to request removal of any previously submitted data.
 
+UBoss reserves the right to amend this Policy at any time. Material changes will be posted
+on our website(s) and, where practicable, communicated to affected parties. Continued use
+of our services following any amendment constitutes acceptance of the revised Policy.
+
+\begin{tcolorbox}[keyhighlight]
+\textbf{Single Policy Notice:} This document is the sole, authoritative privacy policy
+for UBoss LLC. It incorporates and supersedes any previously published SMS Messaging
+Policy. There is one privacy policy, and you are reading it.
+\end{tcolorbox}
+
+% =============================================
+% SECTION 2 — DEFINITIONS
+% =============================================
 \section{Definitions}
 
 For the purposes of this Policy, the following terms shall have the meanings set forth below:
 
-\begin{description}[style=nextline, leftmargin=2em]
-    \item[\textbf{Data Controller}] The entity that determines the purposes and means of processing personal data. UBoss acts as a Data Controller when collecting information directly from Users for its own business purposes.
-    \item[\textbf{Data Processor}] The entity that processes personal data on behalf of a Data Controller. UBoss acts as a Data Processor when executing automation workflows on behalf of a Tenant.
-    \item[\textbf{Tenant}] A business client of UBoss that engages our services to build and operate automation workflows. Tenants may have their own end-users or customers (``Third-Party End-Users'').
-    \item[\textbf{Third-Party End-User}] An individual who interacts with an automation workflow built by UBoss on behalf of a Tenant. Third-Party End-Users are customers or contacts of the Tenant, not of UBoss directly.
-    \item[\textbf{Personal Data / Personally Identifiable Information (PII)}] Any information that can be used to identify, contact, or locate an individual, including but not limited to full name, mailing address, telephone number, email address, and preferred communication channel.
-    \item[\textbf{Sensitive Data}] A subset of Personal Data that includes Social Security numbers, financial account information, health insurance data, government-issued identification numbers, and any data classified as sensitive under applicable federal or state law. \textit{UBoss does not currently collect Sensitive Data; however, this Policy contemplates future scenarios in which such collection may become necessary in connection with expanded service offerings.}
-    \item[\textbf{Subprocessor}] A third-party service provider engaged by UBoss to assist in the processing or storage of data (e.g., Tally.so, Twilio, Stripe).
-    \item[\textbf{Transactional Communication}] A non-promotional message sent to a User or Third-Party End-User for the purpose of confirming a form submission, providing a status update, or facilitating a service-related notification.
+\begin{description}[style=nextline, leftmargin=1em, font=\bfseries\color{ubossdarkgray}]
+
+    \item[Data Controller]
+    The entity that determines the purposes and means of processing personal data.
+    UBoss acts as a Data Controller when collecting information directly from Users for
+    its own business purposes.
+
+    \item[Data Processor]
+    The entity that processes personal data on behalf of a Data Controller. UBoss acts
+    as a Data Processor when executing automation workflows on behalf of a Tenant.
+
+    \item[Tenant]
+    A business client of UBoss that engages our services to build and operate automation
+    workflows. Tenants may have their own end-users or customers (``Third-Party End-Users'').
+
+    \item[Third-Party End-User]
+    An individual who interacts with an automation workflow built by UBoss on behalf of a
+    Tenant. Third-Party End-Users are customers or contacts of the Tenant, not of UBoss
+    directly.
+
+    \item[Personal Data / Personally Identifiable Information (PII)]
+    Any information that can be used to identify, contact, or locate an individual,
+    including but not limited to full name, mailing address, telephone number, email
+    address, and preferred communication channel.
+
+    \item[Sensitive Data]
+    A subset of Personal Data that includes Social Security numbers, financial account
+    information, health insurance data, government-issued identification numbers, and
+    any data classified as sensitive under applicable federal or state law. UBoss does
+    not currently collect Sensitive Data; however, this Policy contemplates future
+    scenarios in which such collection may become necessary in connection with expanded
+    service offerings.
+
+    \item[Subprocessor]
+    A third-party service provider engaged by UBoss to assist in the processing or
+    storage of data (e.g., Tally.so, Twilio, Stripe).
+
+    \item[Transactional Communication]
+    A non-promotional message sent to a User or Third-Party End-User for the purpose of
+    confirming a form submission, providing a status update, or facilitating a
+    service-related notification.
+
 \end{description}
 
+% =============================================
+% SECTION 3 — INFORMATION WE COLLECT
+% =============================================
 \section{Information We Collect}
 
 \subsection{Information Currently Collected}
 
-As of the effective date of this Policy, UBoss collects the following categories of Personal Data:
+As of the effective date of this Policy, UBoss collects the following categories of
+Personal Data:
 
-\begin{itemize}[nosep]
+\begin{itemize}
     \item Full legal name
     \item Mailing address
     \item Telephone number(s)
@@ -91,121 +293,395 @@ As of the effective date of this Policy, UBoss collects the following categories
     \item Preferred communication channel (e.g., SMS, email, WhatsApp, phone call)
 \end{itemize}
 
-This information is collected primarily through online forms hosted by Tally.so, a third-party form provider, and is transmitted to UBoss systems via webhook or API integration.
+This information is collected primarily through online forms hosted by Tally.so, a
+third-party form provider, and is transmitted to UBoss systems via webhook or API
+integration.
+
+\begin{tcolorbox}[keysummary, title={How We Use Your Mobile Information}]
+Your phone number and messaging consent are collected \textbf{solely} to deliver
+transactional service-related messages as described in Section~\ref{sec:sms} of this
+Policy. We do not use mobile information for marketing, advertising, or any purpose
+unrelated to the services you requested.
+\end{tcolorbox}
 
 \subsection{Information That May Be Collected in the Future}
 
-UBoss anticipates that future service offerings may require the collection of additional data categories, which may include but are not limited to:
+UBoss anticipates that future service offerings may require the collection of additional
+data categories, which may include but are not limited to:
 
-\begin{itemize}[nosep]
+\begin{itemize}
     \item Social Security numbers
     \item Bank account or financial institution information
     \item Health insurance or healthcare-related data
     \item Government-issued identification numbers
-    \item Payment card information (processed via Stripe or a comparable PCI-DSS compliant payment processor)
+    \item Payment card information (processed via Stripe or a comparable PCI-DSS compliant
+          payment processor)
 \end{itemize}
 
-\textbf{Important:} Should UBoss begin collecting any category of Sensitive Data, the following conditions will apply:
-\begin{enumerate}[nosep]
-    \item Affected Users will be notified and asked to provide explicit, informed consent prior to collection;
-    \item Additional technical and administrative safeguards will be implemented in accordance with applicable law and industry standards;
-    \item This Policy will be updated to reflect the specific categories of Sensitive Data collected, the purposes for collection, and the retention schedule applicable thereto.
+\begin{tcolorbox}[keywarning, title={Important}]
+Should UBoss begin collecting any category of Sensitive Data:
+\begin{enumerate}
+    \item Affected Users will be notified and asked to provide explicit, informed consent
+          prior to collection;
+    \item Additional technical and administrative safeguards will be implemented in
+          accordance with applicable law and industry standards;
+    \item This Policy will be updated to reflect the specific categories of Sensitive Data
+          collected, the purposes for collection, and the retention schedule applicable
+          thereto.
 \end{enumerate}
+The existence of data fields within our systems capable of storing Sensitive Data does
+not constitute collection of such data. Collection occurs only when data is actively
+submitted by a User or provided by a Tenant and processed by UBoss systems.
+\end{tcolorbox}
 
-The existence of data fields within our systems capable of storing Sensitive Data does not constitute collection of such data. Collection occurs only when data is actively submitted by a User or provided by a Tenant and processed by UBoss systems.
-
+% =============================================
+% SECTION 4 — HOW WE COLLECT INFORMATION
+% =============================================
 \section{How We Collect Information}
 
 UBoss collects information through the following methods:
 
-\begin{enumerate}[nosep]
-    \item \textbf{Online Forms (Tally.so):} Users submit information through forms hosted on the Tally.so platform. Tally.so is a third-party service and maintains its own privacy policy governing data processed on its infrastructure. UBoss receives submitted data via automated webhook or API transmission. By completing and submitting a Tally.so form linked to UBoss services, the User consents to the transfer and processing of their data by UBoss.
-    \item \textbf{Direct Communication:} Users or Tenants may provide information directly to UBoss via email, telephone, messaging platforms, or in-person consultation.
-    \item \textbf{Tenant-Provided Data:} Tenants may supply data regarding their Third-Party End-Users for the purpose of configuring and operating automation workflows. In such cases, the Tenant represents and warrants that they have obtained all necessary consents from their Third-Party End-Users prior to sharing such data with UBoss.
-    \item \textbf{Future Collection Methods:} UBoss may implement additional collection methods in the future, including but not limited to website analytics, account registration portals, payment processing integrations, and cloud-hosted application interfaces. This Policy will be updated accordingly.
+\begin{enumerate}
+    \item \textbf{Online Forms (Tally.so):} Users submit information through forms hosted
+          on the Tally.so platform. Tally.so is a third-party service and maintains its
+          own privacy policy governing data processed on its infrastructure. UBoss receives
+          submitted data via automated webhook or API transmission. By completing and
+          submitting a Tally.so form linked to UBoss services, the User consents to the
+          transfer and processing of their data by UBoss.
+
+    \item \textbf{Direct Communication:} Users or Tenants may provide information directly
+          to UBoss via email, telephone, messaging platforms, or in-person consultation.
+
+    \item \textbf{Tenant-Provided Data:} Tenants may supply data regarding their
+          Third-Party End-Users for the purpose of configuring and operating automation
+          workflows. In such cases, the Tenant represents and warrants that they have
+          obtained all necessary consents from their Third-Party End-Users prior to sharing
+          such data with UBoss.
+
+    \item \textbf{SMS Opt-In:} End-users may opt in to receive SMS messages by submitting
+          a service request form containing a phone number field and consent checkbox, by
+          verbally confirming consent, or by initiating contact via text message to a
+          UBoss-registered number. See Section~\ref{sec:sms} for complete opt-in details.
+
+    \item \textbf{Future Collection Methods:} UBoss may implement additional collection
+          methods in the future, including but not limited to website analytics, account
+          registration portals, payment processing integrations, and cloud-hosted
+          application interfaces. This Policy will be updated accordingly.
 \end{enumerate}
 
+% =============================================
+% SECTION 5 — THIRD-PARTY SUBPROCESSORS
+% =============================================
 \section{Third-Party Subprocessors}
 
-UBoss engages the following third-party services (``Subprocessors'') in the course of providing its services. Each Subprocessor maintains its own privacy policy and terms of service:
+UBoss engages the following third-party services (``Subprocessors'') in the course of
+providing its services. Each Subprocessor maintains its own privacy policy and terms
+of service:
 
-\begin{enumerate}[nosep]
-    \item \textbf{Tally.so} --- Online form hosting and data collection. Data submitted through Tally.so forms is transmitted to UBoss systems. Tally.so may process and temporarily store form submissions on its own infrastructure.
-    \item \textbf{Twilio} --- SMS, WhatsApp, and voice communication services. UBoss uses Twilio to send Transactional Communications on behalf of itself and its Tenants. All messaging conducted through Twilio is subject to Twilio's Acceptable Use Policy, the Telephone Consumer Protection Act (TCPA), and applicable FCC regulations including 10DLC registration requirements.
-    \item \textbf{Vercel / GitHub Pages} --- Website hosting for UBoss.ai. These platforms may collect standard web server logs (IP address, browser type, access timestamps).
-    \item \textbf{Stripe} \textit{(Future)} --- Payment processing. If and when UBoss implements online payment functionality, payment card data will be processed exclusively by Stripe in accordance with PCI-DSS standards. UBoss will not store, process, or have access to full payment card numbers.
-          \item \textbf{Anthropic} \textit{(Conditional Fallback)} --- AI language model provider. In rare cases where UBoss's self-hosted AI infrastructure is insufficient, requests may be routed to Anthropic's API. Data transmitted is limited to the minimum necessary for the task and does not include raw personally identifiable information. Anthropic's privacy policy and data processing terms govern data processed on their infrastructure.
-    \item \textbf{OpenAI} \textit{(Conditional Fallback)} --- AI language model provider. Used as an alternative fallback under the same conditions and restrictions as Anthropic above. OpenAI's privacy policy and data processing terms apply.
-    \item \textbf{Amazon Web Services (AWS)} \textit{(Future)} --- Cloud infrastructure. If and when UBoss migrates to cloud-hosted infrastructure, appropriate network security controls, encryption, and access management will be implemented.
+\begin{enumerate}
+    \item \textbf{Tally.so} --- Online form hosting and data collection. Data submitted
+          through Tally.so forms is transmitted to UBoss systems. Tally.so may process
+          and temporarily store form submissions on its own infrastructure.
+
+    \item \textbf{Twilio} --- SMS, WhatsApp, and voice communication services. UBoss
+          uses Twilio to send Transactional Communications on behalf of itself and its
+          Tenants. All messaging conducted through Twilio is subject to Twilio's
+          Acceptable Use Policy, the Telephone Consumer Protection Act (TCPA), and
+          applicable FCC regulations including 10DLC registration requirements.
+
+    \item \textbf{Vercel / GitHub Pages} --- Website hosting for UBoss.ai. These
+          platforms may collect standard web server logs (IP address, browser type,
+          access timestamps).
+
+    \item \textbf{Stripe (Future)} --- Payment processing. If and when UBoss implements
+          online payment functionality, payment card data will be processed exclusively
+          by Stripe in accordance with PCI-DSS standards. UBoss will not store, process,
+          or have access to full payment card numbers.
+
+    \item \textbf{Anthropic (Conditional Fallback)} --- AI language model provider. In
+          rare cases where UBoss's self-hosted AI infrastructure is insufficient, requests
+          may be routed to Anthropic's API. Data transmitted is limited to the minimum
+          necessary for the task and does not include raw personally identifiable
+          information.
+
+    \item \textbf{OpenAI (Conditional Fallback)} --- AI language model provider. Used as
+          an alternative fallback under the same conditions and restrictions as Anthropic
+          above.
+
+    \item \textbf{Amazon Web Services (AWS) (Future)} --- Cloud infrastructure. If and
+          when UBoss migrates to cloud-hosted infrastructure, appropriate network security
+          controls, encryption, and access management will be implemented.
 \end{enumerate}
 
-UBoss may engage additional Subprocessors as business needs evolve. Material additions to this list will be reflected in updates to this Policy.
+UBoss may engage additional Subprocessors as business needs evolve. Material additions
+to this list will be reflected in updates to this Policy.
 
-UBoss exercises commercially reasonable diligence in selecting Subprocessors but \textbf{does not guarantee and shall not be held liable for} the privacy practices, security measures, or data handling of any third-party Subprocessor. Users are encouraged to review the privacy policies of each Subprocessor independently.
+UBoss exercises commercially reasonable diligence in selecting Subprocessors but does
+not guarantee and shall not be held liable for the privacy practices, security measures,
+or data handling of any third-party Subprocessor. Users are encouraged to review the
+privacy policies of each Subprocessor independently.
+
+% =============================================
+% SECTION 6 — PURPOSE AND LEGAL BASIS
+% =============================================
 \section{Purpose and Legal Basis for Processing}
 
 UBoss processes Personal Data for the following purposes:
 
-\begin{enumerate}[nosep]
-    \item \textbf{Service Delivery:} To provide, configure, and operate automation workflows for Tenants and their Third-Party End-Users.
-    \item \textbf{Transactional Communications:} To send non-promotional notifications including form submission confirmations, job status updates, appointment confirmations, and service-related alerts.
-    \item \textbf{Client Relationship Management:} To maintain records of business relationships, respond to inquiries, and provide customer support.
-    \item \textbf{Compliance and Legal Obligations:} To comply with applicable federal, state, and local laws, including data breach notification requirements under Massachusetts General Laws Chapter 93H.
-    \item \textbf{Security and Fraud Prevention:} To protect UBoss systems, detect unauthorized access, and maintain the integrity of our infrastructure.
-    \item \textbf{Business Operations:} To manage invoicing, contracts, and internal business processes.
-     \item \textbf{Analytics and Service Improvement:} To create anonymized, de-identified, and aggregated datasets for use in improving UBoss tools, training machine learning models, generating industry benchmarks, and developing commercial analytics insights. Such datasets will not contain personally identifiable information and will not be more granular than zip code or city-level geography.
+\begin{enumerate}
+    \item \textbf{Service Delivery:} To provide, configure, and operate automation
+          workflows for Tenants and their Third-Party End-Users.
+
+    \item \textbf{Transactional Communications:} To send non-promotional notifications
+          including form submission confirmations, job status updates, appointment
+          confirmations, and service-related alerts via SMS, WhatsApp, email, or voice.
+
+    \item \textbf{Client Relationship Management:} To maintain records of business
+          relationships, respond to inquiries, and provide customer support.
+
+    \item \textbf{Compliance and Legal Obligations:} To comply with applicable federal,
+          state, and local laws, including data breach notification requirements under
+          Massachusetts General Laws Chapter~93H.
+
+    \item \textbf{Security and Fraud Prevention:} To protect UBoss systems, detect
+          unauthorized access, and maintain the integrity of our infrastructure.
+
+    \item \textbf{Business Operations:} To manage invoicing, contracts, and internal
+          business processes.
+
+    \item \textbf{Analytics and Service Improvement:} To create anonymized,
+          de-identified, and aggregated datasets for use in improving UBoss tools,
+          training machine learning models, generating industry benchmarks, and
+          developing commercial analytics insights. Such datasets will not contain
+          personally identifiable information and will not be more granular than zip
+          code or city-level geography.
 \end{enumerate}
 
-\textbf{Legal Basis:} Processing is conducted on the basis of (a) the User's consent as expressed through form submission or direct communication; (b) the performance of a contract between UBoss and a Tenant; (c) compliance with legal obligations; and (d) UBoss's legitimate business interests, provided such interests do not override the rights of the data subject.
+\textbf{Legal Basis:} Processing is conducted on the basis of (a)~the User's consent
+as expressed through form submission or direct communication; (b)~the performance of a
+contract between UBoss and a Tenant; (c)~compliance with legal obligations; and
+(d)~UBoss's legitimate business interests, provided such interests do not override the
+rights of the data subject.
 
+% --- End of Part 1 ---
+% Continue with Part 2: Sections 7–13
+
+% =============================================================================
+% UBOSS LLC — Unified Privacy Policy
+% Part 2 of 3: Sections 7–13
+% =============================================================================
+
+% =============================================
+% SECTION 7 — CONSENT AND OPT-IN
+% =============================================
 \section{Consent and Opt-In}
 
 \subsection{Form-Based Consent}
 
-All Tally.so forms operated by or on behalf of UBoss include a clear and conspicuous disclosure stating that submission of the form constitutes consent to the collection and processing of the submitted data by UBoss LLC for the purposes described in this Policy. Users who do not wish to consent should not submit the form.
+All Tally.so forms operated by or on behalf of UBoss include a clear and conspicuous
+disclosure stating that submission of the form constitutes consent to the collection
+and processing of the submitted data by UBoss LLC for the purposes described in this
+Policy. Users who do not wish to consent should not submit the form.
 
 \subsection{Messaging Consent (TCPA / 10DLC Compliance)}
+\label{subsec:messaging-consent}
 
-By providing a telephone number and indicating SMS or WhatsApp as a preferred or acceptable communication channel, the User expressly consents to receive Transactional Communications from UBoss via Twilio-powered messaging services. This consent is subject to the following conditions:
+By providing a telephone number and indicating SMS or WhatsApp as a preferred or
+acceptable communication channel, the User expressly consents to receive Transactional
+Communications from UBoss via Twilio-powered messaging services. This consent is
+subject to the following conditions:
 
-\begin{itemize}[nosep]
-    \item \textbf{No Promotional Messaging:} UBoss does not send promotional, marketing, or advertising messages via SMS, WhatsApp, or voice. All messaging is strictly transactional in nature. Any promotional or advertising outreach will be conducted independently through appropriate channels (e.g., social media platforms) and in compliance with those platforms' policies and applicable law.
-    \item \textbf{10DLC Registration:} UBoss maintains appropriate 10DLC campaign registration with applicable carriers and The Campaign Registry (TCR) as required for A2P (Application-to-Person) messaging.
-    \item \textbf{Message Frequency:} Message frequency varies based on the nature of the automation workflow. Users will not receive messages unrelated to services they have engaged with.
-    \item \textbf{Message and Data Rates:} Standard message and data rates may apply depending on the User's wireless carrier and plan.
+\begin{itemize}
+    \item \textbf{No Promotional Messaging:} UBoss does not send promotional, marketing,
+          or advertising messages via SMS, WhatsApp, or voice. All messaging is strictly
+          transactional in nature. Any promotional or advertising outreach will be
+          conducted independently through appropriate channels (e.g., social media
+          platforms) and in compliance with those platforms' policies and applicable law.
+
+    \item \textbf{10DLC Registration:} UBoss maintains appropriate 10DLC campaign
+          registration with applicable carriers and The Campaign Registry (TCR) as
+          required for A2P (Application-to-Person) messaging.
+
+    \item \textbf{Consent Is Not a Condition of Purchase:} Consent to receive text
+          messages is not a condition of purchasing any goods or services from UBoss
+          or any UBoss Tenant.
 \end{itemize}
-For a complete summary of our SMS messaging terms, visit: uboss.ai/en/legal/sms-policy.
+
+For complete details on message frequency, data rates, opt-out instructions, and
+mobile information sharing, see Section~\ref{sec:sms}.
 
 \subsection{Tenant Responsibility for Third-Party End-User Consent}
 
-When UBoss operates automation workflows that involve Third-Party End-Users, the Tenant is responsible for:
+When UBoss operates automation workflows that involve Third-Party End-Users, the
+Tenant is responsible for:
 
-\begin{enumerate}[nosep]
-    \item Obtaining all necessary consents from Third-Party End-Users prior to providing their data to UBoss;
-    \item Ensuring that appropriate disclosures are made to Third-Party End-Users regarding the nature, purpose, and frequency of any communications;
-    \item Providing Third-Party End-Users with copies of or access to applicable consent forms, privacy notices, or terms of service;
-    \item Maintaining records of consent sufficient to demonstrate compliance with TCPA, state law, and Twilio's Acceptable Use Policy.
+\begin{enumerate}
+    \item Obtaining all necessary consents from Third-Party End-Users prior to providing
+          their data to UBoss;
+    \item Ensuring that appropriate disclosures are made to Third-Party End-Users
+          regarding the nature, purpose, and frequency of any communications;
+    \item Providing Third-Party End-Users with copies of or access to applicable consent
+          forms, privacy notices, or terms of service;
+    \item Maintaining records of consent sufficient to demonstrate compliance with TCPA,
+          state law, and Twilio's Acceptable Use Policy.
 \end{enumerate}
 
-UBoss will provide Tenants with template disclosure language and consent forms where applicable, but the \textbf{Tenant bears ultimate responsibility} for ensuring valid consent has been obtained from their Third-Party End-Users. UBoss shall not be held liable for a Tenant's failure to obtain proper consent.
+UBoss will provide Tenants with template disclosure language and consent forms where
+applicable, but \textbf{the Tenant bears ultimate responsibility for ensuring valid
+consent has been obtained} from their Third-Party End-Users. UBoss shall not be held
+liable for a Tenant's failure to obtain proper consent.
 
-\section{Messaging and Communications}
+% =============================================
+% SECTION 8 — SMS MESSAGING PROGRAM
+% =============================================
+\section{SMS Messaging Program}
+\label{sec:sms}
+
+\begin{tcolorbox}[keysummary, title={SMS Program At-a-Glance}]
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}l X@{}}
+Brand Name:       & UBoss LLC \\
+Website:          & \href{https://uboss.ai}{https://uboss.ai} \\
+Support Email:    & \href{mailto:support@uboss.ai}{support@uboss.ai} \\
+Message Type:     & Transactional only --- no marketing or promotions \\
+Frequency:        & Varies by service engagement \\
+Cost:             & Standard message and data rates may apply \\
+Opt-Out:          & Reply \textbf{STOP} to any message \\
+Help:             & Reply \textbf{HELP} or email support@uboss.ai \\
+\end{tabularx}
+\end{tcolorbox}
+
+\subsection{Program Description}
+
+UBoss sends transactional SMS messages to two categories of recipients:
+
+\begin{enumerate}
+    \item \textbf{Business Clients and Staff:} Internal notifications alerting business
+          owners and team members of new customer inquiries, job assignments, and
+          operational updates.
+
+    \item \textbf{End-User Customers:} Appointment confirmations, service request
+          acknowledgments, post-service follow-ups, and review requests sent to
+          customers on behalf of UBoss Tenant businesses.
+\end{enumerate}
+
+All messages are \textbf{strictly transactional in nature}. UBoss does not send
+promotional, marketing, or advertising messages via SMS.
+
+\subsection{Consent and Opt-In Methods}
+
+End users opt in to receive SMS messages through the following methods:
+
+\begin{itemize}
+    \item \textbf{Web Form:} Customers submit a service request through an online form
+          that includes a phone number field and a consent checkbox agreeing to receive
+          SMS updates related to their service request.
+
+    \item \textbf{Verbal Consent:} Business clients may verbally confirm consent for
+          their staff or customers to receive transactional messages.
+
+    \item \textbf{Via Text:} Users may initiate contact by texting a UBoss-registered
+          number, which constitutes consent to receive a response.
+\end{itemize}
+
+Consent is limited to transactional communications related to the service requested.
+Consent is not a condition of purchasing any goods or services.
+
+\subsection{Message Frequency}
+
+Message frequency varies based on the nature of the service engagement and automation
+workflow. Users will only receive messages directly related to a service they have
+requested or an appointment they have scheduled.
+
+\subsection{Message and Data Rates}
+
+\begin{tcolorbox}[keyhighlight]
+\textbf{Standard message and data rates may apply} depending on your wireless carrier
+and mobile plan. UBoss is not responsible for any charges incurred by your carrier.
+\end{tcolorbox}
+
+\subsection{Opt-Out Instructions}
+
+You may opt out of receiving SMS messages at any time.
+
+\begin{tcolorbox}[keywarning, title={How to Opt Out}]
+\textbf{Reply STOP} to any message from a UBoss-registered number to immediately
+cease receiving SMS messages.
+\end{tcolorbox}
+
+Upon receipt of a STOP request:
+
+\begin{itemize}
+    \item You will receive a single confirmation message acknowledging your opt-out.
+    \item No further messages will be sent from that number.
+    \item Your opt-out applies only to the specific number and campaign from which the
+          request was made.
+\end{itemize}
+
+To resume messages after opting out, reply \textbf{START}.
+
+Additional opt-out keywords honored: STOP, STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT,
+OPTOUT, REVOKE.
+
+\subsection{Help and Support}
+
+For assistance, reply \textbf{HELP} to any message from a UBoss-registered number.
+You will receive a response with support contact information and opt-out instructions.
+You may also contact us directly:
+
+\begin{itemize}
+    \item \textbf{Email:} \href{mailto:support@uboss.ai}{support@uboss.ai}
+    \item \textbf{Website:} \href{https://uboss.ai}{https://uboss.ai}
+\end{itemize}
+
+\subsection{Mobile Information Sharing}
+\label{subsec:mobile-sharing}
+
+\begin{tcolorbox}[keywarning, title={CTIA Required Disclosure}]
+\textbf{UBoss will not sell, rent, share, or provide mobile phone numbers or opt-in
+consent data to any third parties or affiliates for marketing or promotional purposes.}
+
+All the above categories exclude text messaging originator opt-in data and consent;
+this information will not be shared with any third parties.
+\end{tcolorbox}
+
+Mobile information is used \textbf{solely} for the purpose of delivering transactional
+service-related messages as described in this Policy. Mobile information is transmitted
+to Twilio exclusively for message delivery and is not used, stored, or shared by Twilio
+for any purpose beyond transmission.
+
+\subsection{Carrier Liability}
+
+\textbf{Carriers are not liable for any delayed or undelivered messages.} Message
+delivery is subject to wireless carrier network availability and coverage. UBoss makes
+no guarantee regarding the timing or delivery of any SMS message.
+
+% =============================================
+% SECTION 9 — MESSAGING AND COMMUNICATIONS
+% =============================================
+\section{Messaging and Communications (All Channels)}
 
 \subsection{Channels}
 
-UBoss may communicate with Users and Third-Party End-Users through the following channels:
+UBoss may communicate with Users and Third-Party End-Users through the following
+channels:
 
-\begin{itemize}[nosep]
+\begin{itemize}
     \item \textbf{SMS / MMS:} Via Twilio, sent from UBoss-registered numbers.
-    \item \textbf{WhatsApp:} Via Twilio's WhatsApp Business API, sent from UBoss-registered accounts.
-    \item \textbf{Email:} Sent from UBoss-controlled email addresses \textit{or}, in certain automation workflows, from a Tenant's own email account as configured by the Tenant. When email is sent from a Tenant's account, the Tenant is the sender of record and is independently responsible for compliance with the CAN-SPAM Act and applicable state law.
+    \item \textbf{WhatsApp:} Via Twilio's WhatsApp Business API, sent from
+          UBoss-registered accounts.
+    \item \textbf{Email:} Sent from UBoss-controlled email addresses or, in certain
+          automation workflows, from a Tenant's own email account as configured by the
+          Tenant. When email is sent from a Tenant's account, the Tenant is the sender
+          of record and is independently responsible for compliance with the CAN-SPAM
+          Act and applicable state law.
 \end{itemize}
 
 \subsection{Nature of Communications}
 
-All communications initiated through UBoss automation systems are \textbf{transactional in nature} and limited to:
+All communications initiated through UBoss automation systems are
+\textbf{transactional in nature} and limited to:
 
-\begin{itemize}[nosep]
+\begin{itemize}
     \item Confirmation that a form has been submitted or received;
     \item Updates on the status of a labor job, service request, or project;
     \item Appointment or scheduling confirmations;
@@ -213,90 +689,155 @@ All communications initiated through UBoss automation systems are \textbf{transa
     \item System or account-related notifications.
 \end{itemize}
 
-UBoss \textbf{does not} use its automation systems to send promotional content, advertisements, solicitations, or marketing messages. Any promotional outreach conducted by UBoss or its Tenants will be performed through separate, dedicated channels with independent compliance controls.
+\textbf{UBoss does not use its automation systems to send promotional content,
+advertisements, solicitations, or marketing messages.} Any promotional outreach
+conducted by UBoss or its Tenants will be performed through separate, dedicated
+channels with independent compliance controls.
 
+% =============================================
+% SECTION 10 — OPT-OUT AND UNSUBSCRIBE
+% =============================================
 \section{Opt-Out and Unsubscribe (Off-Ramps)}
 
-UBoss respects every individual's right to cease receiving communications. The following opt-out mechanisms are available:
+UBoss respects every individual's right to cease receiving communications. The
+following opt-out mechanisms are available:
 
 \subsection{SMS / WhatsApp}
 
-Users and Third-Party End-Users may reply \textbf{STOP} to any message received from a UBoss-registered number to immediately cease SMS or WhatsApp communications from that specific number or campaign. Upon receipt of a STOP request, UBoss will:
+Users and Third-Party End-Users may reply \textbf{STOP} to any message received from a
+UBoss-registered number to immediately cease SMS or WhatsApp communications from that
+specific number or campaign. Upon receipt of a STOP request, UBoss will:
 
-\begin{enumerate}[nosep]
+\begin{enumerate}
     \item Acknowledge the opt-out with a single confirmation message;
-    \item Suppress the requesting number from future messaging within the applicable automation workflow;
-    \item Process the opt-out within a commercially reasonable timeframe, not to exceed ten (10) business days.
+    \item Suppress the requesting number from future messaging within the applicable
+          automation workflow;
+    \item Process the opt-out within a commercially reasonable timeframe, not to exceed
+          ten (10) business days.
 \end{enumerate}
 
 \subsection{Email}
 
-All emails sent through UBoss automation include a functional unsubscribe mechanism in compliance with the CAN-SPAM Act. Emails sent from a Tenant's own email account are subject to the Tenant's own unsubscribe process.
+All emails sent through UBoss automation include a functional unsubscribe mechanism in
+compliance with the CAN-SPAM Act. Emails sent from a Tenant's own email account are
+subject to the Tenant's own unsubscribe process.
 
 \subsection{Multi-Service Opt-Out}
 
-UBoss operates multiple automation workflows across multiple communication channels and service categories. Because a single User or Third-Party End-User may be enrolled in more than one workflow:
+UBoss operates multiple automation workflows across multiple communication channels and
+service categories. Because a single User or Third-Party End-User may be enrolled in
+more than one workflow:
 
-\begin{itemize}[nosep]
-    \item An opt-out request applies only to the \textbf{specific workflow, channel, or campaign} from which the request originated, unless the User explicitly requests a complete opt-out from all UBoss communications.
-    \item \textbf{It is the responsibility of the User or Third-Party End-User to identify which specific service(s) or communication source(s) they wish to discontinue.} UBoss will make commercially reasonable efforts to assist in identifying active workflows, but cannot guarantee identification of all touchpoints without the User's cooperation.
-    \item To request a complete opt-out from all UBoss-operated communications, Users may contact us directly at the contact information provided in Section~\ref{sec:contact}.
+\begin{itemize}
+    \item An opt-out request applies only to the \textbf{specific workflow, channel, or
+          campaign} from which the request originated, unless the User explicitly
+          requests a complete opt-out from all UBoss communications.
+
+    \item It is the responsibility of the User or Third-Party End-User to identify which
+          specific service(s) or communication source(s) they wish to discontinue.
+          UBoss will make commercially reasonable efforts to assist in identifying active
+          workflows, but cannot guarantee identification of all touchpoints without the
+          User's cooperation.
+
+    \item To request a \textbf{complete opt-out} from all UBoss-operated communications,
+          Users may contact us directly at the contact information provided in
+          Section~\ref{sec:contact}.
 \end{itemize}
 
 \subsection{Right to Terminate}
 
-UBoss reserves the unilateral right to terminate any automation workflow, communication channel, or data processing activity at any time, for any reason, including but not limited to suspected misuse, legal compliance concerns, or Tenant breach of contract. Exercise of this right shall not constitute a breach of any agreement between UBoss and a Tenant.
+UBoss reserves the unilateral right to terminate any automation workflow, communication
+channel, or data processing activity at any time, for any reason, including but not
+limited to suspected misuse, legal compliance concerns, or Tenant breach of contract.
+Exercise of this right shall not constitute a breach of any agreement between UBoss
+and a Tenant.
 
+% =============================================
+% SECTION 11 — MULTI-TENANT (B2B2C)
+% =============================================
 \section{Multi-Tenant (B2B2C) Responsibilities}
 
-UBoss provides automation services to business clients (Tenants) who may, in turn, use those services to interact with their own customers (Third-Party End-Users). This creates a multi-tenant architecture in which responsibilities are allocated as follows:
+UBoss provides automation services to business clients (Tenants) who may, in turn, use
+those services to interact with their own customers (Third-Party End-Users). This
+creates a multi-tenant architecture in which responsibilities are allocated as follows:
 
 \subsection{UBoss Responsibilities}
 
-\begin{itemize}[nosep]
+\begin{itemize}
     \item Build, configure, and maintain automation workflows to Tenant specifications;
-    \item Implement commercially reasonable security controls aligned with SOC 2 principles;
+    \item Implement commercially reasonable security controls aligned with SOC~2
+          principles;
     \item Process data in accordance with this Policy and applicable law;
-    \item Provide opt-out and off-ramp mechanisms for communications sent through UBoss-controlled channels;
-    \item Notify Tenants and affected parties in the event of a data breach as required by law;
-    \item Retain the right to terminate or suspend any workflow that UBoss believes, in its sole discretion, violates applicable law, Twilio's Acceptable Use Policy, or this Policy.
+    \item Provide opt-out and off-ramp mechanisms for communications sent through
+          UBoss-controlled channels;
+    \item Notify Tenants and affected parties in the event of a data breach as required
+          by law;
+    \item Retain the right to terminate or suspend any workflow that UBoss believes, in
+          its sole discretion, violates applicable law, Twilio's Acceptable Use Policy,
+          or this Policy.
 \end{itemize}
 
 \subsection{Tenant Responsibilities}
 
 Tenants engaging UBoss services represent, warrant, and agree that they shall:
 
-\begin{itemize}[nosep]
-    \item Obtain and maintain all necessary consents from Third-Party End-Users before providing their data to UBoss or directing UBoss to initiate communications on their behalf;
-    \item Provide Third-Party End-Users with adequate notice regarding the types of communications they will receive and the identity of the parties involved;
-    \item Comply with all applicable federal, state, and local laws governing data privacy, consumer protection, and electronic communications, including but not limited to TCPA, CAN-SPAM, and Massachusetts General Laws Chapters 93A and 93H;
-    \item Refrain from using UBoss automation services to send unsolicited commercial messages, spam, or any communication that violates Twilio's Acceptable Use Policy;
-    \item Indemnify and hold harmless UBoss from any claims, damages, fines, penalties, or liabilities arising from the Tenant's failure to comply with the obligations set forth in this section;
-    \item Promptly notify UBoss of any opt-out requests, complaints, or legal actions received from Third-Party End-Users relating to communications sent through UBoss systems.
+\begin{itemize}
+    \item Obtain and maintain all necessary consents from Third-Party End-Users before
+          providing their data to UBoss or directing UBoss to initiate communications
+          on their behalf;
+    \item Provide Third-Party End-Users with adequate notice regarding the types of
+          communications they will receive and the identity of the parties involved;
+    \item Comply with all applicable federal, state, and local laws governing data
+          privacy, consumer protection, and electronic communications, including but
+          not limited to TCPA, CAN-SPAM, and Massachusetts General Laws Chapters~93A
+          and 93H;
+    \item Refrain from using UBoss automation services to send unsolicited commercial
+          messages, spam, or any communication that violates Twilio's Acceptable Use
+          Policy;
+    \item Indemnify and hold harmless UBoss from any claims, damages, fines, penalties,
+          or liabilities arising from the Tenant's failure to comply with the
+          obligations set forth in this section;
+    \item Promptly notify UBoss of any opt-out requests, complaints, or legal actions
+          received from Third-Party End-Users relating to communications sent through
+          UBoss systems.
 \end{itemize}
 
 \subsection{Data Ownership}
 
-Data collected through UBoss-operated forms and automation workflows is stored in UBoss-controlled databases. Tenants may request export or transfer of data pertaining to their Third-Party End-Users, subject to the following conditions:
+Data collected through UBoss-operated forms and automation workflows is stored in
+UBoss-controlled databases. Tenants may request export or transfer of data pertaining
+to their Third-Party End-Users, subject to the following conditions:
 
-\begin{itemize}[nosep]
+\begin{itemize}
     \item The request must be submitted in writing;
-    \item UBoss will provide the data in a commonly used, machine-readable format within a commercially reasonable timeframe;
-    \item UBoss retains the right to maintain archival copies of data as required for legal compliance, audit, or dispute resolution purposes;
-    \item Upon termination of the Tenant relationship, data will be retained for a period not to exceed ninety (90) days unless a longer retention period is required by law, after which it will be securely deleted.
+    \item UBoss will provide the data in a commonly used, machine-readable format within
+          a commercially reasonable timeframe;
+    \item UBoss retains the right to maintain archival copies of data as required for
+          legal compliance, audit, or dispute resolution purposes;
+    \item Upon termination of the Tenant relationship, data will be retained for a period
+          not to exceed ninety (90) days unless a longer retention period is required by
+          law, after which it will be securely deleted.
 \end{itemize}
 
+% =============================================
+% SECTION 12 — DATA STORAGE AND SECURITY
+% =============================================
 \section{Data Storage and Security}
 
 \subsection{Current Infrastructure}
 
-As of the effective date of this Policy, all data processed by UBoss automation workflows is stored on a \textbf{locally owned and operated server} maintained by UBoss LLC. This server runs containerized applications (Docker) hosting the n8n automation platform and associated databases. The server is located in Massachusetts and is under the physical and administrative control of UBoss.
+As of the effective date of this Policy, all data processed by UBoss automation
+workflows is stored on a \textbf{locally owned and operated server} maintained by
+UBoss LLC. This server runs containerized applications (Docker) hosting the n8n
+automation platform and associated databases. The server is located in Massachusetts
+and is under the physical and administrative control of UBoss.
 
 \subsection{Security Practices}
 
-UBoss implements security practices aligned with the principles of SOC 2 (Service Organization Control 2), including but not limited to:
+UBoss implements security practices aligned with the principles of SOC~2 (Service
+Organization Control~2), including but not limited to:
 
-\begin{itemize}[nosep]
+\begin{itemize}
     \item Access controls and authentication mechanisms;
     \item Encryption of data in transit (TLS/SSL);
     \item Regular software updates and patch management;
@@ -305,13 +846,20 @@ UBoss implements security practices aligned with the principles of SOC 2 (Servic
     \item Principle of least privilege for administrative access.
 \end{itemize}
 
-\textbf{Disclaimer:} UBoss has not undergone a formal SOC 2 Type I or Type II audit as of the effective date of this Policy. References to SOC 2 alignment indicate that UBoss voluntarily follows security practices modeled on the SOC 2 Trust Services Criteria. UBoss does not represent or warrant that its security controls have been independently verified or certified.
+\begin{tcolorbox}[keyhighlight]
+\textbf{Disclaimer:} UBoss has not undergone a formal SOC~2 Type~I or Type~II audit as
+of the effective date of this Policy. References to SOC~2 alignment indicate that UBoss
+voluntarily follows security practices modeled on the SOC~2 Trust Services Criteria.
+UBoss does not represent or warrant that its security controls have been independently
+verified or certified.
+\end{tcolorbox}
 
 \subsection{Future Infrastructure}
 
-UBoss anticipates transitioning certain services to cloud-hosted infrastructure (e.g., Amazon Web Services) in the future. Such migration will include implementation of:
+UBoss anticipates transitioning certain services to cloud-hosted infrastructure (e.g.,
+Amazon Web Services) in the future. Such migration will include implementation of:
 
-\begin{itemize}[nosep]
+\begin{itemize}
     \item Virtual Private Cloud (VPC) network isolation;
     \item Encryption of data at rest and in transit;
     \item Identity and Access Management (IAM) controls;
@@ -320,131 +868,251 @@ UBoss anticipates transitioning certain services to cloud-hosted infrastructure 
 
 This Policy will be updated to reflect infrastructure changes as they are implemented.
 
+% =============================================
+% SECTION 13 — DATA RETENTION AND DELETION
+% =============================================
 \section{Data Retention and Deletion}
 
-UBoss retains Personal Data only for as long as necessary to fulfill the purposes described in this Policy or as required by applicable law. Specific retention guidelines are as follows:
+UBoss retains Personal Data only for as long as necessary to fulfill the purposes
+described in this Policy or as required by applicable law. Specific retention
+guidelines are as follows:
 
-\begin{itemize}[nosep]
-    \item \textbf{Active Client Data:} Retained for the duration of the business relationship plus ninety (90) days following termination.
-    \item \textbf{Archived / Inactive Data:} May be retained in anonymized or aggregated form for analytics and business improvement purposes.
-    \item \textbf{Legal Hold:} Data subject to a legal hold, regulatory investigation, or pending litigation will be retained until the matter is resolved, notwithstanding any other retention schedule.
-    \item \textbf{Opt-Out Records:} Records of opt-out and unsubscribe requests will be retained indefinitely to ensure continued compliance with suppression obligations.
+\begin{itemize}
+    \item \textbf{Active Client Data:} Retained for the duration of the business
+          relationship plus ninety (90) days following termination.
+
+    \item \textbf{Archived / Inactive Data:} May be retained in anonymized or
+          aggregated form for analytics and business improvement purposes.
+
+    \item \textbf{Legal Hold:} Data subject to a legal hold, regulatory investigation,
+          or pending litigation will be retained until the matter is resolved,
+          notwithstanding any other retention schedule.
+
+    \item \textbf{Opt-Out Records:} Records of opt-out and unsubscribe requests will be
+          retained indefinitely to ensure continued compliance with suppression
+          obligations.
 \end{itemize}
 
-\textbf{Deletion Requests:} Users may request deletion of their Personal Data by contacting UBoss at the information provided in Section~\ref{sec:contact}. UBoss will process deletion requests within thirty (30) calendar days, subject to any legal retention obligations. Deletion of data from third-party Subprocessor systems is governed by the respective Subprocessor's data retention policies.
+\textbf{Deletion Requests:} Users may request deletion of their Personal Data by
+contacting UBoss at the information provided in Section~\ref{sec:contact}. UBoss will
+process deletion requests within thirty (30) calendar days, subject to any legal
+retention obligations. Deletion of data from third-party Subprocessor systems is
+governed by the respective Subprocessor's data retention policies.
+
+% --- End of Part 2 ---
+
+% =============================================================================
+% UBOSS LLC — Unified Privacy Policy
+% Part 3 of 3: Sections 14–18 + end of document
+% =============================================================================
+
+% =============================================
+% SECTION 14 — MASSACHUSETTS STATE LAW
+% =============================================
 \section{Massachusetts State Law Compliance}
 
-UBoss operates in the Commonwealth of Massachusetts and complies with applicable Massachusetts data privacy and consumer protection laws, including:
+UBoss operates in the Commonwealth of Massachusetts and complies with applicable
+Massachusetts data privacy and consumer protection laws, including:
 
 \subsection{201 CMR 17.00 --- Standards for the Protection of Personal Information}
 
-To the extent that UBoss collects, stores, or processes ``personal information'' as defined under 201 CMR 17.00 (a Massachusetts resident's first and last name in combination with a Social Security number, driver's license number, state ID number, or financial account number), UBoss shall develop and maintain a Written Information Security Program (WISP) that includes administrative, technical, and physical safeguards appropriate to the size, scope, and nature of UBoss's business.
+To the extent that UBoss collects, stores, or processes ``personal information'' as
+defined under 201 CMR 17.00 (a Massachusetts resident's first and last name in
+combination with a Social Security number, driver's license number, state ID number,
+or financial account number), UBoss shall develop and maintain a Written Information
+Security Program (WISP) that includes administrative, technical, and physical
+safeguards appropriate to the size, scope, and nature of UBoss's business.
 
-\textit{As of the effective date of this Policy, UBoss does not collect data elements that trigger the WISP requirement under 201 CMR 17.00. Should UBoss begin collecting such data, a WISP will be developed and implemented prior to or concurrent with such collection.}
+As of the effective date of this Policy, UBoss does not collect data elements that
+trigger the WISP requirement under 201 CMR 17.00. Should UBoss begin collecting such
+data, a WISP will be developed and implemented prior to or concurrent with such
+collection.
 
 \subsection{Massachusetts General Laws Chapter 93A --- Consumer Protection}
 
-UBoss conducts its business in compliance with Chapter 93A, which prohibits unfair or deceptive acts or practices in trade or commerce. UBoss commits to transparent data practices, honest disclosures, and fair dealing with all Users, Tenants, and Third-Party End-Users.
+UBoss conducts its business in compliance with Chapter~93A, which prohibits unfair or
+deceptive acts or practices in trade or commerce. UBoss commits to transparent data
+practices, honest disclosures, and fair dealing with all Users, Tenants, and
+Third-Party End-Users.
 
 \subsection{Massachusetts General Laws Chapter 93H --- Data Breach Notification}
 
-In the event of a breach of security involving Personal Data of a Massachusetts resident, UBoss will:
+In the event of a breach of security involving Personal Data of a Massachusetts
+resident, UBoss will:
 
-\begin{enumerate}[nosep]
-    \item Notify the Massachusetts Attorney General's Office and the Office of Consumer Affairs and Business Regulation as soon as practicable and without unreasonable delay;
-    \item Notify affected individuals in writing, providing a description of the breach, the types of data involved, and steps the individual may take to protect themselves;
+\begin{enumerate}
+    \item Notify the Massachusetts Attorney General's Office and the Office of Consumer
+          Affairs and Business Regulation as soon as practicable and without unreasonable
+          delay;
+    \item Notify affected individuals in writing, providing a description of the breach,
+          the types of data involved, and steps the individual may take to protect
+          themselves;
     \item Cooperate with law enforcement and regulatory authorities as required;
-    \item If applicable, notify affected Tenants so they may fulfill their own notification obligations to Third-Party End-Users.
+    \item If applicable, notify affected Tenants so they may fulfill their own
+          notification obligations to Third-Party End-Users.
 \end{enumerate}
 
+% =============================================
+% SECTION 15 — LIMITATION OF LIABILITY
+% =============================================
 \section{Limitation of Liability and Business Protections}
 
 \subsection{Disclaimer of Warranties}
 
-UBOSS PROVIDES ITS SERVICES ON AN ``AS IS'' AND ``AS AVAILABLE'' BASIS. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, UBOSS DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. UBOSS DOES NOT WARRANT THAT ITS SERVICES WILL BE UNINTERRUPTED, ERROR-FREE, OR COMPLETELY SECURE.
+UBOSS PROVIDES ITS SERVICES ON AN ``AS IS'' AND ``AS AVAILABLE'' BASIS. TO THE FULLEST
+EXTENT PERMITTED BY APPLICABLE LAW, UBOSS DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS,
+IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. UBOSS DOES
+NOT WARRANT THAT ITS SERVICES WILL BE UNINTERRUPTED, ERROR-FREE, OR COMPLETELY SECURE.
 
 \subsection{Limitation of Liability}
 
-TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL UBOSS, ITS MEMBERS, MANAGERS, OFFICERS, EMPLOYEES, OR AGENTS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, BUSINESS OPPORTUNITIES, OR GOODWILL, ARISING OUT OF OR IN CONNECTION WITH THIS POLICY, THE SERVICES PROVIDED BY UBOSS, OR ANY DATA BREACH OR UNAUTHORIZED ACCESS, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT, STRICT LIABILITY, OR OTHERWISE) AND EVEN IF UBOSS HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL UBOSS, ITS
+MEMBERS, MANAGERS, OFFICERS, EMPLOYEES, OR AGENTS BE LIABLE FOR ANY INDIRECT,
+INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO
+LOSS OF PROFITS, DATA, BUSINESS OPPORTUNITIES, OR GOODWILL, ARISING OUT OF OR IN
+CONNECTION WITH THIS POLICY, THE SERVICES PROVIDED BY UBOSS, OR ANY DATA BREACH OR
+UNAUTHORIZED ACCESS, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT, STRICT
+LIABILITY, OR OTHERWISE) AND EVEN IF UBOSS HAS BEEN ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES.
 
-UBOSS'S TOTAL AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THIS POLICY OR THE SERVICES SHALL NOT EXCEED THE TOTAL FEES PAID BY THE AFFECTED TENANT OR USER TO UBOSS DURING THE TWELVE (12) MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM.
+UBOSS'S TOTAL AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THIS POLICY OR THE
+SERVICES SHALL NOT EXCEED THE TOTAL FEES PAID BY THE AFFECTED TENANT OR USER TO
+UBOSS DURING THE TWELVE (12) MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM.
 
 \subsection{Indemnification}
 
-Each Tenant agrees to indemnify, defend, and hold harmless UBoss LLC, its members, managers, officers, employees, and agents from and against any and all claims, demands, actions, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or relating to:
+Each Tenant agrees to indemnify, defend, and hold harmless UBoss LLC, its members,
+managers, officers, employees, and agents from and against any and all claims, demands,
+actions, damages, losses, liabilities, costs, and expenses (including reasonable
+attorneys' fees) arising out of or relating to:
 
-\begin{enumerate}[nosep]
+\begin{enumerate}
     \item The Tenant's failure to obtain proper consent from Third-Party End-Users;
     \item The Tenant's misuse of UBoss automation services;
-    \item The Tenant's violation of any applicable law, regulation, or third-party terms of service;
-    \item Any claim by a Third-Party End-User arising from the Tenant's use of UBoss services;
-    \item The Tenant's provision of inaccurate, misleading, or unlawfully obtained data to UBoss.
+    \item The Tenant's violation of any applicable law, regulation, or third-party terms
+          of service;
+    \item Any claim by a Third-Party End-User arising from the Tenant's use of UBoss
+          services;
+    \item The Tenant's provision of inaccurate, misleading, or unlawfully obtained data
+          to UBoss.
 \end{enumerate}
 
 \subsection{Force Majeure}
 
-UBoss shall not be liable for any failure or delay in performance resulting from causes beyond its reasonable control, including but not limited to acts of God, natural disasters, pandemic, government actions, power outages, internet service disruptions, cyberattacks by third parties, or failures of third-party Subprocessors.
+UBoss shall not be liable for any failure or delay in performance resulting from causes
+beyond its reasonable control, including but not limited to acts of God, natural
+disasters, pandemic, government actions, power outages, internet service disruptions,
+cyberattacks by third parties, or failures of third-party Subprocessors.
 
 \subsection{No Third-Party Beneficiaries}
 
-This Policy is between UBoss and the User or Tenant. Nothing in this Policy shall be construed to create any rights, obligations, or causes of action in favor of any third party, including Third-Party End-Users, except as expressly set forth herein or as required by applicable law.
+This Policy is between UBoss and the User or Tenant. Nothing in this Policy shall be
+construed to create any rights, obligations, or causes of action in favor of any third
+party, including Third-Party End-Users, except as expressly set forth herein or as
+required by applicable law.
 
+% =============================================
+% SECTION 16 — CHILDREN'S PRIVACY
+% =============================================
 \section{Children's Privacy}
 
-UBoss services are intended for use by businesses and individuals aged eighteen (18) years or older. UBoss does not knowingly collect Personal Data from children under the age of thirteen (13) in compliance with the Children's Online Privacy Protection Act (COPPA). If UBoss becomes aware that it has inadvertently collected data from a child under 13, UBoss will take prompt steps to delete such data and terminate any associated account or workflow.
+UBoss services are intended for use by businesses and individuals aged eighteen (18)
+years or older. UBoss does not knowingly collect Personal Data from children under the
+age of thirteen (13) in compliance with the Children's Online Privacy Protection Act
+(COPPA). If UBoss becomes aware that it has inadvertently collected data from a child
+under 13, UBoss will take prompt steps to delete such data and terminate any associated
+account or workflow.
 
-If you believe that a child under 13 has provided Personal Data to UBoss, please contact us immediately at the information provided in Section~\ref{sec:contact}.
+If you believe that a child under 13 has provided Personal Data to UBoss, please
+contact us immediately at the information provided in Section~\ref{sec:contact}.
 
+% =============================================
+% SECTION 17 — GOVERNING LAW AND JURISDICTION
+% =============================================
 \section{Governing Law and Jurisdiction}
 
 \subsection{Corporate Matters}
 
-UBoss LLC is organized under the laws of the \textbf{State of Delaware}. Any disputes relating to the formation, governance, or internal affairs of UBoss LLC shall be governed by Delaware law.
+UBoss LLC is organized under the laws of the State of Delaware. Any disputes relating
+to the formation, governance, or internal affairs of UBoss LLC shall be governed by
+Delaware law.
 
 \subsection{Data Privacy and Consumer Protection}
 
-All matters relating to data privacy, consumer protection, electronic communications, and the processing of Personal Data shall be governed by the laws of the \textbf{Commonwealth of Massachusetts}, without regard to its conflict-of-law principles, to the extent that the User or data subject is a Massachusetts resident or the data was collected in connection with UBoss's Massachusetts operations.
+All matters relating to data privacy, consumer protection, electronic communications,
+and the processing of Personal Data shall be governed by the laws of the Commonwealth
+of Massachusetts, without regard to its conflict-of-law principles, to the extent that
+the User or data subject is a Massachusetts resident or the data was collected in
+connection with UBoss's Massachusetts operations.
 
 \subsection{Federal Law}
 
-This Policy is subject to applicable federal laws, including but not limited to the Telephone Consumer Protection Act (TCPA), the CAN-SPAM Act, the Children's Online Privacy Protection Act (COPPA), and regulations promulgated by the Federal Communications Commission (FCC) and the Federal Trade Commission (FTC).
+This Policy is subject to applicable federal laws, including but not limited to the
+Telephone Consumer Protection Act (TCPA), the CAN-SPAM Act, the Children's Online
+Privacy Protection Act (COPPA), and regulations promulgated by the Federal
+Communications Commission (FCC) and the Federal Trade Commission (FTC).
 
 \subsection{Dispute Resolution}
 
-Any dispute arising out of or relating to this Policy shall first be subject to good-faith negotiation between the parties for a period of thirty (30) days. If the dispute cannot be resolved through negotiation, it shall be submitted to binding arbitration in accordance with the rules of the American Arbitration Association (AAA), with the arbitration to be conducted in Massachusetts. Each party shall bear its own costs and attorneys' fees, unless the arbitrator determines otherwise.
+Any dispute arising out of or relating to this Policy shall first be subject to
+good-faith negotiation between the parties for a period of thirty (30) days. If the
+dispute cannot be resolved through negotiation, it shall be submitted to binding
+arbitration in accordance with the rules of the American Arbitration Association (AAA),
+with the arbitration to be conducted in Massachusetts. Each party shall bear its own
+costs and attorneys' fees, unless the arbitrator determines otherwise.
 
+% =============================================
+% SECTION 18 — CHANGES TO THIS POLICY
+% =============================================
 \section{Changes to This Policy}
 
-UBoss reserves the right to modify, amend, or replace this Policy at any time. When changes are made:
+UBoss reserves the right to modify, amend, or replace this Policy at any time. When
+changes are made:
 
-\begin{itemize}[nosep]
+\begin{itemize}
     \item The ``Last Updated'' date at the top of this document will be revised;
-    \item Material changes will be posted prominently on UBoss.ai;
-    \item Where feasible, Tenants with active service agreements will be notified via email or other reasonable means;
-    \item Continued use of UBoss services after the posting of changes constitutes acceptance of the revised Policy.
+    \item Material changes will be posted prominently on
+          \href{https://uboss.ai}{UBoss.ai};
+    \item Where feasible, Tenants with active service agreements will be notified via
+          email or other reasonable means;
+    \item Continued use of UBoss services after the posting of changes constitutes
+          acceptance of the revised Policy.
 \end{itemize}
 
 UBoss encourages all Users and Tenants to review this Policy periodically.
 
+% =============================================
+% SECTION 19 — CONTACT INFORMATION
+% =============================================
 \section{Contact Information}
 \label{sec:contact}
 
-For questions, concerns, data access requests, deletion requests, or opt-out requests, please contact:
+For questions, concerns, data access requests, deletion requests, or opt-out requests,
+please contact:
 
-\begin{quote}
-    \textbf{UBoss LLC}\\
-    \textit{Privacy and Data Protection Inquiries}\\[0.5em]
-    Email: \href{mailto:support@uboss.ai}{support@uboss.ai}\\
-    Website: \href{https://uboss.ai}{https://uboss.ai}\\[0.5em]
-    \textit{Mailing address available upon request.}
-\end{quote}
+\begin{center}
+\begin{tcolorbox}[keysummary, width=0.7\textwidth]
+\begin{center}
+\textbf{\large UBoss LLC}\\[0.3em]
+Privacy and Data Protection Inquiries\\[1em]
+\begin{tabular}{rl}
+\textbf{Email:}   & \href{mailto:support@uboss.ai}{support@uboss.ai} \\
+\textbf{Website:} & \href{https://uboss.ai}{https://uboss.ai} \\
+\end{tabular}\\[0.8em]
+{\small Mailing address available upon request.}
+\end{center}
+\end{tcolorbox}
+\end{center}
 
 \vspace{2em}
 
 \begin{center}
-    \rule{0.4\textwidth}{0.4pt}\\[1em]
-    \textit{End of Privacy Policy --- UBoss LLC}\\
-    \textit{Effective May 1, 2025}
+\textcolor{ubossaccent}{\rule{0.6\textwidth}{1.5pt}}\\[1em]
+{\large\textbf{End of Privacy Policy --- UBoss LLC}}\\[0.3em]
+{\textcolor{ubossgray}{Effective June 10, 2026}}\\[0.3em]
+{\small\textcolor{ubossgray}{This document supersedes all prior privacy policies and
+SMS messaging policies published by UBoss LLC.}}
 \end{center}
 
 \end{document}

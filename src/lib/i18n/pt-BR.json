@@ -301,12 +301,6 @@
       "description": "Um resumo em linguagem simples dos termos mais importantes.",
       "download": "Baixar Resumo dos Termos Principais (PDF)",
       "viewPdf": "Ver PDF"
-    },
-    "smsPolicy": {
-      "title": "Política de Privacidade de SMS",
-      "description": "Como coletamos, usamos e protegemos informações relacionadas a comunicações por SMS.",
-      "download": "Baixar Política de Privacidade de SMS (PDF)",
-      "viewPdf": "Ver PDF"
     }
   },
   "support": {
@@ -341,8 +335,7 @@
     "legal": {
       "terms": "Termos de Serviço",
       "privacy": "Política de Privacidade",
-      "keyTerms": "Termos Principais",
-      "smsPolicy": "Política de Privacidade de SMS"
+      "keyTerms": "Termos Principais"
     },
     "support": "Suporte",
     "careers": "Carreiras"
@@ -396,10 +389,6 @@
     "legalKeyTerms": {
       "title": "Resumo dos Termos Principais — UBOSS LLC",
       "description": "Um resumo em linguagem simples dos termos mais importantes dos nossos acordos."
-    },
-    "legalSmsPolicy": {
-      "title": "Política de Privacidade de SMS — UBOSS LLC",
-      "description": "Política de Privacidade de SMS da UBOSS LLC — como tratamos as comunicações por SMS e protegemos suas informações."
     }
   }
 }
