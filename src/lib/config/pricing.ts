@@ -159,7 +159,11 @@ export const tiers: PricingTier[] = [
 
 export const enterprise: EnterpriseTier = {
 	id: 'enterprise',
-	name: { en: 'Business & Enterprise', es: 'Business & Enterprise', 'pt-BR': 'Business & Enterprise' },
+	name: {
+		en: 'Business & Enterprise',
+		es: 'Business & Enterprise',
+		'pt-BR': 'Business & Enterprise'
+	},
 	price: null,
 	description: {
 		en: 'Built for businesses ready to scale',
@@ -174,7 +178,8 @@ export const setupFee: SetupFee = {
 	display_text: {
 		en: 'One-time setup fee based on project complexity — discussed during your free consultation.',
 		es: 'Tarifa única de configuración según la complejidad — se discute en tu consulta gratuita.',
-		'pt-BR': 'Taxa única de configuração conforme a complexidade — discutida na sua consulta gratuita.'
+		'pt-BR':
+			'Taxa única de configuração conforme a complexidade — discutida na sua consulta gratuita.'
 	},
 	visible: true
 };

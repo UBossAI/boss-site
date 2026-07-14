@@ -2,7 +2,18 @@ import type { RequestHandler } from './$types.js';
 
 const siteUrl = 'https://uboss.ai';
 const locales = ['en', 'es', 'pt-BR'];
-const pages = ['', 'about', 'services', 'pricing', 'contact', 'support', 'careers', 'legal/terms', 'legal/privacy', 'legal/key-terms'];
+const pages = [
+	'',
+	'about',
+	'services',
+	'pricing',
+	'contact',
+	'support',
+	'careers',
+	'legal/terms',
+	'legal/privacy',
+	'legal/key-terms'
+];
 
 const priorities: Record<string, string> = {
 	'': '1.0',

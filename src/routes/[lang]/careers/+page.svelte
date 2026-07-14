@@ -1,14 +1,21 @@
 <script lang="ts">
 	import SEOHead from '$lib/components/SEOHead.svelte';
 	import type { PageData } from './$types.js';
-	interface Props { data: PageData }
+	interface Props {
+		data: PageData;
+	}
 	let { data }: Props = $props();
 	const t = $derived(data.t as Record<string, unknown>);
 	const c = $derived(t.careers as Record<string, string>);
 	const seo = $derived(t.seo as Record<string, Record<string, string>>);
 </script>
 
-<SEOHead title={seo.careers.title} description={seo.careers.description} lang={data.lang} page="careers" />
+<SEOHead
+	title={seo.careers.title}
+	description={seo.careers.description}
+	lang={data.lang}
+	page="careers"
+/>
 
 <div class="bg-surface-light min-h-screen">
 	<section class="bg-black text-white py-20 lg:py-24">

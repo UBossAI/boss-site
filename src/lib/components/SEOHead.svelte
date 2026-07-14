@@ -7,8 +7,13 @@
 		ogImage?: string;
 	}
 
-	let { title, description, lang, page = '', ogImage = '/assets/uboss-logo-light.png' }: Props =
-		$props();
+	let {
+		title,
+		description,
+		lang,
+		page = '',
+		ogImage = '/assets/uboss-logo-light.png'
+	}: Props = $props();
 
 	const siteUrl = 'https://uboss.ai';
 	const canonicalUrl = $derived(page ? `${siteUrl}/${lang}/${page}` : `${siteUrl}/${lang}`);
@@ -62,7 +67,10 @@
 	<meta property="og:image" content="{siteUrl}{ogImage}" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
-	<meta property="og:locale" content={lang === 'pt-BR' ? 'pt_BR' : lang === 'es' ? 'es_US' : 'en_US'} />
+	<meta
+		property="og:locale"
+		content={lang === 'pt-BR' ? 'pt_BR' : lang === 'es' ? 'es_US' : 'en_US'}
+	/>
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image" />
@@ -70,6 +78,8 @@
 	<meta name="twitter:description" content={description} />
 	<meta name="twitter:image" content="{siteUrl}{ogImage}" />
 
-	<!-- JSON-LD -->
-	{@html `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`}
+	<!-- JSON-LD: static object below, not user input; the escaped slash avoids the HTML tokenizer
+	     misreading </script> mid-string as the component's own closing tag -->
+	<!-- eslint-disable-next-line svelte/no-at-html-tags, no-useless-escape -->
+	{@html `<script type="application/ld+json">${JSON.stringify(jsonLd)}<\/script>`}
 </svelte:head>

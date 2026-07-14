@@ -2,7 +2,9 @@
 	import SEOHead from '$lib/components/SEOHead.svelte';
 	import type { PageData } from './$types.js';
 
-	interface Props { data: PageData }
+	interface Props {
+		data: PageData;
+	}
 	let { data }: Props = $props();
 	const t = $derived(data.t as Record<string, unknown>);
 	const c = $derived(t.contact as Record<string, unknown>);
@@ -23,7 +25,6 @@
 
 		status = 'sending';
 		try {
-			const res = await fetch(`mailto:support@uboss.ai?subject=Contact from ${name}&body=${encodeURIComponent(message)}`);
 			// For now, open mailto directly
 			window.location.href = `mailto:support@uboss.ai?subject=Contact%20Form%20-%20${encodeURIComponent(name)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nPreferred Language: ${language}\n\n${message}`)}`;
 			status = 'success';
@@ -33,7 +34,12 @@
 	}
 </script>
 
-<SEOHead title={seo.contact.title} description={seo.contact.description} lang={data.lang} page="contact" />
+<SEOHead
+	title={seo.contact.title}
+	description={seo.contact.description}
+	lang={data.lang}
+	page="contact"
+/>
 
 <div class="bg-surface-light">
 	<section class="bg-black text-white py-20 lg:py-24">
@@ -54,8 +60,19 @@
 			<div class="space-y-6">
 				<div class="card p-6">
 					<div class="text-teal mb-3">
-						<svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-							<path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-7 h-7"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							stroke-width="1.5"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+							/>
 						</svg>
 					</div>
 					<h2 class="font-semibold text-near-black mb-1">{c.emailLabel as string}</h2>
@@ -66,8 +83,19 @@
 
 				<div class="card p-6">
 					<div class="text-teal mb-3">
-						<svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-							<path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-7 h-7"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							stroke-width="1.5"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+							/>
 						</svg>
 					</div>
 					<h2 class="font-semibold text-near-black mb-1">{c.book15Label as string}</h2>
@@ -84,8 +112,19 @@
 
 				<div class="card p-6">
 					<div class="text-teal mb-3">
-						<svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-							<path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-7 h-7"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							stroke-width="1.5"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+							/>
 						</svg>
 					</div>
 					<h2 class="font-semibold text-near-black mb-1">{c.book60Label as string}</h2>
@@ -108,8 +147,19 @@
 				{#if status === 'success'}
 					<div class="text-center py-10">
 						<div class="text-teal mb-4">
-							<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="w-12 h-12 mx-auto"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="1.5"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+								/>
 							</svg>
 						</div>
 						<h3 class="font-semibold text-near-black text-lg mb-2">{form.successTitle}</h3>
@@ -128,7 +178,9 @@
 						/>
 
 						<div>
-							<label for="name" class="block text-sm font-medium text-near-black mb-1.5">{form.name}</label>
+							<label for="name" class="block text-sm font-medium text-near-black mb-1.5"
+								>{form.name}</label
+							>
 							<input
 								id="name"
 								type="text"
@@ -141,7 +193,9 @@
 						</div>
 
 						<div>
-							<label for="email" class="block text-sm font-medium text-near-black mb-1.5">{form.email}</label>
+							<label for="email" class="block text-sm font-medium text-near-black mb-1.5"
+								>{form.email}</label
+							>
 							<input
 								id="email"
 								type="email"
@@ -154,7 +208,9 @@
 						</div>
 
 						<div>
-							<label for="phone" class="block text-sm font-medium text-near-black mb-1.5">{form.phone}</label>
+							<label for="phone" class="block text-sm font-medium text-near-black mb-1.5"
+								>{form.phone}</label
+							>
 							<input
 								id="phone"
 								type="tel"
@@ -166,7 +222,9 @@
 						</div>
 
 						<div>
-							<label for="language" class="block text-sm font-medium text-near-black mb-1.5">{form.language}</label>
+							<label for="language" class="block text-sm font-medium text-near-black mb-1.5"
+								>{form.language}</label
+							>
 							<select
 								id="language"
 								bind:value={language}
@@ -179,7 +237,9 @@
 						</div>
 
 						<div>
-							<label for="message" class="block text-sm font-medium text-near-black mb-1.5">{form.message}</label>
+							<label for="message" class="block text-sm font-medium text-near-black mb-1.5"
+								>{form.message}</label
+							>
 							<textarea
 								id="message"
 								bind:value={message}

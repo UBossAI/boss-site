@@ -5,8 +5,13 @@
 	import type { Locale } from '$lib/utils/i18n.js';
 	import type { PageData } from './$types.js';
 
-	interface FaqItem { question: string; answer: string }
-	interface Props { data: PageData }
+	interface FaqItem {
+		question: string;
+		answer: string;
+	}
+	interface Props {
+		data: PageData;
+	}
 	let { data }: Props = $props();
 	const t = $derived(data.t as Record<string, unknown>);
 	const p = $derived(t.pricing as Record<string, unknown>);
@@ -22,7 +27,12 @@
 	}
 </script>
 
-<SEOHead title={seo.pricing.title} description={seo.pricing.description} lang={data.lang} page="pricing" />
+<SEOHead
+	title={seo.pricing.title}
+	description={seo.pricing.description}
+	lang={data.lang}
+	page="pricing"
+/>
 
 <div class="bg-surface-light">
 	<section class="bg-black text-white py-20 lg:py-24">
@@ -56,7 +66,11 @@
 							</div>
 						{/if}
 
-						<h2 class="text-lg font-semibold {tier.highlighted ? 'text-white' : 'text-near-black'} mb-1">
+						<h2
+							class="text-lg font-semibold {tier.highlighted
+								? 'text-white'
+								: 'text-near-black'} mb-1"
+						>
 							{tier.name[locale] ?? tier.name.en}
 						</h2>
 						<p class="text-sm {tier.highlighted ? 'text-white/60' : 'text-gray-mid'} mb-5">
@@ -64,17 +78,34 @@
 						</p>
 
 						<div class="mb-6">
-							<span class="text-4xl font-bold {tier.highlighted ? 'text-white' : 'text-near-black'}">
+							<span
+								class="text-4xl font-bold {tier.highlighted ? 'text-white' : 'text-near-black'}"
+							>
 								{formatPrice(tier.price ?? 0)}
 							</span>
-							<span class="{tier.highlighted ? 'text-white/50' : 'text-gray-mid'} text-sm">{p.monthly as string}</span>
+							<span class="{tier.highlighted ? 'text-white/50' : 'text-gray-mid'} text-sm"
+								>{p.monthly as string}</span
+							>
 						</div>
 
 						<ul class="flex-1 space-y-2.5 mb-7">
-							{#each (tier.features[locale] ?? tier.features.en) as feature}
-								<li class="flex items-start gap-2.5 text-sm {tier.highlighted ? 'text-white/80' : 'text-gray-mid'}">
-									<svg class="w-4 h-4 text-teal flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+							{#each tier.features[locale] ?? tier.features.en as feature}
+								<li
+									class="flex items-start gap-2.5 text-sm {tier.highlighted
+										? 'text-white/80'
+										: 'text-gray-mid'}"
+								>
+									<svg
+										class="w-4 h-4 text-teal flex-shrink-0 mt-0.5"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 20 20"
+										fill="currentColor"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"
+										/>
 									</svg>
 									{feature}
 								</li>
@@ -92,10 +123,16 @@
 			</div>
 
 			<!-- Enterprise -->
-			<div class="flex flex-col sm:flex-row items-center justify-between gap-4 p-6 rounded-2xl border border-silver bg-white mb-6">
+			<div
+				class="flex flex-col sm:flex-row items-center justify-between gap-4 p-6 rounded-2xl border border-silver bg-white mb-6"
+			>
 				<div>
-					<h3 class="font-semibold text-near-black">{enterprise.name[locale] ?? enterprise.name.en}</h3>
-					<p class="text-gray-mid text-sm">{enterprise.description[locale] ?? enterprise.description.en}</p>
+					<h3 class="font-semibold text-near-black">
+						{enterprise.name[locale] ?? enterprise.name.en}
+					</h3>
+					<p class="text-gray-mid text-sm">
+						{enterprise.description[locale] ?? enterprise.description.en}
+					</p>
 				</div>
 				<a href="/{data.lang}/contact" class="btn-primary flex-shrink-0">
 					{enterprise.cta[locale] ?? enterprise.cta.en}
@@ -105,16 +142,27 @@
 			<!-- Setup fee note -->
 			<div class="rounded-xl bg-teal/5 border border-teal/20 p-5">
 				<div class="flex items-start gap-3">
-					<svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-						<path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+					<svg
+						class="w-5 h-5 text-teal flex-shrink-0 mt-0.5"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 20 20"
+						fill="currentColor"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+							clip-rule="evenodd"
+						/>
 					</svg>
-					<p class="text-gray-mid text-sm">{setupFee.display_text[locale] ?? setupFee.display_text.en}</p>
+					<p class="text-gray-mid text-sm">
+						{setupFee.display_text[locale] ?? setupFee.display_text.en}
+					</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<PricingComparisonSection lang={data.lang} t={data.t as Record<string, unknown>} />
+	<PricingComparisonSection t={data.t as Record<string, unknown>} />
 
 	<!-- FAQ -->
 	<section class="bg-white py-16 lg:py-20">
@@ -132,8 +180,14 @@
 						>
 							<span class="font-medium text-near-black text-sm pr-4">{item.question}</span>
 							<svg
-								class="w-4 h-4 text-teal flex-shrink-0 transition-transform {openFaq === i ? 'rotate-180' : ''}"
-								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+								class="w-4 h-4 text-teal flex-shrink-0 transition-transform {openFaq === i
+									? 'rotate-180'
+									: ''}"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
 							>
 								<polyline points="6 9 12 15 18 9" />
 							</svg>

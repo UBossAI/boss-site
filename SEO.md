@@ -17,6 +17,48 @@
 
 ## English Keywords
 
+### Umbrella / Positioning Keywords
+> Broad phrases tied to the core messaging angles (co-pilot, 24/7, consolidation, AI visibility, professional ops). Weave into hero copy, "Why UBoss," and Services headings — not just body text. See `CONTENT_STRATEGY.md` for the full copy these support.
+
+| Phrase | Angle | Target Page |
+|--------|-------|-------------|
+| business co-pilot for trades | Co-Pilot | Homepage, About |
+| AI co-pilot for small business | Co-Pilot | Homepage |
+| automate my service business | Automation | Homepage, Services |
+| 24/7 business automation | 24/7 | Homepage |
+| run your business while you sleep | 24/7 | Homepage, Services |
+| consolidate your business tools | Consolidation | Services |
+| all-in-one automation for trades | Consolidation | Services |
+| digital presence for trades businesses | Digital Presence | Homepage, About |
+| AI visibility for local business | AI Visibility | Homepage, Services |
+| show up in ChatGPT search results | AI Visibility | Services, Blog |
+| scale without hiring | Scaling | Pricing, Services |
+| grow your business without more staff | Scaling | Pricing |
+| professional invoicing for contractors | Professional Ops | Services |
+| itemized estimates for trades businesses | Professional Ops | Services, Blog |
+| look more corporate as a small business | Professional Ops | Blog |
+
+### Question-Based Keywords (FAQ / Blog)
+> Grouped by messaging angle. These map directly to the FAQ and blog content in `CONTENT_STRATEGY.md`.
+
+| Theme | Question |
+|-------|----------|
+| Co-Pilot | what is a business co-pilot |
+| Co-Pilot | can AI run my business operations |
+| Co-Pilot | how does AI help small business owners |
+| CRM Alternative | why does my CRM feel like more work than it saves |
+| CRM Alternative | best CRM alternative for small trades business |
+| CRM Alternative | do I need a CRM for my small business |
+| 24/7 | can my business run itself overnight |
+| 24/7 | how to never miss a lead after hours |
+| AI Visibility | how do I show up when people ask ChatGPT for a [trade] near me |
+| AI Visibility | what is AI search optimization |
+| AI Visibility | how to make my business visible to AI assistants |
+| Professional Ops | how to make itemized estimates for my business |
+| Professional Ops | how to look more professional as a small contractor |
+| Scaling | how to scale a service business without hiring more staff |
+| Scaling | how many customers can I handle without more employees |
+
 ### Primary (High Priority)
 | Keyword | Target Page |
 |---------|-------------|
@@ -129,6 +171,18 @@
 | ferramentas para fazer seu negócio crescer |
 | automação de formulários para empreiteiros |
 | painel de dados para meu negócio |
+
+## AI Visibility / GEO (Generative Engine Optimization) Checklist
+> Goal: make UBoss — and eventually client businesses — discoverable and accurately represented when people ask an AI assistant (ChatGPT, Perplexity, Claude, Gemini) instead of typing into Google. This is implementation work (do during a coding pass), distinct from the keyword/copy work above.
+
+- [ ] `FAQPage` JSON-LD on every page with an FAQ section (Homepage, Pricing, Support) — schema copy must match the visible Q&A exactly, no divergent text
+- [ ] Expand `LocalBusiness` JSON-LD below: add `sameAs` once social profiles exist; add `makesOffer` / `hasOfferCatalog` referencing `PRICING.md` tiers
+- [ ] Add `/llms.txt` at site root — plain-text summary of what UBoss does, who it serves, service area, and key facts, formatted for LLM ingestion (emerging convention, cheap to add)
+- [ ] `robots.txt`: explicitly allow known AI crawlers (`GPTBot`, `ClaudeBot`, `Google-Extended`, `PerplexityBot`, `anthropic-ai`) instead of relying on the blanket `Allow: /` — makes the intent explicit and documents the decision
+- [ ] Structure FAQ/blog headings as literal questions (H2/H3) matching how people phrase AI queries — same copy doubles as featured-snippet bait and LLM-citation bait
+- [ ] Front-load the direct answer in the first sentence of every FAQ/blog answer, elaborate after — quotable by both Google snippets and AI assistants
+- [ ] Keep NAP (name, service area, contact) identical across every page, schema block, and directory listing — inconsistency undermines an AI system's confidence in grounding facts about the business
+- [ ] Don't let key facts (pricing tiers, service area, differentiators) hide behind JS-only rendering — already satisfied by the SSR mandate in `CLAUDE.md`, just don't regress it
 
 ## Structured Data (JSON-LD)
 

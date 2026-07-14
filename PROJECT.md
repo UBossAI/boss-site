@@ -14,7 +14,7 @@
 
 ## What UBOSS Does
 
-UBOSS is an AI-as-a-Service (AIaaS) consulting agency that builds custom AI-powered automations for small and medium businesses, specializing in the trades industry (landscaping, cleaning services, contracting, plumbing, auto body, property management, restaurants, etc.).
+UBOSS is an AI-as-a-Service (AIaaS) consulting agency that builds custom AI-powered automations for small and medium businesses, specializing in the trades industry (landscaping, cleaning services, contracting, plumbing, auto body, property management, caterers and food entrepreneurs, etc.).
 
 ### Value Proposition
 - We automate repetitive business operations using AI
@@ -37,6 +37,19 @@ UBOSS is an AI-as-a-Service (AIaaS) consulting agency that builds custom AI-powe
 - Local and personal — not a faceless SaaS
 - Full-stack AI infrastructure (not just reselling ChatGPT)
 - One-time setup + subscription model — predictable costs for tenants
+
+### Explicitly Out of Scope (For Now)
+- **Full-service restaurants** (dine-in, kitchen operations) — heavily regulated and typically
+  expect POS/online-ordering as core needs, which is out of scope below. Food-vertical marketing
+  targets caterers and food entrepreneurs instead (custom orders, events, invoicing — a natural
+  fit for the existing automation stack).
+- **POS system installation or integration** (Toast, Square, Clover, etc.) — not offered.
+- **Online ordering / delivery platform integration** (Uber Eats, Grubhub, DoorDash, etc.) — not
+  offered; too much lift for the current stage.
+- **Online payments are still on the roadmap** — Stripe integration is planned (see Tech Stack:
+  "scaffold but do not implement yet"). Don't conflate this with the POS/delivery items above —
+  Stripe payments are a "yes, later" item; POS and delivery-platform integrations are a "not
+  planned" item.
 
 ## Website Purpose
 
@@ -141,7 +154,7 @@ Serving Greater Boston, MA
 
 ## Content Tone
 
-- **English:** Professional but approachable. Think "smart friend who happens to be an engineer." Avoid jargon. Trades people should understand every word.
+- **English:** Casual and friendly first, professional second. Think "the guy at the counter who actually explains things to you," not a tech vendor. Lead with the pain point in plain, physical terms (missed calls, backed-up paperwork, working nights to catch up), then the fix — so a reader nods along before they see the solution. Avoid jargon words like "workflow," "automation," "integration," "AI-powered" in headlines and CTAs; use them sparingly in body copy where SEO needs them, never as the main hook. Trades people — including those not especially comfortable with computers — should understand every word without re-reading it.
 - **Spanish:** Warm, conversational, Central American/Mexican register. Use "tú" not "usted" for approachability. Think how a trusted colleague would explain tech — "Te ayudamos a automatizar tu negocio con inteligencia artificial." NOT Spain Castilian.
 - **Portuguese (BR):** Warm, conversational Brazilian Portuguese. Same approachable energy. "Nós ajudamos a automatizar o seu negócio com inteligência artificial." Use Brazilian expressions and phrasing, not European Portuguese.
 

@@ -1,7 +1,9 @@
 <script lang="ts">
 	import SEOHead from '$lib/components/SEOHead.svelte';
 	import type { PageData } from './$types.js';
-	interface Props { data: PageData }
+	interface Props {
+		data: PageData;
+	}
 	let { data }: Props = $props();
 	const t = $derived(data.t as Record<string, unknown>);
 	const s = $derived(t.services as Record<string, unknown>);
@@ -40,7 +42,12 @@
 	];
 </script>
 
-<SEOHead title={seo.services.title} description={seo.services.description} lang={data.lang} page="services" />
+<SEOHead
+	title={seo.services.title}
+	description={seo.services.description}
+	lang={data.lang}
+	page="services"
+/>
 
 <div class="bg-surface-light">
 	<section class="bg-black text-white py-20 lg:py-24">
@@ -62,16 +69,26 @@
 				<div class="card p-8 {i % 2 === 1 ? 'bg-surface-alt border-surface-alt' : ''}">
 					<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
 						<div>
+							<!-- eslint-disable-next-line svelte/no-at-html-tags -- static hardcoded SVG constant, not user input -->
 							<div class="text-teal mb-4">{@html card.icon}</div>
 							<h2 class="text-xl font-semibold text-near-black mb-3">{service.title as string}</h2>
 							<p class="text-gray-mid leading-relaxed">{service.description as string}</p>
 						</div>
 						<div>
 							<ul class="space-y-2.5 mb-6">
-								{#each service.features as feature}
+								{#each service.features as string[] as feature}
 									<li class="flex items-center gap-2.5 text-sm text-gray-mid">
-										<svg class="w-4 h-4 text-teal flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-											<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+										<svg
+											class="w-4 h-4 text-teal flex-shrink-0"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 20 20"
+											fill="currentColor"
+										>
+											<path
+												fill-rule="evenodd"
+												d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+												clip-rule="evenodd"
+											/>
 										</svg>
 										{feature as string}
 									</li>
