@@ -51,6 +51,7 @@
 					{#each t.industries as industry, i}
 						<li class="flex items-center gap-3 p-3 rounded-lg bg-surface-light">
 							<span class="text-teal flex-shrink-0">
+								<!-- eslint-disable-next-line svelte/no-at-html-tags -- static hardcoded SVG constants above, not user input -->
 								{@html industryIcons[i % 5] ?? industryIcons[0]}
 							</span>
 							<span class="text-near-black text-sm font-medium">{industry}</span>

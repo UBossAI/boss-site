@@ -1,394 +1,394 @@
 {
-  "meta": {
-    "siteName": "UBOSS",
-    "siteDescription": "Automação com inteligência artificial para pequenos negócios na Grande Boston, MA"
-  },
-  "nav": {
-    "home": "Início",
-    "about": "Sobre",
-    "services": "Serviços",
-    "pricing": "Preços",
-    "contact": "Contato",
-    "bookCta": "Agende sua consulta grátis",
-    "openMenu": "Abrir menu",
-    "closeMenu": "Fechar menu",
-    "selectLanguage": "Selecionar idioma"
-  },
-  "hero": {
-    "headline": "Inteligência Artificial que trabalha tão duro quanto você",
-    "subheadline": "Automatizamos os processos do seu negócio na Grande Boston para que você possa focar no que realmente importa.",
-    "cta": "Agende sua consulta grátis",
-    "ctaSubtext": "Sem compromisso. Ligação de 15 minutos."
-  },
-  "whatWeDo": {
-    "title": "O que fazemos",
-    "subtitle": "Automação com IA para pequenas empresas — feita do jeito que você realmente trabalha.",
-    "automation": {
-      "title": "Automação de Processos",
-      "description": "Automatize formulários, agendamentos, follow-ups e muito mais. Seu negócio funciona 24/7 mesmo quando você está trabalhando."
-    },
-    "assistants": {
-      "title": "Assistentes com IA",
-      "description": "Bots de WhatsApp, respostas automáticas de email e assistentes que atendem seus clientes a qualquer hora do dia."
-    },
-    "dashboards": {
-      "title": "Painéis de Dados",
-      "description": "Veja os dados do seu negócio em tempo real — trabalhos, receita, leads e métricas de desempenho em um só lugar."
-    },
-    "integrations": {
-      "title": "Integrações Personalizadas",
-      "description": "Conectamos suas ferramentas existentes para que a informação flua automaticamente — sem copiar e colar entre aplicativos."
-    }
-  },
-  "whoWeServe": {
-    "title": "Desenvolvido para negócios como o seu",
-    "subtitle": "Somos especializados em serviços e construção — os negócios que mantêm a Grande Boston funcionando.",
-    "industries": [
-      "Paisagismo e jardinagem",
-      "Serviços de limpeza",
-      "Empreiteiros gerais",
-      "Encanamento e HVAC",
-      "Funilaria e mecânica",
-      "Administração de imóveis",
-      "Restaurantes e alimentação",
-      "E muito mais..."
-    ],
-    "cta": "Veja como ajudamos seu setor"
-  },
-  "whyUboss": {
-    "title": "Por que a UBOSS?",
-    "subtitle": "Não somos uma empresa de tecnologia genérica. Somos locais, trilíngues e feitos para o setor de serviços.",
-    "reasons": [
-      {
-        "title": "Trilíngue — EN / ES / PT-BR",
-        "description": "Atendemos as comunidades empresariais de fala inglesa, espanhola e portuguesa brasileira da Grande Boston — sem barreiras de idioma."
-      },
-      {
-        "title": "Local e Pessoal",
-        "description": "Somos da Grande Boston. Relacionamentos cara a cara, não apenas filas de suporte."
-      },
-      {
-        "title": "Focado em Serviços",
-        "description": "Entendemos como trabalham paisagistas, faxineiros e empreiteiros. Nossas automações são feitas para a realidade do trabalho manual."
-      },
-      {
-        "title": "IA de Verdade",
-        "description": "Não revendemos apenas o ChatGPT. Construímos infraestrutura real — workflows, integrações e painéis de dados sob medida para o seu negócio."
-      }
-    ]
-  },
-  "pricingPreview": {
-    "title": "Preços simples e previsíveis",
-    "subtitle": "Taxa única de configuração + assinatura mensal. Sem custos ocultos.",
-    "monthly": "/mês",
-    "mostPopular": "Mais Popular",
-    "cta": "Agende uma ligação para encontrar seu plano",
-    "setupFeeNote": "Taxa única de configuração conforme a complexidade — discutida na sua consulta gratuita.",
-    "enterprise": {
-      "title": "Corporativo",
-      "description": "Soluções sob medida para operações maiores",
-      "cta": "Vamos Conversar"
-    },
-    "viewFullPricing": "Ver detalhes completos de preços"
-  },
-  "contact": {
-    "title": "Pronto para automatizar seu negócio?",
-    "subtitle": "Agende uma consulta grátis ou mande uma mensagem. Respondemos em até 24 horas.",
-    "emailLabel": "Nos escreva",
-    "email": "support@uboss.ai",
-    "book15Label": "Ligação de 15 Minutos",
-    "book15Description": "Uma apresentação rápida — nos conte sobre seu negócio",
-    "book60Label": "Sessão de Estratégia",
-    "book60Description": "Uma análise profunda das suas necessidades de automação",
-    "form": {
-      "title": "Mande uma mensagem",
-      "name": "Nome completo",
-      "namePlaceholder": "João Silva",
-      "email": "E-mail",
-      "emailPlaceholder": "joao@seunegocio.com",
-      "phone": "Telefone",
-      "phonePlaceholder": "(617) 555-0100",
-      "message": "Mensagem",
-      "messagePlaceholder": "Conte-nos sobre seu negócio e o que você gostaria de automatizar...",
-      "language": "Idioma preferido",
-      "languageEn": "Inglês",
-      "languageEs": "Espanhol",
-      "languagePt": "Português (Brasileiro)",
-      "submit": "Enviar mensagem",
-      "sending": "Enviando...",
-      "successTitle": "Mensagem enviada!",
-      "successMessage": "Obrigado pelo contato. Vamos responder em até 24 horas.",
-      "errorMessage": "Algo deu errado. Por favor nos escreva diretamente em support@uboss.ai."
-    }
-  },
-  "testimonials": {
-    "title": "O que nossos clientes dizem",
-    "subtitle": "Negócios reais, resultados reais.",
-    "items": [
-      {
-        "name": "Carlos M.",
-        "business": "Negócio de Paisagismo, Framingham MA",
-        "quote": "A UBOSS automatizou todo o nosso processo de recebimento de trabalhos. O que antes me tomava 2 horas agora acontece sozinho. Posso focar no trabalho de verdade."
-      },
-      {
-        "name": "Ana S.",
-        "business": "Serviço de Limpeza, Somerville MA",
-        "quote": "Falaram conosco em português e entenderam nosso negócio desde o primeiro dia. A automação do WhatsApp sozinha nos economiza muitas horas toda semana."
-      },
-      {
-        "name": "Mike T.",
-        "business": "Empreiteiro Geral, Boston MA",
-        "quote": "O painel que construíram me dá uma visão em tempo real de cada trabalho. Finalmente sei para onde vai meu dinheiro."
-      }
-    ]
-  },
-  "about": {
-    "title": "Sobre a UBOSS",
-    "subtitle": "Tornando a inteligência artificial acessível para os negócios que sustentam nossas comunidades.",
-    "missionLabel": "Nossa Missão",
-    "mission": "Tornar a automação com IA de nível empresarial acessível para cada pequeno negócio — independentemente do idioma, formação técnica ou setor.",
-    "founderLabel": "História do Fundador",
-    "founderStory": "A UBOSS foi fundada por Robert, um engenheiro de software salvadorenho-americano de primeira geração criado na Grande Boston. Crescendo observando seu pai trabalhar longas horas como pedreiro nos serviços locais, ele desenvolveu um profundo apreço pelos pequenos negócios administrados por imigrantes e famílias trabalhadoras. Como engenheiro sênior bilíngue e pai ele mesmo, viu em primeira mão como essas operações muitas vezes ficavam para trás com a grande tecnologia — sem as ferramentas para obter informações reais e crescer.",
-    "visionLabel": "A Visão",
-    "vision": "Um futuro onde cada negócio de serviços na Grande Boston tenha acesso às mesmas ferramentas de IA que as grandes empresas usam — a um preço que faça sentido, com suporte no seu idioma.",
-    "pegasusLabel": "A História do Pegaso",
-    "pegasusStory": "Nossa marca leva o nome de Pégaso — o cavalo alado da mitologia. Como Pégaso, acreditamos no poder de combinar força bruta com a capacidade de voar. Nossa infraestrutura roda em um servidor que carinhosamente chamamos de Pégaso, o cavalo de batalha que impulsiona tudo que construímos para nossos clientes.",
-    "founderName": "Robert Gutierrez",
-    "founderSiteText": "Saiba mais sobre Robert em Robg.dev",
-    "founderSiteUrl": "https://robg.dev",
-    "imageAlt": "Robert Gutierrez, Fundador da UBOSS LLC",
-    "founderStory2": "É por isso que a UBOSS preenche essa lacuna com tecnologia prática e acessível. Assim como um artesão habilidoso entrega uma solução sob medida para cada trabalho, desenvolvemos automação para negócios de diversas formas e fornecemos soluções internas que fazem mais sentido para cada empresa no momento presente. Com ferramentas de desenvolvimento personalizadas e painéis customizados, entregamos informações claras sobre as operações do dia a dia — ajudando negócios de serviços a crescer, escalar e prosperar independentemente do idioma ou formação técnica."
-  },
-  "services": {
-    "title": "Nossos Serviços",
-    "subtitle": "Automações com IA construídas especificamente para o seu negócio.",
-    "automation": {
-      "title": "Automação de Processos",
-      "description": "Automatize seus processos mais demorados — formulários de clientes, agendamento de trabalhos, e-mails de follow-up, gatilhos de fatura e muito mais. Mapeamos seu fluxo de trabalho atual e substituímos etapas manuais por automação inteligente.",
-      "features": [
-        "Recepção de clientes e captura de leads",
-        "Agendamento automático de trabalhos",
-        "Sequências de follow-up",
-        "Gatilhos de fatura"
-      ],
-      "cta": "Saiba mais"
-    },
-    "assistants": {
-      "title": "Assistentes com IA",
-      "description": "Implante assistentes de IA no WhatsApp, e-mail e SMS que respondem perguntas de clientes, qualificam leads e agendam compromissos — 24 horas por dia, 7 dias por semana.",
-      "features": [
-        "Bot de WhatsApp (em breve)",
-        "Auto-resposta de e-mail",
-        "Qualificação de leads",
-        "Agendamento de compromissos"
-      ],
-      "cta": "Saiba mais"
-    },
-    "dashboards": {
-      "title": "Painéis de Dados e Análises",
-      "description": "Veja todo o seu negócio de relance. Construímos painéis personalizados que puxam dados de todas as suas ferramentas e os apresentam de forma clara e acionável.",
-      "features": [
-        "Acompanhamento de trabalhos em tempo real",
-        "Visões de receita e despesas",
-        "Visibilidade do pipeline de leads",
-        "Integração com Google Looker"
-      ],
-      "cta": "Saiba mais"
-    },
-    "integrations": {
-      "title": "Integrações Personalizadas",
-      "description": "Já usa ferramentas que você gosta? As conectamos para que a informação flua automaticamente — sem mais copiar e colar entre aplicativos.",
-      "features": [
-        "Integração com QuickBooks",
-        "Google Workspace",
-        "Conexões com CRM",
-        "Trabalho de API personalizado"
-      ],
-      "cta": "Saiba mais"
-    },
-    "forms": {
-      "title": "Criação de Formulários Digitais",
-      "description": "Substitua formulários de papel e PDFs desatualizados por formulários digitais inteligentes que alimentam diretamente seus fluxos de automação.",
-      "features": [
-        "Formulários com sua marca",
-        "Roteamento automático de dados",
-        "Coleta de assinaturas",
-        "Otimizados para celular"
-      ],
-      "cta": "Saiba mais"
-    },
-    "notifications": {
-      "title": "Notificações por SMS e E-mail",
-      "description": "Mantenha sua equipe e clientes informados automaticamente. Envie atualizações de trabalhos, lembretes e confirmações sem mover um dedo.",
-      "features": [
-        "Atualizações de status de trabalhos",
-        "Lembretes de compromissos",
-        "Confirmações de pagamento",
-        "Notificações para a equipe"
-      ],
-      "cta": "Saiba mais"
-    },
-    "consultationCta": "Agende uma consulta gratuita para falar sobre suas necessidades"
-  },
-  "pricing": {
-    "title": "Preços",
-    "subtitle": "Preços transparentes e previsíveis para cada etapa do seu negócio.",
-    "monthly": "/mês",
-    "mostPopular": "Mais Popular",
-    "setupFeeTitle": "Taxa Única de Configuração",
-    "setupFeeNote": "Taxa única de configuração conforme a complexidade — discutida na sua consulta gratuita.",
-    "enterprise": {
-      "title": "Corporativo",
-      "description": "Soluções sob medida para operações maiores",
-      "cta": "Vamos Conversar"
-    },
-    "cta": "Agende uma ligação para encontrar seu plano",
-    "faq": [
-      {
-        "question": "O que está incluído na assinatura mensal?",
-        "answer": "Sua assinatura mensal cobre o gerenciamento, monitoramento e otimização contínuos das suas automações. Mantemos tudo funcionando, resolvemos problemas e fazemos ajustes conforme seu negócio evolui."
-      },
-      {
-        "question": "O que é a taxa única de configuração?",
-        "answer": "A taxa de configuração cobre a descoberta inicial, design e construção das suas automações personalizadas. O custo depende da complexidade — discutimos na sua consulta gratuita antes de qualquer compromisso."
-      },
-      {
-        "question": "Tem contrato ou compromisso de longo prazo?",
-        "answer": "Sem contratos de longo prazo. Nossas assinaturas são mês a mês. Acreditamos em conquistar seu negócio todos os meses."
-      },
-      {
-        "question": "Posso começar com uma automação e adicionar mais depois?",
-        "answer": "Com certeza. A maioria dos nossos clientes começa com o plano Inicial para automatizar um processo chave, e depois faz upgrade quando vê os resultados."
-      },
-      {
-        "question": "Oferecem suporte em português?",
-        "answer": "Sim — oferecemos suporte completo em inglês, espanhol (registro centro-americano/mexicano) e português brasileiro."
-      },
-      {
-        "question": "Quanto tempo leva a configuração?",
-        "answer": "A maioria das automações Iniciais fica pronta em 1-2 semanas. Implementações Profissionais e Empresariais mais complexas geralmente levam 2-4 semanas dependendo das integrações."
-      }
-    ],
-    "comparisonTitle": "O que você está realmente pagando?",
-    "comparisonBody1": "A maioria dos negócios em crescimento não precisa de apenas uma pessoa — precisa de alguém para os dados, alguém para atender chamadas e alguém para coordenar operações. São três contratações. Três salários. Três fontes de erros e ausências.",
-    "comparisonBody2": "Cada um desses funcionários custaria ao seu negócio mais de $25,000 por ano. UBoss combina as três funções em um único sistema — e nunca falha.",
-    "comparisonBanner": "UBoss trabalha 24/7 — 365 dias por ano, incluindo feriados. Sem dias de doença. Sem erros humanos. Sempre disponível.",
-    "comparisonPartTime": "Meio período",
-    "comparisonFullTime": "Tempo integral",
-    "comparisonHoursHeader": "Horas/Semana",
-    "comparisonMonthlyHeader": "Mensal",
-    "comparisonAnnualHeader": "Anual",
-    "comparisonTable1Header": "Assistente de Dados — $17/hr",
-    "comparisonTable2Header": "Secretária / Recepcionista — $20/hr",
-    "comparisonTable3Header": "Secretária Administrativa — $25/hr",
-    "comparisonDisclaimer": "† UBoss opera 24/7 incluindo fins de semana e feriados. Janelas de manutenção programadas podem ocorrer mensalmente — os clientes são notificados com antecedência. As estimativas de taxa horária são baseadas em dados do mercado da área de Boston. Os valores mostrados representam taxas conservadoras de nível inicial. Os custos reais do empregador, incluindo impostos sobre folha de pagamento, benefícios e compensação trabalhista, normalmente adicionam 10–25% acima do salário base."
-  },
-  "legal": {
-    "terms": {
-      "title": "Termos de Serviço",
-      "description": "Nosso acordo completo de termos de serviço.",
-      "download": "Baixar Termos de Serviço (PDF)",
-      "viewPdf": "Ver PDF"
-    },
-    "privacy": {
-      "title": "Política de Privacidade",
-      "description": "Como coletamos, usamos e protegemos seus dados.",
-      "download": "Baixar Política de Privacidade (PDF)",
-      "viewPdf": "Ver PDF"
-    },
-    "keyTerms": {
-      "title": "Resumo dos Termos Principais",
-      "description": "Um resumo em linguagem simples dos termos mais importantes.",
-      "download": "Baixar Resumo dos Termos Principais (PDF)",
-      "viewPdf": "Ver PDF"
-    }
-  },
-  "support": {
-    "title": "Suporte",
-    "subtitle": "Estamos aqui para ajudar.",
-    "description": "Tem uma dúvida ou precisa de ajuda com sua automação? Entre em contato e respondemos em até 24 horas.",
-    "emailLabel": "Nos escreva",
-    "email": "support@uboss.ai",
-    "contactLink": "Ou preencha nosso formulário de contato",
-    "faqTitle": "Perguntas Frequentes"
-  },
-  "careers": {
-    "title": "Carreiras",
-    "subtitle": "Construa o futuro da IA para pequenas empresas.",
-    "description": "A UBOSS é uma equipe pequena e em crescimento que constrói infraestrutura de IA real para negócios desatendidos na Grande Boston. Sempre procuramos pessoas talentosas e comprometidas.",
-    "culture": "Valorizamos curiosidade, empatia e capricho no trabalho. Trabalhamos com negócios de serviços — pessoas que se orgulham do seu trabalho — e nos exigimos o mesmo padrão.",
-    "openingsTitle": "Vagas Abertas",
-    "noOpenings": "No momento não temos vagas listadas, mas estamos sempre abertos a ouvir pessoas talentosas.",
-    "emailCta": "Mande suas informações para support@uboss.ai",
-    "emailSubject": "Carreiras — Gostaria de fazer parte da equipe"
-  },
-  "footer": {
-    "tagline": "Inteligência Artificial que trabalha tão duro quanto você",
-    "serving": "Atendendo a Grande Boston, MA",
-    "copyright": "© 2025 UBOSS LLC. Todos os direitos reservados.",
-    "links": {
-      "services": "Serviços",
-      "pricing": "Preços",
-      "about": "Sobre",
-      "contact": "Contato"
-    },
-    "legal": {
-      "terms": "Termos de Serviço",
-      "privacy": "Política de Privacidade",
-      "keyTerms": "Termos Principais"
-    },
-    "support": "Suporte",
-    "careers": "Carreiras"
-  },
-  "chat": {
-    "title": "Fale conosco",
-    "comingSoon": "O chat ao vivo está chegando em breve! Enquanto isso, nos escreva:",
-    "email": "support@uboss.ai",
-    "openWhatsApp": "Mande mensagem pelo WhatsApp",
-    "openTelegram": "Mande mensagem pelo Telegram",
-    "open": "Abrir chat",
-    "close": "Fechar chat"
-  },
-  "seo": {
-    "home": {
-      "title": "UBOSS — Automação com IA para Negócios em Boston",
-      "description": "Automação com inteligência artificial para paisagistas, empreiteiros e pequenas empresas na Grande Boston. Suporte em português, inglês e espanhol."
-    },
-    "about": {
-      "title": "Sobre a UBOSS — Consultoria de IA em Boston | Agência Bilíngue",
-      "description": "A UBOSS é uma agência de consultoria de IA na Grande Boston fundada por um engenheiro bilíngue. Tornamos a IA acessível para negócios de serviços e empresas de imigrantes."
-    },
-    "services": {
-      "title": "Serviços de IA — Automação e Painéis de Dados | UBOSS",
-      "description": "Automação de processos, assistentes com IA, painéis de dados e mais para negócios de serviços em Massachusetts."
-    },
-    "pricing": {
-      "title": "Preços — Planos de Automação com IA | UBOSS",
-      "description": "Preços mensais transparentes para automação com IA. Inicial a partir de $500/mês. Agende uma consulta gratuita."
-    },
-    "contact": {
-      "title": "Contato UBOSS — Agende sua Consulta Grátis em Boston",
-      "description": "Agende uma ligação de 15 minutos ou sessão de estratégia. Atendemos a Grande Boston em inglês, espanhol e português brasileiro."
-    },
-    "support": {
-      "title": "Suporte — UBOSS Automação com IA",
-      "description": "Precisa de ajuda com sua automação UBOSS? Entre em contato em support@uboss.ai."
-    },
-    "careers": {
-      "title": "Carreiras na UBOSS — Junte-se à Nossa Equipe em Boston",
-      "description": "Junte-se à UBOSS e ajude a construir automação com IA para os negócios que impulsionam a Grande Boston."
-    },
-    "legalTerms": {
-      "title": "Termos de Serviço — UBOSS LLC",
-      "description": "Acordo de Termos de Serviço da UBOSS LLC."
-    },
-    "legalPrivacy": {
-      "title": "Política de Privacidade — UBOSS LLC",
-      "description": "Política de Privacidade da UBOSS LLC — como coletamos, usamos e protegemos suas informações."
-    },
-    "legalKeyTerms": {
-      "title": "Resumo dos Termos Principais — UBOSS LLC",
-      "description": "Um resumo em linguagem simples dos termos mais importantes dos nossos acordos."
-    }
-  }
+	"meta": {
+		"siteName": "UBOSS",
+		"siteDescription": "Automação com inteligência artificial para pequenos negócios na Grande Boston, MA"
+	},
+	"nav": {
+		"home": "Início",
+		"about": "Sobre",
+		"services": "Serviços",
+		"pricing": "Preços",
+		"contact": "Contato",
+		"bookCta": "Agende sua consulta grátis",
+		"openMenu": "Abrir menu",
+		"closeMenu": "Fechar menu",
+		"selectLanguage": "Selecionar idioma"
+	},
+	"hero": {
+		"headline": "Inteligência Artificial que trabalha tão duro quanto você",
+		"subheadline": "Automatizamos os processos do seu negócio na Grande Boston para que você possa focar no que realmente importa.",
+		"cta": "Agende sua consulta grátis",
+		"ctaSubtext": "Sem compromisso. Ligação de 15 minutos."
+	},
+	"whatWeDo": {
+		"title": "O que fazemos",
+		"subtitle": "Automação com IA para pequenas empresas — feita do jeito que você realmente trabalha.",
+		"automation": {
+			"title": "Automação de Processos",
+			"description": "Automatize formulários, agendamentos, follow-ups e muito mais. Seu negócio funciona 24/7 mesmo quando você está trabalhando."
+		},
+		"assistants": {
+			"title": "Assistentes com IA",
+			"description": "Bots de WhatsApp, respostas automáticas de email e assistentes que atendem seus clientes a qualquer hora do dia."
+		},
+		"dashboards": {
+			"title": "Painéis de Dados",
+			"description": "Veja os dados do seu negócio em tempo real — trabalhos, receita, leads e métricas de desempenho em um só lugar."
+		},
+		"integrations": {
+			"title": "Integrações Personalizadas",
+			"description": "Conectamos suas ferramentas existentes para que a informação flua automaticamente — sem copiar e colar entre aplicativos."
+		}
+	},
+	"whoWeServe": {
+		"title": "Desenvolvido para negócios como o seu",
+		"subtitle": "Somos especializados em serviços e construção — os negócios que mantêm a Grande Boston funcionando.",
+		"industries": [
+			"Paisagismo e jardinagem",
+			"Serviços de limpeza",
+			"Empreiteiros gerais",
+			"Encanamento e HVAC",
+			"Funilaria e mecânica",
+			"Administração de imóveis",
+			"Restaurantes e alimentação",
+			"E muito mais..."
+		],
+		"cta": "Veja como ajudamos seu setor"
+	},
+	"whyUboss": {
+		"title": "Por que a UBOSS?",
+		"subtitle": "Não somos uma empresa de tecnologia genérica. Somos locais, trilíngues e feitos para o setor de serviços.",
+		"reasons": [
+			{
+				"title": "Trilíngue — EN / ES / PT-BR",
+				"description": "Atendemos as comunidades empresariais de fala inglesa, espanhola e portuguesa brasileira da Grande Boston — sem barreiras de idioma."
+			},
+			{
+				"title": "Local e Pessoal",
+				"description": "Somos da Grande Boston. Relacionamentos cara a cara, não apenas filas de suporte."
+			},
+			{
+				"title": "Focado em Serviços",
+				"description": "Entendemos como trabalham paisagistas, faxineiros e empreiteiros. Nossas automações são feitas para a realidade do trabalho manual."
+			},
+			{
+				"title": "IA de Verdade",
+				"description": "Não revendemos apenas o ChatGPT. Construímos infraestrutura real — workflows, integrações e painéis de dados sob medida para o seu negócio."
+			}
+		]
+	},
+	"pricingPreview": {
+		"title": "Preços simples e previsíveis",
+		"subtitle": "Taxa única de configuração + assinatura mensal. Sem custos ocultos.",
+		"monthly": "/mês",
+		"mostPopular": "Mais Popular",
+		"cta": "Agende uma ligação para encontrar seu plano",
+		"setupFeeNote": "Taxa única de configuração conforme a complexidade — discutida na sua consulta gratuita.",
+		"enterprise": {
+			"title": "Corporativo",
+			"description": "Soluções sob medida para operações maiores",
+			"cta": "Vamos Conversar"
+		},
+		"viewFullPricing": "Ver detalhes completos de preços"
+	},
+	"contact": {
+		"title": "Pronto para automatizar seu negócio?",
+		"subtitle": "Agende uma consulta grátis ou mande uma mensagem. Respondemos em até 24 horas.",
+		"emailLabel": "Nos escreva",
+		"email": "support@uboss.ai",
+		"book15Label": "Ligação de 15 Minutos",
+		"book15Description": "Uma apresentação rápida — nos conte sobre seu negócio",
+		"book60Label": "Sessão de Estratégia",
+		"book60Description": "Uma análise profunda das suas necessidades de automação",
+		"form": {
+			"title": "Mande uma mensagem",
+			"name": "Nome completo",
+			"namePlaceholder": "João Silva",
+			"email": "E-mail",
+			"emailPlaceholder": "joao@seunegocio.com",
+			"phone": "Telefone",
+			"phonePlaceholder": "(617) 555-0100",
+			"message": "Mensagem",
+			"messagePlaceholder": "Conte-nos sobre seu negócio e o que você gostaria de automatizar...",
+			"language": "Idioma preferido",
+			"languageEn": "Inglês",
+			"languageEs": "Espanhol",
+			"languagePt": "Português (Brasileiro)",
+			"submit": "Enviar mensagem",
+			"sending": "Enviando...",
+			"successTitle": "Mensagem enviada!",
+			"successMessage": "Obrigado pelo contato. Vamos responder em até 24 horas.",
+			"errorMessage": "Algo deu errado. Por favor nos escreva diretamente em support@uboss.ai."
+		}
+	},
+	"testimonials": {
+		"title": "O que nossos clientes dizem",
+		"subtitle": "Negócios reais, resultados reais.",
+		"items": [
+			{
+				"name": "Carlos M.",
+				"business": "Negócio de Paisagismo, Framingham MA",
+				"quote": "A UBOSS automatizou todo o nosso processo de recebimento de trabalhos. O que antes me tomava 2 horas agora acontece sozinho. Posso focar no trabalho de verdade."
+			},
+			{
+				"name": "Ana S.",
+				"business": "Serviço de Limpeza, Somerville MA",
+				"quote": "Falaram conosco em português e entenderam nosso negócio desde o primeiro dia. A automação do WhatsApp sozinha nos economiza muitas horas toda semana."
+			},
+			{
+				"name": "Mike T.",
+				"business": "Empreiteiro Geral, Boston MA",
+				"quote": "O painel que construíram me dá uma visão em tempo real de cada trabalho. Finalmente sei para onde vai meu dinheiro."
+			}
+		]
+	},
+	"about": {
+		"title": "Sobre a UBOSS",
+		"subtitle": "Tornando a inteligência artificial acessível para os negócios que sustentam nossas comunidades.",
+		"missionLabel": "Nossa Missão",
+		"mission": "Tornar a automação com IA de nível empresarial acessível para cada pequeno negócio — independentemente do idioma, formação técnica ou setor.",
+		"founderLabel": "História do Fundador",
+		"founderStory": "A UBOSS foi fundada por Robert, um engenheiro de software salvadorenho-americano de primeira geração criado na Grande Boston. Crescendo observando seu pai trabalhar longas horas como pedreiro nos serviços locais, ele desenvolveu um profundo apreço pelos pequenos negócios administrados por imigrantes e famílias trabalhadoras. Como engenheiro sênior bilíngue e pai ele mesmo, viu em primeira mão como essas operações muitas vezes ficavam para trás com a grande tecnologia — sem as ferramentas para obter informações reais e crescer.",
+		"visionLabel": "A Visão",
+		"vision": "Um futuro onde cada negócio de serviços na Grande Boston tenha acesso às mesmas ferramentas de IA que as grandes empresas usam — a um preço que faça sentido, com suporte no seu idioma.",
+		"pegasusLabel": "A História do Pegaso",
+		"pegasusStory": "Nossa marca leva o nome de Pégaso — o cavalo alado da mitologia. Como Pégaso, acreditamos no poder de combinar força bruta com a capacidade de voar. Nossa infraestrutura roda em um servidor que carinhosamente chamamos de Pégaso, o cavalo de batalha que impulsiona tudo que construímos para nossos clientes.",
+		"founderName": "Robert Gutierrez",
+		"founderSiteText": "Saiba mais sobre Robert em Robg.dev",
+		"founderSiteUrl": "https://robg.dev",
+		"imageAlt": "Robert Gutierrez, Fundador da UBOSS LLC",
+		"founderStory2": "É por isso que a UBOSS preenche essa lacuna com tecnologia prática e acessível. Assim como um artesão habilidoso entrega uma solução sob medida para cada trabalho, desenvolvemos automação para negócios de diversas formas e fornecemos soluções internas que fazem mais sentido para cada empresa no momento presente. Com ferramentas de desenvolvimento personalizadas e painéis customizados, entregamos informações claras sobre as operações do dia a dia — ajudando negócios de serviços a crescer, escalar e prosperar independentemente do idioma ou formação técnica."
+	},
+	"services": {
+		"title": "Nossos Serviços",
+		"subtitle": "Automações com IA construídas especificamente para o seu negócio.",
+		"automation": {
+			"title": "Automação de Processos",
+			"description": "Automatize seus processos mais demorados — formulários de clientes, agendamento de trabalhos, e-mails de follow-up, gatilhos de fatura e muito mais. Mapeamos seu fluxo de trabalho atual e substituímos etapas manuais por automação inteligente.",
+			"features": [
+				"Recepção de clientes e captura de leads",
+				"Agendamento automático de trabalhos",
+				"Sequências de follow-up",
+				"Gatilhos de fatura"
+			],
+			"cta": "Saiba mais"
+		},
+		"assistants": {
+			"title": "Assistentes com IA",
+			"description": "Implante assistentes de IA no WhatsApp, e-mail e SMS que respondem perguntas de clientes, qualificam leads e agendam compromissos — 24 horas por dia, 7 dias por semana.",
+			"features": [
+				"Bot de WhatsApp (em breve)",
+				"Auto-resposta de e-mail",
+				"Qualificação de leads",
+				"Agendamento de compromissos"
+			],
+			"cta": "Saiba mais"
+		},
+		"dashboards": {
+			"title": "Painéis de Dados e Análises",
+			"description": "Veja todo o seu negócio de relance. Construímos painéis personalizados que puxam dados de todas as suas ferramentas e os apresentam de forma clara e acionável.",
+			"features": [
+				"Acompanhamento de trabalhos em tempo real",
+				"Visões de receita e despesas",
+				"Visibilidade do pipeline de leads",
+				"Integração com Google Looker"
+			],
+			"cta": "Saiba mais"
+		},
+		"integrations": {
+			"title": "Integrações Personalizadas",
+			"description": "Já usa ferramentas que você gosta? As conectamos para que a informação flua automaticamente — sem mais copiar e colar entre aplicativos.",
+			"features": [
+				"Integração com QuickBooks",
+				"Google Workspace",
+				"Conexões com CRM",
+				"Trabalho de API personalizado"
+			],
+			"cta": "Saiba mais"
+		},
+		"forms": {
+			"title": "Criação de Formulários Digitais",
+			"description": "Substitua formulários de papel e PDFs desatualizados por formulários digitais inteligentes que alimentam diretamente seus fluxos de automação.",
+			"features": [
+				"Formulários com sua marca",
+				"Roteamento automático de dados",
+				"Coleta de assinaturas",
+				"Otimizados para celular"
+			],
+			"cta": "Saiba mais"
+		},
+		"notifications": {
+			"title": "Notificações por SMS e E-mail",
+			"description": "Mantenha sua equipe e clientes informados automaticamente. Envie atualizações de trabalhos, lembretes e confirmações sem mover um dedo.",
+			"features": [
+				"Atualizações de status de trabalhos",
+				"Lembretes de compromissos",
+				"Confirmações de pagamento",
+				"Notificações para a equipe"
+			],
+			"cta": "Saiba mais"
+		},
+		"consultationCta": "Agende uma consulta gratuita para falar sobre suas necessidades"
+	},
+	"pricing": {
+		"title": "Preços",
+		"subtitle": "Preços transparentes e previsíveis para cada etapa do seu negócio.",
+		"monthly": "/mês",
+		"mostPopular": "Mais Popular",
+		"setupFeeTitle": "Taxa Única de Configuração",
+		"setupFeeNote": "Taxa única de configuração conforme a complexidade — discutida na sua consulta gratuita.",
+		"enterprise": {
+			"title": "Corporativo",
+			"description": "Soluções sob medida para operações maiores",
+			"cta": "Vamos Conversar"
+		},
+		"cta": "Agende uma ligação para encontrar seu plano",
+		"faq": [
+			{
+				"question": "O que está incluído na assinatura mensal?",
+				"answer": "Sua assinatura mensal cobre o gerenciamento, monitoramento e otimização contínuos das suas automações. Mantemos tudo funcionando, resolvemos problemas e fazemos ajustes conforme seu negócio evolui."
+			},
+			{
+				"question": "O que é a taxa única de configuração?",
+				"answer": "A taxa de configuração cobre a descoberta inicial, design e construção das suas automações personalizadas. O custo depende da complexidade — discutimos na sua consulta gratuita antes de qualquer compromisso."
+			},
+			{
+				"question": "Tem contrato ou compromisso de longo prazo?",
+				"answer": "Sem contratos de longo prazo. Nossas assinaturas são mês a mês. Acreditamos em conquistar seu negócio todos os meses."
+			},
+			{
+				"question": "Posso começar com uma automação e adicionar mais depois?",
+				"answer": "Com certeza. A maioria dos nossos clientes começa com o plano Inicial para automatizar um processo chave, e depois faz upgrade quando vê os resultados."
+			},
+			{
+				"question": "Oferecem suporte em português?",
+				"answer": "Sim — oferecemos suporte completo em inglês, espanhol (registro centro-americano/mexicano) e português brasileiro."
+			},
+			{
+				"question": "Quanto tempo leva a configuração?",
+				"answer": "A maioria das automações Iniciais fica pronta em 1-2 semanas. Implementações Profissionais e Empresariais mais complexas geralmente levam 2-4 semanas dependendo das integrações."
+			}
+		],
+		"comparisonTitle": "O que você está realmente pagando?",
+		"comparisonBody1": "A maioria dos negócios em crescimento não precisa de apenas uma pessoa — precisa de alguém para os dados, alguém para atender chamadas e alguém para coordenar operações. São três contratações. Três salários. Três fontes de erros e ausências.",
+		"comparisonBody2": "Cada um desses funcionários custaria ao seu negócio mais de $25,000 por ano. UBoss combina as três funções em um único sistema — e nunca falha.",
+		"comparisonBanner": "UBoss trabalha 24/7 — 365 dias por ano, incluindo feriados. Sem dias de doença. Sem erros humanos. Sempre disponível.",
+		"comparisonPartTime": "Meio período",
+		"comparisonFullTime": "Tempo integral",
+		"comparisonHoursHeader": "Horas/Semana",
+		"comparisonMonthlyHeader": "Mensal",
+		"comparisonAnnualHeader": "Anual",
+		"comparisonTable1Header": "Assistente de Dados — $17/hr",
+		"comparisonTable2Header": "Secretária / Recepcionista — $20/hr",
+		"comparisonTable3Header": "Secretária Administrativa — $25/hr",
+		"comparisonDisclaimer": "† UBoss opera 24/7 incluindo fins de semana e feriados. Janelas de manutenção programadas podem ocorrer mensalmente — os clientes são notificados com antecedência. As estimativas de taxa horária são baseadas em dados do mercado da área de Boston. Os valores mostrados representam taxas conservadoras de nível inicial. Os custos reais do empregador, incluindo impostos sobre folha de pagamento, benefícios e compensação trabalhista, normalmente adicionam 10–25% acima do salário base."
+	},
+	"legal": {
+		"terms": {
+			"title": "Termos de Serviço",
+			"description": "Nosso acordo completo de termos de serviço.",
+			"download": "Baixar Termos de Serviço (PDF)",
+			"viewPdf": "Ver PDF"
+		},
+		"privacy": {
+			"title": "Política de Privacidade",
+			"description": "Como coletamos, usamos e protegemos seus dados.",
+			"download": "Baixar Política de Privacidade (PDF)",
+			"viewPdf": "Ver PDF"
+		},
+		"keyTerms": {
+			"title": "Resumo dos Termos Principais",
+			"description": "Um resumo em linguagem simples dos termos mais importantes.",
+			"download": "Baixar Resumo dos Termos Principais (PDF)",
+			"viewPdf": "Ver PDF"
+		}
+	},
+	"support": {
+		"title": "Suporte",
+		"subtitle": "Estamos aqui para ajudar.",
+		"description": "Tem uma dúvida ou precisa de ajuda com sua automação? Entre em contato e respondemos em até 24 horas.",
+		"emailLabel": "Nos escreva",
+		"email": "support@uboss.ai",
+		"contactLink": "Ou preencha nosso formulário de contato",
+		"faqTitle": "Perguntas Frequentes"
+	},
+	"careers": {
+		"title": "Carreiras",
+		"subtitle": "Construa o futuro da IA para pequenas empresas.",
+		"description": "A UBOSS é uma equipe pequena e em crescimento que constrói infraestrutura de IA real para negócios desatendidos na Grande Boston. Sempre procuramos pessoas talentosas e comprometidas.",
+		"culture": "Valorizamos curiosidade, empatia e capricho no trabalho. Trabalhamos com negócios de serviços — pessoas que se orgulham do seu trabalho — e nos exigimos o mesmo padrão.",
+		"openingsTitle": "Vagas Abertas",
+		"noOpenings": "No momento não temos vagas listadas, mas estamos sempre abertos a ouvir pessoas talentosas.",
+		"emailCta": "Mande suas informações para support@uboss.ai",
+		"emailSubject": "Carreiras — Gostaria de fazer parte da equipe"
+	},
+	"footer": {
+		"tagline": "Inteligência Artificial que trabalha tão duro quanto você",
+		"serving": "Atendendo a Grande Boston, MA",
+		"copyright": "© 2025 UBOSS LLC. Todos os direitos reservados.",
+		"links": {
+			"services": "Serviços",
+			"pricing": "Preços",
+			"about": "Sobre",
+			"contact": "Contato"
+		},
+		"legal": {
+			"terms": "Termos de Serviço",
+			"privacy": "Política de Privacidade",
+			"keyTerms": "Termos Principais"
+		},
+		"support": "Suporte",
+		"careers": "Carreiras"
+	},
+	"chat": {
+		"title": "Fale conosco",
+		"comingSoon": "O chat ao vivo está chegando em breve! Enquanto isso, nos escreva:",
+		"email": "support@uboss.ai",
+		"openWhatsApp": "Mande mensagem pelo WhatsApp",
+		"openTelegram": "Mande mensagem pelo Telegram",
+		"open": "Abrir chat",
+		"close": "Fechar chat"
+	},
+	"seo": {
+		"home": {
+			"title": "UBOSS — Automação com IA para Negócios em Boston",
+			"description": "Automação com inteligência artificial para paisagistas, empreiteiros e pequenas empresas na Grande Boston. Suporte em português, inglês e espanhol."
+		},
+		"about": {
+			"title": "Sobre a UBOSS — Consultoria de IA em Boston | Agência Bilíngue",
+			"description": "A UBOSS é uma agência de consultoria de IA na Grande Boston fundada por um engenheiro bilíngue. Tornamos a IA acessível para negócios de serviços e empresas de imigrantes."
+		},
+		"services": {
+			"title": "Serviços de IA — Automação e Painéis de Dados | UBOSS",
+			"description": "Automação de processos, assistentes com IA, painéis de dados e mais para negócios de serviços em Massachusetts."
+		},
+		"pricing": {
+			"title": "Preços — Planos de Automação com IA | UBOSS",
+			"description": "Preços mensais transparentes para automação com IA. Inicial a partir de $500/mês. Agende uma consulta gratuita."
+		},
+		"contact": {
+			"title": "Contato UBOSS — Agende sua Consulta Grátis em Boston",
+			"description": "Agende uma ligação de 15 minutos ou sessão de estratégia. Atendemos a Grande Boston em inglês, espanhol e português brasileiro."
+		},
+		"support": {
+			"title": "Suporte — UBOSS Automação com IA",
+			"description": "Precisa de ajuda com sua automação UBOSS? Entre em contato em support@uboss.ai."
+		},
+		"careers": {
+			"title": "Carreiras na UBOSS — Junte-se à Nossa Equipe em Boston",
+			"description": "Junte-se à UBOSS e ajude a construir automação com IA para os negócios que impulsionam a Grande Boston."
+		},
+		"legalTerms": {
+			"title": "Termos de Serviço — UBOSS LLC",
+			"description": "Acordo de Termos de Serviço da UBOSS LLC."
+		},
+		"legalPrivacy": {
+			"title": "Política de Privacidade — UBOSS LLC",
+			"description": "Política de Privacidade da UBOSS LLC — como coletamos, usamos e protegemos suas informações."
+		},
+		"legalKeyTerms": {
+			"title": "Resumo dos Termos Principais — UBOSS LLC",
+			"description": "Um resumo em linguagem simples dos termos mais importantes dos nossos acordos."
+		}
+	}
 }

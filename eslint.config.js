@@ -9,6 +9,11 @@ export default [
 	js.configs.recommended,
 	...svelte.configs['flat/recommended'],
 	{
+		rules: {
+			'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }]
+		}
+	},
+	{
 		languageOptions: {
 			globals: {
 				...globals.browser,
@@ -36,6 +41,6 @@ export default [
 		}
 	},
 	{
-		ignores: ['.svelte-kit/', 'build/', 'dist/', 'node_modules/']
+		ignores: ['.svelte-kit/', 'build/', 'dist/', 'node_modules/', '.vercel/']
 	}
 ];

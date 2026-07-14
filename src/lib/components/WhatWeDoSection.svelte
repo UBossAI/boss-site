@@ -62,7 +62,11 @@
 	});
 </script>
 
-<section bind:this={sectionEl} class="bg-surface-light py-20 lg:py-28" aria-labelledby="whatwedo-heading">
+<section
+	bind:this={sectionEl}
+	class="bg-surface-light py-20 lg:py-28"
+	aria-labelledby="whatwedo-heading"
+>
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="text-center mb-14 fade-in">
 			<h2 id="whatwedo-heading" class="section-heading text-near-black mb-4">{t.title}</h2>
@@ -72,11 +76,9 @@
 
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 			{#each services as service, i}
-				<div
-					class="card p-6 fade-in"
-					style="transition-delay: {i * 100}ms"
-				>
+				<div class="card p-6 fade-in" style="transition-delay: {i * 100}ms">
 					<div class="text-teal mb-4">
+						<!-- eslint-disable-next-line svelte/no-at-html-tags -- static hardcoded SVG constant above, not user input -->
 						{@html service.icon}
 					</div>
 					<h3 class="font-semibold text-near-black text-lg mb-2">{service.data.title}</h3>

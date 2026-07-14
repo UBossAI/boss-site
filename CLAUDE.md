@@ -16,6 +16,7 @@ This is the marketing website for UBOSS LLC — an AI-as-a-Service consulting ag
 ## Architecture Rules
 
 ### Performance (CRITICAL — #1 Priority)
+
 - Target Lighthouse score: 95+ on all metrics
 - **Initial load must feel instant** — above-the-fold content renders first
 - Use SvelteKit SSR/SSG where possible — prerender static pages
@@ -29,6 +30,7 @@ This is the marketing website for UBOSS LLC — an AI-as-a-Service consulting ag
 - Bundle size budget: < 50KB initial JS
 
 ### Code Style
+
 - Components: PascalCase (`HeroSection.svelte`)
 - Routes: kebab-case (`/privacy-policy`)
 - Use Svelte 5 runes syntax (`$state`, `$derived`, `$effect`)
@@ -37,6 +39,7 @@ This is the marketing website for UBOSS LLC — an AI-as-a-Service consulting ag
 - All text content must come from translation files (see i18n)
 
 ### i18n (Trilingual — CRITICAL)
+
 - Default locale: `en`
 - Supported: `en`, `es`, `pt-BR`
 - Translation files: `src/lib/i18n/{locale}.json`
@@ -48,6 +51,7 @@ This is the marketing website for UBOSS LLC — an AI-as-a-Service consulting ag
 - Reference `SEO.md` for target keywords per language
 
 ### SEO
+
 - Every page needs: `<title>`, `<meta description>`, Open Graph tags, Twitter card tags
 - Implement JSON-LD structured data for `LocalBusiness` schema
 - Trilingual `hreflang` link tags on every page
@@ -56,6 +60,7 @@ This is the marketing website for UBOSS LLC — an AI-as-a-Service consulting ag
 - Reference `CONTENT_STRATEGY.md` for drafted FAQ/blog/on-page copy (English checkpoint; ES/pt-BR translation intentionally pending, founder hand-flavors Spanish)
 
 ### File Organization
+
 boss-site/
 ├── CLAUDE.md ← you are here
 ├── PROJECT.md ← business context + site structure
@@ -68,7 +73,7 @@ boss-site/
 │ │ ├── uboss-logo-dark.png ← teal U + white BOSS (dark bg)
 │ │ ├── uboss-logo-light.png ← teal U + dark BOSS (light bg)
 │ │ ├── pegasus-icon.png ← favicon/brand mark
-│ | ├── photo-headshot.jpeg  ← founder headshot for About page
+│ | ├── photo-headshot.jpeg ← founder headshot for About page
 │ │ └── legal/
 │ │ ├── full-terms-of-service.pdf
 │ │ ├── key-terms-summary.pdf
@@ -111,6 +116,7 @@ boss-site/
 └── package.json
 
 ### Git Hygiene
+
 - Generate a comprehensive `.gitignore` on project init that includes:
   - `.env`, `.env.*` (secrets)
   - `node_modules/`
@@ -129,8 +135,8 @@ boss-site/
 - Use environment variables for all sensitive config
 - `.env.example` with placeholder keys is okay to commit as a reference
 
-
 ### CI/CD Pipeline
+
 - GitHub Actions workflow on every push/PR to `main`:
   1. Install dependencies (`pnpm install`)
   2. Lint (`eslint` + `prettier --check`)
@@ -140,12 +146,14 @@ boss-site/
 - Vercel auto-deploys from `main` branch
 
 ### Component Architecture
+
 - Each page section is its own component (HeroSection, PricingSection, ContactSection, etc.)
 - Messaging/chat widget area: build a `ChatWidget.svelte` component with a floating button (bottom-right). Initially shows "Coming Soon" tooltip. Architecture should accept a webhook URL prop for future WhatsApp/Telegram/Chatwoot integration.
 - Pricing component must read from a centralized config — never hardcode prices
 - Contact form: client-side validation, honeypot spam field, submit to configurable endpoint (initially mailto, future: n8n webhook)
 
 ### Accessibility
+
 - WCAG 2.1 AA compliance minimum
 - Semantic HTML throughout
 - Keyboard navigable
@@ -153,6 +161,7 @@ boss-site/
 - Color contrast ratios must pass AA for all brand colors
 
 ### What NOT To Do
+
 - Do NOT use heavy animation libraries (GSAP, Framer Motion, etc.)
 - Do NOT install a CSS framework on top of Tailwind
 - Do NOT hardcode any pricing values in components — always reference config

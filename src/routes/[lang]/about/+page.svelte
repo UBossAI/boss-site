@@ -1,14 +1,21 @@
 <script lang="ts">
 	import SEOHead from '$lib/components/SEOHead.svelte';
 	import type { PageData } from './$types.js';
-	interface Props { data: PageData }
+	interface Props {
+		data: PageData;
+	}
 	let { data }: Props = $props();
 	const t = $derived(data.t as Record<string, unknown>);
 	const a = $derived(t.about as Record<string, string>);
 	const seo = $derived(t.seo as Record<string, Record<string, string>>);
 </script>
 
-<SEOHead title={seo.about.title} description={seo.about.description} lang={data.lang} page="about" />
+<SEOHead
+	title={seo.about.title}
+	description={seo.about.description}
+	lang={data.lang}
+	page="about"
+/>
 
 <div class="bg-surface-light min-h-screen">
 	<!-- Hero -->
@@ -38,8 +45,8 @@
 							href={a.founderSiteUrl}
 							target="_blank"
 							rel="noopener noreferrer"
-							class="text-teal hover:underline"
-						>{a.founderSiteText}</a>
+							class="text-teal hover:underline">{a.founderSiteText}</a
+						>
 					</p>
 				</div>
 				<div class="relative">
@@ -53,7 +60,9 @@
 							loading="lazy"
 						/>
 					</picture>
-					<div class="absolute -bottom-4 -right-4 w-full max-w-xs mx-auto h-full max-h-[480px] rounded-2xl border-2 border-teal/30 -z-10"></div>
+					<div
+						class="absolute -bottom-4 -right-4 w-full max-w-xs mx-auto h-full max-h-[480px] rounded-2xl border-2 border-teal/30 -z-10"
+					></div>
 				</div>
 			</div>
 

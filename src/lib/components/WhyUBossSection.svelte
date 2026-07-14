@@ -38,7 +38,11 @@
 	});
 </script>
 
-<section bind:this={sectionEl} class="bg-near-black text-white py-20 lg:py-28" aria-labelledby="whyuboss-heading">
+<section
+	bind:this={sectionEl}
+	class="bg-near-black text-white py-20 lg:py-28"
+	aria-labelledby="whyuboss-heading"
+>
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="text-center mb-14 fade-in">
 			<h2 id="whyuboss-heading" class="section-heading text-white mb-4">{t.title}</h2>
@@ -48,8 +52,12 @@
 
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 			{#each t.reasons as reason, i}
-				<div class="fade-in p-6 rounded-2xl border border-white/10 hover:border-teal/40 transition-colors duration-200" style="transition-delay: {i * 100}ms">
+				<div
+					class="fade-in p-6 rounded-2xl border border-white/10 hover:border-teal/40 transition-colors duration-200"
+					style="transition-delay: {i * 100}ms"
+				>
 					<div class="text-teal mb-4">
+						<!-- eslint-disable-next-line svelte/no-at-html-tags -- static hardcoded SVG constants above, not user input -->
 						{@html icons[i] ?? icons[0]}
 					</div>
 					<h3 class="font-semibold text-white text-base mb-2">{reason.title}</h3>

@@ -31,6 +31,7 @@ Marketing and conversion website for **UBOSS LLC** — an AI-as-a-Service consul
 The UBOSS website is a **marketing and conversion tool** with one primary job: get visitors to book a free consultation. It is not a web app or SaaS dashboard — it is a static/SSR marketing site built for speed, SEO, and accessibility.
 
 **Key goals:**
+
 - Establish credibility and premium positioning in the Greater Boston market
 - Explain what UBOSS does in plain language trades business owners can understand
 - Drive visitors to book via [Cal.com](https://cal.com/robg-uboss)
@@ -41,16 +42,16 @@ The UBOSS website is a **marketing and conversion tool** with one primary job: g
 
 ## Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Framework | [SvelteKit 2.x](https://kit.svelte.dev) + [Svelte 5](https://svelte.dev) (runes syntax) |
-| Styling | [Tailwind CSS v4](https://tailwindcss.com) via `@tailwindcss/vite` |
-| Language | TypeScript (strict mode) |
-| Package Manager | [pnpm](https://pnpm.io) |
-| Hosting | [Vercel](https://vercel.com) via `@sveltejs/adapter-vercel` |
-| Scheduling | [Cal.com](https://cal.com) embed |
-| Fonts | Plus Jakarta Sans (Google Fonts, preloaded 400 weight only) |
-| CI/CD | GitHub Actions |
+| Layer           | Technology                                                                              |
+| --------------- | --------------------------------------------------------------------------------------- |
+| Framework       | [SvelteKit 2.x](https://kit.svelte.dev) + [Svelte 5](https://svelte.dev) (runes syntax) |
+| Styling         | [Tailwind CSS v4](https://tailwindcss.com) via `@tailwindcss/vite`                      |
+| Language        | TypeScript (strict mode)                                                                |
+| Package Manager | [pnpm](https://pnpm.io)                                                                 |
+| Hosting         | [Vercel](https://vercel.com) via `@sveltejs/adapter-vercel`                             |
+| Scheduling      | [Cal.com](https://cal.com) embed                                                        |
+| Fonts           | Plus Jakarta Sans (Google Fonts, preloaded 400 weight only)                             |
+| CI/CD           | GitHub Actions                                                                          |
 
 ---
 
@@ -126,6 +127,7 @@ pnpm dev
 The site will be available at **[http://localhost:5173](http://localhost:5173)** and will automatically redirect to `/en`. Hot module replacement is enabled — changes to Svelte components, CSS, and translation files reload instantly.
 
 **Available locales in dev:**
+
 - [http://localhost:5173/en](http://localhost:5173/en) — English
 - [http://localhost:5173/es](http://localhost:5173/es) — Spanish
 - [http://localhost:5173/pt-BR](http://localhost:5173/pt-BR) — Brazilian Portuguese
@@ -137,6 +139,7 @@ pnpm build
 ```
 
 SvelteKit compiles the site through Vite and the Vercel adapter. A clean build produces:
+
 - `~8–9 KB` initial JS (well under the 50 KB budget)
 - Prerendered HTML for all 30 locale-prefixed routes
 - A `sitemap.xml` with all locale variants
@@ -244,11 +247,11 @@ boss-site/
 
 The site supports three locales with locale-prefixed URLs:
 
-| Locale | URL prefix | Register |
-|---|---|---|
-| English | `/en/...` | Professional, approachable |
-| Spanish | `/es/...` | Central American / Mexican conversational ("tú" not "usted") |
-| Brazilian Portuguese | `/pt-BR/...` | Brazilian conversational (not European Portuguese) |
+| Locale               | URL prefix   | Register                                                     |
+| -------------------- | ------------ | ------------------------------------------------------------ |
+| English              | `/en/...`    | Professional, approachable                                   |
+| Spanish              | `/es/...`    | Central American / Mexican conversational ("tú" not "usted") |
+| Brazilian Portuguese | `/pt-BR/...` | Brazilian conversational (not European Portuguese)           |
 
 Visiting `/` redirects to `/en` automatically.
 
@@ -278,13 +281,13 @@ The globe icon in the nav bar lets visitors switch locales. Switching preserves 
 2. Click **"Import Git Repository"** and select `boss-site` from your GitHub account.
 3. Vercel will auto-detect SvelteKit. Verify the following settings before deploying:
 
-| Setting | Value |
-|---|---|
-| Framework Preset | **SvelteKit** |
-| Build Command | `pnpm build` |
-| Output Directory | *(leave blank — adapter-vercel manages this)* |
-| Install Command | `pnpm install` |
-| Node.js Version | **22.x** |
+| Setting          | Value                                         |
+| ---------------- | --------------------------------------------- |
+| Framework Preset | **SvelteKit**                                 |
+| Build Command    | `pnpm build`                                  |
+| Output Directory | _(leave blank — adapter-vercel manages this)_ |
+| Install Command  | `pnpm install`                                |
+| Node.js Version  | **22.x**                                      |
 
 > The adapter is already configured for `nodejs22.x` in `svelte.config.js` — no additional Vercel config is needed.
 
@@ -292,14 +295,14 @@ The globe icon in the nav bar lets visitors switch locales. Switching preserves 
 
 The site currently runs without required secrets. If you add future integrations, set them in **Vercel → Project → Settings → Environment Variables**:
 
-| Variable | Description | Required now? |
-|---|---|---|
-| `PUBLIC_SITE_URL` | `https://uboss.ai` | No (defaults fine) |
-| `PUBLIC_CONTACT_EMAIL` | `support@uboss.ai` | No |
-| `PUBLIC_CAL_DISCOVERY` | `robg-uboss/discovery-call` | No |
-| `PUBLIC_CAL_STRATEGY` | `robg-uboss/uboss-strategy` | No |
-| `STRIPE_SECRET_KEY` | Stripe secret key | No (not yet implemented) |
-| `N8N_WEBHOOK_URL` | n8n contact form endpoint | No (not yet implemented) |
+| Variable               | Description                 | Required now?            |
+| ---------------------- | --------------------------- | ------------------------ |
+| `PUBLIC_SITE_URL`      | `https://uboss.ai`          | No (defaults fine)       |
+| `PUBLIC_CONTACT_EMAIL` | `support@uboss.ai`          | No                       |
+| `PUBLIC_CAL_DISCOVERY` | `robg-uboss/discovery-call` | No                       |
+| `PUBLIC_CAL_STRATEGY`  | `robg-uboss/uboss-strategy` | No                       |
+| `STRIPE_SECRET_KEY`    | Stripe secret key           | No (not yet implemented) |
+| `N8N_WEBHOOK_URL`      | n8n contact form endpoint   | No (not yet implemented) |
 
 Never commit `.env` to the repository. Use `.env.example` as the reference template.
 
@@ -315,11 +318,11 @@ Never commit `.env` to the repository. Use `.env.example` as the reference templ
 
 ### How auto-deploys work
 
-| Trigger | Action |
-|---|---|
-| Push to `main` | Production deploy to `uboss.ai` |
-| Open a Pull Request | Preview deploy with unique URL |
-| Merge PR to `main` | Preview URL promoted to production |
+| Trigger             | Action                             |
+| ------------------- | ---------------------------------- |
+| Push to `main`      | Production deploy to `uboss.ai`    |
+| Open a Pull Request | Preview deploy with unique URL     |
+| Merge PR to `main`  | Preview URL promoted to production |
 
 Every deploy runs `pnpm build` server-side. If the build fails, the current production deploy is preserved and the broken build is not promoted.
 
@@ -349,9 +352,9 @@ pnpm build    # Production build
 
 Pricing is defined in **two places that must stay in sync**:
 
-| File | Purpose |
-|---|---|
-| `PRICING.md` | Human-readable source of truth — edit this first |
+| File                        | Purpose                                          |
+| --------------------------- | ------------------------------------------------ |
+| `PRICING.md`                | Human-readable source of truth — edit this first |
 | `src/lib/config/pricing.ts` | TypeScript config consumed by pricing components |
 
 ### Steps to update a tier price or feature
@@ -394,12 +397,12 @@ The Enterprise tier has `price: null` and shows a "Let's Talk" CTA linking to th
 
 ### Meta tag targets
 
-| Field | Character limit | Rule |
-|---|---|---|
-| `<title>` | 50–60 chars | Include primary keyword |
-| `<meta description>` | 150–160 chars | Include primary + one secondary keyword |
-| OG title | Same as `<title>` | Auto-inherits from title |
-| OG description | Same as meta description | Auto-inherits |
+| Field                | Character limit          | Rule                                    |
+| -------------------- | ------------------------ | --------------------------------------- |
+| `<title>`            | 50–60 chars              | Include primary keyword                 |
+| `<meta description>` | 150–160 chars            | Include primary + one secondary keyword |
+| OG title             | Same as `<title>`        | Auto-inherits from title                |
+| OG description       | Same as meta description | Auto-inherits                           |
 
 All SEO meta tags, Open Graph tags, Twitter cards, hreflang links, and the JSON-LD `LocalBusiness` schema are rendered by `src/lib/components/SEOHead.svelte`, which is included on every page.
 
@@ -434,7 +437,7 @@ pnpm build     # Must succeed
 - **No hardcoded strings** in `.svelte` files — always use `src/lib/i18n/{locale}.json`
 - **No hardcoded prices** in components — always reference `src/lib/config/pricing.ts`
 - **No heavy dependencies** — no animation libraries, no CSS frameworks on top of Tailwind
-- Comments only where the *why* is non-obvious
+- Comments only where the _why_ is non-obvious
 
 ### Translation PRs
 
