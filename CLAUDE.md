@@ -53,6 +53,7 @@ This is the marketing website for UBOSS LLC — an AI-as-a-Service consulting ag
 - Trilingual `hreflang` link tags on every page
 - Generate `sitemap.xml` with all locale variants
 - Reference `SEO.md` for keyword targets — this file is the single source of truth for SEO terms
+- Reference `CONTENT_STRATEGY.md` for drafted FAQ/blog/on-page copy (English checkpoint; ES/pt-BR translation intentionally pending, founder hand-flavors Spanish)
 
 ### File Organization
 boss-site/
@@ -61,6 +62,7 @@ boss-site/
 ├── BRAND.md ← design system
 ├── PRICING.md ← tier config (single source of truth)
 ├── SEO.md ← keyword targets per language
+├── CONTENT_STRATEGY.md ← drafted FAQ/blog/on-page copy (English checkpoint)
 ├── static/
 │ ├── assets/
 │ │ ├── uboss-logo-dark.png ← teal U + white BOSS (dark bg)
@@ -122,6 +124,7 @@ boss-site/
   - PROJECT.md
   - PRICING.md
   - SEO.md
+  - CONTENT_STRATEGY.md
 - NEVER commit secrets, API keys, tokens, or credentials
 - Use environment variables for all sensitive config
 - `.env.example` with placeholder keys is okay to commit as a reference
