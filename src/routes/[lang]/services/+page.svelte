@@ -76,7 +76,7 @@
 						</div>
 						<div>
 							<ul class="space-y-2.5 mb-6">
-								{#each service.features as feature}
+								{#each service.features as string[] as feature}
 									<li class="flex items-center gap-2.5 text-sm text-gray-mid">
 										<svg
 											class="w-4 h-4 text-teal flex-shrink-0"
