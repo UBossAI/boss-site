@@ -30,6 +30,7 @@
     "vite": "^6.0.0"
   },
   "type": "module",
+  "packageManager": "pnpm@11.5.0",
   "pnpm": {
     "onlyBuiltDependencies": ["esbuild"]
   }
