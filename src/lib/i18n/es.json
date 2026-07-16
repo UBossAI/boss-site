@@ -93,6 +93,7 @@
 		"viewFullPricing": "Ver detalles completos de precios"
 	},
 	"contact": {
+		"eyebrow": "Contacto",
 		"title": "¿Listo para automatizar tu negocio?",
 		"subtitle": "Agenda una consulta gratis o mándanos un mensaje. Te respondemos en menos de 24 horas.",
 		"emailLabel": "Escríbenos",
@@ -161,6 +162,7 @@
 		"founderStory2": "Por eso UBOSS cierra la brecha con tecnología práctica y accesible. Así como un buen artesano ofrece una solución a medida para cada trabajo, desarrollamos automatización para negocios de diversas formas y ofrecemos soluciones internas que tienen más sentido para cada empresa en el momento presente. Con herramientas de desarrollo personalizadas y paneles de control a la medida, entregamos información clara sobre las operaciones del día a día — ayudando a los negocios de oficios a crecer, escalar y prosperar sin importar el idioma ni el nivel técnico."
 	},
 	"services": {
+		"eyebrow": "Servicios",
 		"title": "Nuestros Servicios",
 		"subtitle": "Sin tecnicismos — solo las herramientas que te ahorran tiempo, hechas específicamente para tu negocio.",
 		"automation": {
@@ -232,6 +234,7 @@
 		"consultationCta": "Agenda una plática gratis y te lo explicamos todo"
 	},
 	"pricing": {
+		"eyebrow": "Precios",
 		"title": "Precios",
 		"subtitle": "Precios transparentes y predecibles para cada etapa de tu negocio.",
 		"monthly": "/mes",
@@ -244,6 +247,7 @@
 			"cta": "Hablemos"
 		},
 		"cta": "Agenda una llamada para encontrar tu plan",
+		"faqTitle": "Preguntas Frecuentes",
 		"faq": [
 			{
 				"question": "Entonces, ¿qué es UBoss, realmente?",
@@ -304,6 +308,7 @@
 		"comparisonBanner": "UBoss trabaja 24/7 — 365 días al año, incluyendo días festivos. Sin días de enfermedad. Sin errores humanos. Siempre disponible.",
 		"comparisonPartTime": "Medio tiempo",
 		"comparisonFullTime": "Tiempo completo",
+		"comparisonTypeHeader": "Tipo",
 		"comparisonHoursHeader": "Horas/Semana",
 		"comparisonMonthlyHeader": "Mensual",
 		"comparisonAnnualHeader": "Anual",
@@ -342,10 +347,12 @@
 		"faqTitle": "Preguntas Frecuentes"
 	},
 	"careers": {
+		"eyebrow": "Carreras",
 		"title": "Carreras",
 		"subtitle": "Construye el futuro de la IA para pequeños negocios.",
 		"description": "UBOSS es un equipo pequeño y en crecimiento que construye infraestructura de IA real para negocios desatendidos en el Gran Boston. Siempre buscamos personas talentosas y con propósito.",
 		"culture": "Valoramos la curiosidad, la empatía y el trabajo bien hecho. Trabajamos con negocios de oficios — personas que se enorgullecen de su trabajo — y nos exigimos el mismo estándar.",
+		"cultureTitle": "Nuestra Cultura",
 		"openingsTitle": "Posiciones Abiertas",
 		"noOpenings": "Actualmente no tenemos posiciones abiertas, pero siempre estamos abiertos a escuchar a personas talentosas.",
 		"emailCta": "Mándanos tu información a support@uboss.ai",
@@ -355,6 +362,9 @@
 		"tagline": "Inteligencia Artificial que trabaja tan duro como tú",
 		"serving": "Sirviendo a Greater Boston, MA",
 		"copyright": "© 2026 UBOSS LLC. Todos los derechos reservados.",
+		"companyHeading": "Empresa",
+		"helpHeading": "Ayuda",
+		"legalHeading": "Legal",
 		"links": {
 			"services": "Servicios",
 			"pricing": "Precios",

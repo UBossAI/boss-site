@@ -93,6 +93,7 @@
 		"viewFullPricing": "View full pricing details"
 	},
 	"contact": {
+		"eyebrow": "Contact",
 		"title": "Ready to Automate Your Business?",
 		"subtitle": "Book a free consultation or send us a message. We'll get back to you within 24 hours.",
 		"emailLabel": "Email us",
@@ -161,6 +162,7 @@
 		"founderStory2": "That's why UBOSS bridges the gap with practical, accessible technology. Just as a skilled tradesperson delivers a custom fit for every job, we develop automation for businesses in various ways and provide in-house solutions that make the most sense for each company at the present moment. With tailored developer tools and custom dashboards, we deliver clear insights into day-to-day operations—helping trades businesses grow, scale, and thrive regardless of language or technical background."
 	},
 	"services": {
+		"eyebrow": "Services",
 		"title": "Our Services",
 		"subtitle": "No tech talk — just the tools that save you time, built specifically around your business.",
 		"automation": {
@@ -232,6 +234,7 @@
 		"consultationCta": "Book a free consultation and we'll walk you through it"
 	},
 	"pricing": {
+		"eyebrow": "Pricing",
 		"title": "Pricing",
 		"subtitle": "Transparent, predictable pricing for every stage of your business.",
 		"monthly": "/month",
@@ -244,6 +247,7 @@
 			"cta": "Let's Talk"
 		},
 		"cta": "Book a call to find your plan",
+		"faqTitle": "FAQ",
 		"faq": [
 			{
 				"question": "What is UBoss, exactly?",
@@ -292,6 +296,7 @@
 		"comparisonBanner": "UBoss works 24/7 — 365 days a year, including holidays. No sick days. No human error. Always on.",
 		"comparisonPartTime": "Part-time",
 		"comparisonFullTime": "Full-time",
+		"comparisonTypeHeader": "Type",
 		"comparisonHoursHeader": "Hours/Week",
 		"comparisonMonthlyHeader": "Monthly",
 		"comparisonAnnualHeader": "Annual",
@@ -330,10 +335,12 @@
 		"faqTitle": "Frequently Asked Questions"
 	},
 	"careers": {
+		"eyebrow": "Careers",
 		"title": "Careers",
 		"subtitle": "Build the future of AI for small business.",
 		"description": "UBOSS is a small, growing team building real AI infrastructure for underserved businesses in Greater Boston. We're always looking for talented, mission-driven people to join us.",
 		"culture": "We value curiosity, empathy, and craftsmanship. We work with trades businesses — people who take pride in their work — and we hold ourselves to the same standard.",
+		"cultureTitle": "Our Culture",
 		"openingsTitle": "Current Openings",
 		"noOpenings": "We don't have any open positions listed right now, but we're always open to hearing from great people.",
 		"emailCta": "Send your info to support@uboss.ai",
@@ -343,6 +350,9 @@
 		"tagline": "AI That Works As Hard As You Do",
 		"serving": "Serving Greater Boston, MA",
 		"copyright": "© 2026 UBOSS LLC. All rights reserved.",
+		"companyHeading": "Company",
+		"helpHeading": "Help",
+		"legalHeading": "Legal",
 		"links": {
 			"services": "Services",
 			"pricing": "Pricing",

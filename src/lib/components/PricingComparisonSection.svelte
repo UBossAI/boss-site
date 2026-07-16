@@ -83,7 +83,7 @@
 								<th
 									class="text-left px-4 py-2.5 text-xs uppercase tracking-wider text-white/40 font-medium"
 								>
-									Type
+									{p.comparisonTypeHeader}
 								</th>
 								<th
 									class="text-right px-4 py-2.5 text-xs uppercase tracking-wider text-white/40 font-medium"
