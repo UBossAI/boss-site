@@ -1,5 +1,4 @@
 allowBuilds:
   esbuild: true
-pnpm:
-  onlyBuiltDependencies:
-    - esbuild
+onlyBuiltDependencies:
+  - esbuild
