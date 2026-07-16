@@ -28,10 +28,30 @@
 		description: 'AI-as-a-Service consulting for trades and small businesses in Greater Boston',
 		url: siteUrl,
 		email: 'support@uboss.ai',
-		areaServed: {
-			'@type': 'Place',
-			name: 'Greater Boston, Massachusetts'
-		},
+		areaServed: [
+			{ '@type': 'City', name: 'Boston' },
+			{ '@type': 'City', name: 'East Boston' },
+			{ '@type': 'City', name: 'Lynn' },
+			{ '@type': 'City', name: 'Lynnfield' },
+			{ '@type': 'City', name: 'Saugus' },
+			{ '@type': 'City', name: 'Swampscott' },
+			{ '@type': 'City', name: 'Peabody' },
+			{ '@type': 'City', name: 'Beverly' },
+			{ '@type': 'City', name: 'Gloucester' },
+			{ '@type': 'City', name: 'Revere' },
+			{ '@type': 'City', name: 'Chelsea' },
+			{ '@type': 'City', name: 'Everett' },
+			{ '@type': 'City', name: 'Malden' },
+			{ '@type': 'City', name: 'Reading' },
+			{ '@type': 'City', name: 'Stoneham' },
+			{ '@type': 'City', name: 'Wakefield' },
+			{ '@type': 'City', name: 'Woburn' },
+			{ '@type': 'City', name: 'North Reading' },
+			{ '@type': 'City', name: 'Tewksbury' },
+			{ '@type': 'City', name: 'Somerville' },
+			{ '@type': 'City', name: 'Framingham' },
+			{ '@type': 'City', name: 'Waltham' }
+		],
 		serviceArea: {
 			'@type': 'GeoCircle',
 			geoMidpoint: {
@@ -43,7 +63,10 @@
 		},
 		knowsLanguage: ['en', 'es', 'pt-BR'],
 		priceRange: '$$',
-		sameAs: []
+		sameAs: [
+			'https://www.google.com/maps?cid=17359999283352644362',
+			'https://www.facebook.com/profile.php?id=61572034173888'
+		]
 	};
 </script>
 

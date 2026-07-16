@@ -50,7 +50,7 @@
 					href="/{lang}/services"
 					class="btn-outline text-base px-8 py-4 w-full sm:w-auto text-center border-white/30 text-white/80 hover:border-teal hover:text-white hover:bg-transparent"
 				>
-					Learn more
+					{t.learnMore}
 				</a>
 			</div>
 

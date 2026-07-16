@@ -38,7 +38,9 @@
 
 			<!-- Company links -->
 			<div>
-				<h3 class="text-white text-sm font-semibold mb-3 uppercase tracking-wider">Company</h3>
+				<h3 class="text-white text-sm font-semibold mb-3 uppercase tracking-wider">
+					{footer.companyHeading as string}
+				</h3>
 				<ul class="space-y-2">
 					<li>
 						<a href="/{lang}/about" class="text-sm hover:text-teal transition-colors"
@@ -65,7 +67,9 @@
 
 			<!-- Support & Careers -->
 			<div>
-				<h3 class="text-white text-sm font-semibold mb-3 uppercase tracking-wider">Help</h3>
+				<h3 class="text-white text-sm font-semibold mb-3 uppercase tracking-wider">
+					{footer.helpHeading as string}
+				</h3>
 				<ul class="space-y-2">
 					<li>
 						<a href="/{lang}/support" class="text-sm hover:text-teal transition-colors"
@@ -87,7 +91,9 @@
 
 			<!-- Legal -->
 			<div>
-				<h3 class="text-white text-sm font-semibold mb-3 uppercase tracking-wider">Legal</h3>
+				<h3 class="text-white text-sm font-semibold mb-3 uppercase tracking-wider">
+					{footer.legalHeading as string}
+				</h3>
 				<ul class="space-y-2">
 					<li>
 						<a href="/{lang}/legal/terms" class="text-sm hover:text-teal transition-colors"

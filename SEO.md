@@ -133,6 +133,23 @@
 | automatización de formularios para contratistas |
 | panel de datos para mi negocio |
 
+### Question-Based Keywords (FAQ / Reference Content)
+> Educational/reference queries, not necessarily buyer-intent — targeted so the page gets used and
+> linked as a resource, per founder's content-marketing-funnel strategy. Answered as genuine
+> reference content in `CONTENT_STRATEGY_ES.md`'s FAQ section (entries 11-13), each tying back to
+> a real UBoss feature at the end rather than staying purely definitional.
+
+| Question | Ties to |
+|----------|---------|
+| qué es la ayuda administrativa | Admin-automation positioning |
+| qué es una reseña | AI-visibility angle, review-request feature (Professional Plus) |
+| cómo crear un dashboard para mi negocio | Dashboards feature |
+
+Deliberately NOT chased as a broad target: **"inteligencia de negocios"** (business intelligence)
+— dominated by enterprise BI vendors, expensive to compete on, and pulls toward the corporate
+register this project moved away from. The narrower "panel de datos para mi negocio" above covers
+the same underlying need without that risk.
+
 ## Brazilian Portuguese Keywords
 
 ### Primary
@@ -177,8 +194,15 @@
 
 - [ ] `FAQPage` JSON-LD on every page with an FAQ section (Homepage, Pricing, Support) — schema copy must match the visible Q&A exactly, no divergent text
 - [ ] Expand `LocalBusiness` JSON-LD below: add `sameAs` once social profiles exist; add `makesOffer` / `hasOfferCatalog` referencing `PRICING.md` tiers
-- [ ] Add `/llms.txt` at site root — plain-text summary of what UBoss does, who it serves, service area, and key facts, formatted for LLM ingestion (emerging convention, cheap to add)
-- [ ] `robots.txt`: explicitly allow known AI crawlers (`GPTBot`, `ClaudeBot`, `Google-Extended`, `PerplexityBot`, `anthropic-ai`) instead of relying on the blanket `Allow: /` — makes the intent explicit and documents the decision
+- [x] Add `/llms.txt` at site root — plain-text summary of what UBoss does, who it serves, service area, and key facts, formatted for LLM ingestion (emerging convention, cheap to add). Done 2026-07-15 — `static/llms.txt`.
+- [x] `robots.txt`: explicitly allow known AI crawlers instead of relying on the blanket
+      `Allow: /` — makes the intent explicit and documents the decision. Done 2026-07-15, verified
+      against current sources (not just training-data memory): OpenAI (`GPTBot`, `ChatGPT-User`,
+      `OAI-SearchBot`), Anthropic (`ClaudeBot`, `Claude-User`, `Claude-SearchBot`, legacy
+      `anthropic-ai`), Google (`Google-Extended` — note: this only gates Gemini/Vertex *training*
+      data, not AI Overview inclusion, which rides on regular Googlebot access already allowed),
+      `PerplexityBot`, and xAI/Grok (`GrokBot`, `xAI-Grok`, `Grok-DeepSearch` — documented tokens,
+      though xAI's crawler has been reported not always honoring them in practice as of mid-2026).
 - [ ] Structure FAQ/blog headings as literal questions (H2/H3) matching how people phrase AI queries — same copy doubles as featured-snippet bait and LLM-citation bait
 - [ ] Front-load the direct answer in the first sentence of every FAQ/blog answer, elaborate after — quotable by both Google snippets and AI assistants
 - [ ] Keep NAP (name, service area, contact) identical across every page, schema block, and directory listing — inconsistency undermines an AI system's confidence in grounding facts about the business

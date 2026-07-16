@@ -2,4 +2,50 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
+# Explicit allowlist for known AI crawlers/assistants (AI visibility / GEO)
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google (Google-Extended governs Gemini/Vertex AI training data only —
+# AI Overviews use the regular Googlebot-crawled index, already allowed above)
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# xAI / Grok — documented tokens; note xAI's crawler has been reported not
+# always identifying itself with these in practice, so this may not fully
+# control its traffic yet, but it's the correct token to allow if it does.
+User-agent: GrokBot
+Allow: /
+
+User-agent: xAI-Grok
+Allow: /
+
+User-agent: Grok-DeepSearch
+Allow: /
+
 Sitemap: https://uboss.ai/sitemap.xml

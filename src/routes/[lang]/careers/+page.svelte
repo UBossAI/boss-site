@@ -22,7 +22,7 @@
 		<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="flex items-center gap-2 mb-6">
 				<span class="w-6 h-px bg-teal"></span>
-				<span class="text-teal text-sm font-medium uppercase tracking-widest">Careers</span>
+				<span class="text-teal text-sm font-medium uppercase tracking-widest">{c.eyebrow}</span>
 			</div>
 			<h1 class="hero-heading text-white mb-4">{c.title}</h1>
 			<div class="teal-divider mb-6"></div>
@@ -37,7 +37,7 @@
 			</div>
 
 			<div class="bg-near-black text-white rounded-2xl p-8">
-				<h2 class="font-semibold text-white text-xl mb-4">Our Culture</h2>
+				<h2 class="font-semibold text-white text-xl mb-4">{c.cultureTitle}</h2>
 				<p class="text-white/70 leading-relaxed">{c.culture}</p>
 			</div>
 

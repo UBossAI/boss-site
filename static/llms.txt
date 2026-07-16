@@ -1,0 +1,80 @@
+# UBOSS
+
+> UBOSS LLC (UBoss) is an AI-as-a-Service consulting agency based in Lynn, Massachusetts, building
+> custom AI-powered automation for trades and local service businesses across the North Shore and
+> Greater Boston area.
+
+## About
+
+UBOSS helps small and medium service businesses automate the repetitive parts of running a
+business — customer intake, follow-ups, scheduling, invoicing reminders — and gives owners a clear
+view of how their business is actually doing, without needing to hire additional office staff.
+UBOSS builds real automation infrastructure (workflows, AI-powered assistants, business
+dashboards, custom integrations), not a resold chatbot.
+
+UBOSS is trilingual: full support in English and Spanish, with Portuguese (Brazilian) support
+currently being rolled out.
+
+Founded by Robert Gutierrez, a first-generation Salvadoran-American software engineer with a
+security-conscious engineering background, personally bilingual in English and Spanish. Robert
+also maintains a personal site at https://robg.dev.
+
+## Who UBOSS Serves
+
+Trades and local service businesses, including: landscaping and lawn care, cleaning services,
+general contracting, plumbing and HVAC, auto body and repair, property management, and caterers
+and food entrepreneurs. UBOSS does not currently serve full-service restaurants (dine-in/kitchen
+operations) — that segment typically expects point-of-sale and delivery-platform integrations
+that are out of scope today.
+
+## Services
+
+- Workflow automation: form intake, job scheduling, client follow-ups, invoicing reminders
+- AI-powered assistants: WhatsApp, email, and SMS-based customer response and lead qualification
+- Business dashboards and analytics: real-time view of jobs, revenue, and leads in one place
+- Custom integrations: connecting existing tools (QuickBooks, Google Workspace, CRMs, and more)
+- Digital form creation, replacing paper forms and PDFs
+- SMS/email notifications for job updates, reminders, and confirmations
+
+## Not Currently Offered
+
+- Point-of-sale (POS) system installation or integration (e.g. Toast, Square, Clover)
+- Online ordering / delivery-platform integration (e.g. Uber Eats, Grubhub, DoorDash)
+- Online payments: planned (Stripe), not yet live
+
+## Pricing
+
+Three public tiers, one-time setup fee (based on project complexity, discussed during a free
+consultation) plus a monthly subscription, no long-term contract:
+
+- Starter — $500/month
+- Professional — $800/month
+- Professional Plus — $1,200/month
+- Business & Enterprise — custom pricing, contact for details
+
+Full details: https://uboss.ai/en/pricing
+
+## Contact
+
+- Email: support@uboss.ai
+- Phone: (339) 245-1665 (call or text; also reachable via WhatsApp)
+- 15-minute discovery call: https://cal.com/robg-uboss/discovery-call
+- 60-minute strategy session: https://cal.com/robg-uboss/uboss-strategy
+
+## Service Area
+
+Boston, East Boston, Lynn, Lynnfield, Saugus, Swampscott, Peabody, Beverly, Gloucester, Revere,
+Chelsea, Everett, Malden, Reading, Stoneham, Wakefield, Woburn, North Reading, Tewksbury,
+Somerville, Framingham, and Waltham, Massachusetts.
+
+## Pages
+
+- Home: https://uboss.ai/en
+- About: https://uboss.ai/en/about
+- Services: https://uboss.ai/en/services
+- Pricing: https://uboss.ai/en/pricing
+- Contact: https://uboss.ai/en/contact
+- Support: https://uboss.ai/en/support
+
+This site is also available in Spanish (https://uboss.ai/es) and Brazilian Portuguese
+(https://uboss.ai/pt-BR).

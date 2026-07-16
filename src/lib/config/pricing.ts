@@ -28,7 +28,7 @@ export interface SetupFee {
 export const tiers: PricingTier[] = [
 	{
 		id: 'starter',
-		name: { en: 'Starter', es: 'Inicial', 'pt-BR': 'Inicial' },
+		name: { en: 'Starter', es: 'Starter', 'pt-BR': 'Starter' },
 		price: 500,
 		currency: 'USD',
 		interval: 'month',
@@ -69,7 +69,7 @@ export const tiers: PricingTier[] = [
 	},
 	{
 		id: 'professional',
-		name: { en: 'Professional', es: 'Profesional', 'pt-BR': 'Profissional' },
+		name: { en: 'Professional', es: 'Professional', 'pt-BR': 'Professional' },
 		price: 800,
 		currency: 'USD',
 		interval: 'month',
@@ -89,19 +89,19 @@ export const tiers: PricingTier[] = [
 				'Priority support'
 			],
 			es: [
-				'Todo lo del plan Inicial',
+				'Todo lo del plan Starter',
 				'Confirmaciones de citas por SMS',
 				'Tus clientes reciben respuesta automáticamente',
-				'Panel de negocio — ve tus números',
+				'Dashboard de tu negocio — ve tus números',
 				'Configuración de Google Business Profile',
 				'Revisiones cada 2 semanas',
 				'Soporte prioritario'
 			],
 			'pt-BR': [
-				'Tudo do plano Inicial',
+				'Tudo do plano Starter',
 				'Confirmações de consultas via SMS',
 				'Clientes recebem resposta automaticamente',
-				'Painel do negócio — veja seus números',
+				'Dashboard do seu negócio — veja seus números',
 				'Configuração do Google Business Profile',
 				'Revisões a cada 2 semanas',
 				'Suporte prioritário'
@@ -113,7 +113,7 @@ export const tiers: PricingTier[] = [
 	},
 	{
 		id: 'professional-plus',
-		name: { en: 'Professional Plus', es: 'Profesional Plus', 'pt-BR': 'Profissional Plus' },
+		name: { en: 'Professional Plus', es: 'Professional Plus', 'pt-BR': 'Professional Plus' },
 		price: 1200,
 		currency: 'USD',
 		interval: 'month',
@@ -133,19 +133,19 @@ export const tiers: PricingTier[] = [
 				'Dedicated support channel'
 			],
 			es: [
-				'Todo lo del plan Profesional',
+				'Todo lo del plan Professional',
 				'Solicitudes de reseñas automáticas tras cada trabajo',
 				'Secuencias de seguimiento al cliente',
-				'Panel de rendimiento avanzado',
+				'Dashboard de rendimiento avanzado',
 				'Múltiples canales de captación',
 				'Llamada semanal de seguimiento',
 				'Canal de soporte dedicado'
 			],
 			'pt-BR': [
-				'Tudo do plano Profissional',
+				'Tudo do plano Professional',
 				'Solicitações automáticas de avaliação após cada trabalho',
 				'Sequências de acompanhamento do cliente',
-				'Painel de desempenho avançado',
+				'Dashboard de desempenho avançado',
 				'Múltiplos canais de captação',
 				'Chamada semanal de acompanhamento',
 				'Canal de suporte dedicado'

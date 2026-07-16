@@ -39,7 +39,9 @@
 		<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="flex items-center gap-2 mb-6">
 				<span class="w-6 h-px bg-teal"></span>
-				<span class="text-teal text-sm font-medium uppercase tracking-widest">Pricing</span>
+				<span class="text-teal text-sm font-medium uppercase tracking-widest"
+					>{p.eyebrow as string}</span
+				>
 			</div>
 			<h1 class="hero-heading text-white mb-4">{p.title as string}</h1>
 			<div class="teal-divider mb-6"></div>
@@ -167,7 +169,7 @@
 	<!-- FAQ -->
 	<section class="bg-white py-16 lg:py-20">
 		<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-			<h2 class="section-heading text-near-black mb-3 text-center">FAQ</h2>
+			<h2 class="section-heading text-near-black mb-3 text-center">{p.faqTitle as string}</h2>
 			<div class="teal-divider mx-auto mb-10"></div>
 
 			<div class="space-y-3">

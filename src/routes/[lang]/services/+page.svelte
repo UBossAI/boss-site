@@ -54,7 +54,9 @@
 		<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="flex items-center gap-2 mb-6">
 				<span class="w-6 h-px bg-teal"></span>
-				<span class="text-teal text-sm font-medium uppercase tracking-widest">Services</span>
+				<span class="text-teal text-sm font-medium uppercase tracking-widest"
+					>{s.eyebrow as string}</span
+				>
 			</div>
 			<h1 class="hero-heading text-white mb-4">{s.title as string}</h1>
 			<div class="teal-divider mb-6"></div>
