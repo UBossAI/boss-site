@@ -18,13 +18,14 @@
 		"headline": "Become a Bigger Business, Without Hiring Office Staff",
 		"subheadline": "UBoss quietly handles the back-office work — follow-ups, scheduling, invoicing — so your business runs like it has a full team behind it, without the extra hires.",
 		"cta": "Book a Free Consultation",
-		"ctaSubtext": "No commitment. Just a 15-minute chat about what's slowing you down."
+		"ctaSubtext": "No commitment — just a 15-minute call to see where you're losing time.",
+		"learnMore": "Learn more"
 	},
 	"whatWeDo": {
-		"title": "What We Actually Do For You",
-		"subtitle": "No tech talk, no jargon — just the stuff that saves you time and headaches.",
+		"title": "What We Do For You",
+		"subtitle": "No tech talk, no jargon — just the tools that save you time and headaches.",
 		"automation": {
-			"title": "We Handle the Busywork",
+			"title": "We Handle the Repetitive Work",
 			"description": "A form gets filled out, a job gets booked, a customer needs a reminder — it happens on its own. You don't lift a finger, and nothing gets forgotten."
 		},
 		"assistants": {
@@ -65,10 +66,10 @@
 			},
 			{
 				"title": "Local, Not a Call Center",
-				"description": "We're right here in Greater Boston. You can meet us face to face — this isn't some outsourced help desk."
+				"description": "We're right here in Greater Boston. You can meet us face to face — not an outsourced help desk on the other side of the world."
 			},
 			{
-				"title": "We Get the Trades",
+				"title": "We Understand the Trades",
 				"description": "We know how landscapers, cleaners, and contractors actually work — long days, tight schedules, and no patience for complicated software."
 			},
 			{
@@ -163,8 +164,8 @@
 		"title": "Our Services",
 		"subtitle": "No tech talk — just the tools that save you time, built specifically around your business.",
 		"automation": {
-			"title": "We Handle the Busywork",
-			"description": "Forms, scheduling, follow-up texts, invoicing reminders — the repetitive stuff that eats up your evenings. We set it up once, and it just runs.",
+			"title": "We Handle the Repetitive Work",
+			"description": "Forms, scheduling, follow-up texts, invoicing reminders — the repetitive tasks that eat up your evenings. We set it up once, and it just runs.",
 			"features": [
 				"Catching new leads automatically",
 				"Booking jobs without back-and-forth calls",
@@ -228,7 +229,7 @@
 			],
 			"cta": "Learn more"
 		},
-		"consultationCta": "Book a free chat and we'll walk you through it"
+		"consultationCta": "Book a free consultation and we'll walk you through it"
 	},
 	"pricing": {
 		"title": "Pricing",
@@ -245,16 +246,16 @@
 		"cta": "Book a call to find your plan",
 		"faq": [
 			{
-				"question": "So what is UBoss, really?",
-				"answer": "Think of us as an extra set of hands that never clocks out. We don't replace you or your crew — we just take the repetitive stuff off your plate (texts, follow-ups, paperwork) and give you a simple way to see how your business is actually doing, so you can spend your time on the work, not the busywork."
+				"question": "What is UBoss, exactly?",
+				"answer": "Think of us as an extra set of hands that never clocks out. We don't replace you or your crew — we take the repetitive work off your plate (texts, follow-ups, paperwork) and give you a clear, simple way to see how your business is actually doing, so you can spend your time on the work itself, not the admin behind it."
 			},
 			{
-				"question": "I tried a CRM before and it just sat there unused. Why would this be different?",
-				"answer": "Most CRMs are built for big sales teams — tons of buttons, tons of typing, and basically a part-time job just to keep it updated. That's why they end up ignored. UBoss isn't one more app to log into — we plug into what you already use (texting, forms, invoicing) and automate it quietly in the background. You get the useful stuff — who called, what jobs are stuck, where the money's going — without becoming a data-entry person."
+				"question": "We tried a CRM before and it never really got used. Why would this be different?",
+				"answer": "Most CRMs are built for large sales teams — dozens of features you'll never touch, and enough manual entry that keeping it updated becomes its own part-time job. That's why they end up ignored. UBoss isn't one more app to log into — it plugs into what you already use (texting, forms, invoicing) and runs quietly in the background. You get what actually matters — who called, which jobs are stalled, where the money's going — without becoming a full-time data-entry clerk."
 			},
 			{
 				"question": "Will this help people find my business when they search online?",
-				"answer": "More and more people are asking ChatGPT or similar tools \"who's a good [your trade] near me\" instead of just Googling it. We make sure your business info is set up in a way those tools can actually read and trust, so you show up whichever way someone's looking for you."
+				"answer": "More and more people are asking ChatGPT or similar tools \"who's a good contractor near me\" instead of just Googling it. We make sure your business info is set up in a way those tools can actually read and trust, so you show up whichever way someone's looking for you."
 			},
 			{
 				"question": "Can this make my invoices and estimates look more professional?",
@@ -282,7 +283,7 @@
 			},
 			{
 				"question": "How long does setup take?",
-				"answer": "Most Starter setups are live within 1-2 weeks. Bigger Professional and Business builds usually take 2-4 weeks, depending on what we're connecting."
+				"answer": "Most Starter setups are live within 1-2 weeks. Bigger Professional and Professional Plus builds usually take 2-4 weeks, depending on what we're connecting."
 			}
 		],
 		"comparisonTitle": "What are you really paying for?",

@@ -113,7 +113,7 @@ Sections in order:
 - Phone number placeholder (add when ready)
 - Cal.com embed — 2 event types: 15 min discovery, 60 min strategy session
   - 15 min discovery: https://cal.com/robg-uboss/discovery-call
-  - 40 min strategy: https://cal.com/robg-uboss/uboss-strategy
+  - 60 min strategy: https://cal.com/robg-uboss/uboss-strategy
 - Map or "Serving Greater Boston, MA" text
 
 #### 6. Legal (`/[lang]/legal/terms`, `/[lang]/legal/privacy`, `/[lang]/legal/key-terms`)
@@ -154,9 +154,28 @@ Serving Greater Boston, MA
 
 ## Content Tone
 
-- **English:** Casual and friendly first, professional second. Think "the guy at the counter who actually explains things to you," not a tech vendor. Lead with the pain point in plain, physical terms (missed calls, backed-up paperwork, working nights to catch up), then the fix — so a reader nods along before they see the solution. Avoid jargon words like "workflow," "automation," "integration," "AI-powered" in headlines and CTAs; use them sparingly in body copy where SEO needs them, never as the main hook. Trades people — including those not especially comfortable with computers — should understand every word without re-reading it.
-- **Spanish:** Warm, conversational, Central American/Mexican register. Use "tú" not "usted" for approachability. Think how a trusted colleague would explain tech — "Te ayudamos a automatizar tu negocio con inteligencia artificial." NOT Spain Castilian.
-- **Portuguese (BR):** Warm, conversational Brazilian Portuguese. Same approachable energy. "Nós ajudamos a automatizar o seu negócio com inteligência artificial." Use Brazilian expressions and phrasing, not European Portuguese.
+**The three languages deliberately have different jobs, not just different words for the same
+message:**
+
+- **English is the credibility anchor.** Polished, confident, reads like an established,
+  legitimate company — the "posh value" register, since for many prospects this is the stepping
+  stone / first-impression moment that validates the business. Still plain-language and
+  pain-point-first (lead with the pain in plain, physical terms — missed calls, backed-up
+  paperwork, working nights to catch up — then the fix), and still avoid jargon words like
+  "workflow," "automation," "integration," "AI-powered" as the main hook in headlines/CTAs — but
+  the *execution* should read credible and put-together, not folksy or overly casual. Words/openers
+  that read "chill" (e.g. "So, what is UBoss, really?", "busywork") undercut this — favor phrasing
+  that's plain but confident. Trades people, including those not especially comfortable with
+  computers, should still understand every word without re-reading it — polished doesn't mean
+  jargon-heavy.
+- **Spanish and Portuguese get the warm, laid-back register.** Conversational, casual, "trusted
+  colleague explaining tech to you" energy — this is where the friendly/folksy tone lives.
+  - **Spanish:** Central American/Mexican register, "tú" not "usted." NOT Spain Castilian.
+  - **Portuguese (BR):** Brazilian expressions and phrasing, not European Portuguese.
+
+Founder's framing: English's job is to prove legitimacy to a skeptical or professional-context
+visitor; Spanish/Portuguese's job is warmth and approachability. Don't collapse the two into one
+register.
 
 ## Future Integrations (Scaffold Only — Do Not Implement)
 - Stripe payment page (nav link hidden)

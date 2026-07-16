@@ -15,42 +15,43 @@
 		"selectLanguage": "Seleccionar idioma"
 	},
 	"hero": {
-		"headline": "Inteligencia Artificial que trabaja tan duro como tú",
-		"subheadline": "Automatizamos los procesos de tu negocio en el Gran Boston para que puedas concentrarte en lo que realmente importa.",
+		"headline": "Maneja tu negocio como una empresa grande — sin secretaria, sin equipo.",
+		"subheadline": "UBoss se encarga del trabajo de oficina — seguimientos, citas, facturas — para que tu negocio funcione como si tuviera un equipo completo, sin contratar a nadie más.",
 		"cta": "Agenda tu consulta gratis",
-		"ctaSubtext": "Sin compromisos. Llamada de 15 minutos."
+		"ctaSubtext": "Sin compromisos. Solo una llamada de 15 minutos.",
+		"learnMore": "Saber más"
 	},
 	"whatWeDo": {
-		"title": "¿Qué hacemos?",
-		"subtitle": "Automatización con IA para pequeños negocios — diseñada para como tú realmente trabajas.",
+		"title": "Esto Es Lo Que Hacemos Por Ti",
+		"subtitle": "Sin tecnicismos, sin palabras raras — solo lo que te ahorra tiempo y dolores de cabeza.",
 		"automation": {
-			"title": "Automatización de Procesos",
-			"description": "Automatiza formularios, agendamiento, seguimientos y más. Tu negocio corre 24/7 aunque estés en el trabajo."
+			"title": "Nosotros Nos Encargamos de las Tareas Repetitivas",
+			"description": "Alguien llena un formulario, se agenda un trabajo, un cliente necesita un recordatorio — todo pasa solo. Tú no mueves ni un dedo, y nada se te olvida."
 		},
 		"assistants": {
-			"title": "Asistentes con IA",
-			"description": "Bots de WhatsApp, respuestas automáticas de email y asistentes que atienden a tus clientes a cualquier hora."
+			"title": "Ninguna Consulta Se Queda Sin Respuesta",
+			"description": "En cuanto un cliente te escribe — por mensaje, WhatsApp o correo — recibe una respuesta rápida y un seguimiento de verdad, aunque estés subido en una escalera o debajo de un carro."
 		},
 		"dashboards": {
-			"title": "Paneles de Datos",
-			"description": "Ve los datos de tu negocio en tiempo real — trabajos, ingresos, clientes potenciales y métricas en un solo lugar."
+			"title": "Mira Cómo Le Va de Verdad a Tu Negocio",
+			"description": "Una sola pantalla te muestra tus trabajos, tu dinero y tus clientes potenciales — sin hojas de cálculo, sin adivinar."
 		},
 		"integrations": {
-			"title": "Integraciones Personalizadas",
-			"description": "Conectamos tus herramientas existentes para que la información fluya sola — sin copiar y pegar entre apps."
+			"title": "Tus Herramientas, Por Fin Hablando Entre Sí",
+			"description": "QuickBooks, Google, tu CRM — conectamos lo que ya usas para que no tengas que escribir lo mismo tres veces."
 		}
 	},
 	"whoWeServe": {
 		"title": "Desarrollado para negocios como el tuyo",
-		"subtitle": "Nos especializamos en oficios y servicios — los negocios que mantienen el Gran Boston funcionando.",
+		"subtitle": "Trabajamos con negocios de oficios y servicios locales — los que mantienen a Boston en movimiento.",
 		"industries": [
-			"Paisajismo y jardines",
-			"Servicios de limpieza",
-			"Contratistas generales",
-			"Plomería y HVAC",
-			"Carrocería y reparación de autos",
-			"Administración de propiedades",
-			"Restaurantes y servicios de comida",
+			"Jardinería y Paisajismo",
+			"Servicios de Limpieza",
+			"Contratistas Generales",
+			"Plomería y Climatización",
+			"Talleres de Carrocería",
+			"Administración de Propiedades",
+			"Emprendedores de Comida o Servicios",
 			"Y más..."
 		],
 		"cta": "Conoce cómo ayudamos tu industria"
@@ -60,20 +61,20 @@
 		"subtitle": "No somos una empresa de tecnología genérica. Somos locales, trilingües y hechos para los oficios.",
 		"reasons": [
 			{
-				"title": "Trilingüe — EN / ES / PT-BR",
-				"description": "Servimos a las comunidades quien habla ingles, español y portugues del Gran Boston — sin barreras idiomáticas."
+				"title": "Hablamos Tu Idioma — En Serio",
+				"description": "Inglés, español o portugués — como sea que manejes tu negocio, podemos platicar contigo en tu idioma."
 			},
 			{
-				"title": "Local y Personal",
-				"description": "Somos del Greater Boston. Relaciones cara a cara, no solo un call center."
+				"title": "Somos Locales, No un Call Center",
+				"description": "Estamos aquí mismo, en Greater Boston. Nos puedes ver cara a cara — esto no es un servicio de ayuda subcontratado en otro país."
 			},
 			{
-				"title": "Enfocados en los Oficios",
-				"description": "Entendemos cómo trabajan contratistas. Nuestras automatizaciones están hechas para la realidad del trabajo manual."
+				"title": "Entendemos los Oficios",
+				"description": "Sabemos cómo trabajan de verdad los jardineros, las empresas de limpieza y los contratistas — días largos, horarios apretados, y cero paciencia para programas complicados."
 			},
 			{
-				"title": "IA de Verdad",
-				"description": "No solo revendemos ChatGPT. Construimos infraestructura real — workflows, integraciones y paneles de datos a la medida de tu negocio."
+				"title": "Herramientas de Verdad, No Solo un Chatbot",
+				"description": "Esto no es que te revendamos ChatGPT con otro logo. Construimos algo real, hecho para manejar tu negocio de verdad — no solo para contestar preguntas."
 			}
 		]
 	},
@@ -161,74 +162,74 @@
 	},
 	"services": {
 		"title": "Nuestros Servicios",
-		"subtitle": "Automatizaciones con IA construidas específicamente para tu negocio.",
+		"subtitle": "Sin tecnicismos — solo las herramientas que te ahorran tiempo, hechas específicamente para tu negocio.",
 		"automation": {
-			"title": "Automatización de Procesos",
-			"description": "Automatiza tus procesos más lentos — formularios de clientes, agendamiento de trabajos, emails de seguimiento, activadores de facturas y más. Mapeamos tu flujo de trabajo actual y reemplazamos los pasos manuales con automatización inteligente.",
+			"title": "Nosotros Nos Encargamos de las Tareas Repetitivas",
+			"description": "Formularios, agendas, mensajes de seguimiento, recordatorios de facturas — todo lo repetitivo que te quita las tardes. Lo configuramos una vez, y ya solo funciona.",
 			"features": [
-				"Recepción de clientes y captura de leads",
-				"Agendamiento automático de trabajos",
-				"Secuencias de seguimiento",
-				"Activadores de facturas"
+				"Captura automática de nuevos clientes",
+				"Agenda trabajos sin tanta llamada de ida y vuelta",
+				"Mensajes de seguimiento que se envían solos",
+				"Recordatorios de factura para que te paguen a tiempo"
 			],
 			"cta": "Saber más"
 		},
 		"assistants": {
-			"title": "Asistentes con IA",
-			"description": "Despliega asistentes de IA en WhatsApp, email y SMS que responden preguntas de clientes, califican leads y reservan citas — las 24 horas, los 7 días.",
+			"title": "Ninguna Consulta Se Queda Sin Respuesta",
+			"description": "En cuanto alguien te escribe — por WhatsApp, correo o mensaje de texto — recibe una respuesta rápida y un seguimiento de verdad, a cualquier hora, en vez de esperar días para que le contesten.",
 			"features": [
-				"Bot de WhatsApp (próximamente)",
-				"Respuesta automática de email",
-				"Calificación de leads",
-				"Reserva de citas"
+				"Respuestas automáticas de WhatsApp (muy pronto)",
+				"Correos que se contestan solos",
+				"Separamos los clientes serios de los que solo preguntan por preguntar",
+				"Agenda citas sin que tengas que tocar un calendario"
 			],
 			"cta": "Saber más"
 		},
 		"dashboards": {
-			"title": "Paneles de Datos y Analíticas",
-			"description": "Ve todo tu negocio de un vistazo. Construimos paneles personalizados que toman datos de todas tus herramientas y los presentan de forma clara y accionable.",
+			"title": "Mira Cómo Le Va de Verdad a Tu Negocio",
+			"description": "Todo en un solo lugar — una pantalla sencilla que junta la información de todas tus herramientas y te muestra lo que de verdad está pasando, en números claros.",
 			"features": [
-				"Seguimiento de trabajos en tiempo real",
-				"Vistas de ingresos y gastos",
-				"Visibilidad del pipeline de leads",
+				"Mira el estado de cada trabajo de un vistazo",
+				"Sabe qué está entrando y qué está saliendo",
+				"Mira cuáles clientes potenciales valen la pena",
 				"Integración con Google Looker"
 			],
 			"cta": "Saber más"
 		},
 		"integrations": {
-			"title": "Integraciones Personalizadas",
-			"description": "¿Ya usas herramientas que te gustan? Las conectamos para que la información fluya automáticamente — sin más copiar y pegar entre apps.",
+			"title": "Tus Herramientas, Por Fin Hablando Entre Sí",
+			"description": "¿Ya usas QuickBooks o Google? Los conectamos para que la información fluya sola — ya no tienes que escribir el mismo trabajo en tres aplicaciones diferentes.",
 			"features": [
-				"Integración con QuickBooks",
-				"Google Workspace",
-				"Conexiones con CRM",
-				"Trabajo de API personalizado"
+				"Conexión con QuickBooks",
+				"Conexión con Google Workspace",
+				"Se conecta con tu CRM",
+				"Cualquier conexión personalizada que necesites"
 			],
 			"cta": "Saber más"
 		},
 		"forms": {
-			"title": "Creación de Formularios Digitales",
-			"description": "Reemplaza los formularios de papel y los PDFs con formularios digitales inteligentes que alimentan directamente tus flujos de automatización.",
+			"title": "Despídete de los Formularios en Papel",
+			"description": "Cambia las tablillas y los PDFs maltratados por formularios digitales sencillos que se conectan directo con todo lo demás — ya no tienes que volver a escribir nada a mano.",
 			"features": [
 				"Formularios con tu marca",
-				"Enrutamiento automático de datos",
+				"La información se envía sola a donde debe ir",
 				"Recolección de firmas",
-				"Optimizados para móvil"
+				"Funciona bien en el celular"
 			],
 			"cta": "Saber más"
 		},
 		"notifications": {
-			"title": "Notificaciones por SMS y Email",
-			"description": "Mantén a tu equipo y clientes informados automáticamente. Envía actualizaciones de trabajos, recordatorios y confirmaciones sin mover un dedo.",
+			"title": "Mantén a Todos Informados, Automáticamente",
+			"description": "Actualizaciones de trabajos, recordatorios de citas, confirmaciones de pago — se envían solos, para que nadie se quede con la duda de qué está pasando.",
 			"features": [
 				"Actualizaciones de estado de trabajos",
 				"Recordatorios de citas",
 				"Confirmaciones de pago",
-				"Notificaciones al equipo"
+				"Notificaciones para tu equipo"
 			],
 			"cta": "Saber más"
 		},
-		"consultationCta": "Agenda una consulta gratis para hablar sobre tus necesidades"
+		"consultationCta": "Agenda una plática gratis y te lo explicamos todo"
 	},
 	"pricing": {
 		"title": "Precios",
@@ -245,28 +246,56 @@
 		"cta": "Agenda una llamada para encontrar tu plan",
 		"faq": [
 			{
+				"question": "Entonces, ¿qué es UBoss, realmente?",
+				"answer": "Piensa en nosotros como un par de manos extra que nunca se cansan. No reemplazamos a tu equipo ni a ti — solo te quitamos de encima lo repetitivo (mensajes, seguimientos, papeleo) y te damos una forma sencilla de ver cómo le va de verdad a tu negocio, para que uses tu tiempo en el trabajo, no en el papeleo."
+			},
+			{
+				"question": "Ya probé un CRM antes y terminó ahí, sin que nadie lo usara. ¿Por qué esto sería diferente?",
+				"answer": "La mayoría de los CRM están hechos para equipos de ventas grandes — muchos botones, mucho que escribir, y casi que necesitas a alguien de medio tiempo solo para mantenerlo actualizado. Por eso terminan olvidados. UBoss no es una aplicación más para entrar a cada rato — se conecta con lo que ya usas (mensajes, formularios, facturas) y lo automatiza calladito, sin que tengas que hacer nada. Tú te quedas con lo útil — quién llamó, qué trabajos están atorados, para dónde se va el dinero — sin tener que convertirte en un asistente de datos."
+			},
+			{
+				"question": "¿Esto ayuda a que la gente encuentre mi negocio cuando busca en línea?",
+				"answer": "Cada vez más gente le pregunta a ChatGPT o herramientas parecidas \"quién es un buen contratista cerca de mí\" en lugar de solo buscarlo en Google. Nosotros nos aseguramos de que la información de tu negocio esté organizada de una forma que esas herramientas puedan leer y confiar en ella, para que aparezcas sin importar cómo te estén buscando."
+			},
+			{
+				"question": "¿Esto puede hacer que mis facturas y cotizaciones se vean más profesionales?",
+				"answer": "Sí — una cotización hecha a mano y desordenada puede hacer que un trabajo excelente se vea barato. Parte de lo que automatizamos es que cada cotización, factura y confirmación que ve tu cliente se vea limpia y bien presentada, como si viniera de una empresa mucho más grande."
+			},
+			{
 				"question": "¿Qué incluye la suscripción mensual?",
-				"answer": "Tu suscripción mensual cubre el manejo, monitoreo y optimización continua de tus automatizaciones. Mantenemos todo funcionando, resolvemos problemas y hacemos ajustes conforme evoluciona tu negocio."
+				"answer": "Tu pago mensual cubre que nosotros mantengamos todo funcionando — revisando que no haya problemas, arreglando lo que se rompa, y ajustando las cosas conforme tu negocio va cambiando. No estás pagando por un software; estás pagando para que siga funcionando."
 			},
 			{
-				"question": "¿Qué es la tarifa única de configuración?",
-				"answer": "La tarifa de configuración cubre el descubrimiento inicial, diseño y construcción de tus automatizaciones personalizadas. El costo depende de la complejidad — lo discutimos en tu consulta gratuita antes de que te comprometas a nada."
+				"question": "¿Qué es el pago único de instalación?",
+				"answer": "El pago de instalación cubre que nosotros averigüemos exactamente qué necesitas, y luego construyamos y probemos todo antes de ponerlo a funcionar. El costo depende de cuánto estemos construyendo — lo revisamos juntos en tu llamada gratis, sin sorpresas."
 			},
 			{
-				"question": "¿Hay contrato o compromiso a largo plazo?",
-				"answer": "Sin contratos a largo plazo. Nuestras suscripciones son mes a mes. Creemos en ganarnos tu negocio cada mes."
+				"question": "¿Hay contrato o algún compromiso a largo plazo?",
+				"answer": "No hay contratos a largo plazo. Nuestras suscripciones son mes a mes. Creemos en ganarnos tu confianza cada mes."
 			},
 			{
-				"question": "¿Puedo empezar con una automatización y agregar más después?",
-				"answer": "Claro que sí. La mayoría de nuestros clientes empiezan con el plan Inicial para automatizar un proceso clave, y luego suben de plan cuando ven los resultados."
+				"question": "¿Puedo empezar chico e ir agregando más después?",
+				"answer": "Claro que sí. La mayoría de nuestros clientes empiezan con el plan Starter para resolver un problema primero, y después van agregando más conforme ven que funciona."
 			},
 			{
-				"question": "¿Ofrecen soporte en español?",
-				"answer": "Sí — ofrecemos soporte completo en inglés, español (registro centroamericano/mexicano) y portugués brasileño."
+				"question": "¿Ofrecen soporte en español o portugués?",
+				"answer": "Sí — damos soporte completo en inglés y español, y el soporte en portugués lo estamos implementando ahora mismo."
 			},
 			{
-				"question": "¿Cuánto tiempo tarda la configuración?",
-				"answer": "La mayoría de las automatizaciones Iniciales están listas en 1-2 semanas. Las implementaciones Profesionales y Empresariales más complejas generalmente toman 2-4 semanas dependiendo de las integraciones."
+				"question": "¿Cuánto tiempo tarda la instalación?",
+				"answer": "La mayoría de las instalaciones Starter quedan listas en 1-2 semanas. Los proyectos más grandes, Professional y Professional Plus, generalmente toman de 2 a 4 semanas, dependiendo de todo lo que estemos conectando."
+			},
+			{
+				"question": "¿Qué es la ayuda administrativa?",
+				"answer": "La ayuda administrativa es una parte integral del crecimiento de un negocio. Se trata de alguien que archiva tus documentos, te ayuda a organizar horarios y citas, mantiene todo en orden y te avisa cuando algo necesita tu atención antes de que se convierta en un problema mayor. Tradicionalmente esto lo hace una secretaria o asistente administrativo — con UBoss, gran parte de este trabajo se automatiza, para que no tengas que contratar a alguien de tiempo completo para hacerlo."
+			},
+			{
+				"question": "¿Qué es una reseña?",
+				"answer": "Una reseña — mejor conocida como \"review\" en inglés — es la opinión que un cliente deja sobre tu trabajo, normalmente en Google o en redes sociales: qué tan bien hiciste el trabajo, si cumpliste lo prometido, si valió la pena. Entre más reseñas tengas, más fuerte se vuelve tu credibilidad digital — la gente, y cada vez más la inteligencia artificial, confía en lo que otros clientes ya dijeron de ti. Con UBoss, automatizamos las solicitudes de reseñas después de cada trabajo, para que esa credibilidad crezca sola."
+			},
+			{
+				"question": "¿Cómo puedo crear un dashboard para mi negocio?",
+				"answer": "Un dashboard (o tablero de informes) junta toda la información de tu negocio en un solo lugar, presentada de forma visual y fácil de entender — no hace falta abrir cinco programas distintos para saber cómo te está yendo. Puede mostrar tus gastos mensuales, tus ventas, cuánto te cuesta conseguir un cliente nuevo, qué tan seguido regresan tus clientes, o qué tan rápido se mueve tu inventario — dependiendo de lo que más te importe a ti. Con UBoss, armamos ese panel por ti, para que veas justamente lo que necesitas ver, sin tener que construirlo tú mismo."
 			}
 		],
 		"comparisonTitle": "¿Qué estás pagando realmente?",
