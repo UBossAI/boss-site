@@ -7,13 +7,7 @@
 		ogImage?: string;
 	}
 
-	let {
-		title,
-		description,
-		lang,
-		page = '',
-		ogImage = '/assets/uboss-logo-light.png'
-	}: Props = $props();
+	let { title, description, lang, page = '', ogImage = '/assets/og-image.png' }: Props = $props();
 
 	const siteUrl = 'https://uboss.ai';
 	const canonicalUrl = $derived(page ? `${siteUrl}/${lang}/${page}` : `${siteUrl}/${lang}`);
