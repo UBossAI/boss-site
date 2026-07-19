@@ -1,5 +1,5 @@
 import { redirect } from '@sveltejs/kit';
 
 export const load = () => {
-	throw redirect(307, '/en');
+	throw redirect(301, '/en');
 };

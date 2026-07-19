@@ -6,7 +6,7 @@
 
 Marketing and conversion website for **UBOSS LLC** — an AI-as-a-Service consulting agency serving trades businesses (landscaping, cleaning, contracting, auto body, property management, and more) across Greater Boston, MA.
 
-**Live site:** [uboss.ai](https://uboss.ai)
+**Live site:** [www.uboss.ai](https://www.uboss.ai)
 
 ---
 
@@ -297,7 +297,7 @@ The site currently runs without required secrets. If you add future integrations
 
 | Variable               | Description                 | Required now?            |
 | ---------------------- | --------------------------- | ------------------------ |
-| `PUBLIC_SITE_URL`      | `https://uboss.ai`          | No (defaults fine)       |
+| `PUBLIC_SITE_URL`      | `https://www.uboss.ai`      | No (defaults fine)       |
 | `PUBLIC_CONTACT_EMAIL` | `support@uboss.ai`          | No                       |
 | `PUBLIC_CAL_DISCOVERY` | `robg-uboss/discovery-call` | No                       |
 | `PUBLIC_CAL_STRATEGY`  | `robg-uboss/uboss-strategy` | No                       |

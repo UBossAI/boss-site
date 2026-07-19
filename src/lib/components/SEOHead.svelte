@@ -9,7 +9,7 @@
 
 	let { title, description, lang, page = '', ogImage = '/assets/og-image.png' }: Props = $props();
 
-	const siteUrl = 'https://uboss.ai';
+	const siteUrl = 'https://www.uboss.ai';
 	const canonicalUrl = $derived(page ? `${siteUrl}/${lang}/${page}` : `${siteUrl}/${lang}`);
 	const enUrl = $derived(page ? `${siteUrl}/en/${page}` : `${siteUrl}/en`);
 	const esUrl = $derived(page ? `${siteUrl}/es/${page}` : `${siteUrl}/es`);
