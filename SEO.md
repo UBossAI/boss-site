@@ -218,7 +218,7 @@ Implement on every page — `LocalBusiness` schema:
   "@type": "LocalBusiness",
   "name": "UBOSS LLC",
   "description": "AI-as-a-Service consulting for trades and small businesses in Greater Boston",
-  "url": "https://uboss.ai",
+  "url": "https://www.uboss.ai",
   "email": "support@uboss.ai",
   "areaServed": {
     "@type": "Place",
@@ -240,10 +240,10 @@ Implement on every page — `LocalBusiness` schema:
 ``` 
 ### hreflang Tags (Every Page)
 ```html
-<link rel="alternate" hreflang="en" href="https://uboss.ai/en/{page}" />
-<link rel="alternate" hreflang="es" href="https://uboss.ai/es/{page}" />
-<link rel="alternate" hreflang="pt-BR" href="https://uboss.ai/pt-BR/{page}" />
-<link rel="alternate" hreflang="x-default" href="https://uboss.ai/en/{page}" />
+<link rel="alternate" hreflang="en" href="https://www.uboss.ai/en/{page}" />
+<link rel="alternate" hreflang="es" href="https://www.uboss.ai/es/{page}" />
+<link rel="alternate" hreflang="pt-BR" href="https://www.uboss.ai/pt-BR/{page}" />
+<link rel="alternate" hreflang="x-default" href="https://www.uboss.ai/en/{page}" />
 ```
 
 ## Sitemap
@@ -253,7 +253,7 @@ Implement on every page — `LocalBusiness` schema:
 ## Robots.txt
 User-agent: *
 Allow: /
-Sitemap: https://uboss.ai/sitemap.xml
+Sitemap: https://www.uboss.ai/sitemap.xml
 
 Disallow: /api/
 

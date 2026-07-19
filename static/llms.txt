@@ -52,7 +52,7 @@ consultation) plus a monthly subscription, no long-term contract:
 - Professional Plus — $1,200/month
 - Business & Enterprise — custom pricing, contact for details
 
-Full details: https://uboss.ai/en/pricing
+Full details: https://www.uboss.ai/en/pricing
 
 ## Contact
 
@@ -69,12 +69,12 @@ Somerville, Framingham, and Waltham, Massachusetts.
 
 ## Pages
 
-- Home: https://uboss.ai/en
-- About: https://uboss.ai/en/about
-- Services: https://uboss.ai/en/services
-- Pricing: https://uboss.ai/en/pricing
-- Contact: https://uboss.ai/en/contact
-- Support: https://uboss.ai/en/support
+- Home: https://www.uboss.ai/en
+- About: https://www.uboss.ai/en/about
+- Services: https://www.uboss.ai/en/services
+- Pricing: https://www.uboss.ai/en/pricing
+- Contact: https://www.uboss.ai/en/contact
+- Support: https://www.uboss.ai/en/support
 
-This site is also available in Spanish (https://uboss.ai/es) and Brazilian Portuguese
-(https://uboss.ai/pt-BR).
+This site is also available in Spanish (https://www.uboss.ai/es) and Brazilian Portuguese
+(https://www.uboss.ai/pt-BR).

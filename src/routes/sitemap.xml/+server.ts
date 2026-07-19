@@ -1,6 +1,6 @@
 import type { RequestHandler } from './$types.js';
 
-const siteUrl = 'https://uboss.ai';
+const siteUrl = 'https://www.uboss.ai';
 const locales = ['en', 'es', 'pt-BR'];
 const pages = [
 	'',

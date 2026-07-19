@@ -48,4 +48,4 @@ Allow: /
 User-agent: Grok-DeepSearch
 Allow: /
 
-Sitemap: https://uboss.ai/sitemap.xml
+Sitemap: https://www.uboss.ai/sitemap.xml

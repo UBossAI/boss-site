@@ -6,7 +6,7 @@
 
 - **Legal Name:** UBOSS LLC
 - **Brand Name:** UBoss
-- **Domain (Marketing):** uboss.ai
+- **Domain (Marketing):** www.uboss.ai (canonical — apex `uboss.ai` 301-redirects to it, see `src/hooks.server.ts`)
 - **Domain (Backend Tools):** uboss.work
 - **Contact Email:** support@uboss.ai
 - **Location:** Greater Boston, MA
