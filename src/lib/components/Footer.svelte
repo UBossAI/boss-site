@@ -52,11 +52,13 @@
 							>{links.services}</a
 						>
 					</li>
+					<!-- Pricing page temporarily unplugged — re-enable by uncommenting this link. See PROJECT.md.
 					<li>
 						<a href="/{lang}/pricing" class="text-sm hover:text-teal transition-colors"
 							>{links.pricing}</a
 						>
 					</li>
+					-->
 					<li>
 						<a href="/{lang}/contact" class="text-sm hover:text-teal transition-colors"
 							>{links.contact}</a

@@ -15,30 +15,30 @@
 		"selectLanguage": "Selecionar idioma"
 	},
 	"hero": {
-		"headline": "Administre seu negócio como uma empresa grande — sem secretária, sem equipe.",
-		"subheadline": "A UBoss cuida do trabalho de escritório — follow-ups, agendamentos, faturas — para que seu negócio funcione como se tivesse uma equipe completa, sem precisar contratar mais ninguém.",
+		"headline": "Leve seu negócio a um novo patamar",
+		"subheadline": "A UBoss dá mais poder para donos de negócio, e facilita a administração do dia a dia.",
 		"cta": "Agende sua consulta grátis",
 		"ctaSubtext": "Sem compromisso. Só uma ligação de 15 minutos.",
 		"learnMore": "Saiba mais"
 	},
 	"whatWeDo": {
 		"title": "É Isso Que Fazemos Por Você",
-		"subtitle": "Sem termos técnicos, sem palavras complicadas — só o que economiza seu tempo e suas dores de cabeça.",
+		"subtitle": "Ouvimos você — ninguém conhece seu negócio melhor que você. Depois construímos um sistema sob medida, e mantemos tudo funcionando.",
 		"automation": {
-			"title": "A Gente Cuida das Tarefas Repetitivas",
-			"description": "Alguém preenche um formulário, um trabalho é agendado, um cliente precisa de um lembrete — tudo acontece sozinho. Você não move um dedo, e nada fica esquecido."
+			"title": "Cuidamos do Trabalho Repetitivo",
+			"description": "O trabalho repetitivo que consome seu dia é resolvido sozinho — sem você mexer um dedo."
 		},
 		"assistants": {
-			"title": "Nenhuma Dúvida Fica Sem Resposta",
-			"description": "Assim que um cliente te manda mensagem — por SMS, WhatsApp ou email — ele recebe uma resposta rápida e um follow-up de verdade, mesmo que você esteja em cima de uma escada ou embaixo de um carro."
+			"title": "Fortalecemos a Comunicação com o Cliente",
+			"description": "Todo cliente recebe uma resposta rápida e de verdade — não importa como ou quando ele te procurar."
 		},
 		"dashboards": {
-			"title": "Veja Como Seu Negócio Está Indo de Verdade",
-			"description": "Uma única tela mostra seus trabalhos, seu dinheiro e seus clientes em potencial — sem planilhas, sem achismo."
+			"title": "Mostramos Como Seu Negócio Está Indo de Verdade",
+			"description": "Uma tela só com seus trabalhos, seu dinheiro e seus clientes — sem achismo."
 		},
-		"integrations": {
-			"title": "Suas Ferramentas, Finalmente Conversando Entre Si",
-			"description": "QuickBooks, Google, seu CRM — conectamos o que você já usa para que não precise digitar a mesma coisa três vezes."
+		"digitization": {
+			"title": "Digitalizamos Seus Papéis",
+			"description": "Formulários, cadernos, anotações em papel — viram registros que você consegue buscar e confiar."
 		}
 	},
 	"whoWeServe": {
@@ -80,17 +80,9 @@
 	},
 	"pricingPreview": {
 		"title": "Preços simples e previsíveis",
-		"subtitle": "Taxa única de configuração + assinatura mensal. Sem custos ocultos.",
-		"monthly": "/mês",
-		"mostPopular": "Mais Popular",
-		"cta": "Agende uma ligação para encontrar seu plano",
-		"setupFeeNote": "Taxa única de configuração conforme a complexidade — discutida na sua consulta gratuita.",
-		"enterprise": {
-			"title": "Corporativo",
-			"description": "Soluções sob medida para operações maiores",
-			"cta": "Vamos Conversar"
-		},
-		"viewFullPricing": "Ver detalhes completos de preços"
+		"subtitle": "Taxa única de configuração + assinatura mensal. Sem custos ocultos, sem contrato de fidelidade.",
+		"freeConsult": "Consulta grátis",
+		"cta": "Agende sua consulta grátis"
 	},
 	"contact": {
 		"eyebrow": "Contato",

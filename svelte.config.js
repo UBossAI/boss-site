@@ -19,9 +19,7 @@ const config = {
 				'/en/services',
 				'/es/services',
 				'/pt-BR/services',
-				'/en/pricing',
-				'/es/pricing',
-				'/pt-BR/pricing',
+				// Pricing route is unplugged (redirects to home) — see PROJECT.md. Not prerendered.
 				'/en/contact',
 				'/es/contact',
 				'/pt-BR/contact',
