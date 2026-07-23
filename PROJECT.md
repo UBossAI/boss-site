@@ -64,7 +64,9 @@ This is NOT a web app, dashboard, or SaaS product. It is a marketing site.
 ## Site Map & Page Structure
 
 ### Top Navigation Bar
-[UBOSS Logo] | Home | About | Services | Pricing | Contact | [Language Switcher 🌐] | [Pay — hidden/scaffold only]
+[UBOSS Logo] | Home | About | Services | ~~Pricing~~ | Contact | [Language Switcher 🌐] | [Pay — hidden/scaffold only]
+
+- Pricing nav link temporarily unplugged (2026-07-23, short-term) — see Pricing page section below.
 
 - Pay/Billing link: build the nav item but hide it (`display: none` or feature flag). Stripe integration comes later.
 - Language switcher: globe icon, dropdown with EN / ES / PT-BR
@@ -77,7 +79,11 @@ Sections in order:
 2. **What We Do** — 3-4 cards/icons explaining services simply (Automation, AI Assistants, Dashboards & Data, Integrations). Light background `#F5F5F7`.
 3. **Who We Serve** — Brief section with trades icons or illustrations. "Built for businesses like yours."
 4. **Why UBOSS** — Differentiators (trilingual, local, AI-native, trades-focused).
-5. **Pricing Preview** — Show 3 tiers (Starter, Professional, Business) with brief descriptions. "Contact for Enterprise" link. CTA to book consultation. Read from `PRICING.md` config.
+5. **Pricing Preview** — as of 2026-07-23, simplified to a plain-language teaser (title + one-line
+   setup-fee/subscription copy + "Consultation: Free" badge + CTA), no tier grid. The 3-tier grid
+   (Starter, Professional, Professional Plus + "Contact for Enterprise") is retired from display
+   short-term along with the full `/pricing` page below, but the underlying `PRICING.md` config is
+   unchanged and ready to re-enable.
 6. **Contact / CTA** — Email link, Cal.com embed (lazy loaded), future WhatsApp/Telegram button placeholder.
 7. **Testimonials** — Placeholder section (scaffold with dummy content, easy to replace later).
 
@@ -100,11 +106,16 @@ Sections in order:
 - Each service: icon + short description + "Learn more in a free consultation" CTA
 
 #### 4. Pricing (`/[lang]/pricing`)
-- Full pricing page showing 3 public tiers
-- Reads entirely from pricing config — zero hardcoded values
-- Setup fees: "One-time setup fee based on project complexity — discussed during consultation"
-- CTA: "Book a call to find your plan"
-- FAQ section below pricing (common questions about what's included, what a subscription covers, etc.)
+- **Temporarily unplugged (2026-07-23, short-term)** — the route redirects to the homepage in all
+  three locales. Code is untouched (not deleted), including the 3-tier grid, enterprise row, and
+  FAQ, so it can be re-enabled later by removing the redirect in `+page.server.ts` and restoring
+  the nav/footer links (see `NavBar.svelte`/`Footer.svelte`, both have the link commented out).
+- Below is the original (still intact, currently unreachable) design intent:
+  - Full pricing page showing 3 public tiers
+  - Reads entirely from pricing config — zero hardcoded values
+  - Setup fees: "One-time setup fee based on project complexity — discussed during consultation"
+  - CTA: "Book a call to find your plan"
+  - FAQ section below pricing (common questions about what's included, what a subscription covers, etc.)
 
 #### 5. Contact (`/[lang]/contact`)
 - Contact form (name, email, phone, message, preferred language dropdown)
@@ -135,7 +146,8 @@ Sections in order:
 
 ### Footer
 [UBOSS Logo] [Pegasus Icon]
-Services | Pricing | About | Contact
+Services | ~~Pricing~~ | About | Contact
+(Pricing link temporarily unplugged 2026-07-23, same as nav — see Pricing page section above)
 Legal: Terms of Service | Privacy Policy | Key Terms
 Support | Careers
 © 2025 UBOSS LLC. All rights reserved.

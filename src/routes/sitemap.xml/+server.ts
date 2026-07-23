@@ -2,11 +2,12 @@ import type { RequestHandler } from './$types.js';
 
 const siteUrl = 'https://www.uboss.ai';
 const locales = ['en', 'es', 'pt-BR'];
+// Pricing route is temporarily unplugged (redirects to home) — see PROJECT.md — so it's
+// excluded here to avoid indexing a page that just redirects.
 const pages = [
 	'',
 	'about',
 	'services',
-	'pricing',
 	'contact',
 	'support',
 	'careers',
@@ -19,7 +20,6 @@ const priorities: Record<string, string> = {
 	'': '1.0',
 	about: '0.8',
 	services: '0.9',
-	pricing: '0.9',
 	contact: '0.8',
 	support: '0.6',
 	careers: '0.5',

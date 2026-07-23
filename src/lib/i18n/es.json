@@ -15,30 +15,30 @@
 		"selectLanguage": "Seleccionar idioma"
 	},
 	"hero": {
-		"headline": "Maneja tu negocio como una empresa grande — sin secretaria, sin equipo.",
-		"subheadline": "UBoss se encarga del trabajo de oficina — seguimientos, citas, facturas — para que tu negocio funcione como si tuviera un equipo completo, sin contratar a nadie más.",
+		"headline": "Desarrolla tu negocio a una capacidad más alta",
+		"subheadline": "UBoss empodera a los dueños y dueñas de negocios, y facilita la administración.",
 		"cta": "Agenda tu consulta gratis",
 		"ctaSubtext": "Sin compromisos. Solo una llamada de 15 minutos.",
 		"learnMore": "Saber más"
 	},
 	"whatWeDo": {
 		"title": "Esto Es Lo Que Hacemos Por Ti",
-		"subtitle": "Sin tecnicismos, sin palabras raras — solo lo que te ahorra tiempo y dolores de cabeza.",
+		"subtitle": "Te escuchamos — nadie conoce tu negocio mejor que tú. Luego construimos un sistema a tu medida, y lo mantenemos funcionando.",
 		"automation": {
-			"title": "Nosotros Nos Encargamos de las Tareas Repetitivas",
-			"description": "Alguien llena un formulario, se agenda un trabajo, un cliente necesita un recordatorio — todo pasa solo. Tú no mueves ni un dedo, y nada se te olvida."
+			"title": "Eliminamos las Tareas Repetitivas",
+			"description": "Menos tiempo en las tareas repetitivas que haces todos los días, cada semana o cada mes."
 		},
 		"assistants": {
-			"title": "Ninguna Consulta Se Queda Sin Respuesta",
-			"description": "En cuanto un cliente te escribe — por mensaje, WhatsApp o correo — recibe una respuesta rápida y un seguimiento de verdad, aunque estés subido en una escalera o debajo de un carro."
+			"title": "Mejoramos la Comunicación",
+			"description": "Con tus clientes, y también dentro de tu equipo."
 		},
 		"dashboards": {
-			"title": "Mira Cómo Le Va de Verdad a Tu Negocio",
-			"description": "Una sola pantalla te muestra tus trabajos, tu dinero y tus clientes potenciales — sin hojas de cálculo, sin adivinar."
+			"title": "Te Mostramos Cómo Le Va de Verdad a Tu Negocio",
+			"description": "Tus trabajos, tu dinero, tus clientes — una sola vista clara, sin adivinar."
 		},
-		"integrations": {
-			"title": "Tus Herramientas, Por Fin Hablando Entre Sí",
-			"description": "QuickBooks, Google, tu CRM — conectamos lo que ya usas para que no tengas que escribir lo mismo tres veces."
+		"digitization": {
+			"title": "Digitalizamos tus Papeles",
+			"description": "Tus papeles, digitalizados y fáciles de encontrar."
 		}
 	},
 	"whoWeServe": {
@@ -80,17 +80,9 @@
 	},
 	"pricingPreview": {
 		"title": "Precios simples y predecibles",
-		"subtitle": "Tarifa única de configuración + suscripción mensual. Sin costos ocultos.",
-		"monthly": "/mes",
-		"mostPopular": "Más Popular",
-		"cta": "Agenda una llamada para encontrar tu plan",
-		"setupFeeNote": "Tarifa única de configuración según la complejidad — se discute en tu consulta gratuita.",
-		"enterprise": {
-			"title": "Corporativo",
-			"description": "Soluciones a medida para operaciones grandes",
-			"cta": "Hablemos"
-		},
-		"viewFullPricing": "Ver detalles completos de precios"
+		"subtitle": "Tarifa única de configuración + suscripción mensual. Sin costos ocultos ni adicionales, sin contratos a largo plazo.",
+		"freeConsult": "Consulta gratuita",
+		"cta": "Agenda tu consulta gratis"
 	},
 	"contact": {
 		"eyebrow": "Contacto",
@@ -359,7 +351,7 @@
 		"emailSubject": "Carreras — Me gustaría unirme al equipo"
 	},
 	"footer": {
-		"tagline": "Inteligencia Artificial que trabaja tan duro como tú",
+		"tagline": "Soluciones y sistemas para dueños y dueñas que buscan claridad.",
 		"serving": "Sirviendo a Greater Boston, MA",
 		"copyright": "© 2026 UBOSS LLC. Todos los derechos reservados.",
 		"companyHeading": "Empresa",

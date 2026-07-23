@@ -13,7 +13,7 @@
 			automation: ServiceItem;
 			assistants: ServiceItem;
 			dashboards: ServiceItem;
-			integrations: ServiceItem;
+			digitization: ServiceItem;
 		};
 	}
 
@@ -38,9 +38,9 @@
 			icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>`
 		},
 		{
-			key: 'integrations',
-			data: t.integrations,
-			icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>`
+			key: 'digitization',
+			data: t.digitization,
+			icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z" /><path stroke-linecap="round" stroke-linejoin="round" d="M13 3v5h5M9 13h6M9 17h6" /></svg>`
 		}
 	]);
 
@@ -76,8 +76,10 @@
 
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 			{#each services as service, i}
-				<div class="card p-6 fade-in" style="transition-delay: {i * 100}ms">
-					<div class="text-teal mb-4">
+				<div class="card p-7 fade-in" style="transition-delay: {i * 100}ms">
+					<div
+						class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-teal/10 text-teal mb-5"
+					>
 						<!-- eslint-disable-next-line svelte/no-at-html-tags -- static hardcoded SVG constant above, not user input -->
 						{@html service.icon}
 					</div>

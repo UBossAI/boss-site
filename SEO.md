@@ -5,6 +5,17 @@
 > Update this file to add/remove terms. The site should incorporate these naturally
 > into page titles, meta descriptions, headings, body copy, and alt text.
 
+## Status Note (2026-07-23)
+
+**Needs a full review pass — flagged, not yet done.** The 2026-07-23 value-over-process pivot
+(hero, `whatWeDo` squares, homepage pricing teaser, footer tagline — see `CONTENT_STRATEGY.md`)
+rewrote a meaningful share of the on-page copy this file's keyword tables are supposed to map to,
+and deliberately avoids literal jargon ("AI-powered," "automation," "workflow") as headline
+language per the founder's tone rules. Some entries below may now be aspirational rather than
+reflected in live copy. Before treating this file as accurate: re-check which keywords actually
+appear in current `en.json`/`es.json`/`pt-BR.json` content and which pages truly target what's
+listed here, and update stale mappings rather than assuming this file is current.
+
 ## How to Use This File
 
 - Keywords listed here should be woven into page content **naturally** — no keyword stuffing
