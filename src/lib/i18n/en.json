@@ -155,75 +155,34 @@
 	},
 	"services": {
 		"eyebrow": "Services",
-		"title": "Our Services",
-		"subtitle": "No tech talk — just the tools that save you time, built specifically around your business.",
+		"title": "The Problems We Solve",
+		"subtitle": "These are the problems that cost most owners time, sleep, and jobs — and what changes when we fix them.",
 		"automation": {
 			"title": "We Handle the Repetitive Work",
-			"description": "Forms, scheduling, follow-up texts, invoicing reminders — the repetitive tasks that eat up your evenings. We set it up once, and it just runs.",
-			"features": [
-				"Catching new leads automatically",
-				"Booking jobs without back-and-forth calls",
-				"Follow-up texts that send themselves",
-				"Invoice reminders so you get paid on time"
-			],
-			"cta": "Learn more"
+			"pain": "Most owners let admin pile up until the end of the day or week, then burn an evening catching up.",
+			"solution": "We set up systems that handle the repetitive work in the background. Your only job is to check status and decide what happens next — instead of doing the work yourself."
 		},
 		"assistants": {
-			"title": "No Inquiry Goes Cold",
-			"description": "Once someone reaches out — WhatsApp, email, or text — they get a fast reply and a real follow-up, around the clock, instead of waiting days to hear back.",
-			"features": [
-				"WhatsApp auto-replies (coming soon)",
-				"Email that answers itself",
-				"Sorting real leads from tire-kickers",
-				"Booking appointments without you touching a calendar"
-			],
-			"cta": "Learn more"
+			"title": "We Strengthen Communication",
+			"pain": "A job can be done well and still leave the customer frustrated if they never hear from you. The same gaps create confusion inside the team.",
+			"solution": "We put simple systems in place so every client gets a fast, clear response and your team always knows the current status — without you having to chase anyone."
 		},
 		"dashboards": {
-			"title": "See How Your Business Is Really Doing",
-			"description": "Everything in one place — one simple screen that pulls from all your tools and shows you what's actually happening, in plain numbers.",
-			"features": [
-				"See every job's status at a glance",
-				"Know what's coming in and going out",
-				"See which leads are worth chasing",
-				"Google Looker integration"
-			],
-			"cta": "Learn more"
+			"title": "We Show You How Your Business Is Really Doing",
+			"pain": "What keeps most owners up isn't the work itself — it's not knowing whether the business is actually healthy.",
+			"solution": "We pull the important numbers into one clear view so you can see what's making money, what's draining it, and where attention is needed. Red flags show up early instead of becoming surprises."
 		},
 		"integrations": {
-			"title": "Your Tools, Finally Talking to Each Other",
-			"description": "Already using QuickBooks or Google? We hook them up so information flows on its own — no more typing the same job into three different apps.",
-			"features": [
-				"QuickBooks hookup",
-				"Google Workspace hookup",
-				"Connects to your CRM",
-				"Whatever custom connection you need"
-			],
-			"cta": "Learn more"
+			"title": "Your Tools Finally Talk to Each Other",
+			"pain": "Most of the tools that were supposed to make life easier still demand your time — entering data, moving it between systems, double-checking numbers.",
+			"solution": "We connect and automate those steps so the information is already where it needs to be. You stop transferring data and start using it."
 		},
-		"forms": {
-			"title": "Say Goodbye to Paper Forms",
-			"description": "Replace clipboards and beat-up PDFs with simple digital forms that plug straight into everything else — no re-typing anything by hand.",
-			"features": [
-				"Forms with your logo on them",
-				"Info goes where it needs to go, automatically",
-				"Customers can sign right on their phone",
-				"Works great on mobile"
-			],
-			"cta": "Learn more"
+		"digitization": {
+			"title": "We Digitize Your Paper Trail",
+			"pain": "How many times have important details lived on a napkin or the back of your hand — one wash away from disappearing?",
+			"solution": "We help put simple systems in place so the critical information actually gets captured, stored, and used instead of lost."
 		},
-		"notifications": {
-			"title": "Keep Everyone in the Loop, Automatically",
-			"description": "Job updates, appointment reminders, payment confirmations — sent out on their own, so nobody's left wondering what's going on.",
-			"features": [
-				"Job status updates",
-				"Appointment reminders",
-				"Payment confirmations",
-				"Team notifications"
-			],
-			"cta": "Learn more"
-		},
-		"consultationCta": "Book a free consultation and we'll walk you through it"
+		"cta": "Book a Free Consultation"
 	},
 	"pricing": {
 		"eyebrow": "Pricing",

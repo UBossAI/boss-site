@@ -96,14 +96,19 @@ Sections in order:
 - Founder name linked to personal website: "Learn more about [Robert Gutierrez] at [Robg.dev]" — open in new tab, subtle styling, not a prominent CTA
 
 #### 3. Services (`/[lang]/services`)
-- Detailed breakdown of what UBOSS offers:
-  - Workflow Automation (form intake, notifications, data routing)
-  - AI-Powered Assistants (WhatsApp bots, email responders — coming soon)
-  - Business Dashboards & Analytics (data collection, charts, Google Looker integration)
-  - Custom Integrations (connect your existing tools)
-  - Digital Form Creation (Tally.so custom forms)
-  - SMS/Email Notifications
-- Each service: icon + short description + "Learn more in a free consultation" CTA
+- **Rewritten 2026-07-23 as a value-oriented, pain/solution page** (same pivot as the homepage —
+  see `CONTENT_STRATEGY.md`). Page heading is "The Problems We Solve," not a functional service
+  list. Five cards, each icon + title + one pain paragraph + one solution paragraph — no bullet
+  feature lists, no per-card CTA button. A single "Book a Free Consultation" button sits once at
+  the bottom of the page (the nav already has one, so it isn't repeated per card):
+  1. We Handle the Repetitive Work (workflow automation)
+  2. We Strengthen Communication (customer + internal team communication)
+  3. We Show You How Your Business Is Really Doing (dashboards/analytics)
+  4. Your Tools Finally Talk to Each Other (integrations)
+  5. We Digitize Your Paper Trail (digitizing paper records — formerly "Digital Form Creation")
+- **SMS/Email Notifications card was removed entirely** (not hidden — deleted from both the i18n
+  content and the page component). If notifications ever need their own page section again, this
+  is new work, not an unplug/re-enable like `/pricing`.
 
 #### 4. Pricing (`/[lang]/pricing`)
 - **Temporarily unplugged (2026-07-23, short-term)** — the route redirects to the homepage in all

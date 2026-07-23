@@ -155,75 +155,34 @@
 	},
 	"services": {
 		"eyebrow": "Serviços",
-		"title": "Nossos Serviços",
-		"subtitle": "Sem termos técnicos — só as ferramentas que economizam seu tempo, feitas especificamente para o seu negócio.",
+		"title": "Os Problemas Que Resolvemos",
+		"subtitle": "Esses são os problemas que custam tempo, sono e trabalhos para a maioria dos donos — e o que muda quando a gente resolve isso.",
 		"automation": {
-			"title": "A Gente Cuida das Tarefas Repetitivas",
-			"description": "Formulários, agendamentos, mensagens de follow-up, lembretes de fatura — tudo aquilo repetitivo que consome suas noites. Configuramos uma vez, e já fica funcionando sozinho.",
-			"features": [
-				"Captura automática de novos clientes",
-				"Agenda trabalhos sem tanta ligação de ida e volta",
-				"Mensagens de follow-up que se enviam sozinhas",
-				"Lembretes de fatura para você receber em dia"
-			],
-			"cta": "Saiba mais"
+			"title": "Cuidamos do Trabalho Repetitivo",
+			"pain": "A maioria dos donos deixa a papelada se acumular até o fim do dia ou da semana, e depois passa uma noite inteira tentando colocar tudo em dia.",
+			"solution": "Montamos sistemas que cuidam do trabalho repetitivo em segundo plano. Seu único trabalho é conferir o status e decidir o próximo passo — em vez de fazer o trabalho você mesmo."
 		},
 		"assistants": {
-			"title": "Nenhuma Dúvida Fica Sem Resposta",
-			"description": "Assim que alguém te manda mensagem — por WhatsApp, email ou SMS — recebe uma resposta rápida e um follow-up de verdade, a qualquer hora, em vez de esperar dias para ser respondido.",
-			"features": [
-				"Respostas automáticas de WhatsApp (em breve)",
-				"E-mails que se respondem sozinhos",
-				"Separamos os clientes sérios dos que só perguntam por perguntar",
-				"Agende compromissos sem precisar mexer em calendário"
-			],
-			"cta": "Saiba mais"
+			"title": "Fortalecemos a Comunicação",
+			"pain": "Um trabalho pode ser bem feito e mesmo assim deixar o cliente frustrado se ele nunca tiver notícias suas. Essas mesmas falhas também geram confusão dentro da equipe.",
+			"solution": "Colocamos sistemas simples para que cada cliente receba uma resposta rápida e clara, e sua equipe sempre saiba o status atual — sem você precisar cobrar ninguém."
 		},
 		"dashboards": {
-			"title": "Veja Como Seu Negócio Está Indo de Verdade",
-			"description": "Tudo em um só lugar — uma tela simples que junta as informações de todas as suas ferramentas e mostra o que realmente está acontecendo, em números claros.",
-			"features": [
-				"Veja o status de cada trabalho de relance",
-				"Saiba o que está entrando e o que está saindo",
-				"Veja quais clientes em potencial valem a pena",
-				"Integração com Google Looker"
-			],
-			"cta": "Saiba mais"
+			"title": "Mostramos Como Seu Negócio Está Indo de Verdade",
+			"pain": "O que tira o sono da maioria dos donos não é o trabalho em si — é não saber se o negócio está realmente saudável.",
+			"solution": "Reunimos os números importantes em uma única visão clara para você ver o que está gerando dinheiro, o que está consumindo, e onde precisa de atenção. Os sinais de alerta aparecem cedo, em vez de virarem surpresa."
 		},
 		"integrations": {
-			"title": "Suas Ferramentas, Finalmente Conversando Entre Si",
-			"description": "Já usa QuickBooks ou Google? A gente conecta tudo para que a informação flua sozinha — você não precisa mais digitar o mesmo trabalho em três aplicativos diferentes.",
-			"features": [
-				"Conexão com QuickBooks",
-				"Conexão com Google Workspace",
-				"Conecta com seu CRM",
-				"Qualquer conexão personalizada que você precisar"
-			],
-			"cta": "Saiba mais"
+			"title": "Suas Ferramentas Finalmente Conversam Entre Si",
+			"pain": "A maioria das ferramentas que deveriam facilitar sua vida ainda tomam seu tempo — digitando dados, movendo eles entre sistemas, conferindo números duas vezes.",
+			"solution": "Conectamos e automatizamos essas etapas para que a informação já esteja onde precisa estar. Você para de transferir dados e começa a usá-los."
 		},
-		"forms": {
-			"title": "Diga Adeus aos Formulários de Papel",
-			"description": "Troque as pranchetas e os PDFs surrados por formulários digitais simples que se conectam direto com tudo o mais — você não precisa mais escrever nada à mão.",
-			"features": [
-				"Formulários com a sua marca",
-				"A informação vai sozinha para onde precisa ir",
-				"Coleta de assinaturas",
-				"Funciona bem no celular"
-			],
-			"cta": "Saiba mais"
+		"digitization": {
+			"title": "Digitalizamos Seus Papéis",
+			"pain": "Quantas vezes um dado importante já viveu num guardanapo ou nas costas da sua mão — a uma lavada de desaparecer de vez?",
+			"solution": "Ajudamos a colocar sistemas simples para que a informação importante realmente seja capturada, guardada e usada, em vez de perdida."
 		},
-		"notifications": {
-			"title": "Mantenha Todo Mundo Informado, Automaticamente",
-			"description": "Atualizações de trabalhos, lembretes de compromissos, confirmações de pagamento — são enviados sozinhos, para que ninguém fique na dúvida sobre o que está acontecendo.",
-			"features": [
-				"Atualizações de status de trabalhos",
-				"Lembretes de compromissos",
-				"Confirmações de pagamento",
-				"Notificações para a equipe"
-			],
-			"cta": "Saiba mais"
-		},
-		"consultationCta": "Agende uma conversa gratuita e explicamos tudo pra você"
+		"cta": "Agende sua consulta grátis"
 	},
 	"pricing": {
 		"eyebrow": "Preços",
