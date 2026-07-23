@@ -76,8 +76,10 @@
 
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 			{#each services as service, i}
-				<div class="card p-6 fade-in" style="transition-delay: {i * 100}ms">
-					<div class="text-teal mb-4">
+				<div class="card p-7 fade-in" style="transition-delay: {i * 100}ms">
+					<div
+						class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-teal/10 text-teal mb-5"
+					>
 						<!-- eslint-disable-next-line svelte/no-at-html-tags -- static hardcoded SVG constant above, not user input -->
 						{@html service.icon}
 					</div>
