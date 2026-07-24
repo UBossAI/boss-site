@@ -156,31 +156,31 @@
 	"services": {
 		"eyebrow": "Serviços",
 		"title": "Os Problemas Que Resolvemos",
-		"subtitle": "Esses são os problemas que custam tempo, sono e trabalhos para a maioria dos donos — e o que muda quando a gente resolve isso.",
+		"subtitle": "Em vários negócios, vemos os mesmos problemas que custam tempo, sono e esforço — e resolvê-los é a nossa especialidade.",
 		"automation": {
 			"title": "Cuidamos do Trabalho Repetitivo",
-			"pain": "A maioria dos donos deixa a papelada se acumular até o fim do dia ou da semana, e depois passa uma noite inteira tentando colocar tudo em dia.",
-			"solution": "Montamos sistemas que cuidam do trabalho repetitivo em segundo plano. Seu único trabalho é conferir o status e decidir o próximo passo — em vez de fazer o trabalho você mesmo."
+			"pain": "A maioria dos donos deixa a papelada se acumular até o fim do dia ou da semana, e depois sente a amargura de passar a tarde inteira colocando tudo em ordem.",
+			"solution": "Com a UBoss, nossos sistemas cuidam do trabalho repetitivo. Seu único trabalho é conferir o status e decidir o que vem a seguir — em vez de fazer o trabalho você mesmo."
 		},
 		"assistants": {
 			"title": "Fortalecemos a Comunicação",
-			"pain": "Um trabalho pode ser bem feito e mesmo assim deixar o cliente frustrado se ele nunca tiver notícias suas. Essas mesmas falhas também geram confusão dentro da equipe.",
-			"solution": "Colocamos sistemas simples para que cada cliente receba uma resposta rápida e clara, e sua equipe sempre saiba o status atual — sem você precisar cobrar ninguém."
+			"pain": "Você pode fazer um trabalho excelente e, mesmo assim, deixar o cliente frustrado se ele nunca tiver notícias suas. Essa mesma falta de comunicação também gera confusão dentro da equipe.",
+			"solution": "Colocamos sistemas simples para que cada cliente receba uma resposta rápida e clara que gera confiança. Com a mesma atenção, sua equipe sempre sabe qual é o status atual e os próximos passos, sem você precisar ficar avisando toda hora."
 		},
 		"dashboards": {
 			"title": "Mostramos Como Seu Negócio Está Indo de Verdade",
-			"pain": "O que tira o sono da maioria dos donos não é o trabalho em si — é não saber se o negócio está realmente saudável.",
-			"solution": "Reunimos os números importantes em uma única visão clara para você ver o que está gerando dinheiro, o que está consumindo, e onde precisa de atenção. Os sinais de alerta aparecem cedo, em vez de virarem surpresa."
+			"pain": "Os donos de negócio sofrem com pouco sono por causa do estresse, e o motivo não é o trabalho ou os projetos pendentes — é a incerteza sobre a saúde do negócio.",
+			"solution": "Temos ferramentas para apresentar os números de forma visual. Analisamos os dados que ajudam você a entender seu dinheiro e onde você gasta mais. As decisões melhoram quando você está mais consciente do seu negócio, e a tranquilidade vem junto."
 		},
 		"integrations": {
 			"title": "Suas Ferramentas Finalmente Conversam Entre Si",
-			"pain": "A maioria das ferramentas que deveriam facilitar sua vida ainda tomam seu tempo — digitando dados, movendo eles entre sistemas, conferindo números duas vezes.",
-			"solution": "Conectamos e automatizamos essas etapas para que a informação já esteja onde precisa estar. Você para de transferir dados e começa a usá-los."
+			"pain": "Você provavelmente tem ferramentas que prometiam facilitar o negócio, mas ainda tomam seu tempo — digitando dados, passando eles de um sistema para outro, conferindo números duas vezes.",
+			"solution": "Conectamos essas ferramentas para que a informação flua sozinha entre elas. Você digita uma vez, e ela já fica pronta para usar onde você precisar — sem digitar de novo."
 		},
 		"digitization": {
 			"title": "Digitalizamos Seus Papéis",
-			"pain": "Quantas vezes um dado importante já viveu num guardanapo ou nas costas da sua mão — a uma lavada de desaparecer de vez?",
-			"solution": "Ajudamos a colocar sistemas simples para que a informação importante realmente seja capturada, guardada e usada, em vez de perdida."
+			"pain": "Alguma vez você já andou correndo e escreveu um dado num guardanapo ou na mão — só para que umas gotas de água estragassem tudo?",
+			"solution": "Nossos serviços ajudam você a manter os dados digitalmente, arquivados para que você possa usá-los quando precisar."
 		},
 		"cta": "Agende sua consulta grátis"
 	},
