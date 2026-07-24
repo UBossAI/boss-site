@@ -155,75 +155,34 @@
 	},
 	"services": {
 		"eyebrow": "Servicios",
-		"title": "Nuestros Servicios",
-		"subtitle": "Sin tecnicismos — solo las herramientas que te ahorran tiempo, hechas específicamente para tu negocio.",
+		"title": "Los Problemas Que Resolvemos",
+		"subtitle": "A través de varios negocios vemos los mismos problemas que cuestan tiempo, desvelo y esfuerzo — y resolverlos es nuestra especialidad.",
 		"automation": {
-			"title": "Nosotros Nos Encargamos de las Tareas Repetitivas",
-			"description": "Formularios, agendas, mensajes de seguimiento, recordatorios de facturas — todo lo repetitivo que te quita las tardes. Lo configuramos una vez, y ya solo funciona.",
-			"features": [
-				"Captura automática de nuevos clientes",
-				"Agenda trabajos sin tanta llamada de ida y vuelta",
-				"Mensajes de seguimiento que se envían solos",
-				"Recordatorios de factura para que te paguen a tiempo"
-			],
-			"cta": "Saber más"
+			"title": "Eliminamos las Tareas Repetitivas",
+			"pain": "La mayoría de los dueños deja que el papeleo se acumule hasta el final del día o de la semana, y después siente la amargura de pasar toda una tarde poniendo en orden.",
+			"solution": "Con UBoss nuestros sistemas se encargan del trabajo repetitivo. Tu único trabajo es revisar el estado y decidir qué sigue después — en lugar de hacer tú mismo el trabajo."
 		},
 		"assistants": {
-			"title": "Ninguna Consulta Se Queda Sin Respuesta",
-			"description": "En cuanto alguien te escribe — por WhatsApp, correo o mensaje de texto — recibe una respuesta rápida y un seguimiento de verdad, a cualquier hora, en vez de esperar días para que le contesten.",
-			"features": [
-				"Respuestas automáticas de WhatsApp (muy pronto)",
-				"Correos que se contestan solos",
-				"Separamos los clientes serios de los que solo preguntan por preguntar",
-				"Agenda citas sin que tengas que tocar un calendario"
-			],
-			"cta": "Saber más"
+			"title": "Mejoramos la Comunicación",
+			"pain": "Puedes hacer un trabajo excelente y aun así dejar frustrado al cliente si nunca tiene noticias tuyas. Esa misma falta de comunicación también genera confusión dentro del equipo.",
+			"solution": "Ponemos sistemas simples para que cada cliente reciba una respuesta rápida y clara que genera confianza. Con la misma atención, tu equipo siempre sabe cuál es el estado actual y los siguientes pasos, sin que tengas que estar avisando a cada rato."
 		},
 		"dashboards": {
-			"title": "Mira Cómo Le Va de Verdad a Tu Negocio",
-			"description": "Todo en un solo lugar — una pantalla sencilla que junta la información de todas tus herramientas y te muestra lo que de verdad está pasando, en números claros.",
-			"features": [
-				"Mira el estado de cada trabajo de un vistazo",
-				"Sabe qué está entrando y qué está saliendo",
-				"Mira cuáles clientes potenciales valen la pena",
-				"Integración con Google Looker"
-			],
-			"cta": "Saber más"
+			"title": "Te Mostramos Cómo Le Va de Verdad a Tu Negocio",
+			"pain": "Los dueños de negocios sufren de poco dormir por el estrés, y la razón no es por el trabajo o proyectos pendientes — es la incertidumbre de la salud del negocio.",
+			"solution": "Tenemos herramientas para presentar visualmente los números. Miramos los datos que te ayudan a entender tu dinero y dónde gastas más. Las decisiones mejorarán al estar más consciente de tu negocio, y la tranquilidad te seguirá."
 		},
 		"integrations": {
-			"title": "Tus Herramientas, Por Fin Hablando Entre Sí",
-			"description": "¿Ya usas QuickBooks o Google? Los conectamos para que la información fluya sola — ya no tienes que escribir el mismo trabajo en tres aplicaciones diferentes.",
-			"features": [
-				"Conexión con QuickBooks",
-				"Conexión con Google Workspace",
-				"Se conecta con tu CRM",
-				"Cualquier conexión personalizada que necesites"
-			],
-			"cta": "Saber más"
+			"title": "Tus Herramientas Por Fin Se Hablan Entre Sí",
+			"pain": "Seguramente tienes herramientas que prometían facilitar el negocio, pero te siguen quitando tiempo — metiendo datos, pasándolos de un sistema a otro, revisando números dos veces.",
+			"solution": "Conectamos esas herramientas para que la información fluya sola entre ellas. La capturas una sola vez, y ya está lista para usarse donde la necesites — sin volver a teclearla."
 		},
-		"forms": {
-			"title": "Despídete de los Formularios en Papel",
-			"description": "Cambia las tablillas y los PDFs maltratados por formularios digitales sencillos que se conectan directo con todo lo demás — ya no tienes que volver a escribir nada a mano.",
-			"features": [
-				"Formularios con tu marca",
-				"La información se envía sola a donde debe ir",
-				"Recolección de firmas",
-				"Funciona bien en el celular"
-			],
-			"cta": "Saber más"
+		"digitization": {
+			"title": "Digitalizamos tus Papeles",
+			"pain": "¿Alguna vez has andado a la carrera y escrito un dato en una servilleta o en la mano — solo para que unas gotas de agua lo echen a perder?",
+			"solution": "Nuestros servicios te ayudan a mantener los datos digitalmente, archivados para que puedas usarlos cuando los necesites."
 		},
-		"notifications": {
-			"title": "Mantén a Todos Informados, Automáticamente",
-			"description": "Actualizaciones de trabajos, recordatorios de citas, confirmaciones de pago — se envían solos, para que nadie se quede con la duda de qué está pasando.",
-			"features": [
-				"Actualizaciones de estado de trabajos",
-				"Recordatorios de citas",
-				"Confirmaciones de pago",
-				"Notificaciones para tu equipo"
-			],
-			"cta": "Saber más"
-		},
-		"consultationCta": "Agenda una plática gratis y te lo explicamos todo"
+		"cta": "Agenda tu consulta gratis"
 	},
 	"pricing": {
 		"eyebrow": "Precios",
