@@ -56,7 +56,7 @@
 			<!-- Logo -->
 			<a href="/{lang}" class="flex items-center gap-2 flex-shrink-0" onclick={closeAll}>
 				<img
-					src="/assets/uboss-logo-light.png"
+					src="/assets/uboss-logo-dark-bg.png"
 					alt="UBOSS"
 					class="h-14 md:h-24 w-auto"
 					width="320"
