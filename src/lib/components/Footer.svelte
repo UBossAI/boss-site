@@ -17,7 +17,7 @@
 			<div class="md:col-span-1">
 				<a href="/{lang}" class="inline-flex items-center gap-3 mb-4">
 					<img
-						src="/assets/uboss-logo-light.png"
+						src="/assets/uboss-logo-dark-bg.png"
 						alt="UBOSS"
 						class="h-9 md:h-12 w-auto"
 						width="160"
