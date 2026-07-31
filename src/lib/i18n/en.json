@@ -18,12 +18,12 @@
 		"headline": "Become a Bigger Business by Thinking Like One",
 		"subheadline": "UBoss implements systems that work for your company, so your business becomes easier to manage.",
 		"cta": "Book a Free Consultation",
-		"ctaSubtext": "No commitment — just a 15-minute call to see where you're losing time.",
+		"ctaSubtext": "No commitment. Just a 15-minute call to see where you're losing time.",
 		"learnMore": "Learn more"
 	},
 	"whatWeDo": {
 		"title": "What We Do For You",
-		"subtitle": "We listen — no one knows your business better than you. Then we build a system around your needs, and keep it running.",
+		"subtitle": "We listen. No one knows your business better than you. Then we build a system around your needs, and keep it running.",
 		"automation": {
 			"title": "We Handle the Repetitive Work",
 			"description": "Less time on the repetitive tasks you handle daily, weekly, or monthly."
@@ -34,7 +34,7 @@
 		},
 		"dashboards": {
 			"title": "We Show You How Your Business Is Really Doing",
-			"description": "Your jobs, your money, your leads — one clear picture, no guesswork."
+			"description": "Your jobs, your money, your leads: one clear picture, no guesswork."
 		},
 		"digitization": {
 			"title": "We Digitize Your Paper Trail",
@@ -61,8 +61,8 @@
 		"subtitle": "We're not a generic tech company. We're local, trilingual, and built for the trades.",
 		"reasons": [
 			{
-				"title": "We Speak Your Language — Literally",
-				"description": "English, Spanish, or Portuguese — however you run your business, we can talk shop with you in it."
+				"title": "We Speak Your Language, Literally",
+				"description": "English, Spanish, or Portuguese: however you run your business, we can talk shop with you in it."
 			},
 			{
 				"title": "Local, Not a Call Center",
@@ -74,7 +74,7 @@
 			},
 			{
 				"title": "Real Tools, Not Just a Chatbot",
-				"description": "This isn't us reselling ChatGPT with a new logo on it. We build the real thing, set up to actually run your business — not just answer questions."
+				"description": "This isn't us reselling ChatGPT with a new logo on it. We build the real thing, set up to actually run your business, not just answer questions."
 			}
 		]
 	},
@@ -91,7 +91,7 @@
 		"emailLabel": "Email us",
 		"email": "support@uboss.ai",
 		"book15Label": "15-Minute Discovery Call",
-		"book15Description": "Quick intro — tell us about your business",
+		"book15Description": "Quick intro: tell us about your business",
 		"book60Label": "Strategy Session",
 		"book60Description": "Deep dive into your automation needs",
 		"form": {
@@ -156,16 +156,16 @@
 	"services": {
 		"eyebrow": "Services",
 		"title": "The Problems We Solve",
-		"subtitle": "These are the problems that cost most owners time, sleep, and jobs — and what changes when we fix them.",
+		"subtitle": "These are the problems that cost most owners time, sleep, and jobs. Here's what changes when we fix them.",
 		"automation": {
 			"title": "We Handle the Repetitive Work",
 			"pain": "Most owners let admin pile up until the end of the day or week, then burn an evening catching up.",
-			"solution": "We set up systems that handle the repetitive work in the background. Your only job is to check status and decide what happens next — instead of doing the work yourself."
+			"solution": "We set up systems that handle the repetitive work in the background. Your only job is to check status and decide what happens next, instead of doing the work yourself."
 		},
 		"assistants": {
 			"title": "We Strengthen Communication",
 			"pain": "A job can be done well and still leave the customer frustrated if they never hear from you. The same gaps create confusion inside the team.",
-			"solution": "We put simple systems in place so every client gets a fast, clear response and your team always knows the current status — without you having to chase anyone."
+			"solution": "We put simple systems in place so every client gets a fast, clear response and your team always knows the current status, without you having to chase anyone."
 		},
 		"dashboards": {
 			"title": "We Show You How Your Business Is Really Doing",
