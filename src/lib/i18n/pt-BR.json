@@ -23,7 +23,7 @@
 	},
 	"whatWeDo": {
 		"title": "É Isso Que Fazemos Por Você",
-		"subtitle": "Ouvimos você — ninguém conhece seu negócio melhor que você. Depois construímos um sistema sob medida, e mantemos tudo funcionando.",
+		"subtitle": "Ouvimos você. Ninguém conhece seu negócio melhor que você. Depois construímos um sistema sob medida, e mantemos tudo funcionando.",
 		"automation": {
 			"title": "Cuidamos do Trabalho Repetitivo",
 			"description": "Menos tempo nas tarefas repetitivas que você faz todos os dias, toda semana ou todo mês."
@@ -34,7 +34,7 @@
 		},
 		"dashboards": {
 			"title": "Mostramos Como Seu Negócio Está Indo de Verdade",
-			"description": "Seus trabalhos, seu dinheiro, seus clientes — tudo em uma visão clara, sem achismo."
+			"description": "Seus trabalhos, seu dinheiro, seus clientes: tudo em uma visão clara, sem achismo."
 		},
 		"digitization": {
 			"title": "Digitalizamos Seus Papéis",
@@ -43,7 +43,7 @@
 	},
 	"whoWeServe": {
 		"title": "Desenvolvido para negócios como o seu",
-		"subtitle": "Trabalhamos com negócios de serviços locais — os que mantêm a Grande Boston em movimento.",
+		"subtitle": "Trabalhamos com os negócios de serviços locais que mantêm a Grande Boston em movimento.",
 		"industries": [
 			"Jardinagem e Paisagismo",
 			"Serviços de Limpeza",
@@ -61,8 +61,8 @@
 		"subtitle": "Não somos uma empresa de tecnologia genérica. Somos locais, trilíngues e feitos para o setor de serviços.",
 		"reasons": [
 			{
-				"title": "Falamos a Sua Língua — De Verdade",
-				"description": "Inglês, espanhol ou português — do jeito que você administra seu negócio, podemos conversar com você no seu idioma."
+				"title": "Falamos a Sua Língua, De Verdade",
+				"description": "Inglês, espanhol ou português: do jeito que você administra seu negócio, podemos conversar com você no seu idioma."
 			},
 			{
 				"title": "Somos Locais, Não um Call Center",
@@ -74,7 +74,7 @@
 			},
 			{
 				"title": "Ferramentas de Verdade, Não Só um Chatbot",
-				"description": "Isso não é a gente revendendo ChatGPT com outro logo. Construímos algo real, feito para gerenciar seu negócio de verdade — não só para responder perguntas."
+				"description": "Isso não é a gente revendendo ChatGPT com outro logo. Construímos algo real, feito para gerenciar seu negócio de verdade, não só para responder perguntas."
 			}
 		]
 	},
@@ -91,7 +91,7 @@
 		"emailLabel": "Nos escreva",
 		"email": "support@uboss.ai",
 		"book15Label": "Ligação de 15 Minutos",
-		"book15Description": "Uma apresentação rápida — nos conte sobre seu negócio",
+		"book15Description": "Uma apresentação rápida: nos conte sobre seu negócio",
 		"book60Label": "Sessão de Estratégia",
 		"book60Description": "Uma análise profunda das suas necessidades de automação",
 		"form": {
@@ -156,11 +156,11 @@
 	"services": {
 		"eyebrow": "Serviços",
 		"title": "Os Problemas Que Resolvemos",
-		"subtitle": "Em vários negócios, vemos os mesmos problemas que custam tempo, sono e esforço — e resolvê-los é a nossa especialidade.",
+		"subtitle": "Em vários negócios, vemos os mesmos problemas que custam tempo, sono e esforço. Resolvê-los é a nossa especialidade.",
 		"automation": {
 			"title": "Cuidamos do Trabalho Repetitivo",
 			"pain": "A maioria dos donos deixa a papelada se acumular até o fim do dia ou da semana, e depois sente a amargura de passar a tarde inteira colocando tudo em ordem.",
-			"solution": "Com a UBoss, nossos sistemas cuidam do trabalho repetitivo. Seu único trabalho é conferir o status e decidir o que vem a seguir — em vez de fazer o trabalho você mesmo."
+			"solution": "Com a UBoss, nossos sistemas cuidam do trabalho repetitivo. Seu único trabalho é conferir o status e decidir o que vem a seguir, em vez de fazer o trabalho você mesmo."
 		},
 		"assistants": {
 			"title": "Fortalecemos a Comunicação",
@@ -175,7 +175,7 @@
 		"integrations": {
 			"title": "Suas Ferramentas Finalmente Conversam Entre Si",
 			"pain": "Você provavelmente tem ferramentas que prometiam facilitar o negócio, mas ainda tomam seu tempo — digitando dados, passando eles de um sistema para outro, conferindo números duas vezes.",
-			"solution": "Conectamos essas ferramentas para que a informação flua sozinha entre elas. Você digita uma vez, e ela já fica pronta para usar onde você precisar — sem digitar de novo."
+			"solution": "Conectamos essas ferramentas para que a informação flua sozinha entre elas. Você digita uma vez, e ela já fica pronta para usar onde você precisar, sem digitar de novo."
 		},
 		"digitization": {
 			"title": "Digitalizamos Seus Papéis",
