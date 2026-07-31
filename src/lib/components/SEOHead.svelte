@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { localeLangs } from '$lib/utils/i18n.js';
+
 	interface Props {
 		title: string;
 		description: string;
@@ -18,8 +20,9 @@
 	const jsonLd = {
 		'@context': 'https://schema.org',
 		'@type': 'LocalBusiness',
-		name: 'UBOSS LLC',
-		description: 'AI-as-a-Service consulting for trades and small businesses in Greater Boston',
+		name: 'UBOSS',
+		description:
+			'Modern systems that help trades and small businesses in Greater Boston run more efficiently, scale confidently, and grow without extra overhead.',
 		url: siteUrl,
 		email: 'support@uboss.ai',
 		areaServed: [
@@ -55,7 +58,7 @@
 			},
 			geoRadius: '50000'
 		},
-		knowsLanguage: ['en', 'es', 'pt-BR'],
+		knowsLanguage: [localeLangs.en, localeLangs.es, localeLangs['pt-BR']],
 		priceRange: '$$',
 		sameAs: [
 			'https://www.google.com/maps?cid=17359999283352644362',
@@ -70,9 +73,9 @@
 	<link rel="canonical" href={canonicalUrl} />
 
 	<!-- hreflang -->
-	<link rel="alternate" hreflang="en" href={enUrl} />
-	<link rel="alternate" hreflang="es" href={esUrl} />
-	<link rel="alternate" hreflang="pt-BR" href={ptUrl} />
+	<link rel="alternate" hreflang={localeLangs.en} href={enUrl} />
+	<link rel="alternate" hreflang={localeLangs.es} href={esUrl} />
+	<link rel="alternate" hreflang={localeLangs['pt-BR']} href={ptUrl} />
 	<link rel="alternate" hreflang="x-default" href={enUrl} />
 
 	<!-- Open Graph -->

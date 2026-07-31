@@ -1,7 +1,7 @@
 import type { RequestHandler } from './$types.js';
+import { locales, localeLangs } from '$lib/utils/i18n.js';
 
 const siteUrl = 'https://www.uboss.ai';
-const locales = ['en', 'es', 'pt-BR'];
 // Pricing route is temporarily unplugged (redirects to home) — see PROJECT.md — so it's
 // excluded here to avoid indexing a page that just redirects.
 const pages = [
@@ -37,7 +37,7 @@ export const GET: RequestHandler = () => {
 			const alternates = locales
 				.map((l) => {
 					const altPath = page ? `${l}/${page}` : l;
-					return `<xhtml:link rel="alternate" hreflang="${l}" href="${siteUrl}/${altPath}"/>`;
+					return `<xhtml:link rel="alternate" hreflang="${localeLangs[l]}" href="${siteUrl}/${altPath}"/>`;
 				})
 				.join('\n      ');
 			const xDefault = `<xhtml:link rel="alternate" hreflang="x-default" href="${siteUrl}/en${page ? '/' + page : ''}"/>`;

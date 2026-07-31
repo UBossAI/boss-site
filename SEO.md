@@ -227,8 +227,8 @@ Implement on every page — `LocalBusiness` schema:
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "UBOSS LLC",
-  "description": "AI-as-a-Service consulting for trades and small businesses in Greater Boston",
+  "name": "UBOSS",
+  "description": "Modern systems that help trades and small businesses in Greater Boston run more efficiently, scale confidently, and grow without extra overhead.",
   "url": "https://www.uboss.ai",
   "email": "support@uboss.ai",
   "areaServed": {
