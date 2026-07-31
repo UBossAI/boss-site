@@ -67,16 +67,11 @@
 			</div>
 
 			<div class="space-y-12">
-				<div>
-					<h2 class="section-heading text-near-black mb-3">{a.missionLabel}</h2>
-					<div class="teal-divider mb-6"></div>
-					<p class="text-gray-mid leading-relaxed text-lg">{a.mission}</p>
-				</div>
-
 				<div class="bg-near-black text-white rounded-2xl p-8">
 					<h2 class="section-heading text-white mb-3">{a.visionLabel}</h2>
 					<div class="teal-divider mb-6"></div>
-					<p class="text-white/70 leading-relaxed text-lg">{a.vision}</p>
+					<p class="text-white/70 leading-relaxed text-lg mb-4">{a.vision}</p>
+					<p class="text-white/70 leading-relaxed text-lg">{a.vision2}</p>
 				</div>
 
 				<div>
