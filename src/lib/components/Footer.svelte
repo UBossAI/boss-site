@@ -119,7 +119,7 @@
 		<div
 			class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3"
 		>
-			<p class="text-xs text-white/40">{footer.copyright as string}</p>
+			<p class="text-xs text-white/50">{footer.copyright as string}</p>
 			<!-- Social placeholder -->
 			<div class="flex items-center gap-4 text-white/30">
 				<!-- LinkedIn placeholder -->

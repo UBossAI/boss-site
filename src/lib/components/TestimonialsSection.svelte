@@ -48,7 +48,7 @@
 			{#each t.items as item, i}
 				<div class="fade-in card p-7" style="transition-delay: {i * 100}ms">
 					<!-- Stars -->
-					<div class="flex gap-1 text-teal mb-4" aria-label="5 stars">
+					<div class="flex gap-1 text-teal mb-4" role="img" aria-label="5 stars">
 						{#each Array(5) as _}
 							<svg
 								xmlns="http://www.w3.org/2000/svg"

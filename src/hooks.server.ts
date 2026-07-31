@@ -1,4 +1,5 @@
 import type { Handle } from '@sveltejs/kit';
+import { isValidLocale, localeLangs } from '$lib/utils/i18n.js';
 
 const CANONICAL_HOST = 'www.uboss.ai';
 const APEX_HOST = 'uboss.ai';
@@ -24,5 +25,10 @@ export const handle: Handle = async ({ event, resolve }) => {
 		});
 	}
 
-	return resolve(event);
+	const [, lang] = event.url.pathname.split('/');
+	const htmlLang = isValidLocale(lang) ? localeLangs[lang] : 'en';
+
+	return resolve(event, {
+		transformPageChunk: ({ html }) => html.replace('%sveltekit.lang%', htmlLang)
+	});
 };

@@ -12,7 +12,7 @@ export const localeLabels: Record<Locale, string> = {
 };
 
 export const localeLangs: Record<Locale, string> = {
-	en: 'en',
+	en: 'en-US',
 	es: 'es',
 	'pt-BR': 'pt-BR'
 };
