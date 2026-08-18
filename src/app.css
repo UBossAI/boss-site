@@ -138,6 +138,22 @@
 		line-height: 1.1;
 	}
 
+	/* Native <details> accordion: hide the default disclosure marker and rotate our own
+	   chevron via CSS, so expand/collapse needs no JavaScript. The prefers-reduced-motion
+	   block above already neutralizes the transition. */
+	.faq-item summary {
+		list-style: none;
+		cursor: pointer;
+	}
+
+	.faq-item summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.faq-item[open] .faq-chevron {
+		transform: rotate(180deg);
+	}
+
 	.fade-in {
 		opacity: 0;
 		transform: translateY(20px);
