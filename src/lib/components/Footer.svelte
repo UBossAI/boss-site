@@ -74,6 +74,11 @@
 				</h3>
 				<ul class="space-y-2">
 					<li>
+						<a href="/{lang}/faq" class="text-sm hover:text-teal transition-colors"
+							>{footer.faq as string}</a
+						>
+					</li>
+					<li>
 						<a href="/{lang}/support" class="text-sm hover:text-teal transition-colors"
 							>{footer.support as string}</a
 						>

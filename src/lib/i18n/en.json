@@ -12,7 +12,8 @@
 		"bookCta": "Book a Free Consultation",
 		"openMenu": "Open menu",
 		"closeMenu": "Close menu",
-		"selectLanguage": "Select language"
+		"selectLanguage": "Select language",
+		"faq": "FAQ"
 	},
 	"hero": {
 		"headline": "Become a Bigger Business by Thinking Like One",
@@ -282,7 +283,10 @@
 		"emailLabel": "Email us",
 		"email": "support@uboss.ai",
 		"contactLink": "Or fill out our contact form",
-		"faqTitle": "Frequently Asked Questions"
+		"faqTitle": "Frequently Asked Questions",
+		"faqLinkTitle": "Looking for a quick answer?",
+		"faqLinkBody": "Most common questions about how we work, pricing, and data handling are answered on our FAQ page.",
+		"faqLinkCta": "Read the FAQ"
 	},
 	"careers": {
 		"eyebrow": "Careers",
@@ -300,6 +304,48 @@
 		"heading": "Looks like you're lost",
 		"message": "The page you're looking for doesn't exist or may have moved.",
 		"cta": "Go to Home"
+	},
+	"faq": {
+		"eyebrow": "FAQ",
+		"title": "Frequently Asked Questions",
+		"subtitle": "Straight answers about how we work, what we build, and how your data is handled.",
+		"categoriesNavLabel": "Browse by topic",
+		"searchLabel": "Search questions",
+		"searchPlaceholder": "Search for a question…",
+		"clearSearch": "Clear search",
+		"clearFilter": "Show all topics",
+		"topQuestionsTitle": "Most asked",
+		"allQuestionsTitle": "All questions",
+		"resultsCount": "Showing all {total} questions",
+		"resultsCountFiltered": "Showing {count} of {total} questions",
+		"noResultsTitle": "No questions matched that",
+		"noResultsBody": "Try a different word, or reach out and we'll answer it directly.",
+		"stillStuckTitle": "Still have a question?",
+		"stillStuckBody": "If your question isn't here, ask us directly. A consultation call is free and there's no obligation.",
+		"contactCta": "Get in touch",
+		"translationNotice": "This page hasn't been translated yet, so the answers below are shown in English. Portuguese support is on the way — and you can always reach us in Portuguese by email.",
+		"categories": {
+			"working-with-us": {
+				"label": "Working With Us",
+				"description": "Consultations, pricing, timelines, and what to expect"
+			},
+			"systems-automation": {
+				"label": "Systems & Automation",
+				"description": "Automating your workflow, dashboards, and paperwork"
+			},
+			"ai-assistants": {
+				"label": "AI Assistants",
+				"description": "What AI does, what it doesn't, and where it fits"
+			},
+			"getting-found": {
+				"label": "Getting Found Online",
+				"description": "Google, AI search, reviews, and social media"
+			},
+			"privacy-security": {
+				"label": "Privacy & Security",
+				"description": "Where your data lives and how it's protected"
+			}
+		}
 	},
 	"footer": {
 		"tagline": "Solutions and systems for business owners who want clarity.",
@@ -322,7 +368,8 @@
 		"support": "Support",
 		"careers": "Careers",
 		"linkedinLabel": "Visit UBOSS on LinkedIn",
-		"facebookLabel": "Visit UBOSS on Facebook"
+		"facebookLabel": "Visit UBOSS on Facebook",
+		"faq": "FAQ"
 	},
 	"chat": {
 		"title": "Chat with Us",
@@ -377,6 +424,10 @@
 		"legalKeyTerms": {
 			"title": "Key Terms Summary — UBOSS LLC",
 			"description": "A plain-language summary of the most important terms in our agreements."
+		},
+		"faq": {
+			"title": "FAQ — AI Automation for Trades Businesses | UBOSS",
+			"description": "Answers about automation, AI assistants, dashboards, pricing, and data security for trades and service businesses in Greater Boston and the North Shore."
 		}
 	}
 }

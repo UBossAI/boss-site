@@ -19,6 +19,10 @@ const config = {
 				'/en/services',
 				'/es/services',
 				'/pt-BR/services',
+				// pt-BR FAQ intentionally omitted — falls back to English and is served noindex
+				// until pt-BR content lands. See src/lib/content/faq/pt-BR.ts.
+				'/en/faq',
+				'/es/faq',
 				// Pricing route is unplugged (redirects to home) — see PROJECT.md. Not prerendered.
 				'/en/contact',
 				'/es/contact',

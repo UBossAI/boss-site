@@ -12,7 +12,8 @@
 		"bookCta": "Agenda tu consulta gratis",
 		"openMenu": "Abrir menú",
 		"closeMenu": "Cerrar menú",
-		"selectLanguage": "Seleccionar idioma"
+		"selectLanguage": "Seleccionar idioma",
+		"faq": "Preguntas"
 	},
 	"hero": {
 		"headline": "Desarrolla tu negocio a una capacidad más alta",
@@ -294,7 +295,10 @@
 		"emailLabel": "Escríbenos",
 		"email": "support@uboss.ai",
 		"contactLink": "O llena nuestro formulario de contacto",
-		"faqTitle": "Preguntas Frecuentes"
+		"faqTitle": "Preguntas Frecuentes",
+		"faqLinkTitle": "¿Buscas una respuesta rápida?",
+		"faqLinkBody": "Las preguntas más comunes sobre cómo trabajamos, precios y manejo de datos están contestadas en nuestra página de preguntas frecuentes.",
+		"faqLinkCta": "Ver preguntas frecuentes"
 	},
 	"careers": {
 		"eyebrow": "Carreras",
@@ -312,6 +316,48 @@
 		"heading": "Parece que te perdiste",
 		"message": "La página que buscas no existe o puede que se haya movido.",
 		"cta": "Ir al inicio"
+	},
+	"faq": {
+		"eyebrow": "Preguntas Frecuentes",
+		"title": "Preguntas Frecuentes",
+		"subtitle": "Respuestas claras sobre cómo trabajamos, qué construimos y cómo se manejan tus datos.",
+		"categoriesNavLabel": "Busca por tema",
+		"searchLabel": "Buscar preguntas",
+		"searchPlaceholder": "Busca una pregunta…",
+		"clearSearch": "Borrar búsqueda",
+		"clearFilter": "Ver todos los temas",
+		"topQuestionsTitle": "Las más preguntadas",
+		"allQuestionsTitle": "Todas las preguntas",
+		"resultsCount": "Mostrando las {total} preguntas",
+		"resultsCountFiltered": "Mostrando {count} de {total} preguntas",
+		"noResultsTitle": "No encontramos preguntas con eso",
+		"noResultsBody": "Prueba con otra palabra, o escríbenos y te contestamos directo.",
+		"stillStuckTitle": "¿Te quedó alguna duda?",
+		"stillStuckBody": "Si tu pregunta no está aquí, pregúntanos directamente. La llamada de consulta es gratis y sin compromiso.",
+		"contactCta": "Contáctanos",
+		"translationNotice": "Esta página todavía no está traducida, así que las respuestas se muestran en inglés.",
+		"categories": {
+			"working-with-us": {
+				"label": "Trabajar Con Nosotros",
+				"description": "Consultas, precios, tiempos y qué esperar"
+			},
+			"systems-automation": {
+				"label": "Sistemas y Automatización",
+				"description": "Automatizar tu trabajo, dashboards y papeleo"
+			},
+			"ai-assistants": {
+				"label": "Asistentes de IA",
+				"description": "Qué hace la IA, qué no, y dónde encaja"
+			},
+			"getting-found": {
+				"label": "Que Te Encuentren",
+				"description": "Google, búsqueda con IA, reseñas y redes sociales"
+			},
+			"privacy-security": {
+				"label": "Privacidad y Seguridad",
+				"description": "Dónde viven tus datos y cómo se protegen"
+			}
+		}
 	},
 	"footer": {
 		"tagline": "Soluciones y sistemas para dueños y dueñas que buscan claridad.",
@@ -334,7 +380,8 @@
 		"support": "Soporte",
 		"careers": "Carreras",
 		"linkedinLabel": "Visita a UBOSS en LinkedIn",
-		"facebookLabel": "Visita a UBOSS en Facebook"
+		"facebookLabel": "Visita a UBOSS en Facebook",
+		"faq": "Preguntas Frecuentes"
 	},
 	"chat": {
 		"title": "Chatea con nosotros",
@@ -389,6 +436,10 @@
 		"legalKeyTerms": {
 			"title": "Resumen de Términos Clave — UBOSS LLC",
 			"description": "Un resumen en lenguaje simple de los términos más importantes de nuestros acuerdos."
+		},
+		"faq": {
+			"title": "Preguntas Frecuentes — Automatización con IA | UBOSS",
+			"description": "Respuestas sobre automatización, asistentes de IA, dashboards, precios y seguridad de datos para negocios en el Gran Boston y North Shore."
 		}
 	}
 }

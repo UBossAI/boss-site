@@ -19,6 +19,7 @@
 		{ href: `/${lang}/services`, label: nav.services },
 		// Pricing page temporarily unplugged — re-enable by uncommenting this link. See PROJECT.md.
 		// { href: `/${lang}/pricing`, label: nav.pricing },
+		{ href: `/${lang}/faq`, label: nav.faq },
 		{ href: `/${lang}/contact`, label: nav.contact }
 	]);
 
