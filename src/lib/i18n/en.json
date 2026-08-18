@@ -198,49 +198,6 @@
 			"cta": "Let's Talk"
 		},
 		"cta": "Book a call to find your plan",
-		"faqTitle": "FAQ",
-		"faq": [
-			{
-				"question": "What is UBoss, exactly?",
-				"answer": "Think of us as an extra set of hands that never clocks out. We don't replace you or your crew — we take the repetitive work off your plate (texts, follow-ups, paperwork) and give you a clear, simple way to see how your business is actually doing, so you can spend your time on the work itself, not the admin behind it."
-			},
-			{
-				"question": "We tried a CRM before and it never really got used. Why would this be different?",
-				"answer": "Most CRMs are built for large sales teams — dozens of features you'll never touch, and enough manual entry that keeping it updated becomes its own part-time job. That's why they end up ignored. UBoss isn't one more app to log into — it plugs into what you already use (texting, forms, invoicing) and runs quietly in the background. You get what actually matters — who called, which jobs are stalled, where the money's going — without becoming a full-time data-entry clerk."
-			},
-			{
-				"question": "Will this help people find my business when they search online?",
-				"answer": "More and more people are asking ChatGPT or similar tools \"who's a good contractor near me\" instead of just Googling it. We make sure your business info is set up in a way those tools can actually read and trust, so you show up whichever way someone's looking for you."
-			},
-			{
-				"question": "Can this make my invoices and estimates look more professional?",
-				"answer": "Yes — a sloppy, handwritten estimate can make great work look cheap. Part of what we automate is making sure every estimate, invoice, and confirmation your customers see looks clean and put-together, like it's coming from a much bigger company."
-			},
-			{
-				"question": "What does the monthly subscription include?",
-				"answer": "Your monthly fee covers us keeping everything running — watching for problems, fixing what breaks, and tweaking things as your business changes. You're not paying for software; you're paying for it to keep working."
-			},
-			{
-				"question": "What is the one-time setup fee?",
-				"answer": "The setup fee covers us figuring out exactly what you need, then building and testing it before it goes live. The cost depends on how much we're building — we'll go over it together on your free call, no surprises."
-			},
-			{
-				"question": "Is there a contract or long-term commitment?",
-				"answer": "No long-term contracts. Our subscriptions are month-to-month. We believe in earning your business every month."
-			},
-			{
-				"question": "Can I start small and add more later?",
-				"answer": "Absolutely. Most clients start with the Starter plan to fix one headache first, then add more once they see it working."
-			},
-			{
-				"question": "Do you offer support in Spanish or Portuguese?",
-				"answer": "Yes — full support in English and Spanish, with Portuguese support currently being rolled out."
-			},
-			{
-				"question": "How long does setup take?",
-				"answer": "Most Starter setups are live within 1-2 weeks. Bigger Professional and Professional Plus builds usually take 2-4 weeks, depending on what we're connecting."
-			}
-		],
 		"comparisonTitle": "What are you really paying for?",
 		"comparisonBody1": "Most growing businesses don't need just one person — they need someone to handle data, someone to answer calls, and someone to coordinate operations. That's three hires. Three salaries. Three sets of sick days, holidays, and human errors.",
 		"comparisonBody2": "Each one of those employees would cost your business over $25,000 a year. UBoss bundles all three roles into one seamless system — and it never calls in sick.",
@@ -283,7 +240,6 @@
 		"emailLabel": "Email us",
 		"email": "support@uboss.ai",
 		"contactLink": "Or fill out our contact form",
-		"faqTitle": "Frequently Asked Questions",
 		"faqLinkTitle": "Looking for a quick answer?",
 		"faqLinkBody": "Most common questions about how we work, pricing, and data handling are answered on our FAQ page.",
 		"faqLinkCta": "Read the FAQ"

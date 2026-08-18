@@ -198,61 +198,6 @@
 			"cta": "Hablemos"
 		},
 		"cta": "Agenda una llamada para encontrar tu plan",
-		"faqTitle": "Preguntas Frecuentes",
-		"faq": [
-			{
-				"question": "Entonces, ¿qué es UBoss, realmente?",
-				"answer": "Piensa en nosotros como un par de manos extra que nunca se cansan. No reemplazamos a tu equipo ni a ti — solo te quitamos de encima lo repetitivo (mensajes, seguimientos, papeleo) y te damos una forma sencilla de ver cómo le va de verdad a tu negocio, para que uses tu tiempo en el trabajo, no en el papeleo."
-			},
-			{
-				"question": "Ya probé un CRM antes y terminó ahí, sin que nadie lo usara. ¿Por qué esto sería diferente?",
-				"answer": "La mayoría de los CRM están hechos para equipos de ventas grandes — muchos botones, mucho que escribir, y casi que necesitas a alguien de medio tiempo solo para mantenerlo actualizado. Por eso terminan olvidados. UBoss no es una aplicación más para entrar a cada rato — se conecta con lo que ya usas (mensajes, formularios, facturas) y lo automatiza calladito, sin que tengas que hacer nada. Tú te quedas con lo útil — quién llamó, qué trabajos están atorados, para dónde se va el dinero — sin tener que convertirte en un asistente de datos."
-			},
-			{
-				"question": "¿Esto ayuda a que la gente encuentre mi negocio cuando busca en línea?",
-				"answer": "Cada vez más gente le pregunta a ChatGPT o herramientas parecidas \"quién es un buen contratista cerca de mí\" en lugar de solo buscarlo en Google. Nosotros nos aseguramos de que la información de tu negocio esté organizada de una forma que esas herramientas puedan leer y confiar en ella, para que aparezcas sin importar cómo te estén buscando."
-			},
-			{
-				"question": "¿Esto puede hacer que mis facturas y cotizaciones se vean más profesionales?",
-				"answer": "Sí — una cotización hecha a mano y desordenada puede hacer que un trabajo excelente se vea barato. Parte de lo que automatizamos es que cada cotización, factura y confirmación que ve tu cliente se vea limpia y bien presentada, como si viniera de una empresa mucho más grande."
-			},
-			{
-				"question": "¿Qué incluye la suscripción mensual?",
-				"answer": "Tu pago mensual cubre que nosotros mantengamos todo funcionando — revisando que no haya problemas, arreglando lo que se rompa, y ajustando las cosas conforme tu negocio va cambiando. No estás pagando por un software; estás pagando para que siga funcionando."
-			},
-			{
-				"question": "¿Qué es el pago único de instalación?",
-				"answer": "El pago de instalación cubre que nosotros averigüemos exactamente qué necesitas, y luego construyamos y probemos todo antes de ponerlo a funcionar. El costo depende de cuánto estemos construyendo — lo revisamos juntos en tu llamada gratis, sin sorpresas."
-			},
-			{
-				"question": "¿Hay contrato o algún compromiso a largo plazo?",
-				"answer": "No hay contratos a largo plazo. Nuestras suscripciones son mes a mes. Creemos en ganarnos tu confianza cada mes."
-			},
-			{
-				"question": "¿Puedo empezar chico e ir agregando más después?",
-				"answer": "Claro que sí. La mayoría de nuestros clientes empiezan con el plan Starter para resolver un problema primero, y después van agregando más conforme ven que funciona."
-			},
-			{
-				"question": "¿Ofrecen soporte en español o portugués?",
-				"answer": "Sí — damos soporte completo en inglés y español, y el soporte en portugués lo estamos implementando ahora mismo."
-			},
-			{
-				"question": "¿Cuánto tiempo tarda la instalación?",
-				"answer": "La mayoría de las instalaciones Starter quedan listas en 1-2 semanas. Los proyectos más grandes, Professional y Professional Plus, generalmente toman de 2 a 4 semanas, dependiendo de todo lo que estemos conectando."
-			},
-			{
-				"question": "¿Qué es la ayuda administrativa?",
-				"answer": "La ayuda administrativa es una parte integral del crecimiento de un negocio. Se trata de alguien que archiva tus documentos, te ayuda a organizar horarios y citas, mantiene todo en orden y te avisa cuando algo necesita tu atención antes de que se convierta en un problema mayor. Tradicionalmente esto lo hace una secretaria o asistente administrativo — con UBoss, gran parte de este trabajo se automatiza, para que no tengas que contratar a alguien de tiempo completo para hacerlo."
-			},
-			{
-				"question": "¿Qué es una reseña?",
-				"answer": "Una reseña — mejor conocida como \"review\" en inglés — es la opinión que un cliente deja sobre tu trabajo, normalmente en Google o en redes sociales: qué tan bien hiciste el trabajo, si cumpliste lo prometido, si valió la pena. Entre más reseñas tengas, más fuerte se vuelve tu credibilidad digital — la gente, y cada vez más la inteligencia artificial, confía en lo que otros clientes ya dijeron de ti. Con UBoss, automatizamos las solicitudes de reseñas después de cada trabajo, para que esa credibilidad crezca sola."
-			},
-			{
-				"question": "¿Cómo puedo crear un dashboard para mi negocio?",
-				"answer": "Un dashboard (o tablero de informes) junta toda la información de tu negocio en un solo lugar, presentada de forma visual y fácil de entender — no hace falta abrir cinco programas distintos para saber cómo te está yendo. Puede mostrar tus gastos mensuales, tus ventas, cuánto te cuesta conseguir un cliente nuevo, qué tan seguido regresan tus clientes, o qué tan rápido se mueve tu inventario — dependiendo de lo que más te importe a ti. Con UBoss, armamos ese panel por ti, para que veas justamente lo que necesitas ver, sin tener que construirlo tú mismo."
-			}
-		],
 		"comparisonTitle": "¿Qué estás pagando realmente?",
 		"comparisonBody1": "La mayoría de los negocios en crecimiento no necesitan una sola persona — necesitan a alguien para los datos, alguien para atender llamadas, y alguien para coordinar operaciones. Eso son tres empleados. Tres salarios. Tres fuentes de errores y ausencias.",
 		"comparisonBody2": "Cada uno de esos empleados le costaría a tu negocio más de $25,000 al año. UBoss combina los tres roles en un solo sistema — y nunca falla.",
@@ -295,7 +240,6 @@
 		"emailLabel": "Escríbenos",
 		"email": "support@uboss.ai",
 		"contactLink": "O llena nuestro formulario de contacto",
-		"faqTitle": "Preguntas Frecuentes",
 		"faqLinkTitle": "¿Buscas una respuesta rápida?",
 		"faqLinkBody": "Las preguntas más comunes sobre cómo trabajamos, precios y manejo de datos están contestadas en nuestra página de preguntas frecuentes.",
 		"faqLinkCta": "Ver preguntas frecuentes"
