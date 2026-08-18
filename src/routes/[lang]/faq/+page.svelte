@@ -5,6 +5,7 @@
 	import type { FaqCategoryId, FaqEntry } from '$lib/content/faq/types.js';
 	import { interpolate, type Locale } from '$lib/utils/i18n.js';
 	import { buildBreadcrumbSchema, buildFaqPageSchema } from '$lib/utils/schema.js';
+	import { tick } from 'svelte';
 	import type { PageData } from './$types.js';
 
 	interface Props {
@@ -78,12 +79,21 @@
 		return entriesIn(category).filter((e) => visibleIds.has(e.id)).length;
 	}
 
-	function selectCategory(event: MouseEvent, id: FaqCategoryId) {
+	async function selectCategory(event: MouseEvent, id: FaqCategoryId) {
 		event.preventDefault();
-		activeCategory = activeCategory === id ? 'all' : id;
+		const next = activeCategory === id ? 'all' : id;
+		activeCategory = next;
 		// replaceState, not pushState — Back should leave the page, not rewind filter taps.
-		history.replaceState(null, '', activeCategory === 'all' ? '#faq-all' : `#faq-cat-${id}`);
-		document.getElementById('faq-all')?.scrollIntoView({ block: 'start' });
+		history.replaceState(null, '', next === 'all' ? '#faq-all' : `#faq-cat-${next}`);
+
+		// Clearing the filter grows the page back; leave the reader where they are.
+		if (next === 'all') return;
+
+		// Must wait for the DOM to reflect the filter. Svelte flushes updates asynchronously,
+		// so scrolling immediately measures the *unfiltered* layout — then the hidden entries
+		// collapse, the page shrinks underneath, and the viewport lands near the footer.
+		await tick();
+		document.getElementById(`faq-cat-${next}`)?.scrollIntoView({ block: 'start' });
 	}
 
 	function onSearchKeydown(event: KeyboardEvent) {
@@ -95,7 +105,11 @@
 		const hash = location.hash.replace(/^#/, '');
 		if (!hash.startsWith('faq-cat-')) return;
 		const id = hash.slice('faq-cat-'.length) as FaqCategoryId;
-		if (faqCategories.some((c) => c.id === id)) activeCategory = id;
+		if (!faqCategories.some((c) => c.id === id)) return;
+		activeCategory = id;
+		// The browser already jumped to this anchor before hydration; re-anchor after the
+		// filter applies, for the same reason as selectCategory above.
+		tick().then(() => document.getElementById(`faq-cat-${id}`)?.scrollIntoView({ block: 'start' }));
 	});
 </script>
 
@@ -184,7 +198,7 @@
 						onclick={(e) => selectCategory(e, category.id)}
 						aria-current={activeCategory === category.id ? 'true' : undefined}
 						class="card flex items-start gap-4 p-5 min-h-[104px] transition-colors {category.wide
-							? 'sm:col-span-2'
+							? 'sm:col-span-2 sm:items-center sm:justify-center'
 							: ''} {activeCategory === category.id
 							? 'border-teal ring-1 ring-teal'
 							: ''} focus-visible:outline focus-visible:outline-2 focus-visible:outline-teal focus-visible:outline-offset-2"
