@@ -296,6 +296,11 @@
 		"emailCta": "Send your info to support@uboss.ai",
 		"emailSubject": "Careers — I'd love to join the team"
 	},
+	"notFound": {
+		"heading": "Looks like you're lost",
+		"message": "The page you're looking for doesn't exist or may have moved.",
+		"cta": "Go to Home"
+	},
 	"footer": {
 		"tagline": "Solutions and systems for business owners who want clarity.",
 		"serving": "Serving Greater Boston, MA",
@@ -315,7 +320,9 @@
 			"keyTerms": "Key Terms"
 		},
 		"support": "Support",
-		"careers": "Careers"
+		"careers": "Careers",
+		"linkedinLabel": "Visit UBOSS on LinkedIn",
+		"facebookLabel": "Visit UBOSS on Facebook"
 	},
 	"chat": {
 		"title": "Chat with Us",
@@ -329,7 +336,7 @@
 	"seo": {
 		"home": {
 			"title": "UBOSS — Run Your Business with Real Confidence",
-			"description": "AI automation and consulting for landscapers, contractors, and small businesses in Greater Boston. Trilingual support: EN, ES, PT-BR."
+			"description": "We help Greater Boston & North Shore trades — construction, electricians, plumbers, HVAC & cleaning — simplify operations, communication, and online presence."
 		},
 		"about": {
 			"title": "About UBOSS — AI Consulting Boston | Bilingual AI Agency",
@@ -354,6 +361,10 @@
 		"careers": {
 			"title": "Careers at UBOSS — Join Our AI Team in Boston",
 			"description": "Join UBOSS and help build AI automation for the trades businesses that power Greater Boston."
+		},
+		"notFound": {
+			"title": "Page Not Found | UBOSS",
+			"description": "The page you're looking for doesn't exist or may have moved."
 		},
 		"legalTerms": {
 			"title": "Terms of Service — UBOSS LLC",

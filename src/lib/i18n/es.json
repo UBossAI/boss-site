@@ -308,6 +308,11 @@
 		"emailCta": "Mándanos tu información a support@uboss.ai",
 		"emailSubject": "Carreras — Me gustaría unirme al equipo"
 	},
+	"notFound": {
+		"heading": "Parece que te perdiste",
+		"message": "La página que buscas no existe o puede que se haya movido.",
+		"cta": "Ir al inicio"
+	},
 	"footer": {
 		"tagline": "Soluciones y sistemas para dueños y dueñas que buscan claridad.",
 		"serving": "Sirviendo a Greater Boston, MA",
@@ -327,7 +332,9 @@
 			"keyTerms": "Términos Clave"
 		},
 		"support": "Soporte",
-		"careers": "Carreras"
+		"careers": "Carreras",
+		"linkedinLabel": "Visita a UBOSS en LinkedIn",
+		"facebookLabel": "Visita a UBOSS en Facebook"
 	},
 	"chat": {
 		"title": "Chatea con nosotros",
@@ -341,7 +348,7 @@
 	"seo": {
 		"home": {
 			"title": "UBOSS — Corre tu Negocio con Confianza Total",
-			"description": "Automatización con inteligencia artificial para paisajistas, contratistas y pequeños negocios en el Gran Boston. Soporte en español, inglés y portugués."
+			"description": "Ayudamos a dueños y dueñas en el Gran Boston y North Shore —construcción, electricistas, HVAC, limpieza y más— a mejorar operaciones, comunicación y presencia digital."
 		},
 		"about": {
 			"title": "Sobre UBOSS — Consultoría de IA en Boston | Agencia Bilingüe",
@@ -366,6 +373,10 @@
 		"careers": {
 			"title": "Carreras en UBOSS — Únete a Nuestro Equipo en Boston",
 			"description": "Únete a UBOSS y ayuda a construir automatización con IA para los negocios que impulsan el Gran Boston."
+		},
+		"notFound": {
+			"title": "Página No Encontrada | UBOSS",
+			"description": "La página que buscas no existe o puede que se haya movido."
 		},
 		"legalTerms": {
 			"title": "Términos de Servicio — UBOSS LLC",
