@@ -1,5 +1,6 @@
 import type { RequestHandler } from './$types.js';
 import { locales, localeLangs } from '$lib/utils/i18n.js';
+import { faqTranslatedLocales } from '$lib/content/faq/index.js';
 
 const siteUrl = 'https://www.uboss.ai';
 // Pricing route is temporarily unplugged (redirects to home) — see PROJECT.md — so it's
@@ -8,6 +9,7 @@ const pages = [
 	'',
 	'about',
 	'services',
+	'faq',
 	'contact',
 	'support',
 	'careers',
@@ -20,6 +22,7 @@ const priorities: Record<string, string> = {
 	'': '1.0',
 	about: '0.8',
 	services: '0.9',
+	faq: '0.7',
 	contact: '0.8',
 	support: '0.6',
 	careers: '0.5',
@@ -28,13 +31,19 @@ const priorities: Record<string, string> = {
 	'legal/key-terms': '0.3'
 };
 
-export const GET: RequestHandler = () => {
+export const GET: RequestHandler = async () => {
+	// Pages that don't exist in every locale yet must not be listed or cross-advertised.
+	// The FAQ falls back to English where a locale has no content and is served noindex
+	// there, so it's restricted to the locales actually translated.
+	const faqLocales = await faqTranslatedLocales();
+	const localesFor = (page: string) => (page === 'faq' ? faqLocales : locales);
+
 	const urls = pages.flatMap((page) =>
-		locales.map((locale) => {
+		localesFor(page).map((locale) => {
 			const path = page ? `${locale}/${page}` : locale;
 			const loc = `${siteUrl}/${path}`;
 			const priority = priorities[page] ?? '0.5';
-			const alternates = locales
+			const alternates = localesFor(page)
 				.map((l) => {
 					const altPath = page ? `${l}/${page}` : l;
 					return `<xhtml:link rel="alternate" hreflang="${localeLangs[l]}" href="${siteUrl}/${altPath}"/>`;
