@@ -203,9 +203,19 @@ the same underlying need without that risk.
 ## AI Visibility / GEO (Generative Engine Optimization) Checklist
 > Goal: make UBoss — and eventually client businesses — discoverable and accurately represented when people ask an AI assistant (ChatGPT, Perplexity, Claude, Gemini) instead of typing into Google. This is implementation work (do during a coding pass), distinct from the keyword/copy work above.
 
-- [ ] `FAQPage` JSON-LD on every page with an FAQ section (Homepage, Pricing, Support) — schema copy must match the visible Q&A exactly, no divergent text
+- [x] `FAQPage` JSON-LD — done 2026-08-18, on `/[lang]/faq` only. Note the original target
+      (Homepage, Pricing, Support) is obsolete: all FAQ content consolidated onto one page,
+      and the Support/Pricing accordions were removed. Schema is generated from the same
+      entry array the page renders (`buildFaqPageSchema` in `src/lib/utils/schema.ts`), so
+      copy divergence is structurally impossible rather than a discipline problem.
+      **Expectation check:** Google deprecated FAQ rich results in May 2026 and dropped
+      support from the Rich Results Test — this earns no Google SERP treatment. It is kept
+      for Bing and for the AI crawlers `robots.txt` allowlists. Validate at
+      validator.schema.org, not Google's Rich Results Test.
 - [ ] Expand `LocalBusiness` JSON-LD below: add `sameAs` once social profiles exist; add `makesOffer` / `hasOfferCatalog` referencing `PRICING.md` tiers
-- [x] Add `/llms.txt` at site root — plain-text summary of what UBoss does, who it serves, service area, and key facts, formatted for LLM ingestion (emerging convention, cheap to add). Done 2026-07-15 — `static/llms.txt`.
+- [x] Add `/llms.txt` at site root — plain-text summary of what UBoss does, who it serves, service area, and key facts, formatted for LLM ingestion (emerging convention, cheap to add). Done 2026-07-15 — `static/llms.txt`. Refreshed 2026-08-18: added a `## Common Questions`
+      digest generated from the FAQ content module, and removed the stale published tier prices
+      and the `/en/pricing` link (that route redirects to home).
 - [x] `robots.txt`: explicitly allow known AI crawlers instead of relying on the blanket
       `Allow: /` — makes the intent explicit and documents the decision. Done 2026-07-15, verified
       against current sources (not just training-data memory): OpenAI (`GPTBot`, `ChatGPT-User`,
@@ -214,8 +224,8 @@ the same underlying need without that risk.
       data, not AI Overview inclusion, which rides on regular Googlebot access already allowed),
       `PerplexityBot`, and xAI/Grok (`GrokBot`, `xAI-Grok`, `Grok-DeepSearch` — documented tokens,
       though xAI's crawler has been reported not always honoring them in practice as of mid-2026).
-- [ ] Structure FAQ/blog headings as literal questions (H2/H3) matching how people phrase AI queries — same copy doubles as featured-snippet bait and LLM-citation bait
-- [ ] Front-load the direct answer in the first sentence of every FAQ/blog answer, elaborate after — quotable by both Google snippets and AI assistants
+- [x] Structure FAQ/blog headings as literal questions (H2/H3) — done for the FAQ page 2026-08-18 (each question is an `<h3>` inside `<summary>`). Still open for future blog content.
+- [x] Front-load the direct answer in the first sentence — applied throughout the 2026-08-18 FAQ rewrite. The first paragraph of each answer is also what feeds the `llms.txt` digest, so it has to stand alone.
 - [ ] Keep NAP (name, service area, contact) identical across every page, schema block, and directory listing — inconsistency undermines an AI system's confidence in grounding facts about the business
 - [ ] Don't let key facts (pricing tiers, service area, differentiators) hide behind JS-only rendering — already satisfied by the SSR mandate in `CLAUDE.md`, just don't regress it
 

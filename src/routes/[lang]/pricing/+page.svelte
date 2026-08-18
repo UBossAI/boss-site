@@ -5,26 +5,17 @@
 	import type { Locale } from '$lib/utils/i18n.js';
 	import type { PageData } from './$types.js';
 
-	interface FaqItem {
-		question: string;
-		answer: string;
-	}
 	interface Props {
 		data: PageData;
 	}
 	let { data }: Props = $props();
 	const t = $derived(data.t as Record<string, unknown>);
 	const p = $derived(t.pricing as Record<string, unknown>);
+	const f = $derived(t.faq as Record<string, unknown>);
 	const seo = $derived(t.seo as Record<string, Record<string, string>>);
 	const locale = $derived(data.lang as Locale);
-	const faqItems = $derived((p.faq as FaqItem[]) ?? []);
 
 	const tiers = getVisibleTiers();
-	let openFaq = $state<number | null>(null);
-
-	function toggleFaq(i: number) {
-		openFaq = openFaq === i ? null : i;
-	}
 </script>
 
 <SEOHead
@@ -166,44 +157,15 @@
 
 	<PricingComparisonSection t={data.t as Record<string, unknown>} />
 
-	<!-- FAQ -->
+	<!-- FAQ moved to its own page — one canonical set of answers rather than two
+	     competing for the same queries. Restore the link, not the accordion, if this
+	     page is re-launched. -->
 	<section class="bg-white py-16 lg:py-20">
-		<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-			<h2 class="section-heading text-near-black mb-3 text-center">{p.faqTitle as string}</h2>
-			<div class="teal-divider mx-auto mb-10"></div>
-
-			<div class="space-y-3">
-				{#each faqItems as item, i}
-					<div class="border border-silver rounded-xl overflow-hidden">
-						<button
-							onclick={() => toggleFaq(i)}
-							aria-expanded={openFaq === i}
-							class="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-surface-light transition-colors"
-						>
-							<span class="font-medium text-near-black text-sm pr-4">{item.question}</span>
-							<svg
-								class="w-4 h-4 text-teal flex-shrink-0 transition-transform {openFaq === i
-									? 'rotate-180'
-									: ''}"
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="2"
-							>
-								<polyline points="6 9 12 15 18 9" />
-							</svg>
-						</button>
-						{#if openFaq === i}
-							<div class="px-5 pb-4 text-gray-mid text-sm leading-relaxed">
-								{item.answer}
-							</div>
-						{/if}
-					</div>
-				{/each}
-			</div>
-
-			<div class="text-center mt-10">
+		<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+			<h2 class="section-heading text-near-black mb-3">{f.stillStuckTitle as string}</h2>
+			<div class="teal-divider mx-auto mb-6"></div>
+			<div class="flex flex-col sm:flex-row gap-3 justify-center">
+				<a href="/{data.lang}/faq" class="btn-outline">{f.contactCta as string}</a>
 				<a href="/{data.lang}/contact" class="btn-primary">{p.cta as string}</a>
 			</div>
 		</div>

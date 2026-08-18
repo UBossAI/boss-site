@@ -1,20 +1,13 @@
 <script lang="ts">
 	import SEOHead from '$lib/components/SEOHead.svelte';
 	import type { PageData } from './$types.js';
-	interface FaqItem {
-		question: string;
-		answer: string;
-	}
 	interface Props {
 		data: PageData;
 	}
 	let { data }: Props = $props();
 	const t = $derived(data.t as Record<string, unknown>);
 	const s = $derived(t.support as Record<string, string>);
-	const p = $derived(t.pricing as Record<string, unknown>);
 	const seo = $derived(t.seo as Record<string, Record<string, string>>);
-	const faqItems = $derived((p.faq as FaqItem[]) ?? []);
-	let openFaq = $state<number | null>(null);
 </script>
 
 <SEOHead
@@ -43,36 +36,11 @@
 				</div>
 			</div>
 
-			<h2 class="section-heading text-near-black mb-3">{s.faqTitle}</h2>
-			<div class="teal-divider mb-8"></div>
-
-			<div class="space-y-3">
-				{#each faqItems as item, i}
-					<div class="border border-silver rounded-xl overflow-hidden">
-						<button
-							onclick={() => (openFaq = openFaq === i ? null : i)}
-							aria-expanded={openFaq === i}
-							class="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-surface-light transition-colors"
-						>
-							<span class="font-medium text-near-black text-sm pr-4">{item.question}</span>
-							<svg
-								class="w-4 h-4 text-teal flex-shrink-0 transition-transform {openFaq === i
-									? 'rotate-180'
-									: ''}"
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="2"
-							>
-								<polyline points="6 9 12 15 18 9" />
-							</svg>
-						</button>
-						{#if openFaq === i}
-							<div class="px-5 pb-4 text-gray-mid text-sm leading-relaxed">{item.answer}</div>
-						{/if}
-					</div>
-				{/each}
+			<div class="card p-8 text-center">
+				<h2 class="section-heading text-near-black mb-3">{s.faqLinkTitle}</h2>
+				<div class="teal-divider mx-auto mb-4"></div>
+				<p class="text-gray-mid mb-6">{s.faqLinkBody}</p>
+				<a href="/{data.lang}/faq" class="btn-outline">{s.faqLinkCta}</a>
 			</div>
 		</div>
 	</section>
