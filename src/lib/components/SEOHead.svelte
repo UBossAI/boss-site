@@ -12,6 +12,9 @@
 	let { title, description, lang, page = '', ogImage = '/assets/og-image.png' }: Props = $props();
 
 	const siteUrl = 'https://www.uboss.ai';
+	const ogImageAlt = $derived(
+		lang === 'pt-BR' ? 'Logotipo da UBOSS' : lang === 'es' ? 'Logo de UBOSS' : 'UBOSS logo'
+	);
 	const canonicalUrl = $derived(page ? `${siteUrl}/${lang}/${page}` : `${siteUrl}/${lang}`);
 	const enUrl = $derived(page ? `${siteUrl}/en/${page}` : `${siteUrl}/en`);
 	const esUrl = $derived(page ? `${siteUrl}/es/${page}` : `${siteUrl}/es`);
@@ -62,7 +65,8 @@
 		priceRange: '$$',
 		sameAs: [
 			'https://www.google.com/maps?cid=17359999283352644362',
-			'https://www.facebook.com/profile.php?id=61572034173888'
+			'https://www.facebook.com/profile.php?id=61572034173888',
+			'https://www.linkedin.com/company/uboss-ai'
 		]
 	};
 </script>
@@ -87,16 +91,20 @@
 	<meta property="og:image" content="{siteUrl}{ogImage}" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:alt" content={ogImageAlt} />
 	<meta
 		property="og:locale"
 		content={lang === 'pt-BR' ? 'pt_BR' : lang === 'es' ? 'es_US' : 'en_US'}
 	/>
 
-	<!-- Twitter Card -->
+	<!-- Twitter Card (LinkedIn's Post Inspector and Facebook's Sharing Debugger both read the
+	     Open Graph tags above directly — there is no separate linkedin: tag namespace) -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
 	<meta name="twitter:image" content="{siteUrl}{ogImage}" />
+	<meta name="twitter:image:alt" content={ogImageAlt} />
 
 	<!-- JSON-LD: static object below, not user input; the escaped slash avoids the HTML tokenizer
 	     misreading </script> mid-string as the component's own closing tag -->
