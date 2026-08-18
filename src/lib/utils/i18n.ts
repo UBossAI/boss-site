@@ -16,3 +16,11 @@ export const localeLangs: Record<Locale, string> = {
 	es: 'es',
 	'pt-BR': 'pt-BR'
 };
+
+/**
+ * Substitute `{name}` placeholders in a translation string.
+ * Unmatched placeholders are left as-is so a missing var is visible rather than silent.
+ */
+export function interpolate(template: string, vars: Record<string, string | number>): string {
+	return template.replace(/\{(\w+)\}/g, (match, key) => (key in vars ? String(vars[key]) : match));
+}
