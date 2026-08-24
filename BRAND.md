@@ -16,12 +16,13 @@
 
 ### Primary Colors
 
-| Name          | Hex       | CSS Variable         | Usage                                                 |
-| ------------- | --------- | -------------------- | ----------------------------------------------------- |
-| Petronas Teal | `#00A19B` | `--color-teal`       | Primary accent, CTAs, hover states, links, highlights |
-| Black         | `#000000` | `--color-black`      | Hero backgrounds, nav bar, footer, primary buttons    |
-| Near-Black    | `#1A1A1A` | `--color-near-black` | Logo text (light mode), headings, body text           |
-| White         | `#FFFFFF` | `--color-white`      | Text on dark backgrounds, button text                 |
+| Name          | Hex       | CSS Variable         | Usage                                                                     |
+| ------------- | --------- | -------------------- | ------------------------------------------------------------------------- |
+| Petronas Teal | `#00A19B` | `--color-teal`       | Accent on **dark** backgrounds; dividers, icons, focus rings              |
+| Teal Ink      | `#007A76` | `--color-teal-ink`   | Teal **text** on light backgrounds; outline buttons; primary-button hover |
+| Black         | `#000000` | `--color-black`      | Hero backgrounds, nav bar, footer, primary buttons                        |
+| Near-Black    | `#1A1A1A` | `--color-near-black` | Logo text (light mode), headings, body text                               |
+| White         | `#FFFFFF` | `--color-white`      | Text on dark backgrounds, button text                                     |
 
 ### Secondary Colors
 
@@ -45,6 +46,7 @@
 ```css
 :root {
 	--color-teal: #00a19b;
+	--color-teal-ink: #007a76;
 	--color-black: #000000;
 	--color-near-black: #1a1a1a;
 	--color-white: #ffffff;
@@ -126,7 +128,7 @@
     Transition: all 0.2s ease
 
   Hover state:
-    Background: #00A19B (teal)
+    Background: #007A76 (teal ink — #00A19B gives white text only 3.2:1)
     Text: #FFFFFF (white)
     Transform: translateY(-1px)
     Box-shadow: 0 4px 12px rgba(0, 161, 155, 0.3)
@@ -143,9 +145,29 @@
 
 ### Links
 
-- Default: #00A19B (teal) with no underline
+- Default on light backgrounds: #007A76 (teal ink) with no underline
+- Default on dark backgrounds: #00A19B (teal)
 - Hover: underline + slight opacity change
 - On dark backgrounds: #FFFFFF with teal underline on hover
+
+### Contrast rule
+
+Brand teal `#00A19B` is only **3.2:1 on white** and **2.9:1 on `#F5F5F7`** — both below the
+WCAG 2.1 AA floor of 4.5:1 for body text. It is fully compliant on dark backgrounds (6.6:1
+on black, 5.5:1 on near-black), which is where most of the brand lives.
+
+So the rule is:
+
+| Context                                           | Token                   | Ratio              |
+| ------------------------------------------------- | ----------------------- | ------------------ |
+| Teal text on black / near-black                   | `--color-teal`          | 6.6 / 5.5 — pass   |
+| Teal text on white / off-white                    | `--color-teal-ink`      | 5.2 / 4.8 — pass   |
+| White text on a teal fill                         | `--color-teal-ink` fill | 5.2 — pass         |
+| Dividers, chevrons, focus rings, decorative icons | `--color-teal`          | non-text, 3:1 rule |
+| Graphics that carry meaning (e.g. star ratings)   | `--color-teal-ink`      | must clear 3:1     |
+
+Both tokens share the same hue (177.8°) and full saturation, so they read as the same
+brand colour — the ink variant is simply darker.
 
 ### Cards
 

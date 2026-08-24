@@ -242,7 +242,7 @@
 						<li>
 							<a
 								href="#faq-{entry.id}"
-								class="text-gray-mid hover:text-teal transition-colors underline decoration-silver underline-offset-4"
+								class="text-gray-mid hover:text-teal-ink transition-colors underline decoration-silver underline-offset-4"
 								>{entry.question}</a
 							>
 						</li>

@@ -2,6 +2,12 @@
 
 @theme {
 	--color-teal: #00a19b;
+	/* Accessible teal for TEXT on light backgrounds. The brand teal is only 3.2:1 on
+	   white and 2.9:1 on --color-surface-light, both below the WCAG AA 4.5:1 floor for
+	   body text. This is 5.2:1 and 4.8:1. Same hue and saturation, just darker.
+	   Keep using --color-teal on dark backgrounds (6.6:1) and for non-text graphics
+	   like dividers, chevrons and focus rings, which only need 3:1. */
+	--color-teal-ink: #007a76;
 	--color-teal-dark: #008a85;
 	--color-teal-glow: rgba(0, 161, 155, 0.3);
 	--color-black: #000000;
@@ -47,6 +53,34 @@
 }
 
 @layer components {
+	/* Off-screen until focused, then pinned to the top-left. Uses a real position rather
+	   than display:none so it stays in the tab order. */
+	.skip-link {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		transform: translateY(-120%);
+		background-color: var(--color-black);
+		color: white;
+		padding: 12px 20px;
+		border-bottom-right-radius: 8px;
+		font-weight: 600;
+		text-decoration: none;
+		transition: transform 0.15s ease;
+	}
+
+	.skip-link:focus {
+		transform: translateY(0);
+		outline: 2px solid var(--color-teal);
+		outline-offset: -4px;
+	}
+
+	/* The skip target takes focus programmatically; it should not draw a focus ring. */
+	#main-content:focus {
+		outline: none;
+	}
+
 	.btn-primary {
 		display: inline-flex;
 		align-items: center;
@@ -64,7 +98,7 @@
 	}
 
 	.btn-primary:hover {
-		background-color: var(--color-teal);
+		background-color: var(--color-teal-ink);
 		transform: translateY(-1px);
 		box-shadow: 0 4px 12px var(--color-teal-glow);
 	}
@@ -84,8 +118,8 @@
 		align-items: center;
 		justify-content: center;
 		background-color: transparent;
-		color: var(--color-teal);
-		border: 2px solid var(--color-teal);
+		color: var(--color-teal-ink);
+		border: 2px solid var(--color-teal-ink);
 		border-radius: 8px;
 		padding: 10px 22px;
 		font-weight: 600;
@@ -96,7 +130,7 @@
 	}
 
 	.btn-outline:hover {
-		background-color: var(--color-teal);
+		background-color: var(--color-teal-ink);
 		color: white;
 		transform: translateY(-1px);
 	}

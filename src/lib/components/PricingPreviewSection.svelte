@@ -40,7 +40,7 @@
 			<p class="text-gray-mid text-lg max-w-2xl mx-auto mb-6">{t.subtitle}</p>
 
 			<span
-				class="inline-block bg-teal/10 text-teal text-sm font-semibold px-4 py-1.5 rounded-full mb-8"
+				class="inline-block bg-white text-teal-ink text-sm font-semibold px-4 py-1.5 rounded-full mb-8"
 			>
 				{t.freeConsult}
 			</span>

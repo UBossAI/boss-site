@@ -48,7 +48,7 @@
 			{#each t.items as item, i}
 				<div class="fade-in card p-7" style="transition-delay: {i * 100}ms">
 					<!-- Stars -->
-					<div class="flex gap-1 text-teal mb-4" role="img" aria-label="5 stars">
+					<div class="flex gap-1 text-teal-ink mb-4" role="img" aria-label="5 stars">
 						{#each Array(5) as _}
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -69,9 +69,9 @@
 
 					<div class="flex items-center gap-3">
 						<div
-							class="w-9 h-9 rounded-full bg-teal/20 flex items-center justify-center flex-shrink-0"
+							class="w-9 h-9 rounded-full bg-teal-ink flex items-center justify-center flex-shrink-0"
 						>
-							<span class="text-teal font-semibold text-sm">{item.name.charAt(0)}</span>
+							<span class="text-white font-semibold text-sm">{item.name.charAt(0)}</span>
 						</div>
 						<div>
 							<p class="text-near-black font-semibold text-sm">{item.name}</p>

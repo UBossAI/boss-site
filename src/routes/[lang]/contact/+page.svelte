@@ -1,5 +1,6 @@
 <script lang="ts">
 	import SEOHead from '$lib/components/SEOHead.svelte';
+	import { trackConversion } from '$lib/analytics/index.js';
 	import type { PageData } from './$types.js';
 
 	interface Props {
@@ -24,6 +25,7 @@
 		if (honeypot) return; // spam trap
 
 		status = 'sending';
+		trackConversion('contact_form_submit');
 		try {
 			// For now, open mailto directly
 			window.location.href = `mailto:support@uboss.ai?subject=Contact%20Form%20-%20${encodeURIComponent(name)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nPreferred Language: ${language}\n\n${message}`)}`;
@@ -78,7 +80,10 @@
 						</svg>
 					</div>
 					<h2 class="font-semibold text-near-black mb-1">{c.emailLabel as string}</h2>
-					<a href="mailto:support@uboss.ai" class="text-teal hover:underline text-lg font-medium">
+					<a
+						href="mailto:support@uboss.ai"
+						class="text-teal-ink hover:underline text-lg font-medium"
+					>
 						{c.email as string}
 					</a>
 				</div>
@@ -107,6 +112,7 @@
 						target="_blank"
 						rel="noopener noreferrer"
 						class="btn-primary text-sm"
+						onclick={() => trackConversion('book_discovery_call', { placement: 'contact_page' })}
 					>
 						{c.book15Label as string}
 					</a>
@@ -136,6 +142,7 @@
 						target="_blank"
 						rel="noopener noreferrer"
 						class="btn-primary text-sm"
+						onclick={() => trackConversion('book_strategy_call', { placement: 'contact_page' })}
 					>
 						{c.book60Label as string}
 					</a>
@@ -147,7 +154,9 @@
 				<h2 class="font-semibold text-near-black text-xl mb-6">{form.title}</h2>
 
 				{#if status === 'success'}
-					<div class="text-center py-10">
+					<!-- role="status" so assistive tech announces the outcome; without it the form
+					     simply vanishes and a screen reader user gets no confirmation. -->
+					<div class="text-center py-10" role="status">
 						<div class="text-teal mb-4">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -168,7 +177,7 @@
 						<p class="text-gray-mid text-sm">{form.successMessage}</p>
 					</div>
 				{:else}
-					<form onsubmit={handleSubmit} class="space-y-4" novalidate>
+					<form onsubmit={handleSubmit} class="space-y-4">
 						<!-- Honeypot -->
 						<input
 							type="text"
@@ -253,7 +262,7 @@
 						</div>
 
 						{#if status === 'error'}
-							<p class="text-error text-sm">{form.errorMessage}</p>
+							<p class="text-error text-sm" role="alert">{form.errorMessage}</p>
 						{/if}
 
 						<button
