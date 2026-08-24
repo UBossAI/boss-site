@@ -12,9 +12,15 @@
 	let { data, children }: Props = $props();
 </script>
 
+<!-- WCAG 2.4.1 Bypass Blocks: keyboard users can jump the nav on every page. Visible
+     only while focused. -->
+<a href="#main-content" class="skip-link"
+	>{(data.t as Record<string, Record<string, string>>).nav.skipToContent}</a
+>
+
 <NavBar lang={data.lang} t={data.t as Record<string, Record<string, string>>} />
 
-<main id="main-content">
+<main id="main-content" tabindex="-1">
 	{@render children()}
 </main>
 

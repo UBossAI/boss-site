@@ -45,7 +45,7 @@
 							href={a.founderSiteUrl}
 							target="_blank"
 							rel="noopener noreferrer"
-							class="text-teal hover:underline">{a.founderSiteText}</a
+							class="text-teal-ink hover:underline">{a.founderSiteText}</a
 						>
 					</p>
 				</div>

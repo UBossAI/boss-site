@@ -68,6 +68,7 @@ boss-site/
 ├── PRICING.md ← tier config (single source of truth)
 ├── SEO.md ← keyword targets per language
 ├── CONTENT_STRATEGY.md ← drafted FAQ/blog/on-page copy (English checkpoint)
+├── ANALYTICS.md ← GA4 / Google Ads / Clarity: where tags live, how to enable
 ├── static/
 │ ├── assets/
 │ │ ├── uboss-logo-dark.png ← teal U + white BOSS (dark bg)
@@ -87,6 +88,7 @@ boss-site/
 │ │ │ ├── en.json
 │ │ │ ├── es.json
 │ │ │ └── pt-BR.json
+│ │ ├── analytics/ ← GA4 + Google Ads + Clarity (see ANALYTICS.md)
 │ │ ├── config/
 │ │ │ └── pricing.ts ← reads from PRICING.md or mirrors it
 │ │ ├── styles/

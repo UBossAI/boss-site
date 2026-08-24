@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { trackConversion } from '$lib/analytics/index.js';
 
 	interface Props {
 		t: {
@@ -116,6 +117,7 @@
 					target="_blank"
 					rel="noopener noreferrer"
 					class="btn-primary text-sm"
+					onclick={() => trackConversion('book_discovery_call', { placement: 'cta_card' })}
 				>
 					{t.book15Label}
 				</a>
@@ -149,6 +151,7 @@
 					target="_blank"
 					rel="noopener noreferrer"
 					class="btn-primary text-sm"
+					onclick={() => trackConversion('book_strategy_call', { placement: 'cta_card' })}
 				>
 					{t.book60Label}
 				</a>
@@ -174,6 +177,7 @@
 						target="_blank"
 						rel="noopener noreferrer"
 						class="btn-primary"
+						onclick={() => trackConversion('book_discovery_call', { placement: 'embed_fallback' })}
 					>
 						{t.book15Label} →
 					</a>
