@@ -11,7 +11,10 @@ async function verifyTurnstile(
 	remoteIp: string,
 	fetchFn: typeof fetch
 ): Promise<boolean> {
-	if (!env.TURNSTILE_SECRET_KEY) return false;
+	if (!env.TURNSTILE_SECRET_KEY) {
+		console.error('[contact] TURNSTILE_SECRET_KEY is not set');
+		return false;
+	}
 
 	const body = new URLSearchParams({
 		secret: env.TURNSTILE_SECRET_KEY,
@@ -19,9 +22,15 @@ async function verifyTurnstile(
 		remoteip: remoteIp
 	});
 	const res = await fetchFn(TURNSTILE_VERIFY_URL, { method: 'POST', body });
-	if (!res.ok) return false;
+	if (!res.ok) {
+		console.error('[contact] siteverify HTTP error', res.status, await res.text());
+		return false;
+	}
 
-	const result = (await res.json()) as { success: boolean };
+	const result = (await res.json()) as { success: boolean; 'error-codes'?: string[] };
+	if (!result.success) {
+		console.error('[contact] siteverify rejected token', result['error-codes']);
+	}
 	return result.success === true;
 }
 
@@ -44,10 +53,20 @@ export const actions: Actions = {
 		const turnstileToken = data.get('cf-turnstile-response')?.toString() ?? '';
 
 		if (!name || !email || !message) {
+			console.error('[contact] missing required field(s)', {
+				name: !!name,
+				email: !!email,
+				message: !!message
+			});
 			return fail(400, { error: true });
 		}
 
-		if (!turnstileToken || !(await verifyTurnstile(turnstileToken, getClientAddress(), fetch))) {
+		if (!turnstileToken) {
+			console.error('[contact] cf-turnstile-response was empty');
+			return fail(400, { error: true });
+		}
+
+		if (!(await verifyTurnstile(turnstileToken, getClientAddress(), fetch))) {
 			return fail(400, { error: true });
 		}
 
