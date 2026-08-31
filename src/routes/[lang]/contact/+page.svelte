@@ -1,39 +1,27 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+	import { enhance } from '$app/forms';
+	import { env as publicEnv } from '$env/dynamic/public';
+	import { loadScript } from '$lib/analytics/loadScript.js';
 	import SEOHead from '$lib/components/SEOHead.svelte';
 	import { trackConversion } from '$lib/analytics/index.js';
-	import type { PageData } from './$types.js';
+	import type { ActionData, PageData } from './$types.js';
 
 	interface Props {
 		data: PageData;
+		form: ActionData;
 	}
-	let { data }: Props = $props();
+	let { data, form }: Props = $props();
 	const t = $derived(data.t as Record<string, unknown>);
 	const c = $derived(t.contact as Record<string, unknown>);
-	const form = $derived(c.form as Record<string, string>);
+	const formT = $derived(c.form as Record<string, string>);
 	const seo = $derived(t.seo as Record<string, Record<string, string>>);
 
-	let name = $state('');
-	let email = $state('');
-	let phone = $state('');
-	let message = $state('');
-	let language = $state('en');
-	let honeypot = $state('');
-	let status = $state<'idle' | 'sending' | 'success' | 'error'>('idle');
+	let submitting = $state(false);
 
-	async function handleSubmit(e: Event) {
-		e.preventDefault();
-		if (honeypot) return; // spam trap
-
-		status = 'sending';
-		trackConversion('contact_form_submit');
-		try {
-			// For now, open mailto directly
-			window.location.href = `mailto:support@uboss.ai?subject=Contact%20Form%20-%20${encodeURIComponent(name)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nPreferred Language: ${language}\n\n${message}`)}`;
-			status = 'success';
-		} catch {
-			status = 'error';
-		}
-	}
+	onMount(() => {
+		loadScript('https://challenges.cloudflare.com/turnstile/v0/api.js');
+	});
 </script>
 
 <SEOHead
@@ -80,10 +68,7 @@
 						</svg>
 					</div>
 					<h2 class="font-semibold text-near-black mb-1">{c.emailLabel as string}</h2>
-					<a
-						href="mailto:support@uboss.ai"
-						class="text-teal-ink hover:underline text-lg font-medium"
-					>
+					<a href="#contact-form" class="text-teal-ink hover:underline text-lg font-medium">
 						{c.email as string}
 					</a>
 				</div>
@@ -151,9 +136,9 @@
 
 			<!-- Contact form -->
 			<div class="card p-7">
-				<h2 class="font-semibold text-near-black text-xl mb-6">{form.title}</h2>
+				<h2 class="font-semibold text-near-black text-xl mb-6">{formT.title}</h2>
 
-				{#if status === 'success'}
+				{#if form?.success}
 					<!-- role="status" so assistive tech announces the outcome; without it the form
 					     simply vanishes and a screen reader user gets no confirmation. -->
 					<div class="text-center py-10" role="status">
@@ -173,16 +158,29 @@
 								/>
 							</svg>
 						</div>
-						<h3 class="font-semibold text-near-black text-lg mb-2">{form.successTitle}</h3>
-						<p class="text-gray-mid text-sm">{form.successMessage}</p>
+						<h3 class="font-semibold text-near-black text-lg mb-2">{formT.successTitle}</h3>
+						<p class="text-gray-mid text-sm">{formT.successMessage}</p>
 					</div>
 				{:else}
-					<form onsubmit={handleSubmit} class="space-y-4">
+					<form
+						id="contact-form"
+						method="POST"
+						use:enhance={() => {
+							submitting = true;
+							return async ({ result, update }) => {
+								submitting = false;
+								if (result.type === 'success') {
+									trackConversion('contact_form_submit');
+								}
+								await update();
+							};
+						}}
+						class="space-y-4"
+					>
 						<!-- Honeypot -->
 						<input
 							type="text"
 							name="_gotcha"
-							bind:value={honeypot}
 							style="display:none"
 							tabindex="-1"
 							autocomplete="off"
@@ -190,13 +188,13 @@
 
 						<div>
 							<label for="name" class="block text-sm font-medium text-near-black mb-1.5"
-								>{form.name}</label
+								>{formT.name}</label
 							>
 							<input
 								id="name"
+								name="name"
 								type="text"
-								bind:value={name}
-								placeholder={form.namePlaceholder}
+								placeholder={formT.namePlaceholder}
 								required
 								autocomplete="name"
 								class="w-full px-3.5 py-2.5 rounded-lg border border-silver text-near-black text-sm focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition-shadow"
@@ -205,13 +203,13 @@
 
 						<div>
 							<label for="email" class="block text-sm font-medium text-near-black mb-1.5"
-								>{form.email}</label
+								>{formT.email}</label
 							>
 							<input
 								id="email"
+								name="email"
 								type="email"
-								bind:value={email}
-								placeholder={form.emailPlaceholder}
+								placeholder={formT.emailPlaceholder}
 								required
 								autocomplete="email"
 								class="w-full px-3.5 py-2.5 rounded-lg border border-silver text-near-black text-sm focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition-shadow"
@@ -220,13 +218,13 @@
 
 						<div>
 							<label for="phone" class="block text-sm font-medium text-near-black mb-1.5"
-								>{form.phone}</label
+								>{formT.phone}</label
 							>
 							<input
 								id="phone"
+								name="phone"
 								type="tel"
-								bind:value={phone}
-								placeholder={form.phonePlaceholder}
+								placeholder={formT.phonePlaceholder}
 								autocomplete="tel"
 								class="w-full px-3.5 py-2.5 rounded-lg border border-silver text-near-black text-sm focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition-shadow"
 							/>
@@ -234,43 +232,45 @@
 
 						<div>
 							<label for="language" class="block text-sm font-medium text-near-black mb-1.5"
-								>{form.language}</label
+								>{formT.language}</label
 							>
 							<select
 								id="language"
-								bind:value={language}
+								name="language"
 								class="w-full px-3.5 py-2.5 rounded-lg border border-silver text-near-black text-sm focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition-shadow bg-white"
 							>
-								<option value="en">{form.languageEn}</option>
-								<option value="es">{form.languageEs}</option>
-								<option value="pt-BR">{form.languagePt}</option>
+								<option value="en">{formT.languageEn}</option>
+								<option value="es">{formT.languageEs}</option>
+								<option value="pt-BR">{formT.languagePt}</option>
 							</select>
 						</div>
 
 						<div>
 							<label for="message" class="block text-sm font-medium text-near-black mb-1.5"
-								>{form.message}</label
+								>{formT.message}</label
 							>
 							<textarea
 								id="message"
-								bind:value={message}
-								placeholder={form.messagePlaceholder}
+								name="message"
+								placeholder={formT.messagePlaceholder}
 								required
 								rows="4"
 								class="w-full px-3.5 py-2.5 rounded-lg border border-silver text-near-black text-sm focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition-shadow resize-none"
 							></textarea>
 						</div>
 
-						{#if status === 'error'}
-							<p class="text-error text-sm" role="alert">{form.errorMessage}</p>
+						<div class="cf-turnstile" data-sitekey={publicEnv.PUBLIC_TURNSTILE_SITE_KEY}></div>
+
+						{#if form?.error}
+							<p class="text-error text-sm" role="alert">{formT.errorMessage}</p>
 						{/if}
 
 						<button
 							type="submit"
-							disabled={status === 'sending'}
+							disabled={submitting}
 							class="btn-primary w-full disabled:opacity-60 disabled:cursor-not-allowed"
 						>
-							{status === 'sending' ? form.sending : form.submit}
+							{submitting ? formT.sending : formT.submit}
 						</button>
 					</form>
 				{/if}

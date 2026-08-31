@@ -88,11 +88,6 @@
 							>{footer.careers as string}</a
 						>
 					</li>
-					<li>
-						<a href="mailto:support@uboss.ai" class="text-sm hover:text-teal transition-colors">
-							support@uboss.ai
-						</a>
-					</li>
 				</ul>
 			</div>
 

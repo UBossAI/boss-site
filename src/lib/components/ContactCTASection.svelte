@@ -3,6 +3,7 @@
 	import { trackConversion } from '$lib/analytics/index.js';
 
 	interface Props {
+		lang: string;
 		t: {
 			title: string;
 			subtitle: string;
@@ -15,7 +16,7 @@
 		};
 	}
 
-	let { t }: Props = $props();
+	let { lang, t }: Props = $props();
 	let sectionEl: HTMLElement;
 	let calLoaded = $state(false);
 	let calContainer: HTMLDivElement;
@@ -84,7 +85,7 @@
 					</svg>
 				</div>
 				<h3 class="text-white font-semibold mb-2">{t.emailLabel}</h3>
-				<a href="mailto:support@uboss.ai" class="text-teal hover:underline text-lg font-medium">
+				<a href="/{lang}/contact" class="text-teal hover:underline text-lg font-medium">
 					{t.email}
 				</a>
 			</div>

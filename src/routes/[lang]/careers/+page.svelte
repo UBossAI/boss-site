@@ -46,7 +46,7 @@
 				<div class="card p-6 text-center">
 					<p class="text-gray-mid mb-6">{c.noOpenings}</p>
 					<a
-						href="mailto:support@uboss.ai?subject={encodeURIComponent(c.emailSubject)}"
+						href="mailto:careers@uboss.ai?subject={encodeURIComponent(c.emailSubject)}"
 						class="btn-primary"
 					>
 						{c.emailCta}

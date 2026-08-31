@@ -25,4 +25,4 @@
 </main>
 
 <Footer lang={data.lang} t={data.t as Record<string, Record<string, string>>} />
-<ChatWidget t={data.t as Record<string, Record<string, string>>} />
+<ChatWidget lang={data.lang} t={data.t as Record<string, Record<string, string>>} />

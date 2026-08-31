@@ -50,7 +50,6 @@
 		description:
 			'Modern systems that help trades and small businesses in Greater Boston run more efficiently, scale confidently, and grow without extra overhead.',
 		url: siteUrl,
-		email: 'support@uboss.ai',
 		areaServed: [
 			{ '@type': 'City', name: 'Boston' },
 			{ '@type': 'City', name: 'East Boston' },

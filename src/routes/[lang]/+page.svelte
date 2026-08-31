@@ -31,5 +31,5 @@
 	{lang}
 	t={t.pricingPreview as ComponentProps<typeof PricingPreviewSection>['t']}
 />
-<ContactCTASection t={t.contact as ComponentProps<typeof ContactCTASection>['t']} />
+<ContactCTASection {lang} t={t.contact as ComponentProps<typeof ContactCTASection>['t']} />
 <TestimonialsSection t={t.testimonials as ComponentProps<typeof TestimonialsSection>['t']} />
