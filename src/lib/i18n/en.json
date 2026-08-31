@@ -90,8 +90,8 @@
 		"eyebrow": "Contact",
 		"title": "Ready to Automate Your Business?",
 		"subtitle": "Book a free consultation or send us a message. We'll get back to you within 24 hours.",
-		"emailLabel": "Email us",
-		"email": "support@uboss.ai",
+		"emailLabel": "Send a Message",
+		"email": "Fill out our contact form",
 		"book15Label": "15-Minute Discovery Call",
 		"book15Description": "Quick intro: tell us about your business",
 		"book60Label": "Strategy Session",
@@ -114,7 +114,7 @@
 			"sending": "Sending...",
 			"successTitle": "Message Sent!",
 			"successMessage": "Thanks for reaching out. We'll get back to you within 24 hours.",
-			"errorMessage": "Something went wrong. Please email us directly at support@uboss.ai."
+			"errorMessage": "Something went wrong. Please try again in a moment."
 		}
 	},
 	"testimonials": {
@@ -238,9 +238,7 @@
 		"title": "Support",
 		"subtitle": "We're here to help.",
 		"description": "Have a question or need help with your automation? Reach out to us and we'll get back to you within 24 hours.",
-		"emailLabel": "Email us",
-		"email": "support@uboss.ai",
-		"contactLink": "Or fill out our contact form",
+		"contactLink": "Fill out our contact form",
 		"faqLinkTitle": "Looking for a quick answer?",
 		"faqLinkBody": "Most common questions about how we work, pricing, and data handling are answered on our FAQ page.",
 		"faqLinkCta": "Read the FAQ"
@@ -254,7 +252,7 @@
 		"cultureTitle": "Our Culture",
 		"openingsTitle": "Current Openings",
 		"noOpenings": "We don't have any open positions listed right now, but we're always open to hearing from great people.",
-		"emailCta": "Send your info to support@uboss.ai",
+		"emailCta": "Send your info to careers@uboss.ai",
 		"emailSubject": "Careers — I'd love to join the team"
 	},
 	"notFound": {
@@ -330,8 +328,8 @@
 	},
 	"chat": {
 		"title": "Chat with Us",
-		"comingSoon": "Live chat is coming soon! In the meantime, email us:",
-		"email": "support@uboss.ai",
+		"comingSoon": "Live chat is coming soon! In the meantime, reach out here:",
+		"email": "Send us a message",
 		"openWhatsApp": "Message us on WhatsApp",
 		"openTelegram": "Message us on Telegram",
 		"open": "Open chat",
@@ -360,7 +358,7 @@
 		},
 		"support": {
 			"title": "Support — UBOSS AI Automation",
-			"description": "Need help with your UBOSS automation? Contact our support team at support@uboss.ai."
+			"description": "Need help with your UBOSS automation? Reach out through our contact form."
 		},
 		"careers": {
 			"title": "Careers at UBOSS — Join Our AI Team in Boston",

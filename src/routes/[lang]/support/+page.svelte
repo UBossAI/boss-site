@@ -30,9 +30,8 @@
 		<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="card p-8 mb-10 text-center">
 				<p class="text-gray-mid mb-5">{s.description}</p>
-				<div class="flex flex-col sm:flex-row gap-3 justify-center">
-					<a href="mailto:support@uboss.ai" class="btn-primary">{s.emailLabel}: {s.email}</a>
-					<a href="/{data.lang}/contact" class="btn-outline">{s.contactLink}</a>
+				<div class="flex justify-center">
+					<a href="/{data.lang}/contact" class="btn-primary">{s.contactLink}</a>
 				</div>
 			</div>
 

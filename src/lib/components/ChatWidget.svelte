@@ -1,5 +1,6 @@
 <script lang="ts">
 	interface Props {
+		lang: string;
 		t: Record<string, Record<string, string>>;
 		webhookUrl?: string;
 	}
@@ -7,7 +8,7 @@
 	// webhookUrl is intentionally unused today — scaffolded per PROJECT.md for the future
 	// Chatwoot/WhatsApp Business API integration; kept as part of the component's public API.
 	// eslint-disable-next-line no-unused-vars
-	let { t, webhookUrl = '' }: Props = $props();
+	let { lang, t, webhookUrl = '' }: Props = $props();
 	let chat = $derived(t.chat as Record<string, string>);
 	let open = $state(false);
 
@@ -57,7 +58,7 @@
 			<!-- Body -->
 			<div class="p-4 space-y-3">
 				<p class="text-white/70 text-sm leading-relaxed">{chat.comingSoon}</p>
-				<a href="mailto:{chat.email}" class="text-teal hover:underline text-sm font-medium block">
+				<a href="/{lang}/contact" class="text-teal hover:underline text-sm font-medium block">
 					{chat.email}
 				</a>
 

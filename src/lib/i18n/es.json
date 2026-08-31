@@ -91,7 +91,7 @@
 		"title": "¿Listo para automatizar tu negocio?",
 		"subtitle": "Agenda una consulta gratis o mándanos un mensaje. Te respondemos en menos de 24 horas.",
 		"emailLabel": "Escríbenos",
-		"email": "support@uboss.ai",
+		"email": "Completa nuestro formulario de contacto",
 		"book15Label": "Llamada de 15 Minutos",
 		"book15Description": "Una introducción rápida: cuéntanos sobre tu negocio",
 		"book60Label": "Sesión de Estrategia",
@@ -114,7 +114,7 @@
 			"sending": "Enviando...",
 			"successTitle": "¡Mensaje enviado!",
 			"successMessage": "Gracias por escribirnos. Te respondemos en menos de 24 horas.",
-			"errorMessage": "Algo salió mal. Por favor escríbenos directamente a support@uboss.ai."
+			"errorMessage": "Algo salió mal. Por favor intenta de nuevo en un momento."
 		}
 	},
 	"testimonials": {
@@ -238,9 +238,7 @@
 		"title": "Soporte",
 		"subtitle": "Estamos aquí para ayudarte.",
 		"description": "¿Tienes una pregunta o necesitas ayuda con tu automatización? Contáctanos y te respondemos en menos de 24 horas.",
-		"emailLabel": "Escríbenos",
-		"email": "support@uboss.ai",
-		"contactLink": "O llena nuestro formulario de contacto",
+		"contactLink": "Llena nuestro formulario de contacto",
 		"faqLinkTitle": "¿Buscas una respuesta rápida?",
 		"faqLinkBody": "Las preguntas más comunes sobre cómo trabajamos, precios y manejo de datos están contestadas en nuestra página de preguntas frecuentes.",
 		"faqLinkCta": "Ver preguntas frecuentes"
@@ -254,7 +252,7 @@
 		"cultureTitle": "Nuestra Cultura",
 		"openingsTitle": "Posiciones Abiertas",
 		"noOpenings": "Actualmente no tenemos posiciones abiertas, pero siempre estamos abiertos a escuchar a personas talentosas.",
-		"emailCta": "Mándanos tu información a support@uboss.ai",
+		"emailCta": "Mándanos tu información a careers@uboss.ai",
 		"emailSubject": "Carreras — Me gustaría unirme al equipo"
 	},
 	"notFound": {
@@ -330,8 +328,8 @@
 	},
 	"chat": {
 		"title": "Chatea con nosotros",
-		"comingSoon": "¡El chat en vivo llega pronto! Mientras tanto, escríbenos:",
-		"email": "support@uboss.ai",
+		"comingSoon": "¡El chat en vivo llega pronto! Mientras tanto, contáctanos aquí:",
+		"email": "Envíanos un mensaje",
 		"openWhatsApp": "Escríbenos por WhatsApp",
 		"openTelegram": "Escríbenos por Telegram",
 		"open": "Abrir chat",
@@ -360,7 +358,7 @@
 		},
 		"support": {
 			"title": "Soporte — UBOSS Automatización con IA",
-			"description": "¿Necesitas ayuda con tu automatización UBOSS? Contáctanos en support@uboss.ai."
+			"description": "¿Necesitas ayuda con tu automatización UBOSS? Contáctanos con nuestro formulario."
 		},
 		"careers": {
 			"title": "Carreras en UBOSS — Únete a Nuestro Equipo en Boston",
