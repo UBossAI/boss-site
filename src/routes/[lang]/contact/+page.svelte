@@ -1,8 +1,9 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onDestroy, onMount } from 'svelte';
 	import { enhance } from '$app/forms';
 	import { env as publicEnv } from '$env/dynamic/public';
 	import { loadScript } from '$lib/analytics/loadScript.js';
+	import { MESSAGE_MAX_LENGTH, MESSAGE_MIN_LENGTH } from '$lib/config/contactForm.js';
 	import SEOHead from '$lib/components/SEOHead.svelte';
 	import { trackConversion } from '$lib/analytics/index.js';
 	import type { ActionData, PageData } from './$types.js';
@@ -18,10 +19,34 @@
 	const seo = $derived(t.seo as Record<string, Record<string, string>>);
 
 	let submitting = $state(false);
+	let message = $state('');
+	let contactMethodError = $state(false);
+	let progress = $state(0);
+	let progressTimer: ReturnType<typeof setInterval> | undefined;
+
+	// Climbs quickly at first, then eases toward (but never reaches) 92% — real
+	// submissions land in 1-3s normally, up to ~22s worst case, and the actual
+	// response snaps the bar to 100% (or resets it on failure) rather than the
+	// timer ever completing it on its own.
+	function startProgress() {
+		const startedAt = Date.now();
+		progress = 0;
+		progressTimer = setInterval(() => {
+			progress = 92 * (1 - Math.exp(-(Date.now() - startedAt) / 1300));
+		}, 100);
+	}
+
+	function stopProgress(finalValue: number) {
+		clearInterval(progressTimer);
+		progressTimer = undefined;
+		progress = finalValue;
+	}
 
 	onMount(() => {
 		loadScript('https://challenges.cloudflare.com/turnstile/v0/api.js');
 	});
+
+	onDestroy(() => clearInterval(progressTimer));
 </script>
 
 <SEOHead
@@ -165,10 +190,21 @@
 					<form
 						id="contact-form"
 						method="POST"
-						use:enhance={() => {
+						use:enhance={({ formData, cancel }) => {
+							const hasEmail = !!formData.get('email')?.toString().trim();
+							const hasPhone = !!formData.get('phone')?.toString().trim();
+							if (!hasEmail && !hasPhone) {
+								contactMethodError = true;
+								cancel();
+								return;
+							}
+							contactMethodError = false;
+
 							submitting = true;
+							startProgress();
 							return async ({ result, update }) => {
 								submitting = false;
+								stopProgress(result.type === 'success' ? 100 : 0);
 								if (result.type === 'success') {
 									trackConversion('contact_form_submit');
 								}
@@ -210,7 +246,6 @@
 								name="email"
 								type="email"
 								placeholder={formT.emailPlaceholder}
-								required
 								autocomplete="email"
 								class="w-full px-3.5 py-2.5 rounded-lg border border-silver text-near-black text-sm focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition-shadow"
 							/>
@@ -228,6 +263,7 @@
 								autocomplete="tel"
 								class="w-full px-3.5 py-2.5 rounded-lg border border-silver text-near-black text-sm focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition-shadow"
 							/>
+							<p class="text-gray-mid text-xs mt-1.5">{formT.contactMethodHint}</p>
 						</div>
 
 						<div>
@@ -252,17 +288,45 @@
 							<textarea
 								id="message"
 								name="message"
+								bind:value={message}
 								placeholder={formT.messagePlaceholder}
 								required
+								minlength={MESSAGE_MIN_LENGTH}
+								maxlength={MESSAGE_MAX_LENGTH}
 								rows="4"
 								class="w-full px-3.5 py-2.5 rounded-lg border border-silver text-near-black text-sm focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition-shadow resize-none"
 							></textarea>
+							{#if MESSAGE_MAX_LENGTH - message.length <= 200}
+								<p class="text-gray-mid text-xs mt-1 text-right">
+									{formT.charCount
+										.replace('{typed}', String(message.length))
+										.replace('{max}', String(MESSAGE_MAX_LENGTH))}
+								</p>
+							{/if}
 						</div>
 
 						<div class="cf-turnstile" data-sitekey={publicEnv.PUBLIC_TURNSTILE_SITE_KEY}></div>
 
-						{#if form?.error}
+						{#if contactMethodError}
+							<p class="text-error text-sm" role="alert">{formT.contactMethodHint}</p>
+						{:else if form?.error}
 							<p class="text-error text-sm" role="alert">{formT.errorMessage}</p>
+						{/if}
+
+						{#if submitting}
+							<div
+								class="w-full h-1.5 bg-silver/40 rounded-full overflow-hidden"
+								role="progressbar"
+								aria-label={formT.sending}
+								aria-valuenow={Math.round(progress)}
+								aria-valuemin="0"
+								aria-valuemax="100"
+							>
+								<div
+									class="h-full bg-teal transition-[width] duration-150 ease-linear"
+									style="width: {progress}%"
+								></div>
+							</div>
 						{/if}
 
 						<button
