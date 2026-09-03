@@ -16,21 +16,27 @@
 			<!-- Brand column -->
 			<div class="md:col-span-1">
 				<a href="/{lang}" class="inline-flex items-center gap-3 mb-4">
-					<img
-						src="/assets/uboss-logo-dark-bg.png"
-						alt="UBOSS"
-						class="h-9 md:h-12 w-auto"
-						width="160"
-						height="48"
-					/>
-					<img
-						src="/assets/pegasus-icon-modern.jpg"
-						alt=""
-						class="h-9 md:h-11 w-auto object-contain opacity-60"
-						width="44"
-						height="44"
-						aria-hidden="true"
-					/>
+					<picture>
+						<source srcset="/assets/uboss-logo-dark-bg-400.webp" type="image/webp" />
+						<img
+							src="/assets/uboss-logo-dark-bg-400.png"
+							alt="UBOSS"
+							class="h-9 md:h-12 w-auto"
+							width="68"
+							height="48"
+						/>
+					</picture>
+					<picture>
+						<source srcset="/assets/pegasus-mark-on-dark.webp" type="image/webp" />
+						<img
+							src="/assets/pegasus-mark-on-dark.png"
+							alt=""
+							class="h-9 md:h-11 w-auto object-contain opacity-60"
+							width="30"
+							height="44"
+							aria-hidden="true"
+						/>
+					</picture>
 				</a>
 				<p class="text-sm text-white/50 leading-relaxed">{footer.tagline as string}</p>
 				<p class="text-sm text-teal mt-2">{footer.serving as string}</p>

@@ -51,8 +51,9 @@
 				</div>
 				<div class="relative">
 					<picture>
+						<source srcset="/assets/photo-headshot-800.webp" type="image/webp" />
 						<img
-							src="/assets/photo-headshot.jpeg"
+							src="/assets/photo-headshot-800.jpg"
 							alt={a.imageAlt}
 							class="w-full max-w-xs mx-auto rounded-2xl object-cover shadow-xl"
 							width="400"
@@ -78,13 +79,20 @@
 					<h2 class="section-heading text-near-black mb-3">{a.pegasusLabel}</h2>
 					<div class="teal-divider mb-6"></div>
 					<div class="flex items-start gap-6">
-						<img
-							src="/assets/pegasus-icon-modern.jpg"
-							alt=""
-							class="w-16 h-16 object-contain flex-shrink-0 opacity-80"
-							loading="lazy"
-							aria-hidden="true"
-						/>
+						<!-- The ink-on-light variant: the mark is white, so the on-dark version would be
+						     invisible against this light card. -->
+						<picture class="flex-shrink-0">
+							<source srcset="/assets/pegasus-mark-on-light.webp" type="image/webp" />
+							<img
+								src="/assets/pegasus-mark-on-light.png"
+								alt=""
+								class="w-16 h-16 object-contain opacity-80"
+								width="43"
+								height="64"
+								loading="lazy"
+								aria-hidden="true"
+							/>
+						</picture>
 						<p class="text-gray-mid leading-relaxed">{a.pegasusStory}</p>
 					</div>
 				</div>

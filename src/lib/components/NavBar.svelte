@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { localeLabels, type Locale } from '$lib/utils/i18n.js';
+	import { isValidLocale, localeLabels, rememberLocale, type Locale } from '$lib/utils/i18n.js';
 
 	interface Props {
 		lang: string;
@@ -38,6 +38,8 @@
 		const segments = p.split('/').filter(Boolean);
 		segments[0] = newLang;
 		langOpen = false;
+		// Deliberate choice, so remember it for the next visit to `/`.
+		if (isValidLocale(newLang)) rememberLocale(newLang);
 		window.location.href = '/' + segments.join('/');
 	}
 
@@ -56,13 +58,16 @@
 		<div class="flex items-center justify-between h-[72px] md:h-[120px]">
 			<!-- Logo -->
 			<a href="/{lang}" class="flex items-center gap-2 flex-shrink-0" onclick={closeAll}>
-				<img
-					src="/assets/uboss-logo-dark-bg.png"
-					alt="UBOSS"
-					class="h-14 md:h-24 w-auto"
-					width="320"
-					height="96"
-				/>
+				<picture>
+					<source srcset="/assets/uboss-logo-dark-bg-400.webp" type="image/webp" />
+					<img
+						src="/assets/uboss-logo-dark-bg-400.png"
+						alt="UBOSS"
+						class="h-14 md:h-24 w-auto"
+						width="136"
+						height="96"
+					/>
+				</picture>
 			</a>
 
 			<!-- Desktop nav -->

@@ -90,7 +90,9 @@
 			<p class="text-white/60 text-lg max-w-2xl mx-auto">{t.subtitle}</p>
 		</div>
 
-		<div class="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-8 lg:items-center">
+		<!-- The middle column is pinned to the diagram's own max width (24rem = max-w-sm) so the gap
+		     either side of it is exactly gap-8, which is what the connector ticks are sized to reach. -->
+		<div class="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_24rem_1fr] lg:gap-8 lg:items-center">
 			<div class="fade-in flex justify-center lg:col-start-2 lg:row-start-1 lg:row-span-2">
 				<div class="relative w-full max-w-sm aspect-square">
 					<!-- Traced from static/assets/info-diagram.svg, inlined so the colors read from the
@@ -165,7 +167,9 @@
 				>
 					<span
 						aria-hidden="true"
-						class="hidden lg:block absolute top-1/2 h-px w-8 bg-teal/30 {layout[i].connector}"
+						class="hidden lg:block absolute top-1/2 -translate-y-1/2 h-0.5 w-8 rounded-full bg-teal/50 {layout[
+							i
+						].connector}"
 					></span>
 					<summary
 						class="flex items-center gap-3 p-5 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-teal focus-visible:outline-offset-2"
