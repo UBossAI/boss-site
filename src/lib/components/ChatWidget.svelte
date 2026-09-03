@@ -29,12 +29,17 @@
 			<!-- Header -->
 			<div class="flex items-center justify-between px-4 py-3 border-b border-white/10">
 				<div class="flex items-center gap-2">
-					<img
-						src="/assets/pegasus-icon-modern.jpg"
-						alt=""
-						class="w-6 h-6 object-contain"
-						aria-hidden="true"
-					/>
+					<picture>
+						<source srcset="/assets/pegasus-mark-on-dark.webp" type="image/webp" />
+						<img
+							src="/assets/pegasus-mark-on-dark.png"
+							alt=""
+							class="w-6 h-6 object-contain"
+							width="16"
+							height="24"
+							aria-hidden="true"
+						/>
+					</picture>
 					<span class="text-white font-semibold text-sm">{chat.title}</span>
 				</div>
 				<button
