@@ -86,6 +86,29 @@
 		"freeConsult": "Consulta gratuita",
 		"cta": "Agenda tu consulta gratis"
 	},
+	"partnershipLoop": {
+		"title": "Una alianza, no un trabajo de una sola vez",
+		"subtitle": "Cuatro etapas que no terminan cuando lanzamos — seguimos contigo.",
+		"diagramTitle": "Un ciclo continuo que conecta cuatro etapas: descubrimiento, estrategia, desarrollo y alianza a largo plazo.",
+		"phases": [
+			{
+				"title": "Descubrimiento",
+				"description": "Empezamos escuchando: dónde se te va el tiempo, dónde se enfrían los clientes, dónde estás haciendo demasiado. Ves el panorama claro antes de que construyamos nada."
+			},
+			{
+				"title": "Estrategia",
+				"description": "Vemos cómo funciona tu negocio de verdad, día a día, y armamos el plan alrededor de eso — no una plantilla. Primero el plan, después las herramientas."
+			},
+			{
+				"title": "Desarrollo",
+				"description": "Construimos las automatizaciones, los asistentes y los tableros como un solo sistema conectado. Después lo afinamos hasta que funcione sin que tengas que estar encima."
+			},
+			{
+				"title": "Alianza",
+				"description": "Lanzamos contigo y nos quedamos. El monitoreo, los ajustes y el soporte son parte de la relación, no una entrega y adiós."
+			}
+		]
+	},
 	"contact": {
 		"eyebrow": "Contacto",
 		"title": "¿Listo para automatizar tu negocio?",

@@ -5,6 +5,7 @@
 	import WhoWeServeSection from '$lib/components/WhoWeServeSection.svelte';
 	import WhyUBossSection from '$lib/components/WhyUBossSection.svelte';
 	import PricingPreviewSection from '$lib/components/PricingPreviewSection.svelte';
+	import PartnershipLoopSection from '$lib/components/PartnershipLoopSection.svelte';
 	import ContactCTASection from '$lib/components/ContactCTASection.svelte';
 	import TestimonialsSection from '$lib/components/TestimonialsSection.svelte';
 	import type { ComponentProps } from 'svelte';
@@ -30,6 +31,9 @@
 <PricingPreviewSection
 	{lang}
 	t={t.pricingPreview as ComponentProps<typeof PricingPreviewSection>['t']}
+/>
+<PartnershipLoopSection
+	t={t.partnershipLoop as ComponentProps<typeof PartnershipLoopSection>['t']}
 />
 <ContactCTASection {lang} t={t.contact as ComponentProps<typeof ContactCTASection>['t']} />
 <TestimonialsSection t={t.testimonials as ComponentProps<typeof TestimonialsSection>['t']} />
