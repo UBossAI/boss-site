@@ -86,6 +86,29 @@
 		"freeConsult": "Consulta grátis",
 		"cta": "Agende sua consulta grátis"
 	},
+	"partnershipLoop": {
+		"title": "Uma parceria, não um trabalho pontual",
+		"subtitle": "Quatro etapas que não terminam no lançamento — a gente continua com você.",
+		"diagramTitle": "Um ciclo contínuo conectando quatro etapas: descoberta, estratégia, desenvolvimento e parceria contínua.",
+		"phases": [
+			{
+				"title": "Descoberta",
+				"description": "Começamos ouvindo: onde o tempo está indo embora, onde os clientes esfriam, onde você está fazendo demais. Você enxerga tudo com clareza antes de construirmos qualquer coisa."
+			},
+			{
+				"title": "Estratégia",
+				"description": "A gente entende como o negócio funciona no dia a dia e monta o plano em cima disso — não um modelo pronto. Primeiro o plano, depois as ferramentas."
+			},
+			{
+				"title": "Desenvolvimento",
+				"description": "Construímos as automações, os assistentes e os painéis como um sistema só, conectado. Depois ajustamos até rodar sem você ter que ficar correndo atrás."
+			},
+			{
+				"title": "Parceria",
+				"description": "A gente lança junto com você e continua por perto. Monitoramento, ajustes e suporte fazem parte da parceria, não são uma entrega e tchau."
+			}
+		]
+	},
 	"contact": {
 		"eyebrow": "Contato",
 		"title": "Pronto para automatizar seu negócio?",

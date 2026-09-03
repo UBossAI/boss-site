@@ -86,6 +86,29 @@
 		"freeConsult": "Consultation: Free",
 		"cta": "Book a Free Consultation"
 	},
+	"partnershipLoop": {
+		"title": "A Partnership, Not a Handoff",
+		"subtitle": "Four phases that don't end at launch — we stay on the loop with you.",
+		"diagramTitle": "A continuous loop connecting four phases: discovery, strategy, development, and ongoing partnership.",
+		"phases": [
+			{
+				"title": "Discovery",
+				"description": "We start by listening — where time is slipping away, where leads go quiet, where you're stretched too thin. You get a clear picture before anything gets built."
+			},
+			{
+				"title": "Strategy",
+				"description": "We map out how the business actually runs day to day, then build the plan around that — not a template. Plan first, tools second."
+			},
+			{
+				"title": "Development",
+				"description": "We build the automations, assistants, and dashboards as one connected system — then tighten it until it runs without you chasing it."
+			},
+			{
+				"title": "Partnership",
+				"description": "We launch with you and stay on the loop — monitoring, iteration, and support are part of the partnership, not a one-time handoff."
+			}
+		]
+	},
 	"contact": {
 		"eyebrow": "Contact",
 		"title": "Ready to Automate Your Business?",
