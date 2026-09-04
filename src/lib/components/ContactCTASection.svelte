@@ -5,8 +5,8 @@
 	interface Props {
 		lang: string;
 		t: {
-			title: string;
-			subtitle: string;
+			ctaTitle: string;
+			ctaSubtitle: string;
 			emailLabel: string;
 			email: string;
 			book15Label: string;
@@ -58,9 +58,9 @@
 >
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="text-center mb-14 fade-in">
-			<h2 id="contact-cta-heading" class="section-heading text-white mb-4">{t.title}</h2>
+			<h2 id="contact-cta-heading" class="section-heading text-white mb-4">{t.ctaTitle}</h2>
 			<div class="teal-divider mx-auto mb-4"></div>
-			<p class="text-white/60 text-lg max-w-2xl mx-auto">{t.subtitle}</p>
+			<p class="text-white/60 text-lg max-w-2xl mx-auto">{t.ctaSubtitle}</p>
 		</div>
 
 		<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">

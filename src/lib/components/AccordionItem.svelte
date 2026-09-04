@@ -42,7 +42,7 @@
 			<polyline points="6 9 12 15 18 9" />
 		</svg>
 	</summary>
-	<div class="px-5 pb-5 text-gray-mid leading-relaxed space-y-3">
+	<div class="faq-copy px-5 pb-5 text-gray-mid space-y-3">
 		{@render children()}
 	</div>
 </details>

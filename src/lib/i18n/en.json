@@ -87,25 +87,25 @@
 		"cta": "Book a Free Consultation"
 	},
 	"partnershipLoop": {
-		"title": "A Partnership, Not a Handoff",
-		"subtitle": "Four phases that don't end at launch — we stay on the loop with you.",
+		"title": "One driver. One engine. Built for every lap.",
+		"subtitle": "Four phases to build the engine your business runs on.",
 		"diagramTitle": "A continuous loop connecting four phases: discovery, strategy, development, and ongoing partnership.",
 		"phases": [
 			{
 				"title": "Discovery",
-				"description": "We start by listening — where time is slipping away, where leads go quiet, where you're stretched too thin. You get a clear picture before anything gets built."
+				"description": "We start by listening: what's this week's biggest headache, the problem that keeps you up at night? Before we build anything, we learn how your world actually works — and you walk away knowing where your time is going and what can be fixed."
 			},
 			{
 				"title": "Strategy",
-				"description": "We map out how the business actually runs day to day, then build the plan around that — not a template. Plan first, tools second."
+				"description": "We look at how your business really runs day to day. That's where the plan comes from: which engine to build, for which part of the business, and in what order it needs to fire. Plan first, tools second."
 			},
 			{
 				"title": "Development",
-				"description": "We build the automations, assistants, and dashboards as one connected system — then tighten it until it runs without you chasing it."
+				"description": "We integrate and build the tools your business needs until they work as one engine: reliable, fast, and simple to run. Then we tune it until it runs without you chasing it."
 			},
 			{
 				"title": "Partnership",
-				"description": "We launch with you and stay on the loop — monitoring, iteration, and support are part of the partnership, not a one-time handoff."
+				"description": "We want you to win. That's why we don't disappear at launch: we monitor, tune the engine when it needs it, and stay available to you. You drive. We keep the engine running."
 			}
 		]
 	},
@@ -113,6 +113,8 @@
 		"eyebrow": "Contact",
 		"title": "Ready to Automate Your Business?",
 		"subtitle": "Book a free consultation or send us a message. We'll get back to you within 24 hours.",
+		"ctaTitle": "Ready to Start a New Engine?",
+		"ctaSubtitle": "Book a free consultation and we'll map out what to automate first. We'll get back to you within 24 hours.",
 		"emailLabel": "Send a Message",
 		"email": "Fill out our contact form",
 		"book15Label": "15-Minute Discovery Call",

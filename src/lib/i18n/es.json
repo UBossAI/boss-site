@@ -87,25 +87,25 @@
 		"cta": "Agenda tu consulta gratis"
 	},
 	"partnershipLoop": {
-		"title": "Una alianza, no un trabajo de una sola vez",
-		"subtitle": "Cuatro etapas que no terminan cuando lanzamos — seguimos contigo.",
+		"title": "Un conductor. Un motor. Una carrera larga.",
+		"subtitle": "Cuatro etapas para desarrollar el motor de tu negocio.",
 		"diagramTitle": "Un ciclo continuo que conecta cuatro etapas: descubrimiento, estrategia, desarrollo y alianza a largo plazo.",
 		"phases": [
 			{
 				"title": "Descubrimiento",
-				"description": "Empezamos escuchando: dónde se te va el tiempo, dónde se enfrían los clientes, dónde estás haciendo demasiado. Ves el panorama claro antes de que construyamos nada."
+				"description": "Empezamos escuchando: ¿cuál es el dolor de cabeza más grande de tu semana, la preocupación que no te deja dormir? Antes de construir nada, ya vas a tener claro dónde se te está yendo el tiempo y qué sí se puede arreglar."
 			},
 			{
 				"title": "Estrategia",
-				"description": "Vemos cómo funciona tu negocio de verdad, día a día, y armamos el plan alrededor de eso — no una plantilla. Primero el plan, después las herramientas."
+				"description": "Analizamos la dinámica de tu negocio y el ritmo del día a día. De ahí sale el plan: qué motor hay que construir, para qué parte del negocio y en qué orden tiene que encender. Primero el plan, después las herramientas."
 			},
 			{
 				"title": "Desarrollo",
-				"description": "Construimos las automatizaciones, los asistentes y los tableros como un solo sistema conectado. Después lo afinamos hasta que funcione sin que tengas que estar encima."
+				"description": "Integramos y construimos las herramientas que tu negocio necesita, hasta que sean un solo motor: confiable, rápido y sin complicaciones. Después lo afinamos hasta que funcione sin que tengas que estar encima."
 			},
 			{
-				"title": "Alianza",
-				"description": "Lanzamos contigo y nos quedamos. El monitoreo, los ajustes y el soporte son parte de la relación, no una entrega y adiós."
+				"title": "Socios",
+				"description": "Nosotros queremos que ganes. Por eso no desaparecemos cuando lanzamos: monitoreamos, afinamos el motor cuando hace falta y seguimos ahí para apoyarte. Tú manejas, nosotros mantenemos el motor rugiendo."
 			}
 		]
 	},
@@ -113,6 +113,8 @@
 		"eyebrow": "Contacto",
 		"title": "¿Listo para automatizar tu negocio?",
 		"subtitle": "Agenda una consulta gratis o mándanos un mensaje. Te respondemos en menos de 24 horas.",
+		"ctaTitle": "¿Arrancamos un motor nuevo?",
+		"ctaSubtitle": "Agenda una consulta gratis y vemos juntos qué automatizar primero. Te respondemos en menos de 24 horas.",
 		"emailLabel": "Escríbenos",
 		"email": "Completa nuestro formulario de contacto",
 		"book15Label": "Llamada de 15 Minutos",
