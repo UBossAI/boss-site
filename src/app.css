@@ -188,6 +188,14 @@
 		transform: rotate(180deg);
 	}
 
+	/* Answer copy gets the same breathing room as the partnership-loop cards: opened leading
+	   plus a little word-spacing. No letter-spacing here — these sit on a light background,
+	   where dark text doesn't halo the way light-on-dark does, and tracking would only thin it. */
+	.faq-copy {
+		line-height: 1.8;
+		word-spacing: 0.08em;
+	}
+
 	.fade-in {
 		opacity: 0;
 		transform: translateY(20px);

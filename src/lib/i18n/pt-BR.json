@@ -87,25 +87,25 @@
 		"cta": "Agende sua consulta grátis"
 	},
 	"partnershipLoop": {
-		"title": "Uma parceria, não um trabalho pontual",
-		"subtitle": "Quatro etapas que não terminam no lançamento — a gente continua com você.",
+		"title": "Um piloto. Um motor. Uma corrida longa.",
+		"subtitle": "Quatro etapas para construir o motor do seu negócio.",
 		"diagramTitle": "Um ciclo contínuo conectando quatro etapas: descoberta, estratégia, desenvolvimento e parceria contínua.",
 		"phases": [
 			{
 				"title": "Descoberta",
-				"description": "Começamos ouvindo: onde o tempo está indo embora, onde os clientes esfriam, onde você está fazendo demais. Você enxerga tudo com clareza antes de construirmos qualquer coisa."
+				"description": "Começamos ouvindo: qual é a maior dor de cabeça da sua semana, aquela preocupação que não te deixa dormir? Antes de construir qualquer coisa, você já vai ter clareza de onde o seu tempo está indo e o que dá para resolver."
 			},
 			{
 				"title": "Estratégia",
-				"description": "A gente entende como o negócio funciona no dia a dia e monta o plano em cima disso — não um modelo pronto. Primeiro o plano, depois as ferramentas."
+				"description": "Analisamos a dinâmica do seu negócio e o ritmo do dia a dia. É daí que sai o plano: qual motor precisa ser construído, para qual parte do negócio e em que ordem ele precisa pegar. Primeiro o plano, depois as ferramentas."
 			},
 			{
 				"title": "Desenvolvimento",
-				"description": "Construímos as automações, os assistentes e os painéis como um sistema só, conectado. Depois ajustamos até rodar sem você ter que ficar correndo atrás."
+				"description": "Integramos e construímos as ferramentas que o seu negócio precisa, até virarem um motor só: confiável, rápido e sem complicação. Depois a gente ajusta até rodar sem você ter que ficar em cima."
 			},
 			{
-				"title": "Parceria",
-				"description": "A gente lança junto com você e continua por perto. Monitoramento, ajustes e suporte fazem parte da parceria, não são uma entrega e tchau."
+				"title": "Sócios",
+				"description": "A gente quer que você ganhe. Por isso não desaparecemos depois do lançamento: monitoramos, afinamos o motor quando precisa e continuamos aqui para te apoiar. Você dirige, a gente mantém o motor roncando."
 			}
 		]
 	},
@@ -113,6 +113,8 @@
 		"eyebrow": "Contato",
 		"title": "Pronto para automatizar seu negócio?",
 		"subtitle": "Agende uma consulta grátis ou mande uma mensagem. Respondemos em até 24 horas.",
+		"ctaTitle": "Vamos dar partida num motor novo?",
+		"ctaSubtitle": "Agende uma consulta grátis e a gente vê junto o que automatizar primeiro. Respondemos em até 24 horas.",
 		"emailLabel": "Nos escreva",
 		"email": "Preencha nosso formulário de contato",
 		"book15Label": "Ligação de 15 Minutos",

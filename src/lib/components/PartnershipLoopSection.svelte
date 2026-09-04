@@ -190,7 +190,7 @@
 							<polyline points="6 9 12 15 18 9" />
 						</svg>
 					</summary>
-					<p class="px-5 pb-5 text-white/50 text-sm leading-relaxed">{phase.description}</p>
+					<p class="loop-copy px-5 pb-5 text-white/60 text-sm">{phase.description}</p>
 				</details>
 			{/each}
 		</div>
@@ -204,6 +204,15 @@
 	.loop-item summary {
 		list-style: none;
 		cursor: pointer;
+	}
+
+	/* Light text on a dark ground haloes slightly, which reads as crowding. Opening the leading
+	   plus a touch of letter- and word-spacing gives each word its own air. Kept scoped to this
+	   section rather than added to the global prose styles. */
+	.loop-copy {
+		line-height: 1.8;
+		letter-spacing: 0.012em;
+		word-spacing: 0.08em;
 	}
 
 	.loop-item summary::-webkit-details-marker {
