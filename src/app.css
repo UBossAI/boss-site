@@ -164,6 +164,10 @@
 		font-size: clamp(1.5rem, 4vw, 2.25rem);
 		font-weight: 600;
 		line-height: 1.2;
+		/* At display sizes this face sets its word space narrower than the letterforms, so
+		   short words run together ("Un conductor" reading as one). Widening the space only,
+		   not the tracking, keeps the headline tight without bunching it. */
+		word-spacing: 0.06em;
 	}
 
 	.hero-heading {

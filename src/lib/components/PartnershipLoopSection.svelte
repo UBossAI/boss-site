@@ -139,7 +139,7 @@
 					{#each markers as marker, i (i)}
 						<button
 							type="button"
-							class="loop-badge absolute -translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full border font-mono text-xs sm:text-sm font-semibold transition-colors duration-200 {openStates[
+							class="loop-badge absolute -translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full border font-mono text-sm sm:text-base font-semibold transition-colors duration-200 {openStates[
 								i
 							]
 								? 'bg-teal text-near-black border-teal'
