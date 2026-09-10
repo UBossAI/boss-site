@@ -17,15 +17,15 @@
 		"skipToContent": "Skip to main content"
 	},
 	"hero": {
-		"headline": "Become a Bigger Business by Thinking Like One",
-		"subheadline": "UBoss implements systems that work for your company, so your business becomes easier to manage.",
+		"headline": "You built the business. Let's give it an engine.",
+		"subheadline": "Focus on your next move, not on keeping everything running.",
 		"cta": "Book a Free Consultation",
 		"ctaSubtext": "No commitment. Just a 15-minute call to see where you're losing time.",
 		"learnMore": "Learn more"
 	},
 	"whatWeDo": {
 		"title": "What We Do For You",
-		"subtitle": "We listen. No one knows your business better than you. Then we build a system around your needs, and keep it running.",
+		"subtitle": "One person, two jobs. There's the work you're good at, and then there's the quotes, the invoices, the scheduling, and the paperwork after dinner. We build the system so the second job stops riding with you.",
 		"automation": {
 			"title": "We Handle the Repetitive Work",
 			"description": "Less time on the repetitive tasks you handle daily, weekly, or monthly."
@@ -41,7 +41,8 @@
 		"digitization": {
 			"title": "We Digitize Your Paper Trail",
 			"description": "Paperwork made digital and easy to find."
-		}
+		},
+		"permission": "Some businesses need a small engine. Some need a big one. We'll figure out which one yours is."
 	},
 	"whoWeServe": {
 		"title": "Built for Businesses Like Yours",
@@ -60,7 +61,7 @@
 	},
 	"whyUboss": {
 		"title": "Why UBOSS",
-		"subtitle": "We're not a generic tech company. We're local, trilingual, and built for the trades.",
+		"subtitle": "Plenty of shops will sell you automation and move on. We build the engine, and we stay for every lap.",
 		"reasons": [
 			{
 				"title": "We Speak Your Language, Literally",
@@ -330,7 +331,7 @@
 		}
 	},
 	"footer": {
-		"tagline": "Solutions and systems for business owners who want clarity.",
+		"tagline": "For the business owners who want to drive.",
 		"serving": "Serving Greater Boston, MA",
 		"copyright": "© 2026 UBOSS LLC. All rights reserved.",
 		"companyHeading": "Company",
@@ -364,7 +365,7 @@
 	},
 	"seo": {
 		"home": {
-			"title": "UBOSS — Run Your Business with Real Confidence",
+			"title": "Automation & Dashboards for Service Businesses in Boston",
 			"description": "We help Greater Boston & North Shore trades — construction, electricians, plumbers, HVAC & cleaning — simplify operations, communication, and online presence."
 		},
 		"about": {

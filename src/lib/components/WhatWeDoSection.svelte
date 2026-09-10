@@ -14,6 +14,7 @@
 			assistants: ServiceItem;
 			dashboards: ServiceItem;
 			digitization: ServiceItem;
+			permission?: string;
 		};
 	}
 
@@ -88,5 +89,11 @@
 				</div>
 			{/each}
 		</div>
+
+		{#if t.permission}
+			<p class="text-gray-mid text-lg text-center max-w-2xl mx-auto mt-14 fade-in">
+				{t.permission}
+			</p>
+		{/if}
 	</div>
 </section>
