@@ -35,6 +35,10 @@
 
 	body {
 		font-family: var(--font-sans);
+		/* Plus Jakarta Sans sets its word space narrower than its letterforms, so running text
+		   bunches. Fix it once at the root; .section-heading / .section-subtitle / .faq-copy
+		   below raise it further where text sets larger or runs multi-line. */
+		word-spacing: 0.05em;
 		color: var(--color-near-black);
 		background-color: var(--color-surface-light);
 		-webkit-font-smoothing: antialiased;
@@ -168,6 +172,13 @@
 		   short words run together ("Un conductor" reading as one). Widening the space only,
 		   not the tracking, keeps the headline tight without bunching it. */
 		word-spacing: 0.06em;
+	}
+
+	/* Section subtitles and other multi-line body blocks. Centered ragged text has no fixed
+	   left edge to return to, so it needs more leading and word space than inline copy. */
+	.section-subtitle {
+		line-height: 1.75;
+		word-spacing: 0.08em;
 	}
 
 	.hero-heading {

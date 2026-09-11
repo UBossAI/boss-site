@@ -87,7 +87,7 @@
 		<div class="text-center mb-14 fade-in">
 			<h2 id="partnership-heading" class="section-heading text-white mb-4">{t.title}</h2>
 			<div class="teal-divider mx-auto mb-4"></div>
-			<p class="text-white/60 text-lg max-w-2xl mx-auto">{t.subtitle}</p>
+			<p class="section-subtitle text-white/60 text-lg max-w-2xl mx-auto">{t.subtitle}</p>
 		</div>
 
 		<!-- The middle column is pinned to the diagram's own max width (24rem = max-w-sm) so the gap

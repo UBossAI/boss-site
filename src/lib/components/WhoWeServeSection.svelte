@@ -42,7 +42,7 @@
 			<div class="fade-in">
 				<h2 id="whoweserve-heading" class="section-heading text-near-black mb-4">{t.title}</h2>
 				<div class="teal-divider mb-6"></div>
-				<p class="text-gray-mid text-lg mb-8 leading-relaxed">{t.subtitle}</p>
+				<p class="section-subtitle text-gray-mid text-lg mb-8">{t.subtitle}</p>
 				<a href="/{lang}/services" class="btn-primary inline-flex">{t.cta}</a>
 			</div>
 

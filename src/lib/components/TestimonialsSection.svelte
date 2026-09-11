@@ -41,7 +41,7 @@
 		<div class="text-center mb-14 fade-in">
 			<h2 id="testimonials-heading" class="section-heading text-near-black mb-4">{t.title}</h2>
 			<div class="teal-divider mx-auto mb-4"></div>
-			<p class="text-gray-mid text-lg">{t.subtitle}</p>
+			<p class="section-subtitle text-gray-mid text-lg">{t.subtitle}</p>
 		</div>
 
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
