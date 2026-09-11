@@ -72,7 +72,7 @@
 		<div class="text-center mb-14 fade-in">
 			<h2 id="whatwedo-heading" class="section-heading text-near-black mb-4">{t.title}</h2>
 			<div class="teal-divider mx-auto mb-4"></div>
-			<p class="text-gray-mid text-lg max-w-2xl mx-auto">{t.subtitle}</p>
+			<p class="section-subtitle text-gray-mid text-lg max-w-2xl mx-auto">{t.subtitle}</p>
 		</div>
 
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -91,7 +91,7 @@
 		</div>
 
 		{#if t.permission}
-			<p class="text-gray-mid text-lg text-center max-w-2xl mx-auto mt-14 fade-in">
+			<p class="section-subtitle text-gray-mid text-lg text-center max-w-2xl mx-auto mt-14 fade-in">
 				{t.permission}
 			</p>
 		{/if}

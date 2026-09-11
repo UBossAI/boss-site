@@ -47,7 +47,7 @@
 		<div class="text-center mb-14 fade-in">
 			<h2 id="whyuboss-heading" class="section-heading text-white mb-4">{t.title}</h2>
 			<div class="teal-divider mx-auto mb-4"></div>
-			<p class="text-white/60 text-lg max-w-2xl mx-auto">{t.subtitle}</p>
+			<p class="section-subtitle text-white/60 text-lg max-w-2xl mx-auto">{t.subtitle}</p>
 		</div>
 
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

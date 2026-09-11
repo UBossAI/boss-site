@@ -67,7 +67,7 @@
 			</div>
 			<h1 class="hero-heading text-white mb-4">{c.title as string}</h1>
 			<div class="teal-divider mb-6"></div>
-			<p class="text-white/60 text-xl">{c.subtitle as string}</p>
+			<p class="section-subtitle text-white/60 text-xl">{c.subtitle as string}</p>
 		</div>
 	</section>
 

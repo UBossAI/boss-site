@@ -37,7 +37,7 @@
 		<div class="fade-in">
 			<h2 id="pricing-preview-heading" class="section-heading text-near-black mb-4">{t.title}</h2>
 			<div class="teal-divider mx-auto mb-4"></div>
-			<p class="text-gray-mid text-lg max-w-2xl mx-auto mb-6">{t.subtitle}</p>
+			<p class="section-subtitle text-gray-mid text-lg max-w-2xl mx-auto mb-6">{t.subtitle}</p>
 
 			<span
 				class="inline-block bg-white text-teal-ink text-sm font-semibold px-4 py-1.5 rounded-full mb-8"
