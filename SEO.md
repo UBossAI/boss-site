@@ -5,16 +5,27 @@
 > Update this file to add/remove terms. The site should incorporate these naturally
 > into page titles, meta descriptions, headings, body copy, and alt text.
 
-## Status Note (2026-07-23)
+## Status Note (2026-09-10)
 
-**Needs a full review pass — flagged, not yet done.** The 2026-07-23 value-over-process pivot
-(hero, `whatWeDo` squares, homepage pricing teaser, footer tagline — see `CONTENT_STRATEGY.md`)
-rewrote a meaningful share of the on-page copy this file's keyword tables are supposed to map to,
-and deliberately avoids literal jargon ("AI-powered," "automation," "workflow") as headline
-language per the founder's tone rules. Some entries below may now be aspirational rather than
-reflected in live copy. Before treating this file as accurate: re-check which keywords actually
-appear in current `en.json`/`es.json`/`pt-BR.json` content and which pages truly target what's
-listed here, and update stale mappings rather than assuming this file is current.
+**Partially reviewed.** The 2026-07-23 value-over-process pivot and the 2026-09-10 top-of-page
+clause pass (hero, `whatWeDo`, `whyUboss`, footer tagline, meta titles/descriptions, see
+`CONTENT_STRATEGY.md`) both rewrote on-page copy this file's keyword tables are supposed to map
+to. English homepage and `/services` meta were checked against this file's 50-60/150-160 length
+rules and the Primary keyword tables on 2026-09-10 and brought into compliance:
+
+- `seo.home.title` (EN): "Automation & Dashboards for Service Businesses in Boston" (56 chars)
+- `seo.home.description` (EN): 155 chars, names Greater Boston + North Shore + five verticals
+- `seo.services.title` (EN): "Custom Automation, Dashboards & AI Assistants in Boston" (55
+  chars) — was 63 and truncating "UBOSS"
+- `seo.services.description` (EN): 158 chars, was 120 (a third of the budget unused)
+
+**Still not reviewed:** about/pricing/contact/support/careers/faq meta on any locale, and the
+audience-noun decision above (`trades` → `service businesses`, EN homepage/services only) hasn't
+propagated to those pages' copy or to `es.json`/`pt-BR.json`, which still carry the July value-
+over-process copy and haven't been checked against this file at all. `es`/`pt-BR` home and about
+descriptions are currently over the 160-char ceiling — see `CONTENT_STRATEGY.md` for the exact
+strings. Don't assume the rest of this file is reflected in live copy until it's re-checked the
+same way.
 
 ## How to Use This File
 
