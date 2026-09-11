@@ -10,7 +10,9 @@ UBOSS helps small and medium service businesses automate the repetitive parts of
 business — customer intake, follow-ups, scheduling, invoicing reminders — and gives owners a clear
 view of how their business is actually doing, without needing to hire additional office staff.
 UBOSS builds real automation infrastructure (workflows, AI-powered assistants, business
-dashboards, custom integrations), not a resold chatbot.
+dashboards, custom integrations), not a resold chatbot. UBOSS runs its own self-hosted
+language models on UBOSS infrastructure rather than reselling access to a third-party
+chatbot service.
 
 UBOSS is trilingual: full support in English and Spanish, with Portuguese (Brazilian) support
 currently being rolled out.
