@@ -69,15 +69,15 @@
 			},
 			{
 				"title": "Local, Not a Call Center",
-				"description": "We're right here in Greater Boston. You can meet us face to face — not an outsourced help desk on the other side of the world."
+				"description": "We're right here in Greater Boston. You can meet us face to face, not an outsourced help desk on the other side of the world."
 			},
 			{
 				"title": "We Understand the Trades",
-				"description": "We know how landscapers, cleaners, and contractors actually work — long days, tight schedules, and no patience for complicated software."
+				"description": "We know how landscapers, cleaners, and contractors actually work: long days, tight schedules, and no patience for complicated software."
 			},
 			{
 				"title": "Real Tools, Not Just a Chatbot",
-				"description": "This isn't us reselling ChatGPT with a new logo on it. We build the real thing, set up to actually run your business, not just answer questions."
+				"description": "We run our own AI models on our own hardware, not a rebranded chatbot. What we build is set up to run parts of your business, not just answer questions."
 			}
 		]
 	},
@@ -366,30 +366,30 @@
 	"seo": {
 		"home": {
 			"title": "Automation & Dashboards for Service Businesses in Boston",
-			"description": "We help Greater Boston & North Shore trades — construction, electricians, plumbers, HVAC & cleaning — simplify operations, communication, and online presence."
+			"description": "In-house AI automation, dashboards, and websites for Greater Boston and North Shore service businesses: construction, cleaning, plumbing, HVAC, electrical."
 		},
 		"about": {
-			"title": "About UBOSS — AI Consulting Boston | Bilingual AI Agency",
+			"title": "About UBOSS: AI Consulting Boston | Bilingual AI Agency",
 			"description": "UBOSS is a Greater Boston AI consulting agency founded by a bilingual engineer. We make AI accessible for trades businesses and immigrant-owned SMBs."
 		},
 		"services": {
-			"title": "AI Services — Workflow Automation & Business Dashboards | UBOSS",
-			"description": "Custom workflow automation, AI assistants, business dashboards, and integrations for trades businesses in Massachusetts."
+			"title": "Custom Automation, Dashboards & AI Assistants in Boston",
+			"description": "Custom workflow automation, AI assistants, business dashboards, and integrations, built in-house for service businesses in Greater Boston and the North Shore."
 		},
 		"pricing": {
-			"title": "Pricing — AI Automation Plans for Small Business | UBOSS",
-			"description": "Transparent monthly pricing for AI automation. Starter at $500/mo, Professional at $900/mo, Business at $2,000/mo. Book a free consultation."
+			"title": "Pricing: AI Automation Plans for Small Business | UBOSS",
+			"description": "Transparent monthly pricing for AI automation. A one-time setup fee plus a monthly subscription, with no long-term lock-in. Book a free consultation."
 		},
 		"contact": {
-			"title": "Contact UBOSS — Book a Free AI Consultation in Boston",
+			"title": "Contact UBOSS: Book a Free AI Consultation in Boston",
 			"description": "Book a free 15-minute discovery call or strategy session. We serve Greater Boston in English, Spanish, and Brazilian Portuguese."
 		},
 		"support": {
-			"title": "Support — UBOSS AI Automation",
+			"title": "Support: UBOSS AI Automation",
 			"description": "Need help with your UBOSS automation? Reach out through our contact form."
 		},
 		"careers": {
-			"title": "Careers at UBOSS — Join Our AI Team in Boston",
+			"title": "Careers at UBOSS: Join Our AI Team in Boston",
 			"description": "Join UBOSS and help build AI automation for the trades businesses that power Greater Boston."
 		},
 		"notFound": {
@@ -397,19 +397,19 @@
 			"description": "The page you're looking for doesn't exist or may have moved."
 		},
 		"legalTerms": {
-			"title": "Terms of Service — UBOSS LLC",
+			"title": "Terms of Service | UBOSS LLC",
 			"description": "UBOSS LLC Terms of Service agreement."
 		},
 		"legalPrivacy": {
-			"title": "Privacy Policy — UBOSS LLC",
-			"description": "UBOSS LLC Privacy Policy — how we collect, use, and protect your information."
+			"title": "Privacy Policy | UBOSS LLC",
+			"description": "UBOSS LLC Privacy Policy: how we collect, use, and protect your information."
 		},
 		"legalKeyTerms": {
-			"title": "Key Terms Summary — UBOSS LLC",
+			"title": "Key Terms Summary | UBOSS LLC",
 			"description": "A plain-language summary of the most important terms in our agreements."
 		},
 		"faq": {
-			"title": "FAQ — AI Automation for Trades Businesses | UBOSS",
+			"title": "FAQ: AI Automation for Trades Businesses | UBOSS",
 			"description": "Answers about automation, AI assistants, dashboards, pricing, and data security for trades and service businesses in Greater Boston and the North Shore."
 		}
 	}
