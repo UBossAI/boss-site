@@ -17,15 +17,16 @@
 		"skipToContent": "Saltar al contenido principal"
 	},
 	"hero": {
-		"headline": "Desarrolla tu negocio a una capacidad más alta",
-		"subheadline": "UBoss empodera a los dueños y dueñas de negocios, y facilita la administración.",
+		"headline": "Tú construiste el negocio. Vamos a ponerle un motor.",
+		"subheadline": "Enfócate en tu próximo paso, no en mantener todo funcionando.",
 		"cta": "Agenda tu consulta gratis",
 		"ctaSubtext": "Sin compromisos. Solo una llamada de 15 minutos.",
 		"learnMore": "Saber más"
 	},
 	"whatWeDo": {
 		"title": "Esto Es Lo Que Hacemos Por Ti",
-		"subtitle": "Te escuchamos. Nadie conoce tu negocio mejor que tú. Luego construimos un sistema a tu medida, y lo mantenemos funcionando.",
+		"subtitle": "Una persona, dos trabajos. Está el trabajo en el que eres bueno, y luego están las cotizaciones, las facturas, los horarios y el papeleo después de la cena. Construimos el sistema para que ese segundo trabajo deje de seguirte a todas partes.",
+		"permission": "Algunos negocios necesitan un motor pequeño. Otros necesitan uno grande. Vamos a averiguar cuál es el tuyo.",
 		"automation": {
 			"title": "Eliminamos las Tareas Repetitivas",
 			"description": "Menos tiempo en las tareas repetitivas que haces todos los días, cada semana o cada mes."
@@ -60,7 +61,7 @@
 	},
 	"whyUboss": {
 		"title": "¿Por qué UBOSS?",
-		"subtitle": "No somos una empresa de tecnología genérica. Somos locales, trilingües y hechos para los oficios.",
+		"subtitle": "Muchas empresas te venden automatización y se van. Nosotros construimos el motor, y nos quedamos en cada vuelta.",
 		"reasons": [
 			{
 				"title": "Hablamos Tu Idioma, En Serio",
@@ -68,11 +69,11 @@
 			},
 			{
 				"title": "Somos Locales, No un Call Center",
-				"description": "Estamos aquí mismo, en Greater Boston. Nos puedes ver cara a cara — esto no es un servicio de ayuda subcontratado en otro país."
+				"description": "Estamos aquí mismo, en Greater Boston. Nos puedes ver cara a cara: esto no es un servicio de ayuda subcontratado en otro país."
 			},
 			{
 				"title": "Entendemos los Oficios",
-				"description": "Sabemos cómo trabajan de verdad los jardineros, las empresas de limpieza y los contratistas — días largos, horarios apretados, y cero paciencia para programas complicados."
+				"description": "Sabemos cómo trabajan de verdad los jardineros, las empresas de limpieza y los contratistas, días largos, horarios apretados, y cero paciencia para programas complicados."
 			},
 			{
 				"title": "Herramientas de Verdad, No Solo un Chatbot",
@@ -81,7 +82,7 @@
 		]
 	},
 	"pricingPreview": {
-		"title": "Precios simples y predecibles",
+		"title": "Precios pensados para tu negocio",
 		"subtitle": "Tarifa única de configuración + suscripción mensual. Sin costos ocultos ni adicionales, sin contratos a largo plazo.",
 		"freeConsult": "Consulta gratuita",
 		"cta": "Agenda tu consulta gratis"
@@ -212,35 +213,6 @@
 		},
 		"cta": "Agenda tu consulta gratis"
 	},
-	"pricing": {
-		"eyebrow": "Precios",
-		"title": "Precios",
-		"subtitle": "Precios transparentes y predecibles para cada etapa de tu negocio.",
-		"monthly": "/mes",
-		"mostPopular": "Más Popular",
-		"setupFeeTitle": "Tarifa Única de Configuración",
-		"setupFeeNote": "Tarifa única de configuración según la complejidad — se discute en tu consulta gratuita.",
-		"enterprise": {
-			"title": "Corporativo",
-			"description": "Soluciones a medida para operaciones grandes",
-			"cta": "Hablemos"
-		},
-		"cta": "Agenda una llamada para encontrar tu plan",
-		"comparisonTitle": "¿Qué estás pagando realmente?",
-		"comparisonBody1": "La mayoría de los negocios en crecimiento no necesitan una sola persona — necesitan a alguien para los datos, alguien para atender llamadas, y alguien para coordinar operaciones. Eso son tres empleados. Tres salarios. Tres fuentes de errores y ausencias.",
-		"comparisonBody2": "Cada uno de esos empleados le costaría a tu negocio más de $25,000 al año. UBoss combina los tres roles en un solo sistema — y nunca falla.",
-		"comparisonBanner": "UBoss trabaja 24/7 — 365 días al año, incluyendo días festivos. Sin días de enfermedad. Sin errores humanos. Siempre disponible.",
-		"comparisonPartTime": "Medio tiempo",
-		"comparisonFullTime": "Tiempo completo",
-		"comparisonTypeHeader": "Tipo",
-		"comparisonHoursHeader": "Horas/Semana",
-		"comparisonMonthlyHeader": "Mensual",
-		"comparisonAnnualHeader": "Anual",
-		"comparisonTable1Header": "Asistente de Datos — $17/hr",
-		"comparisonTable2Header": "Secretaria / Recepcionista — $20/hr",
-		"comparisonTable3Header": "Secretaria Administrativa — $25/hr",
-		"comparisonDisclaimer": "† UBoss opera 24/7 incluyendo fines de semana y días festivos. Pueden ocurrir ventanas de mantenimiento programadas mensualmente — los clientes son notificados con anticipación. Las estimaciones de tarifas por hora se basan en datos del mercado del área de Boston. Las cifras mostradas representan tarifas conservadoras de nivel inicial. Los costos reales del empleador, incluyendo impuestos sobre nómina, beneficios y compensación laboral, típicamente añaden entre un 10–25% sobre el salario base."
-	},
 	"legal": {
 		"terms": {
 			"title": "Términos de Servicio",
@@ -330,7 +302,7 @@
 		}
 	},
 	"footer": {
-		"tagline": "Soluciones y sistemas para dueños y dueñas que buscan claridad.",
+		"tagline": "Para los dueños y dueñas que quieren estar al volante.",
 		"serving": "Sirviendo a Greater Boston, MA",
 		"copyright": "© 2026 UBOSS LLC. Todos los derechos reservados.",
 		"companyHeading": "Empresa",
@@ -364,19 +336,19 @@
 	},
 	"seo": {
 		"home": {
-			"title": "UBOSS — Corre tu Negocio con Confianza Total",
-			"description": "Ayudamos a dueños y dueñas en el Gran Boston y North Shore —construcción, electricistas, HVAC, limpieza y más— a mejorar operaciones, comunicación y presencia digital."
+			"title": "Automatización con IA para Negocios de Servicio en Boston",
+			"description": "Automatización con IA, paneles de datos y sitios web para negocios de servicio en el Gran Boston y North Shore: construcción, limpieza, plomería, HVAC."
 		},
 		"about": {
 			"title": "Sobre UBOSS — Consultoría de IA en Boston | Agencia Bilingüe",
 			"description": "UBOSS es una agencia de consultoría de IA en el Gran Boston fundada por un ingeniero bilingüe. Hacemos la IA accesible para negocios de oficios y empresas familiares."
 		},
 		"services": {
-			"title": "Servicios de IA — Automatización y Paneles de Datos | UBOSS",
-			"description": "Automatización de procesos, asistentes con IA, paneles de datos y más para negocios de oficios en Massachusetts."
+			"title": "Automatización, Paneles y Asistentes de IA en Boston",
+			"description": "Automatización de flujos de trabajo, asistentes de IA, paneles de datos e integraciones, hechos en casa para negocios de servicio en Boston y North Shore."
 		},
 		"pricing": {
-			"title": "Precios — Planes de Automatización con IA | UBOSS",
+			"title": "Precios Personalizados de Automatización con IA | UBOSS",
 			"description": "Precios mensuales transparentes para automatización con IA. Agenda una consulta gratuita."
 		},
 		"contact": {
