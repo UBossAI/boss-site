@@ -17,7 +17,7 @@
 		"skipToContent": "Pular para o conteúdo principal"
 	},
 	"hero": {
-		"headline": "Você construiu o negócio. Vamos colocar um motor nele.",
+		"headline": "Você construiu o negócio. Agora vamos colocar um motor nele.",
 		"subheadline": "Foque no seu próximo passo, não em manter tudo funcionando.",
 		"cta": "Agende sua consulta grátis",
 		"ctaSubtext": "Sem compromisso. Só uma ligação de 15 minutos.",
@@ -94,7 +94,7 @@
 		"phases": [
 			{
 				"title": "Descoberta",
-				"description": "Começamos ouvindo: qual é a maior dor de cabeça da sua semana, aquela preocupação que não te deixa dormir? Antes de construir qualquer coisa, você já vai ter clareza de onde o seu tempo está indo e o que dá para resolver."
+				"description": "Começamos ouvindo: qual é a maior dor de cabeça da sua semana, aquela preocupação que não te deixa dormir? Conte pra gente o que está falhando, vamos ver o que não está rendendo bem e sem te encher de ferramentas que você não precisa."
 			},
 			{
 				"title": "Estratégia",
