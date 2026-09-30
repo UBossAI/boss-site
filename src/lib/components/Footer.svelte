@@ -44,9 +44,9 @@
 
 			<!-- Company links -->
 			<div>
-				<h3 class="text-white text-sm font-semibold mb-3 uppercase tracking-wider">
+				<h2 class="text-white text-sm font-semibold mb-3 uppercase tracking-wider">
 					{footer.companyHeading as string}
-				</h3>
+				</h2>
 				<ul class="space-y-2">
 					<li>
 						<a href="/{lang}/about" class="text-sm hover:text-teal transition-colors"
@@ -75,9 +75,9 @@
 
 			<!-- Support & Careers -->
 			<div>
-				<h3 class="text-white text-sm font-semibold mb-3 uppercase tracking-wider">
+				<h2 class="text-white text-sm font-semibold mb-3 uppercase tracking-wider">
 					{footer.helpHeading as string}
-				</h3>
+				</h2>
 				<ul class="space-y-2">
 					<li>
 						<a href="/{lang}/faq" class="text-sm hover:text-teal transition-colors"
@@ -99,9 +99,9 @@
 
 			<!-- Legal -->
 			<div>
-				<h3 class="text-white text-sm font-semibold mb-3 uppercase tracking-wider">
+				<h2 class="text-white text-sm font-semibold mb-3 uppercase tracking-wider">
 					{footer.legalHeading as string}
-				</h3>
+				</h2>
 				<ul class="space-y-2">
 					<li>
 						<a href="/{lang}/legal/terms" class="text-sm hover:text-teal transition-colors"
@@ -147,7 +147,7 @@
 					</svg>
 				</a>
 				<a
-					href="https://www.facebook.com/people/UBoss/61572034173888/"
+					href="https://www.facebook.com/profile.php?id=61572034173888"
 					target="_blank"
 					rel="noopener noreferrer"
 					aria-label={footer.facebookLabel as string}

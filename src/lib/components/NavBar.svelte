@@ -104,6 +104,7 @@
 							stroke-width="2"
 							stroke-linecap="round"
 							stroke-linejoin="round"
+							aria-hidden="true"
 						>
 							<circle cx="12" cy="12" r="10" />
 							<path
@@ -118,6 +119,7 @@
 							fill="none"
 							stroke="currentColor"
 							stroke-width="2"
+							aria-hidden="true"
 						>
 							<polyline points="6 9 12 15 18 9" />
 						</svg>
@@ -159,6 +161,7 @@
 						viewBox="0 0 24 24"
 						stroke="currentColor"
 						stroke-width="2"
+						aria-hidden="true"
 					>
 						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 					</svg>
@@ -170,6 +173,7 @@
 						viewBox="0 0 24 24"
 						stroke="currentColor"
 						stroke-width="2"
+						aria-hidden="true"
 					>
 						<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
 					</svg>

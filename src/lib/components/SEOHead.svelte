@@ -47,6 +47,8 @@
 		'@context': 'https://schema.org',
 		'@type': 'LocalBusiness',
 		name: 'UBOSS',
+		logo: `${siteUrl}/assets/uboss-logo-dark-bg.png`,
+		image: `${siteUrl}/assets/uboss-logo-dark-bg.png`,
 		description:
 			'Modern systems that help trades and small businesses in Greater Boston run more efficiently, scale confidently, and grow without extra overhead.',
 		url: siteUrl,
