@@ -17,7 +17,7 @@
 		"skipToContent": "Saltar al contenido principal"
 	},
 	"hero": {
-		"headline": "Tú construiste el negocio. Vamos a ponerle un motor.",
+		"headline": "Tú construiste el negocio. Ahora le pondremos un motor.",
 		"subheadline": "Enfócate en tu próximo paso, no en mantener todo funcionando.",
 		"cta": "Agenda tu consulta gratis",
 		"ctaSubtext": "Sin compromisos. Solo una llamada de 15 minutos.",
@@ -94,7 +94,7 @@
 		"phases": [
 			{
 				"title": "Descubrimiento",
-				"description": "Empezamos escuchando: ¿cuál es el dolor de cabeza más grande de tu semana, la preocupación que no te deja dormir? Antes de construir nada, ya vas a tener claro dónde se te está yendo el tiempo y qué sí se puede arreglar."
+				"description": "Empezamos escuchando: ¿cuál es el dolor de cabeza más grande de tu semana, la preocupación que no te deja dormir? Cuéntanos qué te está fallando, veamos qué es lo que no rinde bien y sin llenarte de herramientas que no necesitas."
 			},
 			{
 				"title": "Estrategia",
