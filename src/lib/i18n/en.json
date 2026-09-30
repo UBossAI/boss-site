@@ -213,35 +213,6 @@
 		},
 		"cta": "Book a Free Consultation"
 	},
-	"pricing": {
-		"eyebrow": "Pricing",
-		"title": "Pricing",
-		"subtitle": "Transparent, predictable pricing for every stage of your business.",
-		"monthly": "/month",
-		"mostPopular": "Most Popular",
-		"setupFeeTitle": "One-Time Setup Fee",
-		"setupFeeNote": "One-time setup fee based on project complexity — discussed during your free consultation.",
-		"enterprise": {
-			"title": "Enterprise",
-			"description": "Custom solutions for larger operations",
-			"cta": "Let's Talk"
-		},
-		"cta": "Book a call to find your plan",
-		"comparisonTitle": "What are you really paying for?",
-		"comparisonBody1": "Most growing businesses don't need just one person — they need someone to handle data, someone to answer calls, and someone to coordinate operations. That's three hires. Three salaries. Three sets of sick days, holidays, and human errors.",
-		"comparisonBody2": "Each one of those employees would cost your business over $25,000 a year. UBoss bundles all three roles into one seamless system — and it never calls in sick.",
-		"comparisonBanner": "UBoss works 24/7 — 365 days a year, including holidays. No sick days. No human error. Always on.",
-		"comparisonPartTime": "Part-time",
-		"comparisonFullTime": "Full-time",
-		"comparisonTypeHeader": "Type",
-		"comparisonHoursHeader": "Hours/Week",
-		"comparisonMonthlyHeader": "Monthly",
-		"comparisonAnnualHeader": "Annual",
-		"comparisonTable1Header": "Data Entry — $17/hr",
-		"comparisonTable2Header": "Secretary / Receptionist — $20/hr",
-		"comparisonTable3Header": "Administrative Secretary — $25/hr",
-		"comparisonDisclaimer": "† UBoss operates 24/7 including weekends and holidays. Scheduled maintenance windows may occur monthly — clients are notified in advance of any planned downtime. Hourly rate estimates based on Greater Boston market data. Figures shown represent conservative entry-level rates. Actual employer costs including payroll taxes, benefits, and workers’ compensation typically add 10–25% above base wages."
-	},
 	"legal": {
 		"terms": {
 			"title": "Terms of Service",
