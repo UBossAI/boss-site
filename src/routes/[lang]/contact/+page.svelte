@@ -84,6 +84,7 @@
 							viewBox="0 0 24 24"
 							stroke="currentColor"
 							stroke-width="1.5"
+							aria-hidden="true"
 						>
 							<path
 								stroke-linecap="round"
@@ -107,6 +108,7 @@
 							viewBox="0 0 24 24"
 							stroke="currentColor"
 							stroke-width="1.5"
+							aria-hidden="true"
 						>
 							<path
 								stroke-linecap="round"
@@ -137,6 +139,7 @@
 							viewBox="0 0 24 24"
 							stroke="currentColor"
 							stroke-width="1.5"
+							aria-hidden="true"
 						>
 							<path
 								stroke-linecap="round"
@@ -175,6 +178,7 @@
 								viewBox="0 0 24 24"
 								stroke="currentColor"
 								stroke-width="1.5"
+								aria-hidden="true"
 							>
 								<path
 									stroke-linecap="round"
@@ -247,6 +251,7 @@
 								type="email"
 								placeholder={formT.emailPlaceholder}
 								autocomplete="email"
+								aria-describedby="contact-method-hint"
 								class="w-full px-3.5 py-2.5 rounded-lg border border-silver text-near-black text-sm focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition-shadow"
 							/>
 						</div>
@@ -261,9 +266,12 @@
 								type="tel"
 								placeholder={formT.phonePlaceholder}
 								autocomplete="tel"
+								aria-describedby="contact-method-hint"
 								class="w-full px-3.5 py-2.5 rounded-lg border border-silver text-near-black text-sm focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition-shadow"
 							/>
-							<p class="text-gray-mid text-xs mt-1.5">{formT.contactMethodHint}</p>
+							<p id="contact-method-hint" class="text-gray-mid text-xs mt-1.5">
+								{formT.contactMethodHint}
+							</p>
 						</div>
 
 						<div>
@@ -294,10 +302,11 @@
 								minlength={MESSAGE_MIN_LENGTH}
 								maxlength={MESSAGE_MAX_LENGTH}
 								rows="4"
+								aria-describedby="message-char-count"
 								class="w-full px-3.5 py-2.5 rounded-lg border border-silver text-near-black text-sm focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition-shadow resize-none"
 							></textarea>
 							{#if MESSAGE_MAX_LENGTH - message.length <= 200}
-								<p class="text-gray-mid text-xs mt-1 text-right">
+								<p id="message-char-count" class="text-gray-mid text-xs mt-1 text-right">
 									{formT.charCount
 										.replace('{typed}', String(message.length))
 										.replace('{max}', String(MESSAGE_MAX_LENGTH))}
