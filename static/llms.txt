@@ -1,108 +1,43 @@
 # UBOSS
 
-> UBOSS LLC (UBoss) is an AI-as-a-Service consulting agency based in Lynn, Massachusetts, building
-> custom AI-powered automation for trades and local service businesses across the North Shore and
-> Greater Boston area.
+> UBOSS LLC (UBOSS) is an AI automation consultancy for local service businesses in Boston and Greater Boston, Massachusetts. It builds automation, dashboards, and AI assistants for trades and service businesses, in English and Spanish, with Brazilian Portuguese being rolled out.
 
-## About
+UBOSS helps small service businesses automate the repetitive parts of running a business (customer intake, follow-ups, scheduling, invoicing reminders) and gives owners a clear view of how the business is doing. It builds real automation infrastructure (workflows, AI-powered assistants, business dashboards, custom integrations), not a resold chatbot, and runs its own self-hosted language models on UBOSS infrastructure.
 
-UBOSS helps small and medium service businesses automate the repetitive parts of running a
-business (customer intake, follow-ups, scheduling, invoicing reminders) and gives owners a clear
-view of how their business is actually doing. UBOSS builds real automation infrastructure
-(workflows, AI-powered assistants, business dashboards, custom integrations), not a resold
-chatbot. UBOSS runs its own self-hosted language models on UBOSS infrastructure rather than
-reselling access to a third-party chatbot service.
+Founded by Robert Gutierrez, a first-generation Salvadoran-American software engineer who is bilingual in English and Spanish. Consultations are by phone or video call. The first call is a free 15-minute discovery call. Pricing is a custom quote after that call: a one-time setup fee for the build plus a month-to-month monthly fee, with no long-term contract. Fixed public packages are not published.
 
-UBOSS is trilingual: full support in English and Spanish, with Portuguese (Brazilian) support
-currently being rolled out.
+Serves: landscaping and lawn care, cleaning, general contracting, plumbing and HVAC, auto body and repair, property management, and caterers and food entrepreneurs. Does not serve full-service restaurants, and does not offer POS or delivery-platform integration (Toast, Square, Clover, Uber Eats, Grubhub, DoorDash). Online payments (Stripe) are planned, not live.
 
-Founded by Robert Gutierrez, a first-generation Salvadoran-American software engineer with a
-security-conscious engineering background, personally bilingual in English and Spanish. Robert
-also maintains a personal site at https://robg.dev.
+Every page below has a clean markdown version at the same URL with `.md` appended. Pages are also available in Spanish (`/es`) and Brazilian Portuguese (`/pt-BR`).
 
-## Who UBOSS Serves
+## Core pages
 
-Trades and local service businesses, including: landscaping and lawn care, cleaning services,
-general contracting, plumbing and HVAC, auto body and repair, property management, and caterers
-and food entrepreneurs. UBOSS does not currently serve full-service restaurants (dine-in/kitchen
-operations) — that segment typically expects point-of-sale and delivery-platform integrations
-that are out of scope today.
+- [Home](https://www.uboss.ai/en.md): What UBOSS does, who it serves, and how an engagement works
+- [Services](https://www.uboss.ai/en/services.md): The business problems UBOSS solves, from repetitive admin to dashboards
+- [FAQ](https://www.uboss.ai/en/faq.md): Answers on pricing, setup time, security, data handling, AI, and fit
+- [About](https://www.uboss.ai/en/about.md): Founder story and vision
+- [Contact](https://www.uboss.ai/en/contact.md): Contact form, phone, and booking options
+- [Support](https://www.uboss.ai/en/support.md): How existing clients get help
 
-## Services
+## Book or contact
 
-- Workflow automation: form intake, job scheduling, client follow-ups, invoicing reminders
-- AI-powered assistants: WhatsApp, email, and SMS-based customer response and lead qualification
-- Business dashboards and analytics: real-time view of jobs, revenue, and leads in one place
-- Custom integrations: connecting existing tools (QuickBooks, Google Workspace, CRMs, and more)
-- Digital form creation, replacing paper forms and PDFs
-- SMS/email notifications for job updates, reminders, and confirmations
+- [Free 15-minute discovery call](https://cal.com/robg-uboss/discovery-call): Phone or video call to find where time is being lost
+- [60-minute strategy session](https://cal.com/robg-uboss/uboss-strategy): Deeper working session on a specific problem
+- Phone: (339) 245-1665 (call or text, also on WhatsApp)
 
-## Not Currently Offered
+## Spanish and Portuguese
 
-- Point-of-sale (POS) system installation or integration (e.g. Toast, Square, Clover)
-- Online ordering / delivery-platform integration (e.g. Uber Eats, Grubhub, DoorDash)
-- Online payments: planned (Stripe), not yet live
+- [Inicio (Español)](https://www.uboss.ai/es.md): Spanish home page
+- [Servicios (Español)](https://www.uboss.ai/es/services.md): Spanish services page
+- [Preguntas frecuentes (Español)](https://www.uboss.ai/es/faq.md): Spanish FAQ
+- [Início (Português)](https://www.uboss.ai/pt-BR.md): Brazilian Portuguese home page
+- [Serviços (Português)](https://www.uboss.ai/pt-BR/services.md): Brazilian Portuguese services page
 
-## Pricing
+## Optional
 
-Pricing is quoted after a free consultation call, because it depends on what is being solved.
-The structure is a one-time setup fee covering the build, plus a monthly fee covering
-monitoring, fixes, and adjustments as the business changes. No long-term contract — the
-monthly side is month-to-month. Fixed public packages are deliberately not published.
-
-## Contact
-
-- Contact form: https://www.uboss.ai/en/contact
-- Phone: (339) 245-1665 (call or text; also reachable via WhatsApp)
-- 15-minute discovery call: https://cal.com/robg-uboss/discovery-call
-- 60-minute strategy session: https://cal.com/robg-uboss/uboss-strategy
-
-## Service Area
-
-Boston, East Boston, Lynn, Lynnfield, Saugus, Swampscott, Peabody, Beverly, Gloucester, Revere,
-Chelsea, Everett, Malden, Reading, Stoneham, Wakefield, Woburn, North Reading, Tewksbury,
-Somerville, Framingham, and Waltham, Massachusetts.
-
-## Pages
-
-- Home: https://www.uboss.ai/en
-- About: https://www.uboss.ai/en/about
-- Services: https://www.uboss.ai/en/services
-- Contact: https://www.uboss.ai/en/contact
-- Support: https://www.uboss.ai/en/support
-- FAQ: https://www.uboss.ai/en/faq
-
-This site is also available in Spanish (https://www.uboss.ai/es) and Brazilian Portuguese
-(https://www.uboss.ai/pt-BR).
-
-## Common Questions
-
-- **What is UBOSS, exactly?** UBOSS builds the systems that handle the repetitive side of running your business — customer follow-ups, paperwork, scheduling, invoice reminders — so your time goes to the work itself. (https://www.uboss.ai/en/faq#faq-what-is-uboss)
-- **What happens on a consultation call?** We start by finding out what is costing you the most time and aggravation. The first conversation is diagnostic, not a sales pitch — we want to understand how your business actually runs before proposing anything. (https://www.uboss.ai/en/faq#faq-consultation-call)
-- **How does pricing work?** Pricing is quoted after a consultation call, because the right number depends entirely on what we are solving. (https://www.uboss.ai/en/faq#faq-pricing)
-- **Is there a contract or long-term commitment?** No long-term contracts. The monthly side is month-to-month — we would rather earn it each month than lock you in. (https://www.uboss.ai/en/faq#faq-contract-commitment)
-- **How long does setup take?** Most straightforward builds are live within one to two weeks. More involved projects — several systems connected, custom dashboards, multiple people using it — usually run two to four weeks. (https://www.uboss.ai/en/faq#faq-setup-timeline)
-- **Can I start small and add more later?** Yes, and most people do. Fixing one specific headache first is the sensible way to start — smaller commitment, and you get to see the thing working before deciding how far to take it. (https://www.uboss.ai/en/faq#faq-start-small)
-- **Do you work with businesses outside the trades?** Our focus today is trades and local service businesses — contractors, electricians, plumbers, HVAC, cleaning, landscaping. That is where most of our work is and where we know the operational details cold. (https://www.uboss.ai/en/faq#faq-outside-trades)
-- **Do you offer support in Spanish or Portuguese?** Yes. Full support in English and Spanish, with Portuguese being rolled out. The founder is personally bilingual in English and Spanish, so you are not routed through a translation layer to get an answer. (https://www.uboss.ai/en/faq#faq-language-support)
-- **We tried a CRM before and nobody used it. Why would this be different?** Most CRMs are built for large sales teams: dozens of features you will never touch, and enough manual data entry that keeping it current becomes its own part-time job. That is why they get abandoned. (https://www.uboss.ai/en/faq#faq-crm-different)
-- **How do you automate a business that still runs on phone calls and paper?** We start by learning how the work actually flows today — who takes the call, what gets written down, what happens next, and where things fall through. (https://www.uboss.ai/en/faq#faq-automate-my-business)
-- **Will I have to replace the tools I already use?** Usually not. The goal is to connect what is working rather than rip it out — most tools worth keeping have a way to integrate, and building around your existing habits beats forcing new ones. (https://www.uboss.ai/en/faq#faq-existing-tools)
-- **Can you build a dashboard for my business?** Yes, and it starts with the data. On the consultation call we work out what you are already capturing, what you are not, and what you would actually make decisions from. (https://www.uboss.ai/en/faq#faq-dashboards)
-- **Which numbers can a dashboard actually track?** The common ones are all fair game — revenue growth rate, net profit margin, customer acquisition cost, conversion rate, monthly recurring revenue, inventory turnover, maintenance cost, burn rate — along with anything specific to how you work. (https://www.uboss.ai/en/faq#faq-business-metrics)
-- **Can you make my estimates and invoices look more professional?** Yes. Documentation is often the weakest part of an otherwise excellent operation — a vague, handwritten estimate can make first-rate work look careless, and itemizing materials and labor properly is rarely anyone’s favorite task. (https://www.uboss.ai/en/faq#faq-estimates-invoices)
-- **Can you send text or email confirmations to my customers?** Yes, within the rules that govern business texting. Text messaging requires the recipient’s consent before you can message them — that is a legal requirement, not a preference — so the flow we build starts with a form or booking step where the customer opts in. (https://www.uboss.ai/en/faq#faq-customer-notifications)
-- **What is the difference between automation and AI?** Automation is the backbone; AI is the judgment layer. Automation handles the defined work — moving information where it needs to go, triggering the next step, making sure nothing gets dropped. (https://www.uboss.ai/en/faq#faq-automation-vs-ai)
-- **Is AI going to replace my employees?** That is your call to make, not ours, and it is not what we build toward. The aim is to make the people you already have more effective — less time on repetitive admin, more on the work they are genuinely good at. (https://www.uboss.ai/en/faq#faq-replace-employees)
-- **Can this run around the clock?** Automation does not keep hours, so the parts that are automated do run continuously — a form submitted at 2am is processed at 2am. (https://www.uboss.ai/en/faq#faq-always-on)
-- **What happens if ChatGPT or another AI service goes down?** We run models in-house for most work, so an outage at a third-party provider does not take your systems with it. Where an external model is used, there is a fallback path to reroute to an alternative. (https://www.uboss.ai/en/faq#faq-model-outage)
-- **How do you decide where AI actually helps?** By starting from the problem rather than the technology. The consultation is where we work out what is costing you time, what is error-prone, and what you would like to stop thinking about — then match the right tool to each, which is often a plain automation rather than AI. (https://www.uboss.ai/en/faq#faq-where-ai-helps)
-- **How do I show up when someone asks ChatGPT for a business like mine?** People increasingly ask an AI assistant for a recommendation instead of typing into a search box, and those systems read your business information differently than a person does. (https://www.uboss.ai/en/faq#faq-ai-search-visibility)
-- **Can you help my business rank higher on Google?** Yes — and the honest version is that it is ongoing work, not a switch you flip. (https://www.uboss.ai/en/faq#faq-google-ranking)
-- **Do you handle Facebook and Instagram?** We can help manage a Facebook page and run paid campaigns across Meta’s platforms — Facebook, Instagram, and WhatsApp. (https://www.uboss.ai/en/faq#faq-social-media)
-- **How much do online reviews actually matter?** A great deal, and increasingly so. A review is a customer’s public account of whether you did what you said you would do, and both people and AI systems weigh that heavily when deciding who to trust. (https://www.uboss.ai/en/faq#faq-customer-reviews)
-- **Where is my business data stored?** On infrastructure we run ourselves, and we collect only what the system actually needs to work. (https://www.uboss.ai/en/faq#faq-data-storage)
-- **Does my customers’ information get sent to AI companies?** We do not route personally identifiable information through third-party AI models. Most processing runs on models we host ourselves, which is the main reason we can commit to that. (https://www.uboss.ai/en/faq#faq-pii-and-ai)
-- **How do you keep the systems secure?** Security is designed in rather than added afterward. In practice that means least privilege — every component and every AI agent gets access only to what its specific task requires, and nothing more. (https://www.uboss.ai/en/faq#faq-security-practices)
-- **What if my business handles sensitive records?** Then the design questions get more specific, and we would rather raise them early. During consultation we go through what you handle, what rules apply in your field, and what that means for how a system stores and moves information. (https://www.uboss.ai/en/faq#faq-sensitive-records)
-- **Does my website need a privacy policy or terms page?** Often, yes — it depends on what you collect and what you sell. If your site takes contact details, books appointments, or processes payments, there is usually good reason to have clear terms and a privacy policy. (https://www.uboss.ai/en/faq#faq-website-legal-pages)
+- [Careers](https://www.uboss.ai/en/careers.md): Open roles at UBOSS
+- [Terms of Service](https://www.uboss.ai/en/legal/terms.md): Full terms
+- [Privacy Policy](https://www.uboss.ai/en/legal/privacy.md): How data is collected and used
+- [Key Terms Summary](https://www.uboss.ai/en/legal/key-terms.md): Plain-language summary of the terms
+- [Founder site](https://robg.dev): Robert Gutierrez's personal site
+- [Sitemap](https://www.uboss.ai/sitemap.xml): Every page in every language

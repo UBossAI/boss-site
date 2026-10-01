@@ -76,8 +76,8 @@
 				"description": "Sabemos cómo trabajan de verdad los jardineros, las empresas de limpieza y los contratistas, días largos, horarios apretados, y cero paciencia para programas complicados."
 			},
 			{
-				"title": "Herramientas de Verdad, No Solo un Chatbot",
-				"description": "Esto no es que te revendamos ChatGPT con otro logo. Construimos algo real, hecho para manejar tu negocio de verdad, no solo para contestar preguntas."
+				"title": "Tus Datos en Buenas Manos",
+				"description": "Nuestra IA corre en equipo que alojamos y protegemos nosotros mismos, para que la información de tus clientes no ande regada por plataformas de IA gigantes. Hecha para manejar partes de tu negocio, no solo para contestar preguntas."
 			}
 		]
 	},
@@ -144,27 +144,6 @@
 			"successMessage": "Gracias por escribirnos. Te respondemos en menos de 24 horas.",
 			"errorMessage": "Algo salió mal. Por favor intenta de nuevo en un momento."
 		}
-	},
-	"testimonials": {
-		"title": "Lo que dicen nuestros clientes",
-		"subtitle": "Negocios reales, resultados reales.",
-		"items": [
-			{
-				"name": "Carlos M.",
-				"business": "Negocio de Paisajismo, Framingham MA",
-				"quote": "UBOSS automatizó todo nuestro proceso de recepción de trabajos. Lo que antes me tomaba 2 horas ahora pasa solo. Puedo concentrarme en el trabajo real."
-			},
-			{
-				"name": "Ana S.",
-				"business": "Servicio de Limpieza, Somerville MA",
-				"quote": "Nos hablaron en portugués y entendieron nuestro negocio desde el primer día. La automatización de WhatsApp sola nos ahorra muchísimas horas cada semana."
-			},
-			{
-				"name": "Mike T.",
-				"business": "Contratista General, Boston MA",
-				"quote": "El panel que construyeron me da una vista en tiempo real de cada trabajo. Por fin sé a dónde va mi dinero."
-			}
-		]
 	},
 	"about": {
 		"title": "Sobre UBOSS",
@@ -336,8 +315,8 @@
 	},
 	"seo": {
 		"home": {
-			"title": "Automatización con IA para Negocios de Servicio en Boston",
-			"description": "Automatización con IA, paneles de datos y sitios web para negocios de servicio en el Gran Boston y North Shore: construcción, limpieza, plomería, HVAC."
+			"title": "IA para negocios de servicios en Boston | UBOSS",
+			"description": "IA para negocios de servicios en Boston y el North Shore. Las llamadas se devuelven, el trabajo entra, las reseñas se piden, los anuncios corren y los números se ven claros."
 		},
 		"about": {
 			"title": "Sobre UBOSS — Consultoría de IA en Boston | Agencia Bilingüe",

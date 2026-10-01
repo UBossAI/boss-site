@@ -76,8 +76,8 @@
 				"description": "Sabemos como realmente trabalham os jardineiros, as empresas de limpeza e os empreiteiros, dias longos, horários apertados, e zero paciência para programas complicados."
 			},
 			{
-				"title": "Ferramentas de Verdade, Não Só um Chatbot",
-				"description": "Isso não é a gente revendendo ChatGPT com outro logo. Construímos algo real, feito para gerenciar seu negócio de verdade, não só para responder perguntas."
+				"title": "Seus Dados em Boas Mãos",
+				"description": "Nossa IA roda em hardware que hospedamos e protegemos nós mesmos, para que as informações dos seus clientes não fiquem espalhadas por grandes plataformas de IA. Feita para gerenciar partes do seu negócio, não só para responder perguntas."
 			}
 		]
 	},
@@ -144,27 +144,6 @@
 			"successMessage": "Obrigado pelo contato. Vamos responder em até 24 horas.",
 			"errorMessage": "Algo deu errado. Por favor tente novamente em instantes."
 		}
-	},
-	"testimonials": {
-		"title": "O que nossos clientes dizem",
-		"subtitle": "Negócios reais, resultados reais.",
-		"items": [
-			{
-				"name": "Carlos M.",
-				"business": "Negócio de Paisagismo, Framingham MA",
-				"quote": "A UBOSS automatizou todo o nosso processo de recebimento de trabalhos. O que antes me tomava 2 horas agora acontece sozinho. Posso focar no trabalho de verdade."
-			},
-			{
-				"name": "Ana S.",
-				"business": "Serviço de Limpeza, Somerville MA",
-				"quote": "Falaram conosco em português e entenderam nosso negócio desde o primeiro dia. A automação do WhatsApp sozinha nos economiza muitas horas toda semana."
-			},
-			{
-				"name": "Mike T.",
-				"business": "Empreiteiro Geral, Boston MA",
-				"quote": "O painel que construíram me dá uma visão em tempo real de cada trabalho. Finalmente sei para onde vai meu dinheiro."
-			}
-		]
 	},
 	"about": {
 		"title": "Sobre a UBOSS",
