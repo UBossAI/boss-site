@@ -34,6 +34,7 @@
 		lang === 'pt-BR' ? 'Logotipo da UBOSS' : lang === 'es' ? 'Logo de UBOSS' : 'UBOSS logo'
 	);
 	const canonicalUrl = $derived(page ? `${siteUrl}/${lang}/${page}` : `${siteUrl}/${lang}`);
+	const markdownUrl = $derived(`${siteUrl}/${lang}${page ? `/${page}` : ''}.md`);
 	const enUrl = $derived(page ? `${siteUrl}/en/${page}` : `${siteUrl}/en`);
 	const alternates = $derived(
 		alternateLocales.map((l) => ({
@@ -43,38 +44,33 @@
 	);
 	const extraJsonLd = $derived(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : []);
 
+	const bookingUrl = 'https://cal.com/robg-uboss/discovery-call';
+
 	const localBusinessJsonLd = {
 		'@context': 'https://schema.org',
 		'@type': 'LocalBusiness',
+		'@id': `${siteUrl}/#business`,
 		name: 'UBOSS',
+		legalName: 'UBOSS LLC',
+		alternateName: 'UBOSS LLC',
 		logo: `${siteUrl}/assets/uboss-logo-dark-bg.png`,
 		image: `${siteUrl}/assets/uboss-logo-dark-bg.png`,
 		description:
-			'Modern systems that help trades and small businesses in Greater Boston run more efficiently, scale confidently, and grow without extra overhead.',
+			'AI automation for local service businesses in Boston and the North Shore. Calls returned, jobs booked, reviews asked for, ads run, numbers in plain view.',
 		url: siteUrl,
+		telephone: '+1-339-245-1665',
+		email: 'support@uboss.ai',
+		founder: {
+			'@type': 'Person',
+			'@id': `${siteUrl}/#founder`,
+			name: 'Robert Gutierrez',
+			jobTitle: 'Founder',
+			url: 'https://robg.dev',
+			knowsLanguage: [localeLangs.en, 'es']
+		},
 		areaServed: [
 			{ '@type': 'City', name: 'Boston' },
-			{ '@type': 'City', name: 'East Boston' },
-			{ '@type': 'City', name: 'Lynn' },
-			{ '@type': 'City', name: 'Lynnfield' },
-			{ '@type': 'City', name: 'Saugus' },
-			{ '@type': 'City', name: 'Swampscott' },
-			{ '@type': 'City', name: 'Peabody' },
-			{ '@type': 'City', name: 'Beverly' },
-			{ '@type': 'City', name: 'Gloucester' },
-			{ '@type': 'City', name: 'Revere' },
-			{ '@type': 'City', name: 'Chelsea' },
-			{ '@type': 'City', name: 'Everett' },
-			{ '@type': 'City', name: 'Malden' },
-			{ '@type': 'City', name: 'Reading' },
-			{ '@type': 'City', name: 'Stoneham' },
-			{ '@type': 'City', name: 'Wakefield' },
-			{ '@type': 'City', name: 'Woburn' },
-			{ '@type': 'City', name: 'North Reading' },
-			{ '@type': 'City', name: 'Tewksbury' },
-			{ '@type': 'City', name: 'Somerville' },
-			{ '@type': 'City', name: 'Framingham' },
-			{ '@type': 'City', name: 'Waltham' }
+			{ '@type': 'AdministrativeArea', name: 'Greater Boston' }
 		],
 		serviceArea: {
 			'@type': 'GeoCircle',
@@ -86,12 +82,66 @@
 			geoRadius: '50000'
 		},
 		knowsLanguage: [localeLangs.en, localeLangs.es, localeLangs['pt-BR']],
-		priceRange: '$$',
+		contactPoint: {
+			'@type': 'ContactPoint',
+			contactType: 'customer service',
+			telephone: '+1-339-245-1665',
+			email: 'support@uboss.ai',
+			availableLanguage: ['English', 'Spanish'],
+			url: bookingUrl
+		},
+		hasOfferCatalog: {
+			'@type': 'OfferCatalog',
+			name: 'Consultations',
+			itemListElement: [
+				{
+					'@type': 'Offer',
+					price: '0',
+					priceCurrency: 'USD',
+					itemOffered: {
+						'@type': 'Service',
+						name: 'Free 15-minute discovery call',
+						serviceType: 'Business automation consultation',
+						availableChannel: {
+							'@type': 'ServiceChannel',
+							name: 'Phone or video call',
+							serviceUrl: bookingUrl,
+							servicePhone: '+1-339-245-1665',
+							availableLanguage: ['English', 'Spanish']
+						}
+					}
+				}
+			]
+		},
+		potentialAction: {
+			'@type': 'ReserveAction',
+			name: 'Book a free 15-minute discovery call',
+			target: {
+				'@type': 'EntryPoint',
+				urlTemplate: bookingUrl,
+				actionPlatform: [
+					'https://schema.org/DesktopWebPlatform',
+					'https://schema.org/MobileWebPlatform'
+				]
+			}
+		},
 		sameAs: [
 			'https://www.google.com/maps?cid=17359999283352644362',
 			'https://www.facebook.com/profile.php?id=61572034173888',
 			'https://www.linkedin.com/company/uboss-ai'
 		]
+	};
+
+	// Google reads the site name from the home page only, and the three locale homes are
+	// duplicates of it, so each carries identical markup (per Google's site-name docs).
+	const webSiteJsonLd = {
+		'@context': 'https://schema.org',
+		'@type': 'WebSite',
+		'@id': `${siteUrl}/#website`,
+		name: 'UBOSS',
+		alternateName: ['UBOSS LLC'],
+		url: `${siteUrl}/`,
+		publisher: { '@id': `${siteUrl}/#business` }
 	};
 </script>
 
@@ -99,6 +149,8 @@
 	<title>{title}</title>
 	<meta name="description" content={description} />
 	<link rel="canonical" href={canonicalUrl} />
+	<!-- Clean markdown twin of this page for agents (served by routes/md). -->
+	<link rel="alternate" type="text/markdown" href={markdownUrl} />
 	{#if noindex}
 		<meta name="robots" content="noindex, follow" />
 	{/if}
@@ -138,6 +190,10 @@
 	     from Svelte's own template parser. -->
 	<!-- eslint-disable-next-line svelte/no-at-html-tags, no-useless-escape -->
 	{@html `<script type="application/ld+json">${serializeJsonLd(localBusinessJsonLd)}<\/script>`}
+	{#if !page}
+		<!-- eslint-disable-next-line svelte/no-at-html-tags, no-useless-escape -->
+		{@html `<script type="application/ld+json">${serializeJsonLd(webSiteJsonLd)}<\/script>`}
+	{/if}
 	{#each extraJsonLd as schema, i (i)}
 		<!-- eslint-disable-next-line svelte/no-at-html-tags, no-useless-escape -->
 		{@html `<script type="application/ld+json">${serializeJsonLd(schema)}<\/script>`}

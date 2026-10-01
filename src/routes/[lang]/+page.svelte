@@ -7,7 +7,6 @@
 	import PricingPreviewSection from '$lib/components/PricingPreviewSection.svelte';
 	import PartnershipLoopSection from '$lib/components/PartnershipLoopSection.svelte';
 	import ContactCTASection from '$lib/components/ContactCTASection.svelte';
-	import TestimonialsSection from '$lib/components/TestimonialsSection.svelte';
 	import type { ComponentProps } from 'svelte';
 	import type { PageData } from './$types.js';
 
@@ -36,4 +35,3 @@
 	t={t.partnershipLoop as ComponentProps<typeof PartnershipLoopSection>['t']}
 />
 <ContactCTASection {lang} t={t.contact as ComponentProps<typeof ContactCTASection>['t']} />
-<TestimonialsSection t={t.testimonials as ComponentProps<typeof TestimonialsSection>['t']} />

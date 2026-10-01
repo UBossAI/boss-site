@@ -53,7 +53,8 @@ This is the marketing website for UBOSS LLC — an AI-as-a-Service consulting ag
 ### SEO
 
 - Every page needs: `<title>`, `<meta description>`, Open Graph tags, Twitter card tags
-- Implement JSON-LD structured data for `LocalBusiness` schema
+- Implement JSON-LD structured data for `LocalBusiness` schema, plus `WebSite` on the locale home pages (Google site name)
+- Every page has a markdown twin at `<url>.md` (`src/hooks.ts` reroute → `src/routes/md/`), generated from the rendered `<main>`; `static/llms.txt` follows the llmstxt.org v2 format and links to them
 - Trilingual `hreflang` link tags on every page
 - Generate `sitemap.xml` with all locale variants
 - Reference `SEO.md` for keyword targets — this file is the single source of truth for SEO terms

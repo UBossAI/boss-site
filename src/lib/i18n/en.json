@@ -76,8 +76,8 @@
 				"description": "We know how landscapers, cleaners, and contractors actually work: long days, tight schedules, and no patience for complicated software."
 			},
 			{
-				"title": "Real Tools, Not Just a Chatbot",
-				"description": "We run our own AI models on our own hardware, not a rebranded chatbot. What we build is set up to run parts of your business, not just answer questions."
+				"title": "Your Data Stays in Good Hands",
+				"description": "Our AI runs on hardware we host and secure ourselves, so your customer information isn't scattered across big AI platforms. Built to run parts of your business, not just answer questions."
 			}
 		]
 	},
@@ -144,27 +144,6 @@
 			"successMessage": "Thanks for reaching out. We'll get back to you within 24 hours.",
 			"errorMessage": "Something went wrong. Please try again in a moment."
 		}
-	},
-	"testimonials": {
-		"title": "What Our Clients Say",
-		"subtitle": "Real businesses, real results.",
-		"items": [
-			{
-				"name": "Carlos M.",
-				"business": "Landscaping Business, Framingham MA",
-				"quote": "UBOSS automated our whole job intake process. What used to take me 2 hours now happens automatically. I can focus on the actual work."
-			},
-			{
-				"name": "Ana S.",
-				"business": "Cleaning Service, Somerville MA",
-				"quote": "They spoke to us in Portuguese and understood our business from day one. The WhatsApp automation alone has saved us countless hours every week."
-			},
-			{
-				"name": "Mike T.",
-				"business": "General Contractor, Boston MA",
-				"quote": "The dashboard they built gives me a real-time view of every job. I finally know where my money is going."
-			}
-		]
 	},
 	"about": {
 		"title": "About UBOSS",
@@ -336,8 +315,8 @@
 	},
 	"seo": {
 		"home": {
-			"title": "Automation & Dashboards for Service Businesses in Boston",
-			"description": "In-house AI automation, dashboards, and websites for Greater Boston and North Shore service businesses: construction, cleaning, plumbing, HVAC, electrical."
+			"title": "AI Automation for Local Service Businesses in Boston | UBOSS",
+			"description": "AI automation for local service businesses in Boston and the North Shore. Calls returned, jobs booked, reviews asked for, ads run, numbers in plain view."
 		},
 		"about": {
 			"title": "About UBOSS: AI Consulting Boston | Bilingual AI Agency",
