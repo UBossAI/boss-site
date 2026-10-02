@@ -28,7 +28,15 @@ export const handle: Handle = async ({ event, resolve }) => {
 	const [, lang] = event.url.pathname.split('/');
 	const htmlLang = isValidLocale(lang) ? localeLangs[lang] : 'en';
 
-	return resolve(event, {
+	const response = await resolve(event, {
 		transformPageChunk: ({ html }) => html.replace('%sveltekit.lang%', htmlLang)
 	});
+
+	// SvelteKit sends `text/html` with no charset. The <meta charset> in app.html covers browsers,
+	// but audits and non-browser clients read the header, so state it there too.
+	if (response.headers.get('content-type') === 'text/html') {
+		response.headers.set('content-type', 'text/html; charset=utf-8');
+	}
+
+	return response;
 };

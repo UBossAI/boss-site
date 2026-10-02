@@ -1,31 +1,41 @@
 # UBOSS
 
-> UBOSS LLC (UBOSS) is an AI automation consultancy for local service businesses in Boston and Greater Boston, Massachusetts. It builds automation, dashboards, and AI assistants for trades and service businesses, in English and Spanish, with Brazilian Portuguese being rolled out.
+> UBOSS helps local service businesses in Boston and the North Shore stop losing evenings to quotes, invoices, follow-ups, and paperwork. Simple systems handle the repetitive work, and the owner sees how the business is really doing in one clear view.
 
-UBOSS helps small service businesses automate the repetitive parts of running a business (customer intake, follow-ups, scheduling, invoicing reminders) and gives owners a clear view of how the business is doing. It builds real automation infrastructure (workflows, AI-powered assistants, business dashboards, custom integrations), not a resold chatbot, and runs its own self-hosted language models on UBOSS infrastructure.
+Free 15-minute discovery call, in English or Spanish, with founder Robert Gutierrez: [book a time](https://cal.com/robg-uboss/discovery-call).
 
-Founded by Robert Gutierrez, a first-generation Salvadoran-American software engineer who is bilingual in English and Spanish. Consultations are by phone or video call. The first call is a free 15-minute discovery call. Pricing is a custom quote after that call: a one-time setup fee for the build plus a month-to-month monthly fee, with no long-term contract. Fixed public packages are not published.
+## What clients get
 
-Serves: landscaping and lawn care, cleaning, general contracting, plumbing and HVAC, auto body and repair, property management, and caterers and food entrepreneurs. Does not serve full-service restaurants, and does not offer POS or delivery-platform integration (Toast, Square, Clover, Uber Eats, Grubhub, DoorDash). Online payments (Stripe) are planned, not live.
-
-Every page below has a clean markdown version at the same URL with `.md` appended. Pages are also available in Spanish (`/es`) and Brazilian Portuguese (`/pt-BR`).
+- Less time on the repetitive tasks that pile up daily, weekly, and monthly, so admin stops eating the end of the day.
+- Customers who hear back fast and clearly, and a team that always knows the current status without anyone chasing.
+- One clear picture of jobs, money, and leads, so red flags show up early instead of becoming surprises.
+- The tools already in use connected to each other, and paperwork captured and easy to find instead of lost.
+- A quick start: most straightforward builds are live within one to two weeks, with no long-term contract (the monthly side is month-to-month).
 
 ## Core pages
 
 - [Home](https://www.uboss.ai/en.md): What UBOSS does, who it serves, and how an engagement works
-- [Services](https://www.uboss.ai/en/services.md): The business problems UBOSS solves, from repetitive admin to dashboards
+- [Services](https://www.uboss.ai/en/services.md): The business problems UBOSS solves and what changes when they are fixed
 - [FAQ](https://www.uboss.ai/en/faq.md): Answers on pricing, setup time, security, data handling, AI, and fit
-- [About](https://www.uboss.ai/en/about.md): Founder story and vision
+- [About](https://www.uboss.ai/en/about.md): The founder's story and vision
 - [Contact](https://www.uboss.ai/en/contact.md): Contact form, phone, and booking options
 - [Support](https://www.uboss.ai/en/support.md): How existing clients get help
 
-## Book or contact
+## Booking
 
-- [Free 15-minute discovery call](https://cal.com/robg-uboss/discovery-call): Phone or video call to find where time is being lost
-- [60-minute strategy session](https://cal.com/robg-uboss/uboss-strategy): Deeper working session on a specific problem
-- Phone: (339) 245-1665 (call or text, also on WhatsApp)
+- [Free 15-minute discovery call](https://cal.com/robg-uboss/discovery-call): Book a free 15-minute discovery call (English or Spanish) by phone or video. Pick any open time.
+- [60-minute strategy session](https://cal.com/robg-uboss/uboss-strategy): Book a longer working session on one specific problem (English or Spanish). Pick any open time.
+- Phone: (339) 245-1665 (call or text)
 
-## Spanish and Portuguese
+## Good to know
+
+- Serves trades and local service businesses: landscaping and lawn care, cleaning, general contracting, plumbing and HVAC, auto body and repair, property management, and caterers and food entrepreneurs.
+- Not offered: full-service restaurants, point-of-sale or delivery-platform integration (Toast, Square, Clover, Uber Eats, Grubhub, DoorDash). Online payments are planned, not live.
+- Pricing is a custom quote after the free call: a one-time setup fee for the build plus a month-to-month monthly fee. Fixed public packages are not published.
+- The AI runs on hardware UBOSS hosts and secures itself, so customer information is not scattered across big AI platforms.
+- Every page above also has a markdown version at the same URL with `.md` appended.
+
+## In Spanish and Portuguese
 
 - [Inicio (Español)](https://www.uboss.ai/es.md): Spanish home page
 - [Servicios (Español)](https://www.uboss.ai/es/services.md): Spanish services page

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { trackConversion } from '$lib/analytics/index.js';
+
 	interface Props {
 		lang: string;
 		t: Record<string, string>;
@@ -41,8 +43,11 @@
 			<!-- CTAs -->
 			<div class="flex flex-col sm:flex-row gap-4 items-start">
 				<a
-					href="/{lang}/contact"
+					href="https://cal.com/robg-uboss/discovery-call"
+					target="_blank"
+					rel="noopener noreferrer"
 					class="btn-primary text-base px-8 py-4 w-full sm:w-auto text-center"
+					onclick={() => trackConversion('book_discovery_call', { placement: 'hero' })}
 				>
 					{t.cta}
 				</a>
