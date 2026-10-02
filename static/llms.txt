@@ -1,6 +1,6 @@
 # UBOSS
 
-> UBOSS helps local service businesses in Boston and the North Shore stop losing evenings to quotes, invoices, follow-ups, and paperwork. Simple systems handle the repetitive work, and the owner sees how the business is really doing in one clear view.
+> UBOSS helps local service businesses in Boston and the North Shore stop losing evenings to quotes, invoices, follow-ups, and paperwork. Simple systems handle the repetitive work, and the owner gets clearer answers about how the business is really doing.
 
 Free 15-minute discovery call, in English or Spanish, with founder Robert Gutierrez: [book a time](https://cal.com/robg-uboss/discovery-call).
 
@@ -8,7 +8,7 @@ Free 15-minute discovery call, in English or Spanish, with founder Robert Gutier
 
 - Less time on the repetitive tasks that pile up daily, weekly, and monthly, so admin stops eating the end of the day.
 - Customers who hear back fast and clearly, and a team that always knows the current status without anyone chasing.
-- One clear picture of jobs, money, and leads, so red flags show up early instead of becoming surprises.
+- Clearer answers about how the business is doing, built around the numbers that matter most to that business (such as what it costs to win a customer and what each effort returns), as trust and access to the data grow.
 - The tools already in use connected to each other, and paperwork captured and easy to find instead of lost.
 - A quick start: most straightforward builds are live within one to two weeks, with no long-term contract (the monthly side is month-to-month).
 
@@ -45,6 +45,7 @@ Free 15-minute discovery call, in English or Spanish, with founder Robert Gutier
 
 ## Optional
 
+- [Client dashboards](https://www.uboss.ai/en/faq.md): Built case by case for ongoing clients, usually around business numbers such as the cost of winning a customer and what each effort returns. Not a standard package (see the dashboards question in the FAQ)
 - [Careers](https://www.uboss.ai/en/careers.md): Open roles at UBOSS
 - [Terms of Service](https://www.uboss.ai/en/legal/terms.md): Full terms
 - [Privacy Policy](https://www.uboss.ai/en/legal/privacy.md): How data is collected and used
