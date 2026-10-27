@@ -79,7 +79,7 @@ boss-site/
 │ │ └── legal/
 │ │ ├── full-terms-of-service.pdf
 │ │ ├── key-terms-summary.pdf
-│ │ └── privacy-policy.pdf
+│ │ └── privacy_policy.pdf
 │ ├── favicon.ico
 │ └── robots.txt
 ├── src/
