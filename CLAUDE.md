@@ -148,6 +148,15 @@ boss-site/
   5. Optional: Lighthouse CI audit
 - Vercel auto-deploys from `main` branch
 
+#### Claude workflows (`.github/workflows/`)
+
+- `claude-code-review.yml`: automatic review on each non-draft, same-repo, non-bot PR (code-review plugin).
+- `claude.yml`: answers `@claude` in comments/issues, only from OWNER/MEMBER/COLLABORATOR.
+- Both are read-only: they comment and review, never commit (no Edit/Write, no push; `GITHUB_TOKEN` has read scopes only).
+- They need the `CLAUDE_CODE_OAUTH_TOKEN` repo secret and the Claude GitHub App installed on this repo.
+- Actions are pinned to full commit SHAs; Dependabot (`.github/dependabot.yml`, github-actions only) opens weekly bump PRs.
+- claude-code-action refuses to run when the workflow file in a PR differs from the default branch, so the review check cannot run on the PR that adds or edits the workflow file. Expected; it works on the next PR after merge.
+
 ### Component Architecture
 
 - Each page section is its own component (HeroSection, PricingSection, ContactSection, etc.)
